@@ -1,0 +1,1 @@
+In this directory are the cumulative results of the enrichment pipeline. The file "original.ttl" contains the Turtle representation of the original data available here: https://kg.odissei.nl/odissei/odissei-kg/graphs 
