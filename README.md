@@ -103,11 +103,11 @@ This project follows open science principles and welcomes contributions. Please 
 
 ## License
 
-Part of the SSHOC-NL initiative. Please cite appropriately when using this system for research purposes.
+MIT License
 
 ---
 
-**Maintained by**: SSHOC-NL Team  
+**Maintained by**: Ronald Siebes - UCDS group - VU Amsterdam  
 **Last Updated**: July 2025  
 **Version**: 1.0.0
 
