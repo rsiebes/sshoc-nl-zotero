@@ -8,7 +8,7 @@ can be found  [here](https://github.com/rsiebes/sshoc-nl-zotero/blob/main/zotero
 
 ### 🔧 [Zotero Transformation Task](./zotero-transformation-task/)
 
-A batch metadata generation script that creates Dublin Core BIBO-compliant metadata files with optimized caching for ELSST vocabulary and ORCID author information.
+A batch metadata generation pipeline that creates Dublin Core BIBO-compliant metadata files with optimized caching for ELSST vocabulary and ORCID author information.
 
 **Key Features:**
 - **Intelligent Caching**: reduction in (ELSST) vocabulary lookups and author searches (including ORCID)
