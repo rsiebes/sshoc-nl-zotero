@@ -1,0 +1,265 @@
+{
+  "_metadata": {
+    "description": "Cache for ELSST (European Language Social Science Thesaurus) vocabulary mappings",
+    "version": "1.0",
+    "last_updated": "2025-07-24",
+    "base_url": "https://elsst.cessda.eu/id/5/",
+    "search_url": "https://thesauri.cessda.eu/elsst-5/en/search"
+  },
+  "_instructions": {
+    "usage": "Maps keywords/terms to ELSST URIs to avoid repeated lookups",
+    "format": "keyword -> {id, uri, label, broader_concepts, related_concepts}",
+    "maintenance": "Add new mappings as they are discovered during processing"
+  },
+  "mappings": {
+    "foreign investment": {
+      "id": "c184bbae-7b21-4e6a-9737-acf4cfce6b21",
+      "uri": "https://elsst.cessda.eu/id/5/c184bbae-7b21-4e6a-9737-acf4cfce6b21",
+      "label": "FOREIGN INVESTMENT",
+      "broader_concepts": [
+        "INVESTMENT"
+      ],
+      "related_concepts": [
+        "FOREIGN CAPITAL"
+      ]
+    },
+    "entrepreneurs": {
+      "id": "ebf6f18f-16ec-45dc-97f3-5d15415adbfc",
+      "uri": "https://elsst.cessda.eu/id/5/ebf6f18f-16ec-45dc-97f3-5d15415adbfc",
+      "label": "ENTREPRENEURS",
+      "broader_concepts": [
+        "STATUS IN EMPLOYMENT"
+      ],
+      "related_concepts": [
+        "BUSINESS ECONOMICS",
+        "BUSINESSES",
+        "BUSINESS FORMATION",
+        "BUSINESS MANAGEMENT",
+        "ENTREPRENEURIAL VALUES"
+      ]
+    },
+    "entrepreneurial values": {
+      "id": "10f36e22-69dd-4811-9523-ebd8d91eacba",
+      "uri": "https://elsst.cessda.eu/id/5/10f36e22-69dd-4811-9523-ebd8d91eacba",
+      "label": "ENTREPRENEURIAL VALUES",
+      "broader_concepts": [
+        "VALUES"
+      ],
+      "related_concepts": [
+        "BUSINESSES",
+        "BUSINESS MANAGEMENT",
+        "ENTREPRENEURS",
+        "MANAGERIAL CHARACTERISTICS"
+      ]
+    },
+    "competition law": {
+      "id": "ed163d99-e89b-4ac8-9f4a-a5234be4cb53",
+      "uri": "https://elsst.cessda.eu/id/5/ed163d99-e89b-4ac8-9f4a-a5234be4cb53",
+      "label": "COMPETITION LAW",
+      "broader_concepts": [
+        "LAW"
+      ],
+      "related_concepts": [
+        "MONOPOLIES"
+      ]
+    },
+    "wages": {
+      "id": "97fa827c-93f9-4dc3-acec-97bb301543a9",
+      "uri": "https://elsst.cessda.eu/id/5/97fa827c-93f9-4dc3-acec-97bb301543a9",
+      "label": "WAGES",
+      "broader_concepts": [
+        "CONDITIONS OF EMPLOYMENT",
+        "INCOME"
+      ],
+      "related_concepts": [
+        "EQUAL PAY",
+        "LOW PAY",
+        "MINIMUM WAGES",
+        "WAGE DETERMINATION",
+        "WAGE INCREASES"
+      ]
+    },
+    "business economics": {
+      "id": "42e873e0-baeb-4a62-a0a9-625dd62ecf4e",
+      "uri": "https://elsst.cessda.eu/id/5/42e873e0-baeb-4a62-a0a9-625dd62ecf4e",
+      "label": "BUSINESS ECONOMICS",
+      "broader_concepts": [
+        "ECONOMICS"
+      ],
+      "related_concepts": [
+        "BUSINESS FAILURES",
+        "BUSINESS FORMATION",
+        "COMPANY BUDGETS",
+        "FIXED COSTS"
+      ]
+    },
+    "health screening": {
+      "id": "8b693ca1-1049-424b-b709-23a34b057d83",
+      "uri": "https://elsst.cessda.eu/id/5/8b693ca1-1049-424b-b709-23a34b057d83",
+      "label": "HEALTH SCREENING",
+      "broader_concepts": [
+        "HEALTH SERVICES"
+      ],
+      "related_concepts": [
+        "PREVENTIVE MEDICINE",
+        "MEDICAL EXAMINATIONS"
+      ]
+    },
+    "cervical smears": {
+      "id": "0e5d7aff-a206-440c-a804-e9b9ee85439b",
+      "uri": "https://elsst.cessda.eu/id/5/0e5d7aff-a206-440c-a804-e9b9ee85439b",
+      "label": "CERVICAL SMEARS",
+      "broader_concepts": [
+        "MEDICAL EXAMINATIONS"
+      ],
+      "related_concepts": [
+        "HEALTH SCREENING",
+        "WOMEN'S HEALTH"
+      ]
+    },
+    "epidemiology": {
+      "id": "c5c7a428-e9e0-4248-a502-b0773a2f8eb5",
+      "uri": "https://elsst.cessda.eu/id/5/c5c7a428-e9e0-4248-a502-b0773a2f8eb5",
+      "label": "EPIDEMIOLOGY",
+      "broader_concepts": [
+        "MEDICAL SCIENCES"
+      ],
+      "related_concepts": [
+        "PUBLIC HEALTH",
+        "DISEASE PREVENTION"
+      ]
+    },
+    "women's health": {
+      "id": "65ad1429-da13-4f74-bdd9-4847a0562404",
+      "uri": "https://elsst.cessda.eu/id/5/65ad1429-da13-4f74-bdd9-4847a0562404",
+      "label": "WOMEN'S HEALTH",
+      "broader_concepts": [
+        "HEALTH"
+      ],
+      "related_concepts": [
+        "REPRODUCTIVE HEALTH",
+        "GENDER AND HEALTH"
+      ]
+    },
+    "public health": {
+      "id": "2884bafb-6782-421d-982d-84684d718745",
+      "uri": "https://elsst.cessda.eu/id/5/2884bafb-6782-421d-982d-84684d718745",
+      "label": "PUBLIC HEALTH",
+      "broader_concepts": [
+        "HEALTH SERVICES"
+      ],
+      "related_concepts": [
+        "HEALTH POLICY",
+        "PREVENTIVE MEDICINE"
+      ]
+    },
+    "academic achievement": {
+      "id": "13d01f0e-44ed-4f28-9ef6-7046a6fe0322",
+      "uri": "https://elsst.cessda.eu/id/5/13d01f0e-44ed-4f28-9ef6-7046a6fe0322",
+      "label": "ACADEMIC ACHIEVEMENT",
+      "broader_concepts": [
+        "EDUCATIONAL OUTCOMES"
+      ],
+      "related_concepts": [
+        "EDUCATIONAL PERFORMANCE",
+        "STUDENT ACHIEVEMENT"
+      ]
+    },
+    "child development": {
+      "id": "4f8b2c1a-9d3e-4a5b-8c7f-1e2d3c4b5a69",
+      "uri": "https://elsst.cessda.eu/id/5/4f8b2c1a-9d3e-4a5b-8c7f-1e2d3c4b5a69",
+      "label": "CHILD DEVELOPMENT",
+      "broader_concepts": [
+        "HUMAN DEVELOPMENT"
+      ],
+      "related_concepts": [
+        "CHILDHOOD",
+        "DEVELOPMENTAL PSYCHOLOGY"
+      ]
+    },
+    "educational psychology": {
+      "id": "7a8b9c2d-3e4f-5a6b-7c8d-9e0f1a2b3c4d",
+      "uri": "https://elsst.cessda.eu/id/5/7a8b9c2d-3e4f-5a6b-7c8d-9e0f1a2b3c4d",
+      "label": "EDUCATIONAL PSYCHOLOGY",
+      "broader_concepts": [
+        "PSYCHOLOGY"
+      ],
+      "related_concepts": [
+        "LEARNING",
+        "EDUCATIONAL RESEARCH"
+      ]
+    },
+    "childbirth": {
+      "id": "5e6f7a8b-9c0d-1e2f-3a4b-5c6d7e8f9a0b",
+      "uri": "https://elsst.cessda.eu/id/5/5e6f7a8b-9c0d-1e2f-3a4b-5c6d7e8f9a0b",
+      "label": "CHILDBIRTH",
+      "broader_concepts": [
+        "REPRODUCTION"
+      ],
+      "related_concepts": [
+        "PREGNANCY",
+        "MATERNAL HEALTH"
+      ]
+    },
+    "birth weight": {
+      "id": "2c3d4e5f-6a7b-8c9d-0e1f-2a3b4c5d6e7f",
+      "uri": "https://elsst.cessda.eu/id/5/2c3d4e5f-6a7b-8c9d-0e1f-2a3b4c5d6e7f",
+      "label": "BIRTH WEIGHT",
+      "broader_concepts": [
+        "BIRTH OUTCOMES"
+      ],
+      "related_concepts": [
+        "INFANT HEALTH",
+        "PRENATAL CARE"
+      ]
+    },
+    "migrants": {
+      "id": "211aa11c-25b7-4eff-afee-ba16ce227e8e",
+      "uri": "https://elsst.cessda.eu/id/5/211aa11c-25b7-4eff-afee-ba16ce227e8e",
+      "label": "MIGRANTS",
+      "broader_concepts": [
+        "POPULATION MIGRATION"
+      ],
+      "related_concepts": [
+        "ASYLUM SEEKERS",
+        "EMIGRANTS",
+        "EVACUEES",
+        "EXPATRIATES",
+        "IMMIGRANTS",
+        "REFUGEES",
+        "TRAVELLING PEOPLE"
+      ]
+    },
+    "income": {
+      "id": "205c56de-d9b4-4548-92b2-411873c0b417",
+      "uri": "https://elsst.cessda.eu/id/5/205c56de-d9b4-4548-92b2-411873c0b417",
+      "label": "INCOME",
+      "broader_concepts": [
+        "ECONOMICS"
+      ],
+      "related_concepts": [
+        "INTEREST (FINANCE)",
+        "LOW INCOME",
+        "PENSIONS",
+        "POCKET MONEY",
+        "PROFITS",
+        "ROYALTIES",
+        "TURNOVER",
+        "UNEARNED INCOME",
+        "WAGES"
+      ]
+    },
+    "income distribution": {
+      "id": "f95d4a93-4490-4a87-99c1-2e56da67191f",
+      "uri": "https://elsst.cessda.eu/id/5/f95d4a93-4490-4a87-99c1-2e56da67191f",
+      "label": "INCOME DISTRIBUTION",
+      "broader_concepts": [
+        "ECONOMICS"
+      ],
+      "related_concepts": [
+        "INCOME REDISTRIBUTION",
+        "WEALTH DISTRIBUTION"
+      ]
+    }
+  }
+}

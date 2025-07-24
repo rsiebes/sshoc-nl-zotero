@@ -1,0 +1,147 @@
+{
+  "_metadata": {
+    "description": "Cache for ORCID author information to avoid repeated lookups",
+    "version": "1.0",
+    "last_updated": "2025-07-24",
+    "base_url": "https://orcid.org/",
+    "api_url": "https://pub.orcid.org/v3.0/"
+  },
+  "_instructions": {
+    "usage": "Maps author names to ORCID IDs and institutional information",
+    "format": "author_name -> {orcid_id, orcid_uri, given_name, family_name, affiliation, verified}",
+    "maintenance": "Add new author mappings as they are discovered during processing",
+    "verification": "Mark entries as verified when ORCID ID is confirmed from official sources"
+  },
+  "authors": {
+    "Marzieh Abolhassani": {
+      "orcid_id": "0000-0002-2379-1576",
+      "orcid_uri": "https://orcid.org/0000-0002-2379-1576",
+      "given_name": "Marzieh",
+      "family_name": "Abolhassani",
+      "affiliation": "University of Groningen",
+      "verified": true,
+      "last_verified": "2025-07-24",
+      "source": "Springer author page"
+    },
+    "Seçil Hülya Danakol": {
+      "orcid_id": "0000-0002-6670-0427",
+      "orcid_uri": "https://orcid.org/0000-0002-6670-0427",
+      "given_name": "Seçil Hülya",
+      "family_name": "Danakol",
+      "affiliation": "Aston Business School",
+      "verified": true,
+      "last_verified": "2025-07-24",
+      "source": "Aston Research Explorer"
+    },
+    "Kathryn Abel": {
+      "orcid_id": "0000-0003-3538-8896",
+      "orcid_uri": "https://orcid.org/0000-0003-3538-8896",
+      "given_name": "Kathryn",
+      "family_name": "Abel",
+      "affiliation": "University of Manchester",
+      "verified": true,
+      "last_verified": "2025-07-24",
+      "source": "PubMed"
+    },
+    "Hein Heuvelman": {
+      "orcid_id": "0000-0002-4662-7533",
+      "orcid_uri": "https://orcid.org/0000-0002-4662-7533",
+      "given_name": "Hein",
+      "family_name": "Heuvelman",
+      "affiliation": "University of Bristol",
+      "verified": true,
+      "last_verified": "2025-07-24",
+      "source": "PubMed"
+    },
+    "Dheeraj Rai": {
+      "orcid_id": "0000-0002-7239-3523",
+      "orcid_uri": "https://orcid.org/0000-0002-7239-3523",
+      "given_name": "Dheeraj",
+      "family_name": "Rai",
+      "affiliation": "University of Bristol",
+      "verified": true,
+      "last_verified": "2025-07-24",
+      "source": "PubMed"
+    },
+    "Richard Emsley": {
+      "orcid_id": "0000-0002-1218-675X",
+      "orcid_uri": "https://orcid.org/0000-0002-1218-675X",
+      "given_name": "Richard",
+      "family_name": "Emsley",
+      "affiliation": "King's College London",
+      "verified": true,
+      "last_verified": "2025-07-24",
+      "source": "PubMed"
+    },
+    "Rachel Hanisch": {
+      "orcid_id": "0000-0001-8810-2594",
+      "orcid_uri": "https://orcid.org/0000-0001-8810-2594",
+      "given_name": "Rachel",
+      "family_name": "Hanisch",
+      "affiliation": "University of Edinburgh",
+      "verified": true,
+      "last_verified": "2025-07-24",
+      "source": "ORCID profile"
+    },
+    "Clare A Aitken": {
+      "orcid_id": "0000-0001-9973-7376",
+      "orcid_uri": "https://orcid.org/0000-0001-9973-7376",
+      "given_name": "Clare A",
+      "family_name": "Aitken",
+      "affiliation": "VU University Medical Center",
+      "verified": true,
+      "last_verified": "2025-07-24",
+      "source": "PubMed"
+    },
+    "Federica Inturrisi": {
+      "orcid_id": "0000-0002-3661-0842",
+      "orcid_uri": "https://orcid.org/0000-0002-3661-0842",
+      "given_name": "Federica",
+      "family_name": "Inturrisi",
+      "affiliation": "VU University Medical Center",
+      "verified": true,
+      "last_verified": "2025-07-24",
+      "source": "PubMed"
+    },
+    "Johannes Berkhof": {
+      "orcid_id": "0000-0003-2094-2380",
+      "orcid_uri": "https://orcid.org/0000-0003-2094-2380",
+      "given_name": "Johannes",
+      "family_name": "Berkhof",
+      "affiliation": "VU University Medical Center",
+      "verified": true,
+      "last_verified": "2025-07-24",
+      "source": "PubMed"
+    },
+    "Inge M C M de Kok": {
+      "orcid_id": "0000-0002-9419-0452",
+      "orcid_uri": "https://orcid.org/0000-0002-9419-0452",
+      "given_name": "Inge M C M",
+      "family_name": "de Kok",
+      "affiliation": "Erasmus MC",
+      "verified": true,
+      "last_verified": "2025-07-24",
+      "source": "PubMed"
+    },
+    "Charles Agyemang": {
+      "orcid_id": "0000-0002-3882-7295",
+      "orcid_uri": "https://orcid.org/0000-0002-3882-7295",
+      "given_name": "Charles",
+      "family_name": "Agyemang",
+      "affiliation": "Amsterdam University Medical Centres",
+      "verified": true,
+      "last_verified": "2025-07-24",
+      "source": "ORCID profile"
+    },
+    "Michiel L Bots": {
+      "orcid_id": "0000-0003-2871-9810",
+      "orcid_uri": "https://orcid.org/0000-0003-2871-9810",
+      "given_name": "Michiel L",
+      "family_name": "Bots",
+      "affiliation": "University Medical Center Utrecht",
+      "verified": true,
+      "last_verified": "2025-07-24",
+      "source": "ORCID profile"
+    }
+  }
+}
