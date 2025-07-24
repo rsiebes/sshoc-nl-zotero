@@ -62,7 +62,7 @@ zotero-transformation-task/
 
 ### Basic Usage
 
-1. **Prepare your CSV file** with columns:
+1. **Prepare your CSV file** with columns (note that project refers to a CBS project from [this list](https://www.cbs.nl/-/media/cbs-op-maat/zelf-onderzoek-doen/projecten_met_bestanden_einddatum_voor_2025_.xlsx):
    ```csv
    Paper URL,identifier,project
    https://heart.bmj.com/content/100/3/239.short,D66SMIX6,7506
