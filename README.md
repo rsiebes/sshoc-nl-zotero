@@ -1,6 +1,8 @@
 # SSHOC-NL Zotero Pipeline
 
-A comprehensive pipeline to generate Linked Data representations and enrichments for research papers from the Zotero database, with advanced metadata transformation capabilities.
+A pipeline to enrich Linked Data for research papers from the Zotero database.
+The original source can be found here: https://kg.odissei.nl/odissei/odissei-kg/graphs (name of the graph is graph:cbs_publications), and a convenient .ttl representation 
+can be found  [here](https://github.com/rsiebes/sshoc-nl-zotero/blob/main/zotero-transformation-task/data/original.ttl)
 
 ## Components
 
