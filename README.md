@@ -99,10 +99,9 @@ This pipeline is designed to integrate seamlessly with:
    ls data/*.ttl
    ```
 
-## Contributing
+## Feeback
 
-This project follows open science principles and welcomes contributions. Please refer to the component-specific documentation for detailed technical information and contribution guidelines.
-
+This project follows open science principles and welcomes contributions. Please contact r.m.siebes@vu.nl
 ## License
 
 MIT License
