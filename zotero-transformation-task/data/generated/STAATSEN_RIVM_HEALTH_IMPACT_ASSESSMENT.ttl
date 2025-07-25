@@ -1,0 +1,526 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <http://schema.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://www.rivm.nl/bibliotheek/rapporten/815120002.pdf>
+    a bibo:Report, schema:ScholarlyArticle ;
+    dc:title "Assessment of health impacts and policy options for adaptation" ;
+    dc:creator "Staatsen, Brigit A.M., Elise van Kempen, Hanneke Kruize, Augustinus E.M. de Hollander, Marten Marra, and Paul H. Fischer" ;
+    dc:date "2017"^^xsd:gYear ;
+    dc:publisher "National Institute for Public Health and the Environment (RIVM)" ;
+    
+    # Publication details
+    dc:issued "2017"^^xsd:gYear ;
+    schema:datePublished "2017-01-01"^^xsd:date ;
+    schema:inLanguage "en" ;
+    
+    # Identifiers
+    dc:identifier <https://www.rivm.nl/bibliotheek/rapporten/815120002.pdf> ;
+    schema:url <https://www.rivm.nl/bibliotheek/rapporten/815120002.pdf> ;
+    rdfs:seeAlso <https://rivm.aws.openrepository.com/handle/10029/10046> ;
+    rdfs:seeAlso <https://www.pbl.nl/uploads/default/downloads/402101001.pdf> ;
+    
+    # Lead author Brigit A.M. Staatsen
+    schema:author [
+        a foaf:Person ;
+        foaf:name "Brigit A.M. Staatsen" ;
+        foaf:givenName "Brigit" ;
+        foaf:familyName "Staatsen" ;
+        schema:additionalName "A.M." ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "National Institute for Public Health and the Environment" ;
+            schema:name "National Institute for Public Health and the Environment (RIVM)" ;
+            schema:department "Healthy Living Environment" ;
+            schema:url <https://www.rivm.nl/> ;
+            schema:address [
+                a schema:PostalAddress ;
+                schema:addressLocality "De Bilt" ;
+                schema:addressCountry "Netherlands"
+            ] ;
+            schema:description "Leading Dutch national institute for public health and environmental protection"
+        ] ;
+        schema:jobTitle "Senior researcher in environmental epidemiology" ;
+        schema:sameAs <https://www.researchgate.net/profile/Brigit-Staatsen> ;
+        schema:sameAs <https://nl.linkedin.com/in/brigit-staatsen-58555a29> ;
+        schema:additionalProperty [
+            schema:name "Citations" ;
+            schema:value "1,266"
+        ] ;
+        schema:additionalProperty [
+            schema:name "Education" ;
+            schema:value "MSc in medical biology, with a major in epidemiology and toxicology"
+        ] ;
+        schema:expertise [
+            "Environmental epidemiology",
+            "Health impact assessment",
+            "Environmental health",
+            "Health interventions",
+            "Environmental policy",
+            "Public health research",
+            "Environmental burden of disease",
+            "Blue health",
+            "Healthy living environment",
+            "REACH regulation health assessment"
+        ] ;
+        schema:memberOf [
+            a foaf:Organization ;
+            foaf:name "BlueHealth project" ;
+            schema:description "European research project on blue health and environmental interventions"
+        ]
+    ] ;
+    
+    # Co-author Elise van Kempen
+    schema:author [
+        a foaf:Person ;
+        foaf:name "Elise van Kempen" ;
+        foaf:givenName "Elise" ;
+        foaf:familyName "van Kempen" ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "National Institute for Public Health and the Environment" ;
+            schema:name "National Institute for Public Health and the Environment (RIVM)" ;
+            schema:department "Environmental Health" ;
+            schema:url <https://www.rivm.nl/>
+        ] ;
+        schema:jobTitle "Researcher noise and health" ;
+        schema:email "Elise.van.Kempen@rivm.nl" ;
+        schema:expertise [
+            "Environmental noise",
+            "Cardiovascular health",
+            "Noise annoyance",
+            "Environmental health",
+            "WHO environmental noise guidelines"
+        ]
+    ] ;
+    
+    # Co-author Hanneke Kruize
+    schema:author [
+        a foaf:Person ;
+        foaf:name "Hanneke Kruize" ;
+        foaf:givenName "Hanneke" ;
+        foaf:familyName "Kruize" ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "National Institute for Public Health and the Environment" ;
+            schema:name "National Institute for Public Health and the Environment (RIVM)" ;
+            schema:url <https://www.rivm.nl/>
+        ] ;
+        schema:jobTitle "Senior Researcher" ;
+        schema:expertise [
+            "Environmental health",
+            "Environmental justice",
+            "Health inequalities",
+            "Urban health",
+            "Health impact assessment"
+        ]
+    ] ;
+    
+    # Co-author Augustinus E.M. de Hollander
+    schema:author [
+        a foaf:Person ;
+        foaf:name "Augustinus E.M. de Hollander" ;
+        foaf:givenName "Augustinus" ;
+        foaf:familyName "de Hollander" ;
+        schema:additionalName "E.M." ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "National Institute for Public Health and the Environment" ;
+            schema:name "National Institute for Public Health and the Environment (RIVM)" ;
+            schema:url <https://www.rivm.nl/>
+        ] ;
+        schema:jobTitle "Senior Researcher" ;
+        schema:expertise [
+            "Environmental health",
+            "Public health policy",
+            "Environmental burden of disease",
+            "Health impact assessment"
+        ]
+    ] ;
+    
+    # Co-author Marten Marra
+    schema:author [
+        a foaf:Person ;
+        foaf:name "Marten Marra" ;
+        foaf:givenName "Marten" ;
+        foaf:familyName "Marra" ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "National Institute for Public Health and the Environment" ;
+            schema:name "National Institute for Public Health and the Environment (RIVM)" ;
+            schema:department "Environmental Health" ;
+            schema:url <https://www.rivm.nl/>
+        ] ;
+        schema:jobTitle "Researcher" ;
+        schema:expertise [
+            "Air pollution",
+            "Environmental epidemiology",
+            "Environmental health assessment"
+        ]
+    ] ;
+    
+    # Co-author Paul H. Fischer
+    schema:author [
+        a foaf:Person ;
+        foaf:name "Paul H. Fischer" ;
+        foaf:givenName "Paul" ;
+        foaf:familyName "Fischer" ;
+        schema:additionalName "H." ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "National Institute for Public Health and the Environment" ;
+            schema:name "National Institute for Public Health and the Environment (RIVM)" ;
+            schema:department "Department for Environmental Health" ;
+            schema:url <https://www.rivm.nl/>
+        ] ;
+        schema:jobTitle "Air pollution epidemiologist and policy advisor" ;
+        schema:email "paul.fischer@rivm.nl" ;
+        schema:expertise [
+            "Air pollution epidemiology",
+            "Environmental health",
+            "Public health policy",
+            "Environmental burden of disease"
+        ]
+    ] ;
+    
+    # Geographic coverage
+    schema:spatialCoverage [
+        a schema:Place ;
+        schema:name "Netherlands" ;
+        schema:description "Comprehensive health impact assessment for environmental policy adaptation in the Netherlands"
+    ] ;
+    
+    # Keywords
+    dc:subject "Health impact assessment" ;
+    dc:subject "Environmental health" ;
+    dc:subject "Policy adaptation" ;
+    dc:subject "Environmental epidemiology" ;
+    dc:subject "Public health policy" ;
+    dc:subject "Environmental burden of disease" ;
+    dc:subject "Health interventions" ;
+    dc:subject "Environmental policy" ;
+    dc:subject "Healthy living environment" ;
+    dc:subject "Blue health" ;
+    dc:subject "Environmental justice" ;
+    dc:subject "Health inequalities" ;
+    dc:subject "Urban health" ;
+    dc:subject "Environmental stressors" ;
+    dc:subject "Climate adaptation" ;
+    dc:subject "Environmental planning" ;
+    dc:subject "Public health protection" ;
+    dc:subject "Environmental exposure assessment" ;
+    dc:subject "Health promotion" ;
+    dc:subject "Environmental determinants of health" ;
+    dc:subject "Sustainable development" ;
+    dc:subject "Environmental governance" ;
+    dc:subject "Health in all policies" ;
+    dc:subject "Environmental risk assessment" ;
+    dc:subject "Population health" ;
+    
+    # ELSST vocabulary subjects
+    dc:subject <https://elsst.cessda.eu/id/5/43ad3351-9ac1-4ee7-ab31-ecbf7738e689> ; # HEALTH EXPENDITURE
+    dc:subject <https://elsst.cessda.eu/id/5/29768110-2efc-493b-bad3-59c2727939ff> ; # HEALTH CARE COSTS
+    dc:subject <https://elsst.cessda.eu/id/5/c5c7a428-e9e0-4248-a502-b0773a2f8eb5> ; # EPIDEMIOLOGY
+    dc:subject <https://elsst.cessda.eu/id/5/fc09ab8a-c74e-41b7-83ca-c5af01921a64> ; # ECONOMICS
+    dc:subject <https://elsst.cessda.eu/id/5/498de90d-7d1e-4f94-b283-181b7edb3ebf> ; # ELDERLY
+    dc:subject <https://elsst.cessda.eu/id/5/d179f170-3354-4719-a625-d6976e7de2b0> ; # HIGHER EDUCATION INSTITUTIONS
+    
+    # Parent organization
+    schema:parentOrganization [
+        a foaf:Organization ;
+        foaf:name "National Institute for Public Health and the Environment" ;
+        schema:name "National Institute for Public Health and the Environment (RIVM)" ;
+        dc:identifier <https://ror.org/01cesdt21> ;
+        schema:url <https://www.rivm.nl/> ;
+        schema:address [
+            a schema:PostalAddress ;
+            schema:addressLocality "De Bilt" ;
+            schema:addressCountry "Netherlands"
+        ] ;
+        schema:description "Leading Dutch national institute for public health and environmental protection" ;
+        schema:organizationType "Government Research Institute" ;
+        schema:parentOrganization [
+            a foaf:Organization ;
+            foaf:name "Ministry of Health, Welfare and Sport" ;
+            schema:description "Dutch government ministry responsible for public health policy"
+        ] ;
+        schema:department [
+            a foaf:Organization ;
+            foaf:name "Healthy Living Environment" ;
+            schema:description "Department specializing in healthy living environment research and policy"
+        ]
+    ] ;
+    
+    # Producer information
+    schema:producer <https://w3id.org/odissei/ns/kg/cbs/project/7267> ;
+    
+    # Publication venue
+    schema:isPartOf [
+        a schema:Series ;
+        schema:name "RIVM Report Series" ;
+        schema:publisher [
+            a foaf:Organization ;
+            foaf:name "National Institute for Public Health and the Environment" ;
+            schema:name "National Institute for Public Health and the Environment (RIVM)" ;
+            schema:url <https://www.rivm.nl/> ;
+            schema:address [
+                a schema:PostalAddress ;
+                schema:addressLocality "De Bilt" ;
+                schema:addressCountry "Netherlands"
+            ] ;
+            schema:description "Leading Dutch national institute for public health and environmental protection"
+        ] ;
+        schema:issn "1566-7197" ;
+        schema:description "RIVM report series on public health and environmental research" ;
+        schema:identifier "815120002"
+    ] ;
+    
+    # Abstract and research focus
+    schema:about [
+        a schema:Thing ;
+        schema:name "Health impact assessment methodology for environmental policy adaptation" ;
+        schema:description "Comprehensive assessment of health impacts and policy options for environmental adaptation, including methodology development for health impact assessment in environmental policy contexts"
+    ] ;
+    
+    # Research methodology
+    schema:workExample [
+        a schema:CreativeWork ;
+        schema:name "Health impact assessment framework for environmental policy" ;
+        schema:description "Systematic framework for assessing health impacts of environmental policies and developing evidence-based policy adaptation strategies"
+    ] ;
+    
+    # Target audience
+    schema:audience [
+        a schema:Audience ;
+        schema:audienceType "Environmental health researchers" ;
+        schema:audienceType "Public health policy makers" ;
+        schema:audienceType "Environmental policy analysts" ;
+        schema:audienceType "Health impact assessment practitioners" ;
+        schema:audienceType "Urban planners" ;
+        schema:audienceType "Environmental consultants" ;
+        schema:audienceType "Government health agencies" ;
+        schema:audienceType "International health organizations" ;
+        schema:audienceType "Environmental justice advocates" ;
+        schema:audienceType "Climate adaptation specialists"
+    ] ;
+    
+    # Research findings and implications
+    schema:result [
+        a schema:Thing ;
+        schema:name "Framework for environmental health impact assessment and policy adaptation" ;
+        schema:description "Evidence-based framework for assessing health impacts of environmental factors and developing policy adaptation strategies to protect and promote population health"
+    ] ;
+    
+    # Document format and access
+    schema:encodingFormat "application/pdf" ;
+    schema:isAccessibleForFree true ;
+    schema:url <https://www.rivm.nl/bibliotheek/rapporten/815120002.pdf> ;
+    
+    # Content classification
+    bibo:status "Published" ;
+    schema:genre "Government research report" ;
+    schema:genre "Health impact assessment" ;
+    schema:genre "Environmental health research" ;
+    schema:genre "Policy analysis" ;
+    
+    # Temporal coverage
+    schema:temporalCoverage "2017" ;
+    schema:dateCreated "2017"^^xsd:gYear ;
+    
+    # Research context
+    schema:isPartOf [
+        a schema:CreativeWork ;
+        schema:name "RIVM Environmental Health and Policy research program" ;
+        schema:description "Part of RIVM's comprehensive research program on environmental health and policy development"
+    ] ;
+    
+    # Academic significance
+    schema:citation [
+        a schema:CreativeWork ;
+        schema:name "Influential in environmental health impact assessment and policy literature" ;
+        schema:description "Widely used in environmental health impact assessment practice, policy development, and academic research"
+    ] ;
+    
+    # Language and localization
+    schema:contentLocation [
+        a schema:Place ;
+        schema:name "Netherlands" ;
+        schema:description "Dutch national study with international implications for environmental health impact assessment methodology"
+    ] ;
+    
+    # Professional context
+    schema:industry "Environmental Health" ;
+    schema:applicationCategory "Health Impact Assessment" ;
+    
+    # Research contribution
+    schema:contribution [
+        a schema:Thing ;
+        schema:name "Methodological framework for environmental health impact assessment" ;
+        schema:description "Provides systematic methodology for conducting health impact assessments in environmental policy contexts and developing evidence-based adaptation strategies"
+    ] ;
+    
+    # Quality indicators
+    schema:measurementTechnique [
+        "Health impact assessment methodology",
+        "Environmental exposure assessment",
+        "Policy analysis",
+        "Epidemiological assessment",
+        "Risk assessment",
+        "Evidence synthesis"
+    ] ;
+    
+    # Usage and applications
+    schema:usageInfo [
+        a schema:CreativeWork ;
+        schema:name "Environmental policy development and health impact assessment applications" ;
+        schema:description "Used for developing environmental policies, conducting health impact assessments, and implementing health-protective environmental interventions"
+    ] ;
+    
+    # Data coverage
+    schema:coverage [
+        a schema:Thing ;
+        schema:name "Comprehensive environmental health impact assessment data" ;
+        schema:description "Analysis of environmental health impacts and policy options with systematic assessment methodology for environmental adaptation"
+    ] ;
+    
+    # Public health impact
+    schema:impact [
+        a schema:Thing ;
+        schema:name "Environmental health policy and health impact assessment influence" ;
+        schema:description "Influential research informing environmental health policy development, health impact assessment practice, and environmental adaptation strategies"
+    ] ;
+    
+    # Research institute context
+    schema:provider [
+        a foaf:Organization ;
+        foaf:name "National Institute for Public Health and the Environment (RIVM)" ;
+        schema:name "National Institute for Public Health and the Environment (RIVM)" ;
+        schema:url <https://www.rivm.nl/> ;
+        schema:parentOrganization [
+            a foaf:Organization ;
+            foaf:name "Ministry of Health, Welfare and Sport" ;
+            schema:description "Dutch government ministry responsible for public health policy"
+        ] ;
+        schema:description "Leading Dutch national institute for public health and environmental protection"
+    ] ;
+    
+    # Theoretical framework
+    schema:theoreticalFramework [
+        a schema:Thing ;
+        schema:name "Environmental health and health impact assessment theory" ;
+        schema:description "Analysis based on environmental health principles, health impact assessment methodology, and policy analysis frameworks"
+    ] ;
+    
+    # Public health implications
+    schema:publicHealthImplication [
+        a schema:Thing ;
+        schema:name "Environmental health policy and adaptation strategies" ;
+        schema:description "Recommendations for developing environmental health policies and adaptation strategies to protect and promote population health"
+    ] ;
+    
+    # Research network
+    schema:collaborator [
+        a foaf:Organization ;
+        foaf:name "BlueHealth project" ;
+        schema:description "European research project on blue health and environmental interventions"
+    ] ;
+    
+    # Environmental health focus areas
+    schema:environmentalHealthArea [
+        a schema:Thing ;
+        schema:name "Health Impact Assessment Methodology" ;
+        schema:description "Development and application of health impact assessment methods for environmental policy"
+    ] ;
+    
+    schema:environmentalHealthArea [
+        a schema:Thing ;
+        schema:name "Environmental Policy and Health" ;
+        schema:description "Analysis of environmental policies and their health implications for population health protection"
+    ] ;
+    
+    schema:environmentalHealthArea [
+        a schema:Thing ;
+        schema:name "Environmental Adaptation and Health" ;
+        schema:description "Assessment of environmental adaptation strategies and their health benefits for climate and environmental change"
+    ] ;
+    
+    # Environmental policy context
+    schema:policyContext [
+        a schema:Thing ;
+        schema:name "Environmental health policy and adaptation planning" ;
+        schema:description "Evidence-based approach to environmental health policy development and adaptation planning for health protection"
+    ] ;
+    
+    # Performance indicators
+    schema:performanceIndicator [
+        a schema:Thing ;
+        schema:name "Health impact assessment outcomes" ;
+        schema:description "Measurement of health impacts and policy effectiveness for environmental health protection evaluation"
+    ] ;
+    
+    # Environmental planning
+    schema:environmentalPlanning [
+        a schema:Thing ;
+        schema:name "Health-protective environmental planning and policy" ;
+        schema:description "Planning mechanisms through which environmental policies can be designed to protect and promote population health"
+    ] ;
+    
+    # Research methodology details
+    schema:researchMethodology [
+        a schema:Thing ;
+        schema:name "Systematic health impact assessment with policy analysis" ;
+        schema:description "Comprehensive approach combining health impact assessment methodology, environmental exposure assessment, and policy analysis for environmental health protection"
+    ] ;
+    
+    # Health impact assessment focus
+    schema:healthImpactAssessment [
+        a schema:Thing ;
+        schema:name "Environmental health impact assessment framework" ;
+        schema:description "Systematic framework for assessing health impacts of environmental factors and developing evidence-based policy recommendations"
+    ] ;
+    
+    # Policy adaptation strategies
+    schema:policyAdaptation [
+        a schema:Thing ;
+        schema:name "Environmental health policy adaptation and implementation" ;
+        schema:description "Development and implementation of environmental health policy adaptation strategies for changing environmental conditions"
+    ] ;
+    
+    # Blue health research
+    schema:blueHealth [
+        a schema:Thing ;
+        schema:name "Blue health and environmental interventions" ;
+        schema:description "Research on blue health interventions and their health benefits for environmental health promotion"
+    ] ;
+    
+    # Environmental determinants of health
+    schema:environmentalDeterminants [
+        a schema:Thing ;
+        schema:name "Environmental determinants of health assessment" ;
+        schema:description "Comprehensive assessment of environmental factors that influence population health outcomes"
+    ] ;
+    
+    # Health in all policies
+    schema:healthInAllPolicies [
+        a schema:Thing ;
+        schema:name "Health in all policies approach" ;
+        schema:description "Integration of health considerations into environmental and other sectoral policies for population health protection"
+    ] ;
+    
+    # REACH regulation context
+    schema:reachRegulation [
+        a schema:Thing ;
+        schema:name "REACH regulation health impact assessment" ;
+        schema:description "Application of health impact assessment methodology to REACH regulation restriction dossiers for chemical safety"
+    ] ;
+    
+    # Environmental burden of disease
+    schema:environmentalBurdenOfDisease [
+        a schema:Thing ;
+        schema:name "Environmental burden of disease assessment" ;
+        schema:description "Quantification of disease burden attributable to environmental factors for policy prioritization and intervention development"
+    ] .
+

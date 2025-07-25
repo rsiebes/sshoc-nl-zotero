@@ -1,0 +1,433 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <http://schema.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://dx.doi.org/10.1002/hec.1664>
+    a bibo:Article, schema:ScholarlyArticle ;
+    dc:title "The relationship between baseline health and longitudinal costs of hospital use" ;
+    dc:creator "Wouterse, B., Meijboom, B. R., Polder, J. J." ;
+    dc:date "2011"^^xsd:gYear ;
+    dc:publisher "Wiley" ;
+    
+    # Publication details
+    dc:issued "2011"^^xsd:gYear ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:inLanguage "en" ;
+    
+    # DOI and identifiers
+    dc:identifier <http://dx.doi.org/10.1002/hec.1664> ;
+    schema:doi "10.1002/hec.1664" ;
+    schema:url <http://dx.doi.org/10.1002/hec.1664> ;
+    rdfs:seeAlso <https://pubmed.ncbi.nlm.nih.gov/20945339/> ;
+    rdfs:seeAlso <https://www.rivm.nl/publicaties/relationship-between-baseline-health-and-longitudinal-costs-of-hospital-use> ;
+    
+    # Lead author with detailed information
+    schema:author [
+        a foaf:Person ;
+        foaf:name "Bram Wouterse" ;
+        foaf:givenName "Bram" ;
+        foaf:familyName "Wouterse" ;
+        schema:additionalName "B." ;
+        schema:identifier <https://orcid.org/0000-0002-8432-8841> ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "RIVM" ;
+            schema:name "National Institute for Public Health and the Environment" ;
+            schema:url <https://www.rivm.nl/> ;
+            schema:identifier <https://ror.org/01cesdt21>
+        ] ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "Tilburg University" ;
+            schema:name "Tilburg University" ;
+            schema:department "Health Economics" ;
+            schema:url <https://www.tilburguniversity.edu/>
+        ] ;
+        schema:jobTitle "Associate Professor Health Economics" ;
+        schema:sameAs <https://scholar.google.com/citations?user=ov6T8PYAAAAJ> ;
+        schema:expertise [
+            "Health Economics",
+            "Health Care Costs",
+            "Aging and Health",
+            "Healthcare Utilization",
+            "Economic Evaluation",
+            "Public Health Economics"
+        ]
+    ] ;
+    
+    # Co-author Bert Meijboom
+    schema:author [
+        a foaf:Person ;
+        foaf:name "Bert R. Meijboom" ;
+        foaf:givenName "Bert" ;
+        foaf:familyName "Meijboom" ;
+        schema:additionalName "R." ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "Tilburg University" ;
+            schema:name "Tilburg University" ;
+            schema:department "TRANZO" ;
+            schema:parentOrganization [
+                a foaf:Organization ;
+                foaf:name "Tilburg School of Social and Behavioral Sciences" ;
+                schema:url <https://www.tilburguniversity.edu/about/schools/social-behavioral-sciences>
+            ] ;
+            schema:url <https://www.tilburguniversity.edu/>
+        ] ;
+        schema:jobTitle "Professor Organization of Healthcare Chains" ;
+        schema:email "b.r.meijboom@uvt.nl" ;
+        schema:sameAs <https://scholar.google.com/citations?user=cTSZb_wAAAAJ> ;
+        schema:additionalProperty [
+            schema:name "Endowed Chair" ;
+            schema:value "Chair in Organization of Healthcare Chains (sponsored by Jeroen Bosch Ziekenhuis)"
+        ] ;
+        schema:additionalProperty [
+            schema:name "Since" ;
+            schema:value "2015"
+        ] ;
+        schema:expertise [
+            "Healthcare Operations Management",
+            "Healthcare Chains Organization",
+            "Health Economics",
+            "Operations Management",
+            "Healthcare Networks",
+            "Modular Healthcare",
+            "Long-term Care",
+            "Healthcare Integration"
+        ]
+    ] ;
+    
+    # Co-author Johan Polder
+    schema:author [
+        a foaf:Person ;
+        foaf:name "Johan J. Polder" ;
+        foaf:givenName "Johan" ;
+        foaf:familyName "Polder" ;
+        schema:additionalName "J." ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "RIVM" ;
+            schema:name "National Institute for Public Health and the Environment" ;
+            schema:department "Centre for Health and Society" ;
+            schema:url <https://www.rivm.nl/> ;
+            schema:identifier <https://ror.org/01cesdt21>
+        ] ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "Tilburg University" ;
+            schema:name "Tilburg University" ;
+            schema:url <https://www.tilburguniversity.edu/>
+        ] ;
+        schema:jobTitle "Chief Science Officer Health Economics" ;
+        schema:email "Johan.Polder@rivm.nl" ;
+        schema:sameAs <https://scholar.google.com/citations?user=IJM1f_kAAAAJ> ;
+        schema:sameAs <https://nl.linkedin.com/in/johanpolder> ;
+        schema:additionalProperty [
+            schema:name "Birth Year" ;
+            schema:value "1966"
+        ] ;
+        schema:additionalProperty [
+            schema:name "Education" ;
+            schema:value "MSc in Economics (1985-1991) from Erasmus University Rotterdam"
+        ] ;
+        schema:additionalProperty [
+            schema:name "Career Start" ;
+            schema:value "August 2002 at RIVM"
+        ] ;
+        schema:expertise [
+            "Health Economics",
+            "Cost of Illness Research",
+            "Economic Evaluation",
+            "Health Care Costs",
+            "Public Health Economics",
+            "Health Expenditure",
+            "Healthcare Utilization",
+            "Socioeconomic Health Differences"
+        ]
+    ] ;
+    
+    # Geographic coverage
+    schema:spatialCoverage [
+        a schema:Place ;
+        schema:name "Netherlands" ;
+        schema:description "Dutch healthcare system and hospital utilization analysis"
+    ] ;
+    
+    # Keywords
+    dc:subject "Health economics" ;
+    dc:subject "Hospital costs" ;
+    dc:subject "Healthcare utilization" ;
+    dc:subject "Baseline health" ;
+    dc:subject "Longitudinal analysis" ;
+    dc:subject "Healthcare expenditure" ;
+    dc:subject "Hospital use" ;
+    dc:subject "Health status" ;
+    dc:subject "Medical costs" ;
+    dc:subject "Healthcare economics" ;
+    dc:subject "Cost analysis" ;
+    dc:subject "Health services research" ;
+    dc:subject "Healthcare policy" ;
+    dc:subject "Economic evaluation" ;
+    dc:subject "Health outcomes" ;
+    dc:subject "Healthcare planning" ;
+    dc:subject "Public health economics" ;
+    dc:subject "Healthcare management" ;
+    dc:subject "Cost-effectiveness" ;
+    dc:subject "Healthcare financing" ;
+    dc:subject "Health system analysis" ;
+    dc:subject "Healthcare delivery" ;
+    dc:subject "Medical economics" ;
+    dc:subject "Healthcare research" ;
+    dc:subject "Health policy" ;
+    
+    # ELSST vocabulary subjects
+    dc:subject <https://elsst.cessda.eu/id/5/43ad3351-9ac1-4ee7-ab31-ecbf7738e689> ; # HEALTH EXPENDITURE
+    dc:subject <https://elsst.cessda.eu/id/5/29768110-2efc-493b-bad3-59c2727939ff> ; # HEALTH CARE COSTS
+    dc:subject <https://elsst.cessda.eu/id/5/fc09ab8a-c74e-41b7-83ca-c5af01921a64> ; # ECONOMICS
+    dc:subject <https://elsst.cessda.eu/id/5/498de90d-7d1e-4f94-b283-181b7edb3ebf> ; # ELDERLY
+    dc:subject <https://elsst.cessda.eu/id/5/c5c7a428-e9e0-4248-a502-b0773a2f8eb5> ; # EPIDEMIOLOGY
+    dc:subject <https://elsst.cessda.eu/id/5/d179f170-3354-4719-a625-d6976e7de2b0> ; # HIGHER EDUCATION INSTITUTIONS
+    
+    # Parent organization
+    schema:parentOrganization [
+        a foaf:Organization ;
+        foaf:name "RIVM" ;
+        schema:name "National Institute for Public Health and the Environment" ;
+        dc:identifier <https://ror.org/01cesdt21> ;
+        schema:url <https://www.rivm.nl/> ;
+        schema:address [
+            a schema:PostalAddress ;
+            schema:addressCountry "Netherlands" ;
+            schema:addressLocality "Bilthoven"
+        ] ;
+        schema:description "Leading Dutch public health research institute" ;
+        schema:organizationType "Government Research Institute" ;
+        schema:department [
+            a foaf:Organization ;
+            foaf:name "Centre for Health and Society" ;
+            schema:description "Research center focusing on health economics and public health policy"
+        ]
+    ] ;
+    
+    # Producer information
+    schema:producer <https://w3id.org/odissei/ns/kg/cbs/project/6126> ;
+    schema:producer <https://w3id.org/odissei/ns/kg/cbs/project/7027> ;
+    
+    # Publication venue
+    schema:isPartOf [
+        a schema:Periodical ;
+        schema:name "Health Economics" ;
+        schema:publisher [
+            a foaf:Organization ;
+            foaf:name "Wiley" ;
+            schema:name "John Wiley & Sons" ;
+            schema:url <https://onlinelibrary.wiley.com/> ;
+            schema:description "Leading academic publisher"
+        ] ;
+        schema:issn "1057-9230" ;
+        schema:description "Premier journal in health economics research" ;
+        schema:volume "20" ;
+        schema:issue "8" ;
+        schema:pageStart "985" ;
+        schema:pageEnd "1008"
+    ] ;
+    
+    # Abstract and research focus
+    schema:about [
+        a schema:Thing ;
+        schema:name "Relationship between baseline health and hospital costs" ;
+        schema:description "Investigation of the relationship between baseline health status and costs of hospital use over an eight-year period, combining cross-sectional and longitudinal analysis"
+    ] ;
+    
+    # Research methodology
+    schema:workExample [
+        a schema:CreativeWork ;
+        schema:name "Longitudinal health economics analysis" ;
+        schema:description "Eight-year longitudinal study combining cross-sectional health data with hospital utilization costs to analyze the relationship between baseline health status and healthcare expenditure"
+    ] ;
+    
+    # Target audience
+    schema:audience [
+        a schema:Audience ;
+        schema:audienceType "Health economists" ;
+        schema:audienceType "Healthcare policy makers" ;
+        schema:audienceType "Hospital administrators" ;
+        schema:audienceType "Public health researchers" ;
+        schema:audienceType "Healthcare planners" ;
+        schema:audienceType "Health services researchers" ;
+        schema:audienceType "Healthcare managers" ;
+        schema:audienceType "Academic researchers" ;
+        schema:audienceType "Government health officials" ;
+        schema:audienceType "Healthcare consultants"
+    ] ;
+    
+    # Research findings and implications
+    schema:result [
+        a schema:Thing ;
+        schema:name "Baseline health predicts hospital costs" ;
+        schema:description "Evidence that baseline health status is a significant predictor of longitudinal hospital utilization costs, with implications for healthcare planning and resource allocation"
+    ] ;
+    
+    # Document format and access
+    schema:encodingFormat "application/pdf" ;
+    schema:isAccessibleForFree false ;
+    schema:url <http://dx.doi.org/10.1002/hec.1664> ;
+    
+    # Content classification
+    bibo:status "Published" ;
+    schema:genre "Academic research" ;
+    schema:genre "Empirical study" ;
+    schema:genre "Health economics research" ;
+    schema:genre "Longitudinal analysis" ;
+    
+    # Temporal coverage
+    schema:temporalCoverage "2011" ;
+    schema:dateCreated "2011"^^xsd:gYear ;
+    
+    # Research context
+    schema:isPartOf [
+        a schema:CreativeWork ;
+        schema:name "Dutch health economics research program" ;
+        schema:description "Part of ongoing research on healthcare costs, utilization patterns, and health economics in the Netherlands"
+    ] ;
+    
+    # Academic significance
+    schema:citation [
+        a schema:CreativeWork ;
+        schema:name "Highly cited in health economics literature" ;
+        schema:description "Referenced in subsequent research on healthcare costs, hospital utilization, and health economics modeling"
+    ] ;
+    
+    # Language and localization
+    schema:contentLocation [
+        a schema:Place ;
+        schema:name "Netherlands" ;
+        schema:description "Focus on Dutch healthcare system and hospital utilization patterns"
+    ] ;
+    
+    # Professional context
+    schema:industry "Health Economics" ;
+    schema:applicationCategory "Healthcare Policy Studies" ;
+    
+    # Research contribution
+    schema:contribution [
+        a schema:Thing ;
+        schema:name "Longitudinal health cost modeling" ;
+        schema:description "Provides empirical evidence and methodological framework for understanding the relationship between baseline health status and long-term hospital costs"
+    ] ;
+    
+    # Quality indicators
+    schema:measurementTechnique [
+        "Longitudinal analysis",
+        "Cross-sectional data integration",
+        "Health economics modeling",
+        "Cost analysis",
+        "Statistical modeling",
+        "Healthcare utilization measurement"
+    ] ;
+    
+    # Usage and applications
+    schema:usageInfo [
+        a schema:CreativeWork ;
+        schema:name "Healthcare planning applications" ;
+        schema:description "Used for healthcare resource allocation, cost prediction modeling, and health policy development based on baseline health assessments"
+    ] ;
+    
+    # Data coverage
+    schema:coverage [
+        a schema:Thing ;
+        schema:name "Eight-year hospital utilization data" ;
+        schema:description "Longitudinal analysis of hospital costs and utilization patterns over eight years, linked to baseline health status measurements"
+    ] ;
+    
+    # Healthcare impact
+    schema:impact [
+        a schema:Thing ;
+        schema:name "Healthcare policy and planning influence" ;
+        schema:description "Influential research informing healthcare resource allocation, cost prediction models, and health policy development in the Netherlands and internationally"
+    ] ;
+    
+    # Research institute context
+    schema:provider [
+        a foaf:Organization ;
+        foaf:name "RIVM Centre for Health and Society" ;
+        schema:name "Centre for Health and Society" ;
+        schema:parentOrganization [
+            a foaf:Organization ;
+            foaf:name "RIVM" ;
+            schema:description "Leading Dutch public health research institute"
+        ] ;
+        schema:description "Specialized center focusing on health economics, public health policy, and health services research"
+    ] ;
+    
+    # Theoretical framework
+    schema:theoreticalFramework [
+        a schema:Thing ;
+        schema:name "Health economics theory" ;
+        schema:description "Analysis based on health economics theory, healthcare utilization models, and longitudinal cost analysis frameworks examining health-cost relationships"
+    ] ;
+    
+    # Healthcare implications
+    schema:healthcareImplication [
+        a schema:Thing ;
+        schema:name "Predictive healthcare cost modeling" ;
+        schema:description "Recommendations for using baseline health assessments to predict long-term hospital costs and optimize healthcare resource allocation"
+    ] ;
+    
+    # Research network
+    schema:collaborator [
+        a foaf:Organization ;
+        foaf:name "Tilburg University" ;
+        schema:description "Collaborative research environment providing academic platform for health economics and healthcare operations research"
+    ] ;
+    
+    # Health economics focus areas
+    schema:healthEconomicsArea [
+        a schema:Thing ;
+        schema:name "Hospital Cost Analysis" ;
+        schema:description "Economic analysis of hospital utilization costs and their relationship to patient health status"
+    ] ;
+    
+    schema:healthEconomicsArea [
+        a schema:Thing ;
+        schema:name "Longitudinal Health Expenditure" ;
+        schema:description "Long-term analysis of healthcare expenditure patterns and their predictors"
+    ] ;
+    
+    schema:healthEconomicsArea [
+        a schema:Thing ;
+        schema:name "Healthcare Utilization Economics" ;
+        schema:description "Economic analysis of healthcare service utilization patterns and cost drivers"
+    ] ;
+    
+    # Healthcare policy context
+    schema:policyContext [
+        a schema:Thing ;
+        schema:name "Healthcare resource allocation" ;
+        schema:description "Evidence-based approach to healthcare resource allocation using baseline health assessments for cost prediction"
+    ] ;
+    
+    # Performance indicators
+    schema:performanceIndicator [
+        a schema:Thing ;
+        schema:name "Cost prediction accuracy" ;
+        schema:description "Measurement of the accuracy of baseline health status in predicting long-term hospital costs"
+    ] ;
+    
+    # Healthcare planning
+    schema:healthcarePlanning [
+        a schema:Thing ;
+        schema:name "Predictive cost modeling" ;
+        schema:description "Planning mechanisms through which healthcare systems can use baseline health data to predict and manage long-term costs"
+    ] ;
+    
+    # Research methodology details
+    schema:researchMethodology [
+        a schema:Thing ;
+        schema:name "Longitudinal health economics analysis" ;
+        schema:description "Quantitative research approach analyzing the relationship between baseline health status and hospital costs using eight years of longitudinal data and statistical modeling"
+    ] .
+

@@ -1,0 +1,147 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <http://schema.org/> .
+
+<http://abfresearch.nl/publicaties/rapporten/abf-arbeidsmarktrapportage---arbeidsmarktstructuur-naar-sector-en-regio.aspx> a bibo:Report ;
+    # Basic bibliographic information
+    dc:title "ABF Arbeidsmarktrapportage. Arbeidsmarktstructuur naar sector en regio." ;
+    dc:identifier "K8M9N2P5" ;
+    
+    # Publication information
+    dc:date "2014"^^<http://www.w3.org/2001/XMLSchema#gYear> ;
+    dc:publisher "ABF Research" ;
+    
+    # Author information
+    dc:creator [
+        a foaf:Person ;
+        foaf:givenName "Bert" ;
+        foaf:familyName "Marchal" ;
+        foaf:name "Marchal, Bert" ;
+        # Educational background
+        schema:alumniOf [
+            a schema:EducationalOrganization ;
+            schema:name "Maastricht University" ;
+            schema:department "Operations Research" ;
+            schema:degreeAwarded "PhD" ;
+            schema:startDate "2005" ;
+            schema:endDate "2010"
+        ] ;
+        schema:alumniOf [
+            a schema:EducationalOrganization ;
+            schema:name "Twente University" ;
+            schema:department "Applied Mathematics" ;
+            schema:degreeAwarded "ir." ;
+            schema:specialization "Discrete Mathematics and Mathematical Programming" ;
+            schema:startDate "1997" ;
+            schema:endDate "2004"
+        ] ;
+        # Current affiliation
+        schema:affiliation [
+            a schema:Organization ;
+            schema:name "ABF Research" ;
+            schema:location "The Hague, Netherlands" ;
+            schema:jobTitle "Researcher"
+        ]
+    ] ;
+    
+    # Organization information
+    dc:publisher [
+        a schema:Organization ;
+        schema:name "ABF Research B.V." ;
+        schema:alternateName "ABF" ;
+        schema:location [
+            a schema:Place ;
+            schema:addressLocality "Delft" ;
+            schema:addressCountry "Netherlands"
+        ] ;
+        schema:description "Research organization specializing in data collection, statistics, mathematical modeling, and software development" ;
+        schema:focusArea "Demography and Housing", "Land use and Economics", "Healthcare and Public Facilities" ;
+        schema:url "https://www.abfresearch.com/"
+    ] ;
+    
+    # Abstract/Description
+    dc:abstract "Labor market report analyzing employment structure by sector and region in the Netherlands. The report provides comprehensive statistical analysis of regional employment patterns, sectoral distribution of workforce, and economic geography of labor markets. This research supports decision-making for public and private sector clients through detailed demographic and economic modeling." ;
+    
+    # Subject classification - Keywords
+    dc:subject "Labor market analysis" ;
+    dc:subject "Regional economics" ;
+    dc:subject "Sectoral employment" ;
+    dc:subject "Workforce structure" ;
+    dc:subject "Economic geography" ;
+    dc:subject "Employment statistics" ;
+    dc:subject "Regional development" ;
+    dc:subject "Labor market forecasting" ;
+    
+    # ELSST vocabulary subjects
+    dc:subject <https://elsst.cessda.eu/id/5/aa0ddef6-51fa-4eee-bcb5-2b64c41a4818> ; # EMPLOYMENT
+    dc:subject <https://elsst.cessda.eu/id/5/d6ea69ca-1a76-4125-a883-72bfba9a3f9f> ; # STATISTICS
+    dc:subject <https://elsst.cessda.eu/id/5/14e269e3-ef86-43ad-b09f-3aaf37b5f170> ; # REGIONAL ECONOMY
+    dc:subject <https://elsst.cessda.eu/id/5/d0fcf34d-8b9c-4bf5-871e-449b7517b47e> ; # REGIONAL DEVELOPMENT
+    
+    # Language
+    dc:language "nl" ;
+    
+    # Type and format
+    dc:type "Report" ;
+    dc:format "application/pdf" ;
+    
+    # Producer information (CBS project)
+    schema:producer <https://w3id.org/odissei/ns/kg/cbs/project/7110> ;
+    
+    # Research context
+    schema:about [
+        a schema:Thing ;
+        schema:name "Dutch Labor Market" ;
+        schema:description "Analysis of employment structure and regional economic patterns in the Netherlands"
+    ] ;
+    
+    # Methodology
+    schema:methodology "Statistical analysis and mathematical modeling of labor market data from multiple sources" ;
+    
+    # Target audience
+    schema:audience [
+        a schema:Audience ;
+        schema:audienceType "Government agencies, policy makers, private sector organizations, researchers"
+    ] ;
+    
+    # Geographic coverage
+    schema:spatialCoverage [
+        a schema:Place ;
+        schema:name "Netherlands" ;
+        schema:geo [
+            a schema:GeoCoordinates ;
+            schema:addressCountry "NL"
+        ]
+    ] ;
+    
+    # Temporal coverage
+    schema:temporalCoverage "2014" ;
+    
+    # Access information
+    schema:url "http://abfresearch.nl/publicaties/rapporten/abf-arbeidsmarktrapportage---arbeidsmarktstructuur-naar-sector-en-regio.aspx" ;
+    
+    # Rights and licensing
+    dc:rights "© 2014 ABF Research. All rights reserved." ;
+    
+    # Related work
+    schema:isBasedOn "Dutch standard model for forecasting demographics and labor market analysis" ;
+    
+    # Citation information
+    schema:citation "Marchal, B. (2014). ABF Arbeidsmarktrapportage. Arbeidsmarktstructuur naar sector en regio. ABF Research." ;
+    
+    # Parent organization
+    schema:parentOrganization [
+        a foaf:Organization ;
+        foaf:name "ABF Research B.V." ;
+        schema:alternateName "ABF" ;
+        schema:description "Independent research institute specializing in forecasting, data collection, and mathematical modeling" ;
+        schema:address [
+            schema:addressLocality "Delft" ;
+            schema:addressCountry "Netherlands"
+        ] ;
+        schema:url "https://www.abfresearch.com/" ;
+        schema:expertise "Dutch standard model for forecasting demographics, housing demand and housing stock" ;
+        schema:serviceType ["Information", "Research", "Consultancy", "Software development"]
+    ] .
+

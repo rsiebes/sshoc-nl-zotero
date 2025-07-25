@@ -1,0 +1,121 @@
+{
+  "organizations": {
+    "ABF": {
+      "full_name": "ABF Research B.V.",
+      "status": "researched",
+      "abbreviation": "ABF",
+      "description": "Independent research institute specializing in forecasting, data collection, and mathematical modeling",
+      "website": "https://www.abfresearch.com/",
+      "location": "Delft, Netherlands",
+      "type": "Private Research Institute",
+      "research_areas": ["Demography and Housing", "Land use and Economics", "Healthcare and Public Facilities"],
+      "specialization": "Dutch standard model for forecasting demographics, housing demand and housing stock",
+      "data_suppliers": "100+ data suppliers",
+      "services": ["Information", "Research", "Consultancy", "Software development"]
+    },
+    "TIU_TiSEM_Netspar": {
+      "full_name": "Tilburg University - Tilburg School of Economics and Management - Network for Studies on Pensions, Aging and Retirement",
+      "status": "researched", 
+      "abbreviation": "TIU_TiSEM_Netspar",
+      "description": "Academic research network combining Tilburg University's economics school with pension research network",
+      "components": {
+        "TIU": "Tilburg University",
+        "TiSEM": "Tilburg School of Economics and Management", 
+        "Netspar": "Network for Studies on Pensions, Aging and Retirement"
+      },
+      "website": "https://www.tilburguniversity.edu/",
+      "netspar_website": "https://www.netspar.nl/en/",
+      "location": "Tilburg, Netherlands",
+      "type": "Academic/Research Network",
+      "research_areas": ["Economics", "Business Management", "Pensions", "Aging", "Retirement"],
+      "description_detailed": "Leading European School for research and education in Business and Economics, with specialized network for pension and aging research"
+    },
+    "CentERdata": {
+      "full_name": "CentERdata Institute for Data Collection and Research",
+      "status": "researched",
+      "abbreviation": "CentERdata",
+      "description": "Independent non-profit research institute specializing in data collection and data analytics",
+      "website": "https://en.centerdata.nl/",
+      "location": "Tilburg, Netherlands (campus of Tilburg University)",
+      "type": "Non-profit Research Institute",
+      "research_areas": ["Data collection", "Survey research", "Social science research", "Policy research"],
+      "specialization": "LISS panel management, online surveys, household surveys",
+      "established": "1997",
+      "clients": ["Academic organizations", "Dutch government", "European Commission", "Non-profit sector"]
+    },
+    "Companen": {
+      "full_name": "Companen B.V.",
+      "status": "researched",
+      "abbreviation": "Companen",
+      "description": "Housing market and living environment advisory",
+      "website": "https://www.companen.nl/",
+      "location": "Delft, Netherlands",
+      "type": "Private Research Company",
+      "research_areas": ["Housing market analysis", "Urban planning", "Policy development"],
+      "mission": "Maatschappelijk resultaat (Social impact)"
+    }
+  },
+  "ror_identifiers": {
+    "https://ror.org/01cesdt21": {
+      "status": "researched",
+      "organization": "RIVM",
+      "full_name": "National Institute for Public Health and the Environment",
+      "dutch_name": "Rijksinstituut voor Volksgezondheid en Milieu",
+      "location": "De Bilt, Netherlands",
+      "type": ["Facility", "Funder"],
+      "website": "https://www.rivm.nl",
+      "description": "Dutch national institute for public health and environmental protection"
+    },
+    "NIVEL": {
+      "full_name": "Netherlands Institute for Health Services Research",
+      "short_name": "NIVEL",
+      "type": "Independent Research Institute",
+      "country": "Netherlands",
+      "city": "Utrecht",
+      "address": "Otterstraat 118, 3513 CR Utrecht",
+      "postal_code": "3500BN",
+      "website": "https://www.nivel.nl/en",
+      "phone": "+31 30 272 9700",
+      "founded": "1970",
+      "employees": "~180 (110 scientific staff)",
+      "mission": "Research for better care",
+      "description": "Independent non-profit foundation contributing to the quality and effectiveness of healthcare",
+      "specialization": [
+        "Health services research",
+        "Primary healthcare research",
+        "Healthcare utilization",
+        "Chronic disease management",
+        "Healthcare policy research",
+        "Public health research"
+      ],
+      "unique_features": [
+        "Only institute in European region active in primary healthcare research",
+        "Nivel Primary Care Database (Nivel-PCD)",
+        "Sentinel network of general practices since 1970",
+        "International orientation and collaboration"
+      ],
+      "research_areas": [
+        "Primary care",
+        "Chronic diseases",
+        "Healthcare utilization",
+        "Health services organization",
+        "Healthcare quality",
+        "Patient safety",
+        "Health policy"
+      ],
+      "databases": [
+        "Nivel Primary Care Database (Nivel-PCD)",
+        "Nivel Corona Cohort",
+        "National databases and panels"
+      ],
+      "leadership": "Cordula Wagner (Executive Director)",
+      "academic_partnerships": [
+        "VU University Medical Centre Amsterdam",
+        "European health research networks"
+      ],
+      "verified": true,
+      "last_verified": "2025-07-25"
+    }
+  }
+}
+

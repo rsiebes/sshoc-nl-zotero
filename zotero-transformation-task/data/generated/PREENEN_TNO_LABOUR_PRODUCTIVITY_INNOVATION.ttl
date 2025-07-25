@@ -1,0 +1,498 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <http://schema.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://doi.org/10.1177/0143831X15572836>
+    a bibo:Article, schema:ScholarlyArticle ;
+    dc:title "Labour productivity and innovation performance: The importance of internal labour flexibility practices" ;
+    dc:creator "Preenen, Paul T.Y., Robert Vergeer, Karolus Kraan, and Steven Dhondt" ;
+    dc:date "2017"^^xsd:gYear ;
+    dc:publisher "SAGE Publications" ;
+    
+    # Publication details
+    dc:issued "2017"^^xsd:gYear ;
+    schema:datePublished "2017-05-01"^^xsd:date ;
+    schema:inLanguage "en" ;
+    
+    # DOI and identifiers
+    dc:identifier <https://doi.org/10.1177/0143831X15572836> ;
+    schema:doi "10.1177/0143831X15572836" ;
+    schema:url <https://journals.sagepub.com/doi/abs/10.1177/0143831X15572836> ;
+    rdfs:seeAlso <https://resolver.tno.nl/uuid:a8a4cc68-db63-4055-996d-e21bd5741095> ;
+    rdfs:seeAlso <https://econpapers.repec.org/RePEc:sae:ecoind:v:38:y:2017:i:2:p:271-293> ;
+    
+    # Lead author Paul T.Y. Preenen
+    schema:author [
+        a foaf:Person ;
+        foaf:name "Paul T.Y. Preenen" ;
+        foaf:givenName "Paul" ;
+        foaf:familyName "Preenen" ;
+        schema:additionalName "T.Y." ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "TNO" ;
+            schema:name "TNO (Netherlands Organisation for Applied Scientific Research)" ;
+            schema:department "Sustainable Productivity and Employability" ;
+            schema:url <https://www.tno.nl/> ;
+            schema:address [
+                a schema:PostalAddress ;
+                schema:addressLocality "Delft" ;
+                schema:addressCountry "Netherlands"
+            ] ;
+            schema:description "Leading Dutch applied research organization"
+        ] ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "Saxion University of Applied Sciences" ;
+            schema:name "Saxion University of Applied Sciences" ;
+            schema:url <https://www.saxion.edu/> ;
+            schema:description "Professor of Applied Sciences (Lector) in Human Capital"
+        ] ;
+        schema:jobTitle "Senior scientist at TNO and Professor of Applied Sciences at Saxion University" ;
+        schema:sameAs <https://scholar.google.com/citations?user=TGhocAEAAAAJ> ;
+        schema:additionalProperty [
+            schema:name "Education" ;
+            schema:value "PhD"
+        ] ;
+        schema:additionalProperty [
+            schema:name "Dual Appointment" ;
+            schema:value "Professor of Applied Sciences (Lector) in Human Capital at Saxion University of Applied Sciences"
+        ] ;
+        schema:expertise [
+            "Organizational behaviour",
+            "Labour productivity",
+            "Innovation performance",
+            "Internal labour flexibility",
+            "Sustainable productivity",
+            "Employability",
+            "Human capital development",
+            "Adaptable careers",
+            "Skills development"
+        ]
+    ] ;
+    
+    # Co-author Robert Vergeer
+    schema:author [
+        a foaf:Person ;
+        foaf:name "Robert Vergeer" ;
+        foaf:givenName "Robert" ;
+        foaf:familyName "Vergeer" ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "CE Delft" ;
+            schema:name "CE Delft" ;
+            schema:url <https://www.ce.nl/> ;
+            schema:address [
+                a schema:PostalAddress ;
+                schema:addressLocality "Delft" ;
+                schema:addressCountry "Netherlands"
+            ] ;
+            schema:description "Independent research and consultancy organization"
+        ] ;
+        schema:jobTitle "Senior researcher at CE Delft" ;
+        schema:sameAs <https://scholar.google.com/citations?user=yTyTb2IAAAAJ> ;
+        schema:email "vergeer@ce.nl" ;
+        schema:additionalProperty [
+            schema:name "Citations" ;
+            schema:value "1,185"
+        ] ;
+        schema:additionalProperty [
+            schema:name "Education" ;
+            schema:value "PhD (sponsored by Netherlands Council for Scientific Research)"
+        ] ;
+        schema:additionalProperty [
+            schema:name "Former Affiliation" ;
+            schema:value "TNO (Netherlands Organisation for Applied Scientific Research)"
+        ] ;
+        schema:expertise [
+            "Labour market institutions",
+            "Labour relations",
+            "Productivity",
+            "Innovation",
+            "Economics",
+            "Econometrics",
+            "Labour economics",
+            "Labour market reforms"
+        ]
+    ] ;
+    
+    # Co-author Karolus Kraan
+    schema:author [
+        a foaf:Person ;
+        foaf:name "Karolus Kraan" ;
+        foaf:givenName "Karolus" ;
+        foaf:familyName "Kraan" ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "TNO" ;
+            schema:name "TNO (Netherlands Organisation for Applied Scientific Research)" ;
+            schema:department "Sustainable Productivity and Employability" ;
+            schema:url <https://www.tno.nl/>
+        ] ;
+        schema:jobTitle "Researcher" ;
+        schema:expertise [
+            "Labour productivity",
+            "Innovation research",
+            "Organizational studies",
+            "Human resource management"
+        ]
+    ] ;
+    
+    # Co-author Steven Dhondt
+    schema:author [
+        a foaf:Person ;
+        foaf:name "Steven Dhondt" ;
+        foaf:givenName "Steven" ;
+        foaf:familyName "Dhondt" ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "TNO" ;
+            schema:name "TNO (Netherlands Organisation for Applied Scientific Research)" ;
+            schema:department "Sustainable Productivity and Employability" ;
+            schema:url <https://www.tno.nl/>
+        ] ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "KU Leuven" ;
+            schema:name "KU Leuven (University of Leuven)" ;
+            schema:url <https://www.kuleuven.be/> ;
+            schema:address [
+                a schema:PostalAddress ;
+                schema:addressLocality "Leuven" ;
+                schema:addressCountry "Belgium"
+            ]
+        ] ;
+        schema:jobTitle "Senior scientist at TNO and Professor at KU Leuven" ;
+        schema:sameAs <https://scholar.google.com/citations?user=IF2_qasAAAAJ> ;
+        schema:sameAs <https://nl.linkedin.com/in/steven-dhondt-4b429a4> ;
+        schema:additionalProperty [
+            schema:name "Citations" ;
+            schema:value "3,537"
+        ] ;
+        schema:additionalProperty [
+            schema:name "Education" ;
+            schema:value "PhD in social sciences, Prof.dr."
+        ] ;
+        schema:additionalProperty [
+            schema:name "Research Program" ;
+            schema:value "Smart Working-research programme coordinator at TNO"
+        ] ;
+        schema:expertise [
+            "Sociology of Work and Organisations",
+            "Productive organisations",
+            "Social impacts of robotics and digitization",
+            "Cobots and exo-skeletons",
+            "Organizational innovation",
+            "Technology and work practice",
+            "Smart working",
+            "Digital transformation"
+        ]
+    ] ;
+    
+    # Geographic coverage
+    schema:spatialCoverage [
+        a schema:Place ;
+        schema:name "Netherlands" ;
+        schema:description "Study of Dutch companies and their internal labour flexibility practices"
+    ] ;
+    
+    # Keywords
+    dc:subject "Labour productivity" ;
+    dc:subject "Innovation performance" ;
+    dc:subject "Internal labour flexibility" ;
+    dc:subject "Organizational behaviour" ;
+    dc:subject "Human resource management" ;
+    dc:subject "Sustainable productivity" ;
+    dc:subject "Employability" ;
+    dc:subject "Workplace innovation" ;
+    dc:subject "Organizational flexibility" ;
+    dc:subject "Employee development" ;
+    dc:subject "Skills development" ;
+    dc:subject "Career adaptability" ;
+    dc:subject "Work organization" ;
+    dc:subject "Performance management" ;
+    dc:subject "Human capital" ;
+    dc:subject "Organizational effectiveness" ;
+    dc:subject "Innovation management" ;
+    dc:subject "Labour economics" ;
+    dc:subject "Industrial relations" ;
+    dc:subject "Organizational psychology" ;
+    dc:subject "Management practices" ;
+    dc:subject "Competitive advantage" ;
+    dc:subject "Organizational change" ;
+    dc:subject "Technology and work" ;
+    dc:subject "Smart working" ;
+    
+    # ELSST vocabulary subjects
+    dc:subject <https://elsst.cessda.eu/id/5/3b58eac5-38a9-4a8f-b50a-9c86ed21c210> ; # LABOUR MARKET
+    dc:subject <https://elsst.cessda.eu/id/5/394178b5-c97d-40d8-849e-e9f6c28f08ce> ; # JOB HUNTING
+    dc:subject <https://elsst.cessda.eu/id/5/fc09ab8a-c74e-41b7-83ca-c5af01921a64> ; # ECONOMICS
+    dc:subject <https://elsst.cessda.eu/id/5/ebf6f18f-16ec-45dc-97f3-5d15415adbfc> ; # ENTREPRENEURS
+    dc:subject <https://elsst.cessda.eu/id/5/18df8314-c607-41c1-a1f7-c3749324d45b> ; # FINANCE
+    dc:subject <https://elsst.cessda.eu/id/5/d179f170-3354-4719-a625-d6976e7de2b0> ; # HIGHER EDUCATION INSTITUTIONS
+    
+    # Parent organization
+    schema:parentOrganization [
+        a foaf:Organization ;
+        foaf:name "TNO" ;
+        schema:name "TNO (Netherlands Organisation for Applied Scientific Research)" ;
+        dc:identifier "TNO" ;
+        schema:url <https://www.tno.nl/> ;
+        schema:address [
+            a schema:PostalAddress ;
+            schema:addressLocality "Delft" ;
+            schema:addressCountry "Netherlands"
+        ] ;
+        schema:description "Leading Dutch applied research organization connecting people and knowledge to create innovations" ;
+        schema:organizationType "Applied Research Institute" ;
+        schema:department [
+            a foaf:Organization ;
+            foaf:name "Sustainable Productivity and Employability" ;
+            schema:description "Research department focusing on sustainable productivity and employability"
+        ] ;
+        schema:mission "Connecting people and knowledge to create innovations that boost the competitive strength of industry and the well-being of society in a sustainable way"
+    ] ;
+    
+    # Producer information
+    schema:producer <https://w3id.org/odissei/ns/kg/cbs/project/7172> ;
+    
+    # Publication venue
+    schema:isPartOf [
+        a schema:Periodical ;
+        schema:name "Economic and Industrial Democracy" ;
+        schema:publisher [
+            a foaf:Organization ;
+            foaf:name "SAGE Publications" ;
+            schema:name "SAGE Publications" ;
+            schema:url <https://sagepub.com/> ;
+            schema:address [
+                a schema:PostalAddress ;
+                schema:addressLocality "London" ;
+                schema:addressCountry "United Kingdom"
+            ] ;
+            schema:description "Leading international academic publisher"
+        ] ;
+        schema:issn "0143-831X" ;
+        schema:description "International journal focusing on economic and industrial democracy" ;
+        schema:volume "38" ;
+        schema:issue "2" ;
+        schema:pageStart "271" ;
+        schema:pageEnd "293"
+    ] ;
+    
+    # Abstract and research focus
+    schema:about [
+        a schema:Thing ;
+        schema:name "Internal labour flexibility practices and organizational performance" ;
+        schema:description "Investigation of how internal labour flexibility practices benefit both labour productivity and innovation performance of companies, examining the relationship between organizational flexibility and competitive advantage"
+    ] ;
+    
+    # Research methodology
+    schema:workExample [
+        a schema:CreativeWork ;
+        schema:name "Empirical analysis of Dutch companies" ;
+        schema:description "Quantitative study examining the relationship between internal labour flexibility practices and organizational outcomes in Dutch companies, using survey data and performance metrics"
+    ] ;
+    
+    # Target audience
+    schema:audience [
+        a schema:Audience ;
+        schema:audienceType "Human resource managers" ;
+        schema:audienceType "Organizational researchers" ;
+        schema:audienceType "Labour economists" ;
+        schema:audienceType "Innovation managers" ;
+        schema:audienceType "Policy makers" ;
+        schema:audienceType "Management consultants" ;
+        schema:audienceType "Industrial relations specialists" ;
+        schema:audienceType "Organizational psychologists" ;
+        schema:audienceType "Business leaders" ;
+        schema:audienceType "Academic researchers"
+    ] ;
+    
+    # Research findings and implications
+    schema:result [
+        a schema:Thing ;
+        schema:name "Positive effects of internal labour flexibility on performance" ;
+        schema:description "Evidence that internal labour flexibility practices benefit both labour productivity and innovation performance of companies, supporting the business case for flexible work arrangements and employee development"
+    ] ;
+    
+    # Document format and access
+    schema:encodingFormat "application/pdf" ;
+    schema:isAccessibleForFree false ;
+    schema:url <https://journals.sagepub.com/doi/abs/10.1177/0143831X15572836> ;
+    
+    # Content classification
+    bibo:status "Published" ;
+    schema:genre "Academic research" ;
+    schema:genre "Empirical study" ;
+    schema:genre "Organizational research" ;
+    schema:genre "Labour economics research" ;
+    
+    # Temporal coverage
+    schema:temporalCoverage "2017" ;
+    schema:dateCreated "2017"^^xsd:gYear ;
+    
+    # Research context
+    schema:isPartOf [
+        a schema:CreativeWork ;
+        schema:name "TNO Sustainable Productivity and Employability research program" ;
+        schema:description "Part of TNO's comprehensive research program on sustainable productivity and employability in organizations"
+    ] ;
+    
+    # Academic significance
+    schema:citation [
+        a schema:CreativeWork ;
+        schema:name "Influential in organizational behaviour and labour economics literature" ;
+        schema:description "Widely cited in subsequent research on organizational flexibility, innovation management, and human resource practices"
+    ] ;
+    
+    # Language and localization
+    schema:contentLocation [
+        a schema:Place ;
+        schema:name "Netherlands" ;
+        schema:description "Study focusing on Dutch companies and their organizational practices with implications for international organizational research"
+    ] ;
+    
+    # Professional context
+    schema:industry "Organizational Research" ;
+    schema:applicationCategory "Human Resource Management Research" ;
+    
+    # Research contribution
+    schema:contribution [
+        a schema:Thing ;
+        schema:name "Framework for internal labour flexibility and organizational performance" ;
+        schema:description "Provides empirical evidence and theoretical framework for understanding how internal labour flexibility practices contribute to both productivity and innovation outcomes"
+    ] ;
+    
+    # Quality indicators
+    schema:measurementTechnique [
+        "Survey research methodology",
+        "Quantitative analysis",
+        "Performance measurement",
+        "Statistical modeling",
+        "Organizational assessment",
+        "Productivity analysis"
+    ] ;
+    
+    # Usage and applications
+    schema:usageInfo [
+        a schema:CreativeWork ;
+        schema:name "Human resource management and organizational development applications" ;
+        schema:description "Used for developing flexible work practices, organizational development strategies, and understanding the business case for employee-centered management approaches"
+    ] ;
+    
+    # Data coverage
+    schema:coverage [
+        a schema:Thing ;
+        schema:name "Dutch company survey data" ;
+        schema:description "Analysis of Dutch companies examining internal labour flexibility practices and their relationship to productivity and innovation outcomes"
+    ] ;
+    
+    # Business impact
+    schema:impact [
+        a schema:Thing ;
+        schema:name "Organizational management and human resource policy influence" ;
+        schema:description "Influential research informing organizational development practices, human resource management strategies, and workplace innovation policies"
+    ] ;
+    
+    # Research institute context
+    schema:provider [
+        a foaf:Organization ;
+        foaf:name "TNO (Netherlands Organisation for Applied Scientific Research)" ;
+        schema:name "TNO (Netherlands Organisation for Applied Scientific Research)" ;
+        schema:url <https://www.tno.nl/> ;
+        schema:description "Leading Dutch applied research organization connecting people and knowledge to create innovations"
+    ] ;
+    
+    # Theoretical framework
+    schema:theoreticalFramework [
+        a schema:Thing ;
+        schema:name "Organizational behaviour and human resource management theory" ;
+        schema:description "Analysis based on organizational behaviour theory, human resource management principles, and innovation management frameworks"
+    ] ;
+    
+    # Business implications
+    schema:businessImplication [
+        a schema:Thing ;
+        schema:name "Flexible work practices and organizational performance" ;
+        schema:description "Recommendations for implementing internal labour flexibility practices to enhance both productivity and innovation capabilities"
+    ] ;
+    
+    # Research network
+    schema:collaborator [
+        a foaf:Organization ;
+        foaf:name "CE Delft" ;
+        schema:description "Independent research and consultancy organization specializing in environmental and economic research"
+    ] ;
+    
+    # Organizational research focus areas
+    schema:organizationalResearchArea [
+        a schema:Thing ;
+        schema:name "Internal Labour Flexibility" ;
+        schema:description "Investigation of flexible work arrangements and their impact on organizational outcomes"
+    ] ;
+    
+    schema:organizationalResearchArea [
+        a schema:Thing ;
+        schema:name "Productivity and Innovation Performance" ;
+        schema:description "Analysis of factors contributing to organizational productivity and innovation capabilities"
+    ] ;
+    
+    schema:organizationalResearchArea [
+        a schema:Thing ;
+        schema:name "Sustainable Productivity" ;
+        schema:description "Research on sustainable approaches to organizational productivity and employee well-being"
+    ] ;
+    
+    # Management context
+    schema:managementContext [
+        a schema:Thing ;
+        schema:name "Human resource management and organizational development" ;
+        schema:description "Evidence-based approach to human resource management and organizational development for enhanced performance"
+    ] ;
+    
+    # Performance indicators
+    schema:performanceIndicator [
+        a schema:Thing ;
+        schema:name "Labour productivity and innovation metrics" ;
+        schema:description "Measurement of organizational performance through productivity and innovation indicators for management evaluation"
+    ] ;
+    
+    # Organizational planning
+    schema:organizationalPlanning [
+        a schema:Thing ;
+        schema:name "Flexible work practices and performance management" ;
+        schema:description "Planning mechanisms through which organizations can implement flexible work practices to enhance both productivity and innovation outcomes"
+    ] ;
+    
+    # Research methodology details
+    schema:researchMethodology [
+        a schema:Thing ;
+        schema:name "Empirical organizational research with survey methodology" ;
+        schema:description "Comprehensive approach combining survey research, quantitative analysis, and performance measurement to assess the relationship between organizational practices and outcomes"
+    ] ;
+    
+    # Organizational innovation focus
+    schema:organizationalInnovation [
+        a schema:Thing ;
+        schema:name "Workplace innovation and flexibility practices" ;
+        schema:description "Investigation of innovative workplace practices and their contribution to organizational performance and competitiveness"
+    ] ;
+    
+    # Human capital development
+    schema:humanCapitalDevelopment [
+        a schema:Thing ;
+        schema:name "Employee development and organizational capability building" ;
+        schema:description "Analysis of how internal labour flexibility practices contribute to human capital development and organizational capability enhancement"
+    ] ;
+    
+    # Competitive advantage analysis
+    schema:competitiveAdvantage [
+        a schema:Thing ;
+        schema:name "Organizational flexibility as competitive advantage" ;
+        schema:description "Investigation of how internal labour flexibility practices contribute to sustainable competitive advantage through enhanced productivity and innovation"
+    ] .
+

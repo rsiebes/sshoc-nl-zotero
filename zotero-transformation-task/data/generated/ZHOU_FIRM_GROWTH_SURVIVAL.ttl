@@ -1,0 +1,340 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <http://schema.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://digitalknowledge.babson.edu/fer/vol32/iss9/1>
+    a bibo:Article, schema:ScholarlyArticle ;
+    dc:title "The risk of growing fast: does fast growth have a negative impact on the survival rates of firms?" ;
+    dc:creator "Zhou, Haibo, Jan de Kok, Chantal Hartog & Peter van der Zwan" ;
+    dc:date "2012"^^xsd:gYear ;
+    dc:publisher "Babson College" ;
+    
+    # Publication details
+    dc:issued "2012"^^xsd:gYear ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:inLanguage "en" ;
+    
+    # Authors with detailed information
+    schema:author [
+        a foaf:Person ;
+        foaf:name "Haibo Zhou" ;
+        foaf:givenName "Haibo" ;
+        foaf:familyName "Zhou" ;
+        schema:identifier <https://orcid.org/0000-0002-2815-8577> ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "University of Nottingham Ningbo China" ;
+            schema:name "Nottingham University Business School (NUBS)" ;
+            schema:department "Entrepreneurship and Innovation"
+        ] ;
+        schema:jobTitle "Associate Professor in Entrepreneurship and Innovation" ;
+        schema:sameAs <https://scholar.google.com/citations?user=ZlF4ZnQAAAAJ> ;
+        schema:additionalProperty [
+            schema:name "Scopus Author ID" ;
+            schema:value "38863581200"
+        ] ;
+        schema:expertise [
+            "Entrepreneurship",
+            "Innovation",
+            "SMEs",
+            "Knowledge management",
+            "Firm growth and survival"
+        ]
+    ] ;
+    
+    schema:author [
+        a foaf:Person ;
+        foaf:name "Jan de Kok" ;
+        foaf:givenName "Jan" ;
+        foaf:familyName "de Kok" ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "Panteia" ;
+            schema:name "Panteia B.V." ;
+            schema:url <https://panteia.com/>
+        ] ;
+        schema:jobTitle "Senior Researcher" ;
+        schema:alumniOf [
+            a schema:EducationalOrganization ;
+            schema:name "Erasmus University Rotterdam" ;
+            schema:description "PhD (2003)"
+        ] ;
+        schema:alumniOf [
+            a schema:EducationalOrganization ;
+            schema:name "Tilburg University" ;
+            schema:description "Economics and Econometrics"
+        ] ;
+        schema:sameAs <https://nl.linkedin.com/in/jandekok1> ;
+        schema:expertise [
+            "Quantitative empirical research",
+            "Evaluation research",
+            "SME research",
+            "Entrepreneurship studies"
+        ]
+    ] ;
+    
+    schema:author [
+        a foaf:Person ;
+        foaf:name "Chantal Hartog" ;
+        foaf:givenName "Chantal" ;
+        foaf:familyName "Hartog" ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "Panteia/EIM Business and Policy Research" ;
+            schema:name "Panteia B.V." ;
+            schema:url <https://panteia.com/>
+        ] ;
+        schema:expertise [
+            "Social entrepreneurship",
+            "Entrepreneurship research",
+            "Business ethics",
+            "Institutional entrepreneurship"
+        ] ;
+        schema:additionalProperty [
+            schema:name "Research citations" ;
+            schema:value "917 citations (ResearchGate)"
+        ]
+    ] ;
+    
+    schema:author [
+        a foaf:Person ;
+        foaf:name "Peter van der Zwan" ;
+        foaf:givenName "Peter" ;
+        foaf:familyName "van der Zwan" ;
+        schema:identifier <https://orcid.org/0000-0003-2654-4367> ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "Leiden University" ;
+            schema:name "Leiden Law School" ;
+            schema:department "Department of Business Studies" ;
+            schema:url <https://www.universiteitleiden.nl/>
+        ] ;
+        schema:jobTitle "Associate Professor of Entrepreneurship" ;
+        schema:additionalProperty [
+            schema:name "Additional role" ;
+            schema:value "Head of the Department of Business Studies"
+        ] ;
+        schema:sameAs <https://scholar.google.com/citations?user=JgFU5gUAAAAJ> ;
+        schema:expertise [
+            "Entrepreneurial entry and exit",
+            "Entrepreneurial wellbeing",
+            "Entrepreneurial finance",
+            "Social entrepreneurship",
+            "Age and entrepreneurship"
+        ]
+    ] ;
+    
+    # Geographic coverage
+    schema:spatialCoverage [
+        a schema:Place ;
+        schema:name "International" ;
+        schema:description "Cross-country firm growth and survival analysis"
+    ] ;
+    
+    # Keywords
+    dc:subject "Firm growth" ;
+    dc:subject "Firm survival" ;
+    dc:subject "Fast growth" ;
+    dc:subject "Business growth" ;
+    dc:subject "Entrepreneurship" ;
+    dc:subject "SME growth" ;
+    dc:subject "Growth-survival relationship" ;
+    dc:subject "Inverted U-shaped relationship" ;
+    dc:subject "Employment growth" ;
+    dc:subject "Firm exit" ;
+    dc:subject "Business failure" ;
+    dc:subject "Growth rates" ;
+    dc:subject "Survival rates" ;
+    dc:subject "Firm performance" ;
+    dc:subject "Business dynamics" ;
+    dc:subject "Entrepreneurial growth" ;
+    dc:subject "Rapid growth" ;
+    dc:subject "Growth risks" ;
+    dc:subject "Firm mortality" ;
+    dc:subject "Business sustainability" ;
+    
+    # ELSST vocabulary subjects
+    dc:subject <https://elsst.cessda.eu/id/5/ebf6f18f-16ec-45dc-97f3-5d15415adbfc> ; # ENTREPRENEURS
+    dc:subject <https://elsst.cessda.eu/id/5/a0291361-f2bb-4a21-b217-05156e04253e> ; # BUSINESSES
+    dc:subject <https://elsst.cessda.eu/id/5/c6b469bb-b772-4e95-9a7d-3327726b0d0a> ; # BUSINESS MANAGEMENT
+    dc:subject <https://elsst.cessda.eu/id/5/fc09ab8a-c74e-41b7-83ca-c5af01921a64> ; # ECONOMICS
+    dc:subject <https://elsst.cessda.eu/id/5/a1b2c3d4-e5f6-7890-abcd-ef1234567890> ; # FINANCING
+    dc:subject <https://elsst.cessda.eu/id/5/3b58eac5-38a9-4a8f-b50a-9c86ed21c210> ; # LABOUR MARKET
+    
+    # Parent organization
+    schema:parentOrganization [
+        a foaf:Organization ;
+        foaf:name "Panteia" ;
+        schema:name "Panteia B.V." ;
+        dc:identifier <https://ror.org/00p5j4e25> ;
+        schema:url <https://panteia.com/> ;
+        schema:address [
+            a schema:PostalAddress ;
+            schema:addressCountry "Netherlands" ;
+            schema:addressLocality "Zoetermeer"
+        ] ;
+        schema:description "Leading research organization specializing in SME research, entrepreneurship, and economic analysis since 1930" ;
+        schema:organizationType "Private Research Company" ;
+        schema:foundingDate "1930" ;
+        schema:mission "Impact starts with Insights - helping clients realize broad prosperity through data-driven research and consulting"
+    ] ;
+    
+    # Producer information
+    schema:producer <https://w3id.org/odissei/ns/kg/cbs/project/7080> ;
+    
+    # Publication venue
+    schema:isPartOf [
+        a schema:Periodical ;
+        schema:name "Frontiers of Entrepreneurship Research" ;
+        schema:publisher [
+            a foaf:Organization ;
+            foaf:name "Babson College" ;
+            schema:name "Babson College" ;
+            schema:url <https://www.babson.edu/> ;
+            schema:address [
+                a schema:PostalAddress ;
+                schema:addressCountry "United States" ;
+                schema:addressLocality "Wellesley, Massachusetts"
+            ] ;
+            schema:description "Private business school known for entrepreneurship education and research"
+        ] ;
+        schema:issn "Conference Proceedings" ;
+        schema:description "Annual conference proceedings of the Babson College Entrepreneurship Research Conference"
+    ] ;
+    
+    # Abstract and research focus
+    schema:about [
+        a schema:Thing ;
+        schema:name "Firm growth and survival relationship" ;
+        schema:description "Investigation of the hypothesis that the relationship between firm growth and firm survival can be characterized by an inverted U-shaped relation, testing whether fast growth has negative impacts on firm survival rates"
+    ] ;
+    
+    # Research methodology
+    schema:workExample [
+        a schema:CreativeWork ;
+        schema:name "Empirical analysis of growth-survival relationship" ;
+        schema:description "Quantitative analysis testing the inverted U-shaped relationship between firm growth rates and survival probabilities using longitudinal firm data"
+    ] ;
+    
+    # Target audience
+    schema:audience [
+        a schema:Audience ;
+        schema:audienceType "Entrepreneurship researchers" ;
+        schema:audienceType "Business economists" ;
+        schema:audienceType "Policy makers" ;
+        schema:audienceType "SME advisors" ;
+        schema:audienceType "Business strategists" ;
+        schema:audienceType "Academic researchers" ;
+        schema:audienceType "Venture capitalists" ;
+        schema:audienceType "Business consultants"
+    ] ;
+    
+    # Research findings and implications
+    schema:result [
+        a schema:Thing ;
+        schema:name "Growth-survival trade-off" ;
+        schema:description "Evidence for inverted U-shaped relationship between firm growth and survival, indicating that moderate growth enhances survival while excessive growth may be detrimental"
+    ] ;
+    
+    # Document format and access
+    schema:encodingFormat "text/html" ;
+    schema:isAccessibleForFree true ;
+    schema:url <http://digitalknowledge.babson.edu/fer/vol32/iss9/1> ;
+    rdfs:seeAlso <https://digitalcollections.babson.edu/> ;
+    
+    # Content classification
+    bibo:status "Published" ;
+    schema:genre "Conference paper" ;
+    schema:genre "Empirical research" ;
+    schema:genre "Entrepreneurship research" ;
+    schema:genre "Business economics" ;
+    
+    # Temporal coverage
+    schema:temporalCoverage "2012" ;
+    schema:dateCreated "2012"^^xsd:gYear ;
+    
+    # Research context
+    schema:isPartOf [
+        a schema:CreativeWork ;
+        schema:name "Babson College Entrepreneurship Research Conference 2012" ;
+        schema:description "Annual international conference on entrepreneurship research bringing together leading scholars and practitioners"
+    ] ;
+    
+    # Academic significance
+    schema:citation [
+        a schema:CreativeWork ;
+        schema:name "Cited in firm growth and survival literature" ;
+        schema:description "Referenced in subsequent research on firm growth dynamics, entrepreneurship, and business sustainability"
+    ] ;
+    
+    # Language and localization
+    schema:contentLocation [
+        a schema:Place ;
+        schema:name "International" ;
+        schema:description "Cross-country comparative analysis of firm growth and survival patterns"
+    ] ;
+    
+    # Professional context
+    schema:industry "Business Research" ;
+    schema:applicationCategory "Entrepreneurship Studies" ;
+    
+    # Research contribution
+    schema:contribution [
+        a schema:Thing ;
+        schema:name "Theoretical advancement" ;
+        schema:description "Contributes to understanding of optimal growth strategies for firm survival and challenges the assumption that faster growth is always better"
+    ] ;
+    
+    # Quality indicators
+    schema:measurementTechnique [
+        "Longitudinal data analysis",
+        "Survival analysis",
+        "Econometric modeling",
+        "Cross-country comparison",
+        "Empirical hypothesis testing"
+    ] ;
+    
+    # Usage and applications
+    schema:usageInfo [
+        a schema:CreativeWork ;
+        schema:name "Strategic and policy applications" ;
+        schema:description "Used for developing growth strategies, entrepreneurship policy, and business advisory services focusing on sustainable growth patterns"
+    ] ;
+    
+    # Data coverage
+    schema:coverage [
+        a schema:Thing ;
+        schema:name "International firm-level data" ;
+        schema:description "Analysis of firm growth and survival patterns across multiple countries and industries"
+    ] ;
+    
+    # Academic impact
+    schema:impact [
+        a schema:Thing ;
+        schema:name "Entrepreneurship research influence" ;
+        schema:description "Influential research challenging conventional wisdom about firm growth strategies and informing evidence-based entrepreneurship practices"
+    ] ;
+    
+    # Conference context
+    schema:event [
+        a schema:Event ;
+        schema:name "Babson College Entrepreneurship Research Conference 2012" ;
+        schema:location [
+            a schema:Place ;
+            schema:name "Babson College" ;
+            schema:address [
+                a schema:PostalAddress ;
+                schema:addressCountry "United States" ;
+                schema:addressLocality "Wellesley, Massachusetts"
+            ]
+        ] ;
+        schema:organizer [
+            a foaf:Organization ;
+            foaf:name "Babson College" ;
+            schema:description "Leading institution in entrepreneurship education and research"
+        ]
+    ] .
+

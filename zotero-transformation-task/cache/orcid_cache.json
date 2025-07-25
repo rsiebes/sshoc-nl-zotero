@@ -142,6 +142,1329 @@
       "verified": true,
       "last_verified": "2025-07-24",
       "source": "ORCID profile"
+    },
+    "Bert Marchal": {
+      "orcid_id": null,
+      "orcid_uri": null,
+      "given_name": "Bert",
+      "family_name": "Marchal",
+      "affiliation": "ABF Research",
+      "verified": false,
+      "last_verified": "2025-07-25",
+      "source": "LinkedIn profile and ABF Research website",
+      "notes": "No ORCID ID found. PhD Operations Research (Maastricht University, 2005-2010), ir. Applied Mathematics (Twente University, 1997-2004). Current researcher at ABF Research, The Hague.",
+      "education": [
+        {
+          "institution": "Maastricht University",
+          "degree": "PhD",
+          "field": "Operations Research",
+          "years": "2005-2010"
+        },
+        {
+          "institution": "Twente University", 
+          "degree": "ir.",
+          "field": "Applied Mathematics",
+          "specialization": "Discrete Mathematics and Mathematical Programming",
+          "years": "1997-2004"
+        }
+      ],
+      "research_interests": ["Operations Research", "Mathematical Programming", "Graph Theory"],
+      "publications_count": 8,
+      "citations_count": 24
+    },
+    "Lisanne Sanders": {
+      "orcid_id": null,
+      "orcid_uri": null,
+      "given_name": "Lisanne",
+      "family_name": "Sanders",
+      "affiliation": "Tilburg University",
+      "verified": false,
+      "last_verified": "2025-07-25",
+      "source": "Tilburg University Research Portal",
+      "orcid_found": false,
+      "note": "No ORCID ID found in available sources",
+      "education": [
+        {
+          "institution": "Tilburg University",
+          "degree": "PhD",
+          "field": "Economics",
+          "thesis_title": "Annuity market imperfections, the value of longevity insurance and individual welfare",
+          "year": "2011"
+        }
+      ],
+      "research_interests": ["Financial economics", "Insurance markets", "Pension economics", "Annuity markets", "Longevity risk"]
+    },
+    "Vesile Kutlu-Koc": {
+      "orcid_id": null,
+      "orcid_uri": null,
+      "given_name": "Vesile",
+      "family_name": "Kutlu-Koc",
+      "affiliation": "Munich Center for the Economics of Aging (MEA)",
+      "verified": false,
+      "last_verified": "2025-07-25",
+      "source": "Demographic Research journal",
+      "orcid_found": false,
+      "note": "No ORCID ID found in available sources",
+      "email": "KutluKoc@mea.mpisoc.mpg.de",
+      "research_interests": ["Survival expectations", "Mortality analysis", "Retirement economics", "Demographic analysis"],
+      "publications": "Multiple papers on survival expectations and retirement behavior"
+    },
+    "Adriaan Kalwij": {
+      "orcid_id": "0000-0001-9061-6156",
+      "orcid_uri": "https://orcid.org/0000-0001-9061-6156",
+      "given_name": "Adriaan",
+      "family_name": "Kalwij",
+      "affiliation": "Utrecht University School of Economics",
+      "department": "Applied Economics",
+      "verified": true,
+      "last_verified": "2025-07-25",
+      "source": "ORCID profile and Utrecht University",
+      "orcid_found": true,
+      "email": "a.s.kalwij@uu.nl",
+      "position": "Associate Professor",
+      "education": [
+        {
+          "institution": "Tilburg University",
+          "degree": "PhD",
+          "field": "Economics"
+        }
+      ],
+      "research_interests": ["Labor economics", "Demography", "Social security", "Aging", "Applied econometrics"],
+      "address": "Kriekenpitplein 21-22, Kamer 2.09A, 3584 EC Utrecht, Netherlands",
+      "projects": ["International Social Security (ISS) project of the National Bureau of Economics Research (NBER)"]
+    },
+    "Bram Klouwen": {
+      "orcid": null,
+      "status": "no ORCID found",
+      "name": "Bram Klouwen",
+      "current_position": "Algemeen directeur (General Director)",
+      "affiliation": "Companen B.V.",
+      "location": "Delft, Netherlands",
+      "expertise": ["Housing market analysis", "Urban planning", "Policy development"],
+      "contact_info": {
+        "linkedin": "https://nl.linkedin.com/in/bramklouwen",
+        "organization_website": "https://www.companen.nl/"
+      },
+      "organization_details": {
+        "name": "Companen B.V.",
+        "specialization": "Housing market and living environment advisory",
+        "mission": "Maatschappelijk resultaat (Social impact)"
+      }
+    },
+    "Pim Tiggeloven": {
+      "orcid": null,
+      "status": "no ORCID found",
+      "name": "Pim Tiggeloven",
+      "current_position": "Onderzoeker / adviseur (Researcher / Advisor)",
+      "affiliation": "Companen B.V.",
+      "location": "Delft, Netherlands",
+      "education": ["University of Utrecht"],
+      "expertise": ["Housing market research", "Urban planning", "Policy analysis", "Housing shortage analysis", "Regional housing needs"],
+      "notable_work": [
+        "Housing shortage analysis (Nijmegen: 5,500 housing shortage)",
+        "ASML impact study (20,000 additional homes needed)",
+        "Caravan site research (4,000 caravan sites needed in Netherlands)"
+      ],
+      "research_focus": ["Housing market trends", "Affordable housing", "Regional development"]
+    },
+    "Vesile Kutlu-Koc": {
+      "orcid": null,
+      "status": "no ORCID found",
+      "name": "Vesile Kutlu-Koc",
+      "current_position": "Risk Analyst",
+      "current_affiliation": "Daimler Truck Financial Services",
+      "previous_affiliation": "Utrecht University (PhD research)",
+      "education": [
+        {
+          "degree": "PhD",
+          "field": "Economics",
+          "institution": "Utrecht University"
+        }
+      ],
+      "expertise": ["Survival data analysis", "Statistical programming", "Mortality risk assessment", "Saving decisions of older individuals"],
+      "teaching_experience": "Statistics to Bachelor students",
+      "research_focus": ["Individual survival expectations", "Mortality prediction", "Demographic economics"],
+      "notable_publications": [
+        "Multiple papers on survival expectations and mortality (2013-2021)",
+        "Research on consumption behavior and annuity income",
+        "Studies on accuracy of survival beliefs"
+      ],
+      "linkedin": "https://de.linkedin.com/in/vesile-kutlu-koc-0987a22b"
+    },
+    "Martin Biewen": {
+      "orcid": "0000-0002-2799-2279",
+      "name": "Martin Biewen",
+      "affiliation": "University of Tübingen",
+      "position": "Professor of Statistics, Econometrics and Quantitative Methods",
+      "additional_role": "Scientific Director at IAB (Institute for Applied Economic Research)",
+      "education": "PhD Economics (University of Heidelberg, 2000), Diploma Economics (University of Bonn, 1996)",
+      "research_areas": ["Income Distribution", "Labor Economics", "Education", "Applied Econometrics"],
+      "citations": 2829,
+      "homepage": "https://uni-tuebingen.de/",
+      "email": "martin.biewen@uni-tuebingen.de"
+    },
+    "Stefano Caria": {
+      "orcid": "0000-0001-6734-2724",
+      "name": "Stefano Caria",
+      "affiliation": "University of Warwick (moving to Oxford in September 2025)",
+      "position": "Professor of Economics",
+      "additional_affiliations": ["J-PAL", "CEPR (development and labour)", "CAGE"],
+      "research_areas": ["Development Economics", "Labor Economics", "Behavioral Economics"],
+      "specialization": "Experimental and structural methods for labor market research",
+      "citations": 1925,
+      "homepage": "https://www.stefanocaria.com/",
+      "email": "stefano.caria@warwick.ac.uk"
+    },
+    "Gesine Stephan": {
+      "orcid": "0000-0002-9266-5514",
+      "name": "Gesine Stephan",
+      "affiliation": "Friedrich-Alexander-Universität Erlangen-Nürnberg (FAU) & Institute for Employment Research (IAB)",
+      "position": "Professor of Empirical Microeconomics & Head of Research Unit",
+      "research_unit": "Active Labour Market Policies and Integration at IAB",
+      "education": "PhD Political Science (University of Hannover, 1994), Economics degree (1990)",
+      "research_areas": ["Labor and Personnel Economics", "Labor and Social Policy", "Microeconometrics"],
+      "citations": 3625,
+      "email": "gesine.stephan@iab.de"
+    },
+    "Bram Wouterse": {
+      "orcid_id": "0000-0002-8432-8841",
+      "orcid_uri": "https://orcid.org/0000-0002-8432-8841",
+      "given_name": "Bram",
+      "family_name": "Wouterse",
+      "affiliation": "Erasmus School of Health Policy & Management, Erasmus University Rotterdam",
+      "additional_affiliation": "Radboudumc",
+      "verified": true,
+      "last_verified": "2025-07-25",
+      "source": "Multiple academic sources and ORCID profile",
+      "email": "wouterse@eshpm.eur.nl",
+      "position": "Associate Professor",
+      "research_focus": ["Health economics", "Health care spending growth", "Aging", "Long-term care", "Health policy"],
+      "citations": 1336,
+      "education": [
+        {
+          "institution": "Tilburg University",
+          "degree": "PhD",
+          "field": "Health Economics",
+          "thesis_title": "Economic consequences of healthy aging",
+          "year": "2013"
+        }
+      ],
+      "notable_work": [
+        "Health economics research focusing on aging population",
+        "Long-term care economics",
+        "Health expenditure growth analysis"
+      ]
+    },
+    "Jan C. van Ours": {
+      "orcid_id": "0000-0002-0144-9956",
+      "orcid_uri": "https://orcid.org/0000-0002-0144-9956",
+      "given_name": "Jan C.",
+      "family_name": "van Ours",
+      "affiliation": "Erasmus School of Economics, Erasmus University Rotterdam",
+      "verified": true,
+      "last_verified": "2025-07-25",
+      "source": "Multiple academic sources including Google Sites, CEPR, and EUR",
+      "email": "vanours@ese.eur.nl",
+      "position": "Emeritus Professor of Applied Economics",
+      "research_focus": ["Labor economics", "Health economics", "Applied microeconomics"],
+      "citations": 21564,
+      "birth_year": 1954,
+      "birth_place": "Stellendam, Netherlands",
+      "education": [
+        {
+          "institution": "Erasmus University Rotterdam",
+          "degree": "PhD",
+          "field": "Economics",
+          "year": "1986",
+          "supervisor": "Arie van der Zwan"
+        }
+      ],
+      "career_history": [
+        {
+          "position": "Emeritus Professor",
+          "institution": "Erasmus University Rotterdam",
+          "period": "2020-present"
+        },
+        {
+          "position": "Professor of Applied Economics",
+          "institution": "Erasmus University Rotterdam",
+          "period": "2016-2020"
+        },
+        {
+          "position": "Professor of Labor Economics",
+          "institution": "Tilburg University",
+          "period": "1998-2016"
+        }
+      ],
+      "affiliations": [
+        "CEPR (Centre for Economic Policy Research)",
+        "IZA (Institute of Labor Economics)",
+        "University of Melbourne (Adjunct Professor)",
+        "Tinbergen Institute"
+      ]
+    },
+    "Haibo Zhou": {
+      "orcid_id": "0000-0002-2815-8577",
+      "orcid_uri": "https://orcid.org/0000-0002-2815-8577",
+      "given_name": "Haibo",
+      "family_name": "Zhou",
+      "affiliation": "University of Nottingham Ningbo China",
+      "current_position": "Associate Professor in Entrepreneurship and Innovation",
+      "department": "Nottingham University Business School (NUBS)",
+      "verified": true,
+      "last_verified": "2025-07-25",
+      "source": "ORCID profile",
+      "keywords": ["Entrepreneurship", "Innovation", "SMEs", "Knowledge"],
+      "scopus_id": "38863581200",
+      "research_interests": [
+        "Firm growth and survival",
+        "Entrepreneurship research",
+        "Innovation management",
+        "Small and medium enterprises",
+        "Knowledge management"
+      ]
+    },
+    "Jan de Kok": {
+      "orcid_id": "Not found",
+      "given_name": "Jan",
+      "family_name": "de Kok",
+      "affiliation": "Panteia",
+      "current_position": "Senior Researcher",
+      "education": "PhD Erasmus University Rotterdam (2003), Economics and Econometrics Tilburg University",
+      "verified": true,
+      "last_verified": "2025-07-25",
+      "source": "Panteia website and ResearchGate",
+      "linkedin": "jandekok1",
+      "research_interests": [
+        "Quantitative empirical research",
+        "Evaluation research",
+        "SME research",
+        "Entrepreneurship studies"
+      ],
+      "experience": "Lecturer research methods for International Business and Management Studies (1995-2014)"
+    },
+    "Chantal Hartog": {
+      "orcid_id": "Not found",
+      "given_name": "Chantal",
+      "family_name": "Hartog",
+      "affiliation": "Panteia/EIM Business and Policy Research",
+      "verified": true,
+      "last_verified": "2025-07-25",
+      "source": "ResearchGate and academic publications",
+      "research_interests": [
+        "Social entrepreneurship",
+        "Entrepreneurship research",
+        "Business ethics",
+        "Institutional entrepreneurship"
+      ],
+      "notable_publications": [
+        "Beyond the Moral Portrayal of Social Entrepreneurs",
+        "Ambitious Entrepreneurship, High-Growth Firms, and Macroeconomic Growth"
+      ],
+      "citations": "917 citations (ResearchGate)"
+    },
+    "Peter van der Zwan": {
+      "orcid_id": "0000-0003-2654-4367",
+      "orcid_uri": "https://orcid.org/0000-0003-2654-4367",
+      "given_name": "Peter",
+      "family_name": "van der Zwan",
+      "affiliation": "Leiden University",
+      "current_position": "Associate Professor of Entrepreneurship",
+      "department": "Department of Business Studies, Leiden Law School",
+      "additional_role": "Head of the Department of Business Studies",
+      "verified": true,
+      "last_verified": "2025-07-25",
+      "source": "Leiden University website and Google Scholar",
+      "email": "law.leidenuniv.nl",
+      "research_interests": [
+        "Entrepreneurial entry and exit",
+        "Entrepreneurial wellbeing",
+        "Entrepreneurial finance",
+        "Social entrepreneurship",
+        "Age and entrepreneurship"
+      ]
+    },
+    "Harry Boumeester": {
+      "orcid_id": "Not found",
+      "given_name": "Harry",
+      "family_name": "Boumeester",
+      "full_name": "Harry J.F.M. Boumeester",
+      "affiliation": "TU Delft",
+      "current_position": "Assistant Professor",
+      "department": "OTB Research Institute for the Built Environment",
+      "faculty": "Faculty of Architecture and the Built Environment",
+      "verified": true,
+      "last_verified": "2025-07-25",
+      "source": "TU Delft website and Google Scholar",
+      "google_scholar": "eV3KjoEAAAAJ",
+      "linkedin": "harry-boumeester-47573019",
+      "citations": "327 citations (ResearchGate)",
+      "experience": "Working at TU Delft since 1992",
+      "research_interests": [
+        "Housing market developments",
+        "Housing demand",
+        "Housing preferences",
+        "Housing affordability",
+        "Housing policy"
+      ],
+      "expertise": [
+        "Housing market research",
+        "Housing policy analysis",
+        "Quantitative housing research",
+        "Contract research"
+      ]
+    },
+    "Kees Dol": {
+      "orcid_id": "Not found",
+      "given_name": "Kees",
+      "family_name": "Dol",
+      "affiliation": "TU Delft / RIGO Research & Advisory",
+      "current_position": "Housing market and housing finance researcher",
+      "department": "OTB Research Institute for the Built Environment (former)",
+      "current_employer": "RIGO Research & Advisory, Amsterdam",
+      "verified": true,
+      "last_verified": "2025-07-25",
+      "source": "Google Scholar and EIPA website",
+      "google_scholar": "I4oVTaUAAAAJ",
+      "citations": "1042 citations (Google Scholar)",
+      "research_interests": [
+        "Housing markets",
+        "Housing policy and finance",
+        "Affordable home ownership",
+        "Housing inequality",
+        "Housing capability approach"
+      ],
+      "expertise": [
+        "Housing market analysis",
+        "Housing finance research",
+        "Housing policy evaluation",
+        "Quantitative housing research"
+      ]
+    },
+    "Ingrid van Maurik": {
+      "orcid_id": "0000-0001-6919-8340",
+      "orcid_uri": "https://orcid.org/0000-0001-6919-8340",
+      "given_name": "Ingrid",
+      "family_name": "van Maurik",
+      "full_name": "Ingrid S. van Maurik",
+      "affiliation": "Amsterdam UMC",
+      "current_position": "Visiting Fellow",
+      "department": "Epidemiology and Data Science",
+      "former_position": "PhD student (2015-2019)",
+      "former_department": "Alzheimer Center Amsterdam, Department of Neurology",
+      "former_affiliation": "VU University Medical Center",
+      "verified": true,
+      "last_verified": "2025-07-25",
+      "source": "ORCID profile and Amsterdam UMC",
+      "research_interests": [
+        "Alzheimer's Disease",
+        "Mild Cognitive Impairment",
+        "Neuropsychological Assessment",
+        "Cerebrospinal Fluid",
+        "Magnetic Resonance Imaging",
+        "Biomarker interpretation",
+        "Amyloid PET imaging"
+      ],
+      "expertise": [
+        "Alzheimer's disease research",
+        "Biomarker studies",
+        "Cognitive assessment",
+        "Medical imaging",
+        "Clinical research"
+      ]
+    },
+    "Hana Broulikova": {
+      "orcid_id": "0000-0002-1662-3005",
+      "orcid_uri": "https://orcid.org/0000-0002-1662-3005",
+      "given_name": "Hana",
+      "family_name": "Broulikova",
+      "full_name": "Hana Marie Broulikova",
+      "affiliation": "Vrije Universiteit Amsterdam",
+      "current_position": "Assistant Professor",
+      "department": "Health Economics and Health Technology Assessment",
+      "additional_affiliations": [
+        "APH - Mental Health",
+        "APH - Methodology"
+      ],
+      "verified": true,
+      "last_verified": "2025-07-25",
+      "source": "ORCID profile and VU Amsterdam",
+      "google_scholar": "1-iIr6AAAAAJ",
+      "linkedin": "hana-marie-broulíková-ba507993",
+      "citations": "278 citations (Google Scholar)",
+      "education": "PhD University of Economics, Prague",
+      "research_interests": [
+        "Health technology assessment",
+        "Health economics",
+        "Dementia",
+        "Mental Health",
+        "Decision analytic modeling"
+      ],
+      "expertise": [
+        "Health economic evaluation",
+        "Cost-effectiveness analysis",
+        "Mental health economics",
+        "Alzheimer's disease economics",
+        "Biostatistics"
+      ]
+    },
+    "Arenda Mank": {
+      "orcid_id": "Not found",
+      "given_name": "Arenda",
+      "family_name": "Mank",
+      "affiliation": "Amsterdam UMC",
+      "current_position": "Researcher",
+      "department": "Alzheimer Center Amsterdam, Department of Neurology",
+      "institution": "VU University Medical Center",
+      "verified": true,
+      "last_verified": "2025-07-25",
+      "source": "Research publications and Amsterdam UMC",
+      "research_interests": [
+        "Alzheimer's disease progression",
+        "Quality of life in dementia",
+        "Patient and caregiver outcomes",
+        "Prediction models",
+        "Life satisfaction",
+        "Informal care"
+      ],
+      "expertise": [
+        "Alzheimer's disease research",
+        "Patient-reported outcomes",
+        "Longitudinal studies",
+        "Caregiver research",
+        "Clinical outcomes research"
+      ],
+      "notable_work": "PhD thesis on outcomes relevant to patients and care partners along the trajectory of Alzheimer's disease"
+    },
+    "Pedro de Faria": {
+      "orcid_id": "Not found",
+      "given_name": "Pedro",
+      "family_name": "de Faria",
+      "full_name": "Pedro M.M. de Faria",
+      "affiliation": "University of Groningen",
+      "current_position": "Professor of Innovation Management",
+      "department": "Innovation Management and Strategy",
+      "faculty": "Faculty of Economics and Business",
+      "verified": true,
+      "last_verified": "2025-07-25",
+      "source": "University of Groningen website and Google Scholar",
+      "google_scholar": "aXD2xqQAAAAJ",
+      "linkedin": "pedrodefaria",
+      "phone": "+31 50 36 34854",
+      "email": "p.m.m.de.faria@rug.nl",
+      "administrative_role": "Chair of the Department of Innovation Management and Strategy (since January 2021)",
+      "education": "PhD from Técnico Lisboa",
+      "research_interests": [
+        "Innovation Management",
+        "Innovation Strategy",
+        "Knowledge Management",
+        "Open Innovation",
+        "Technology Transfer",
+        "Organizational Innovation",
+        "Strategic Management"
+      ],
+      "expertise": [
+        "Innovation management research",
+        "Knowledge sharing and protection",
+        "Open innovation strategies",
+        "Technology commercialization",
+        "Strategic innovation"
+      ],
+      "notable_work": "Inaugural lecture: 'The stars look very different today: Innovation in times of knowledge dispersion'"
+    },
+    "Wilfred Dolfsma": {
+      "orcid_id": "0000-0002-5636-3391",
+      "orcid_uri": "https://orcid.org/0000-0002-5636-3391",
+      "given_name": "Wilfred",
+      "family_name": "Dolfsma",
+      "full_name": "Wilfred A. Dolfsma",
+      "affiliation": "Wageningen University & Research",
+      "current_position": "Professor of Business Management & Organisation",
+      "former_affiliation": "University of Groningen",
+      "former_position": "Professor of Innovation and Strategy",
+      "verified": true,
+      "last_verified": "2025-07-25",
+      "source": "ORCID profile and Wageningen University",
+      "google_scholar": "5eAtbXQAAAAJ",
+      "linkedin": "wilfred-dolfsma-889b364",
+      "education": "PhD in Business Studies from University of Groningen",
+      "background": "Both economist and philosopher",
+      "research_interests": [
+        "Innovation Management",
+        "Strategy",
+        "Business Management",
+        "Organizational Innovation",
+        "Knowledge Management",
+        "Social Economics",
+        "Evolutionary Economics"
+      ],
+      "expertise": [
+        "Innovation strategy",
+        "Business organization",
+        "Knowledge management",
+        "Social economics",
+        "Institutional analysis",
+        "Technology management"
+      ],
+      "notable_work": "Extensive research on innovation failure prevention and capabilities"
+    },
+    "Bert Meijboom": {
+      "orcid_id": "Not found",
+      "given_name": "Bert",
+      "family_name": "Meijboom",
+      "full_name": "Bert R. Meijboom",
+      "affiliation": "Tilburg University",
+      "current_position": "Professor Organization of Healthcare Chains",
+      "department": "TRANZO",
+      "faculty": "Tilburg School of Social and Behavioral Sciences",
+      "verified": true,
+      "last_verified": "2025-07-25",
+      "source": "Tilburg University Research Portal and Google Scholar",
+      "google_scholar": "cTSZb_wAAAAJ",
+      "email": "b.r.meijboom@uvt.nl",
+      "endowed_chair": "Chair in Organization of Healthcare Chains (sponsored by Jeroen Bosch Ziekenhuis)",
+      "since": "2015",
+      "research_interests": [
+        "Health Care Operations Management",
+        "Healthcare Chains Organization",
+        "Health Economics",
+        "Operations Management",
+        "Healthcare Networks",
+        "Modular Healthcare",
+        "Long-term Care",
+        "Healthcare Integration"
+      ],
+      "expertise": [
+        "Healthcare operations management",
+        "Healthcare chain organization",
+        "Network formation in healthcare",
+        "Modular care systems",
+        "Healthcare economics",
+        "Long-term care access",
+        "Healthcare integration"
+      ],
+      "notable_work": "Research on healthcare chain organization and modular care systems"
+    },
+    "Johan Polder": {
+      "orcid_id": "Not found",
+      "given_name": "Johan",
+      "family_name": "Polder",
+      "full_name": "Johan J. Polder",
+      "affiliation": "RIVM",
+      "current_position": "Chief Science Officer Health Economics",
+      "secondary_affiliation": "Tilburg University",
+      "secondary_position": "Professor (Hoogleraar)",
+      "department": "Centre for Health and Society",
+      "verified": true,
+      "last_verified": "2025-07-25",
+      "source": "RIVM website and Google Scholar",
+      "google_scholar": "IJM1f_kAAAAJ",
+      "linkedin": "johanpolder",
+      "email": "Johan.Polder@rivm.nl",
+      "birth_year": "1966",
+      "education": "MSc in Economics (1985-1991) from Erasmus University Rotterdam",
+      "career_start": "August 2002 at RIVM",
+      "academic_appointment": "January 2007 at Tilburg University",
+      "research_interests": [
+        "Health Economics",
+        "Cost of Illness Research",
+        "Economic Evaluation",
+        "Health Care Costs",
+        "Public Health Economics",
+        "Health Expenditure",
+        "Healthcare Utilization",
+        "Socioeconomic Health Differences"
+      ],
+      "expertise": [
+        "Health economics",
+        "Cost of illness research",
+        "Economic evaluation",
+        "Healthcare expenditure analysis",
+        "Public health economics",
+        "Health policy economics",
+        "Healthcare cost modeling",
+        "Socioeconomic health analysis"
+      ],
+      "notable_work": "Leading expert in Dutch health economics and cost of illness research"
+    },
+    "Petra Hopman": {
+      "orcid_id": "Not found",
+      "given_name": "Petra",
+      "family_name": "Hopman",
+      "full_name": "Petra Hopman",
+      "affiliation": "NIVEL",
+      "current_position": "Scientific Researcher",
+      "department": "Tobacco Department",
+      "former_affiliation": "NIVEL",
+      "former_position": "Post-doc Researcher (2008-2015)",
+      "verified": true,
+      "last_verified": "2025-07-25",
+      "source": "NIVEL publications and LinkedIn",
+      "linkedin": "epchopman",
+      "education": "PhD from VU University Amsterdam",
+      "phd_supervisor": "Esther van Leeuwen",
+      "phd_completion": "2010",
+      "career_timeline": [
+        "Post-doc Researcher at NIVEL (2008-2015)",
+        "Scientific Researcher at Trimbos Institute (current)"
+      ],
+      "research_interests": [
+        "Health Services Research",
+        "Multiple Chronic Diseases",
+        "Healthcare Utilization",
+        "Chronic Disease Management",
+        "Health-related Needs",
+        "Tobacco Research",
+        "Secondhand Smoke Exposure",
+        "Public Health Research"
+      ],
+      "expertise": [
+        "Multiple chronic diseases research",
+        "Healthcare utilization analysis",
+        "Health services research",
+        "Chronic disease management",
+        "Primary care research",
+        "Tobacco and smoking research",
+        "Public health policy research"
+      ],
+      "notable_work": "Leading researcher on multiple chronic diseases and healthcare utilization in the Netherlands"
+    },
+    "Nicholas B. Hunt": {
+      "orcid_id": "Not found",
+      "given_name": "Nicholas",
+      "family_name": "Hunt",
+      "full_name": "Nicholas B. Hunt",
+      "middle_name": "B.",
+      "affiliation": "University Medical Center Groningen",
+      "current_position": "PhD Candidate / Researcher",
+      "department": "Clinical Pharmacy and Pharmacology",
+      "verified": true,
+      "last_verified": "2025-07-25",
+      "source": "UMCG research portal and Health Data Science",
+      "education": "MSc in Medical Pharmaceutical Sciences (cum laude) at University of Groningen (2019)",
+      "specialization": "Pharmacoepidemiology",
+      "research_focus": "PharmLines Initiative",
+      "research_interests": [
+        "Pharmacoepidemiology",
+        "Clinical Pharmacy",
+        "Statin Therapy",
+        "Sex Disparities in Medicine",
+        "Lipid Parameters",
+        "Drug Effectiveness",
+        "Real-World Evidence"
+      ],
+      "expertise": [
+        "Pharmacoepidemiology research",
+        "Clinical pharmacy",
+        "Drug effectiveness studies",
+        "Sex disparities in medication response",
+        "Real-world evidence generation",
+        "Statin therapy research"
+      ],
+      "notable_work": "Research on sex disparities in statin effects through PharmLines Initiative"
+    },
+    "Johanna E. Emmens": {
+      "orcid_id": "Not found",
+      "given_name": "Johanna",
+      "family_name": "Emmens",
+      "full_name": "Johanna Elisabeth Emmens",
+      "middle_name": "Elisabeth",
+      "affiliation": "University Medical Center Groningen",
+      "current_position": "Researcher",
+      "department": "Cardiology",
+      "verified": true,
+      "last_verified": "2025-07-25",
+      "source": "UMCG research portal and Google Scholar",
+      "google_scholar": "RMG-JlUAAAAJ",
+      "email": "verified@umcg.nl",
+      "education": "BSc Medicine (Hons), PhD (2021)",
+      "phd_title": "Novel insights in urinary and plasma biomarkers in heart failure",
+      "phd_year": "2021",
+      "research_interests": [
+        "Heart Failure",
+        "Biomarkers",
+        "Cardiology",
+        "Nephrology",
+        "Clinical Research",
+        "Pharmacoepidemiology",
+        "Cardiovascular Medicine"
+      ],
+      "expertise": [
+        "Heart failure research",
+        "Biomarker development",
+        "Cardiovascular medicine",
+        "Clinical research",
+        "Nephrology",
+        "Pharmacoepidemiology",
+        "Urinary and plasma biomarkers"
+      ],
+      "notable_work": "Leading researcher on heart failure biomarkers and cardiovascular medicine"
+    },
+    "Eelko Hak": {
+      "orcid_id": "Not found",
+      "given_name": "Eelko",
+      "family_name": "Hak",
+      "full_name": "Eelko Hak",
+      "affiliation": "University of Groningen",
+      "current_position": "Professor of Clinical Pharmacoepidemiology",
+      "department": "Groningen Research Institute of Pharmacy",
+      "faculty": "Faculty of Science and Engineering",
+      "verified": true,
+      "last_verified": "2025-07-25",
+      "source": "University of Groningen staff page and Google Scholar",
+      "google_scholar": "j-X-6hIAAAAJ",
+      "linkedin": "prof-dr-eelko-hak-b10754134",
+      "email": "e.hak@rug.nl",
+      "citations": "18,951",
+      "career_timeline": [
+        "2015-current: Full professor of clinical pharmacoepidemiology Groningen",
+        "2015-2020: Program director of Groningen Research Master Medical Pharmaceutical Sciences"
+      ],
+      "research_interests": [
+        "Pharmacoepidemiology",
+        "Methodology in Causal Research",
+        "Clinical Pharmacoepidemiology",
+        "Drug Safety",
+        "Real-World Evidence",
+        "Pharmacoeconomics",
+        "Causal Inference"
+      ],
+      "expertise": [
+        "Clinical pharmacoepidemiology",
+        "Causal research methodology",
+        "Drug safety research",
+        "Real-world evidence generation",
+        "Pharmacoeconomics",
+        "Educational leadership in pharmacy",
+        "Research methodology"
+      ],
+      "notable_work": "Leading expert in clinical pharmacoepidemiology and causal research methodology"
+    },
+    "Eric J. Bartelsman": {
+      "orcid_id": "Not found",
+      "given_name": "Eric",
+      "family_name": "Bartelsman",
+      "full_name": "Eric J. Bartelsman",
+      "middle_name": "J.",
+      "affiliation": "Vrije Universiteit Amsterdam",
+      "current_position": "Professor of Economics and General Director of Tinbergen Institute",
+      "department": "Department of Economics",
+      "faculty": "School of Business and Economics",
+      "verified": true,
+      "last_verified": "2025-07-25",
+      "source": "VU Research Portal and Google Scholar",
+      "google_scholar": "8LcvSPgAAAAJ",
+      "linkedin": "eric-bartelsman-496382",
+      "email": "eric.bartelsman@vu.nl",
+      "birth_year": "1960",
+      "education": "BS from MIT, PhD from Columbia University",
+      "career_timeline": [
+        "Current: Professor of Economics and General Director of Tinbergen Institute",
+        "Vice-Dean at Vrije Universiteit Amsterdam",
+        "Research Fellow at CEPR, IZA"
+      ],
+      "research_interests": [
+        "Productivity",
+        "Applied Microeconomics",
+        "Markets and Organizations",
+        "Macroeconomics",
+        "Employment Protection",
+        "Technology Choice",
+        "Worker Allocation",
+        "Firm Dynamics"
+      ],
+      "expertise": [
+        "Productivity analysis",
+        "Labor economics",
+        "Industrial organization",
+        "Firm-level analysis",
+        "Employment protection legislation",
+        "Technology adoption",
+        "Economic policy analysis"
+      ],
+      "notable_work": "Leading expert in productivity analysis and employment protection research"
+    },
+    "Pieter A. Gautier": {
+      "orcid_id": "Not found",
+      "given_name": "Pieter",
+      "family_name": "Gautier",
+      "full_name": "Pieter A. Gautier",
+      "middle_name": "A.",
+      "affiliation": "Vrije Universiteit Amsterdam",
+      "current_position": "Professor of Economics",
+      "department": "Department of Economics",
+      "faculty": "School of Business and Economics",
+      "verified": true,
+      "last_verified": "2025-07-25",
+      "source": "VU Research Portal and Google Scholar",
+      "google_scholar": "bNa-RX0AAAAJ",
+      "linkedin": "pieter-gautier-41208311",
+      "email": "p.a.gautier@vu.nl",
+      "education": "PhD 1997, Vrije Universiteit Amsterdam",
+      "career_timeline": [
+        "2008-present: Professor VU University Amsterdam",
+        "2004-2008: Associate Professor, VU University Amsterdam",
+        "2003-2004: Assistant Professor, VU University Amsterdam",
+        "2003: VIDI grant from NWO"
+      ],
+      "research_interests": [
+        "Macro Labor",
+        "Search Theory",
+        "Labor Economics",
+        "Macroeconomics",
+        "Microeconomic Theory",
+        "Employment Protection",
+        "Worker Allocation",
+        "Search and Matching"
+      ],
+      "expertise": [
+        "Search and matching models",
+        "Labor market dynamics",
+        "Macroeconomic theory",
+        "Employment protection analysis",
+        "Worker allocation mechanisms",
+        "Search theory applications"
+      ],
+      "affiliations": [
+        "Research Fellow at CEPR",
+        "Research Fellow at IZA",
+        "Research Fellow at Tinbergen Institute",
+        "Research Fellow at CESifo"
+      ],
+      "notable_work": "Leading expert in search theory and macro labor economics"
+    },
+    "Joris de Wind": {
+      "orcid_id": "Not found",
+      "given_name": "Joris",
+      "family_name": "de Wind",
+      "full_name": "Joris de Wind",
+      "affiliation": "De Nederlandsche Bank",
+      "current_position": "Economist",
+      "department": "Research Department",
+      "verified": true,
+      "last_verified": "2025-07-25",
+      "source": "DNB and CEPR profiles",
+      "linkedin": "jorisdewind",
+      "education": "PhD from University of Amsterdam (Cum Laude)",
+      "phd_honors": "Highest honors (Cum Laude), honorary mention for KVS medal 2014 for best economics PhD thesis",
+      "career_timeline": [
+        "Current: Economist at De Nederlandsche Bank Research Department",
+        "PhD candidate at University of Amsterdam",
+        "2014: KVS medal honorary mention for best economics PhD thesis"
+      ],
+      "research_interests": [
+        "DSGE Models",
+        "Macroeconomics",
+        "Employment Protection",
+        "Technology Choice",
+        "Worker Allocation",
+        "Monetary Policy",
+        "Economic Modeling",
+        "Financial Stability"
+      ],
+      "expertise": [
+        "DSGE modeling",
+        "Macroeconomic analysis",
+        "Central banking research",
+        "Employment protection analysis",
+        "Economic policy research",
+        "Financial stability analysis",
+        "Quantitative economics"
+      ],
+      "affiliations": [
+        "Research Fellow at CEPR"
+      ],
+      "notable_work": "Leading expert in DSGE modeling and employment protection research at central bank level"
+    },
+    "Paul H. Fischer": {
+      "orcid_id": "Not found",
+      "given_name": "Paul",
+      "family_name": "Fischer",
+      "full_name": "Paul H. Fischer",
+      "middle_name": "H.",
+      "affiliation": "National Institute for Public Health and the Environment (RIVM)",
+      "current_position": "Air pollution epidemiologist and policy advisor",
+      "department": "Department for Environmental Health",
+      "verified": true,
+      "last_verified": "2025-07-25",
+      "source": "RIVM and Google Scholar",
+      "google_scholar": "GO52dLwAAAAJ",
+      "email": "paul.fischer@rivm.nl",
+      "citations": "21,542",
+      "education": "MSc",
+      "research_interests": [
+        "Air pollution epidemiology",
+        "Environmental health",
+        "Public health policy",
+        "Environmental burden of disease",
+        "Climate change and health",
+        "Mortality and morbidity studies",
+        "Environmental exposure assessment"
+      ],
+      "expertise": [
+        "Air pollution epidemiology",
+        "Environmental health research",
+        "Public health policy development",
+        "Environmental burden of disease analysis",
+        "Large-scale cohort studies",
+        "Environmental exposure assessment",
+        "Health impact assessment"
+      ],
+      "notable_work": "Leading expert in air pollution epidemiology and environmental health policy at RIVM"
+    },
+    "Marten Marra": {
+      "orcid_id": "Not found",
+      "given_name": "Marten",
+      "family_name": "Marra",
+      "full_name": "Marten Marra",
+      "affiliation": "National Institute for Public Health and the Environment (RIVM)",
+      "current_position": "Researcher",
+      "department": "Environmental Health",
+      "verified": true,
+      "last_verified": "2025-07-25",
+      "source": "RIVM research publications",
+      "research_interests": [
+        "Air pollution",
+        "Environmental epidemiology",
+        "Mortality studies",
+        "Environmental health",
+        "Public health research",
+        "Environmental exposure assessment"
+      ],
+      "expertise": [
+        "Air pollution research",
+        "Environmental epidemiology",
+        "Statistical analysis",
+        "Environmental health assessment",
+        "Cohort study methodology",
+        "Environmental data analysis"
+      ],
+      "notable_work": "Co-researcher in major Dutch environmental longitudinal studies on air pollution and mortality"
+    },
+    "Gerard Hoek": {
+      "orcid_id": "Not found",
+      "given_name": "Gerard",
+      "family_name": "Hoek",
+      "full_name": "Gerard Hoek",
+      "affiliation": "Utrecht University",
+      "current_position": "Professor",
+      "department": "Institute for Risk Assessment Sciences",
+      "verified": true,
+      "last_verified": "2025-07-25",
+      "source": "Utrecht University staff page",
+      "email": "G.Hoek@uu.nl",
+      "education": "Dr. ir. (PhD)",
+      "research_interests": [
+        "Environmental exposure assessment",
+        "Air pollution",
+        "Environmental epidemiology",
+        "Combined effects of air pollution, noise and green space",
+        "Low air pollution levels effects",
+        "European cohort studies",
+        "Environmental stressors"
+      ],
+      "expertise": [
+        "Environmental exposure assessment methods",
+        "Air pollution epidemiology",
+        "Environmental health research",
+        "Cohort study design",
+        "Environmental modeling",
+        "Health effects assessment",
+        "European environmental research"
+      ],
+      "notable_work": "Leading expert in environmental exposure assessment and air pollution research in Europe"
+    },
+    "Paul T.Y. Preenen": {
+      "orcid_id": "Not found",
+      "given_name": "Paul",
+      "family_name": "Preenen",
+      "full_name": "Paul T.Y. Preenen",
+      "middle_name": "T.Y.",
+      "affiliation": "TNO (Netherlands Organisation for Applied Scientific Research)",
+      "current_position": "Senior scientist at TNO and Professor of Applied Sciences at Saxion University",
+      "department": "Sustainable Productivity and Employability",
+      "verified": true,
+      "last_verified": "2025-07-25",
+      "source": "TNO website and Google Scholar",
+      "google_scholar": "TGhocAEAAAAJ",
+      "education": "PhD",
+      "dual_appointment": "Professor of Applied Sciences (Lector) in Human Capital at Saxion University of Applied Sciences",
+      "research_interests": [
+        "Organizational behaviour",
+        "Labour productivity",
+        "Innovation performance",
+        "Internal labour flexibility",
+        "Sustainable productivity",
+        "Employability",
+        "Human capital development",
+        "Adaptable careers",
+        "Skills development"
+      ],
+      "expertise": [
+        "Organizational behaviour research",
+        "Labour productivity analysis",
+        "Innovation management",
+        "Human resource management",
+        "Sustainable productivity practices",
+        "Employability research",
+        "Skills and competency development",
+        "Career adaptability"
+      ],
+      "notable_work": "Leading expert in sustainable productivity and employability research at TNO"
+    },
+    "Robert Vergeer": {
+      "orcid_id": "Not found",
+      "given_name": "Robert",
+      "family_name": "Vergeer",
+      "full_name": "Robert Vergeer",
+      "affiliation": "CE Delft",
+      "current_position": "Senior researcher at CE Delft",
+      "former_affiliation": "TNO (Netherlands Organisation for Applied Scientific Research)",
+      "verified": true,
+      "last_verified": "2025-07-25",
+      "source": "CE Delft and Google Scholar",
+      "google_scholar": "yTyTb2IAAAAJ",
+      "email": "vergeer@ce.nl",
+      "citations": "1,185",
+      "education": "PhD (sponsored by Netherlands Council for Scientific Research)",
+      "research_interests": [
+        "Labour market institutions",
+        "Labour relations",
+        "Productivity",
+        "Innovation",
+        "Economics",
+        "Econometrics",
+        "Labour economics",
+        "Labour market reforms"
+      ],
+      "expertise": [
+        "Labour market institutions analysis",
+        "Labour relations research",
+        "Productivity analysis",
+        "Innovation economics",
+        "Econometric analysis",
+        "Labour market policy evaluation",
+        "Economic research methodology"
+      ],
+      "notable_work": "Leading expert in labour market institutions and productivity research"
+    },
+    "Steven Dhondt": {
+      "orcid_id": "Not found",
+      "given_name": "Steven",
+      "family_name": "Dhondt",
+      "full_name": "Steven Dhondt",
+      "affiliation": "TNO (Netherlands Organisation for Applied Scientific Research) and KU Leuven",
+      "current_position": "Senior scientist at TNO and Professor at KU Leuven",
+      "department": "Sustainable Productivity and Employability (TNO)",
+      "verified": true,
+      "last_verified": "2025-07-25",
+      "source": "TNO website and Google Scholar",
+      "google_scholar": "IF2_qasAAAAJ",
+      "linkedin": "steven-dhondt-4b429a4",
+      "citations": "3,537",
+      "education": "PhD in social sciences, Prof.dr.",
+      "dual_appointment": "Professor at University of Leuven (Belgium)",
+      "research_program": "Smart Working-research programme coordinator at TNO",
+      "research_interests": [
+        "Sociology of Work and Organisations",
+        "Productive organisations",
+        "Social impacts of robotics and digitization",
+        "Cobots and exo-skeletons",
+        "Organizational innovation",
+        "Technology and work practice",
+        "Smart working",
+        "Digital transformation"
+      ],
+      "expertise": [
+        "Sociology of work and organizations",
+        "Organizational innovation research",
+        "Technology impact assessment",
+        "Digital transformation analysis",
+        "Robotics and work research",
+        "Smart working practices",
+        "Organizational change management",
+        "Social innovation"
+      ],
+      "notable_work": "Leading expert in sociology of work and organizational innovation research"
+    },
+    "Elise van Kempen": {
+      "orcid_id": "Not found",
+      "given_name": "Elise",
+      "family_name": "van Kempen",
+      "full_name": "Elise van Kempen",
+      "affiliation": "National Institute for Public Health and the Environment (RIVM)",
+      "current_position": "Researcher noise and health",
+      "department": "Environmental Health",
+      "verified": true,
+      "last_verified": "2025-07-25",
+      "source": "RIVM and ResearchGate",
+      "researchgate": "Elise_Kempen",
+      "email": "Elise.van.Kempen@rivm.nl",
+      "citations": "5,006",
+      "education": "PhD",
+      "research_interests": [
+        "Environmental noise",
+        "Cardiovascular health",
+        "Noise annoyance",
+        "Environmental health",
+        "Public health",
+        "Noise and health effects",
+        "Traffic noise",
+        "Sleep disturbance",
+        "Children's health and noise",
+        "WHO environmental noise guidelines"
+      ],
+      "expertise": [
+        "Environmental noise research",
+        "Cardiovascular effects of noise",
+        "Noise annoyance assessment",
+        "Environmental health epidemiology",
+        "Public health research",
+        "WHO guideline development",
+        "Systematic reviews",
+        "Meta-analysis"
+      ],
+      "notable_work": "Leading expert in environmental noise and health research, contributor to WHO Environmental Noise Guidelines"
+    },
+    "Brigit A.M. Staatsen": {
+      "orcid_id": "Not found",
+      "given_name": "Brigit",
+      "family_name": "Staatsen",
+      "full_name": "Brigit A.M. Staatsen",
+      "middle_name": "A.M.",
+      "affiliation": "National Institute for Public Health and the Environment (RIVM)",
+      "current_position": "Senior researcher in environmental epidemiology",
+      "department": "Healthy Living Environment",
+      "verified": true,
+      "last_verified": "2025-07-25",
+      "source": "RIVM and ResearchGate",
+      "researchgate": "Brigit-Staatsen",
+      "linkedin": "brigit-staatsen-58555a29",
+      "citations": "1,266",
+      "education": "MSc in medical biology, with a major in epidemiology and toxicology",
+      "research_interests": [
+        "Environmental epidemiology",
+        "Health impact assessment",
+        "Environmental health",
+        "Health interventions",
+        "Environmental policy",
+        "Public health research",
+        "Environmental burden of disease",
+        "Blue health",
+        "Healthy living environment",
+        "REACH regulation health assessment"
+      ],
+      "expertise": [
+        "Environmental epidemiology",
+        "Health impact assessment methodology",
+        "Environmental health research",
+        "Public health policy",
+        "Environmental burden of disease analysis",
+        "Health intervention evaluation",
+        "Environmental policy assessment",
+        "Blue health research",
+        "REACH health impact assessment"
+      ],
+      "projects": [
+        "BlueHealth project",
+        "REACH restriction dossiers",
+        "Schiphol Airport health impact assessment",
+        "OECD environmental health assessment"
+      ],
+      "notable_work": "Leading expert in environmental health impact assessment and environmental epidemiology at RIVM"
+    },
+    "Gerard Hoek": {
+      "orcid_id": "0000-0001-6581-7187",
+      "given_name": "Gerard",
+      "family_name": "Hoek",
+      "full_name": "Gerard Hoek",
+      "affiliation": "Utrecht University",
+      "current_position": "Professor at Institute for Risk Assessment Sciences",
+      "department": "Institute for Risk Assessment Sciences (IRAS)",
+      "verified": true,
+      "last_verified": "2025-07-25",
+      "source": "Utrecht University and WHO",
+      "email": "G.Hoek@uu.nl",
+      "education": "Dr. ir. (PhD)",
+      "research_interests": [
+        "Air pollution epidemiology",
+        "Environmental exposure assessment",
+        "Long-term air pollution exposure",
+        "Health effects of air pollution",
+        "WHO air quality guidelines",
+        "Environmental health",
+        "Exposure science",
+        "Traffic-related air pollution",
+        "PM2.5 and PM10 health effects",
+        "Environmental epidemiology"
+      ],
+      "expertise": [
+        "Air pollution exposure assessment",
+        "Environmental epidemiology",
+        "Long-term exposure modeling",
+        "Health effects research",
+        "WHO guideline development",
+        "Environmental health policy",
+        "Exposure science methodology",
+        "Traffic-related air pollution research",
+        "Cardiovascular and respiratory health",
+        "Environmental risk assessment"
+      ],
+      "projects": [
+        "EXPANSE project",
+        "WHO air quality guidelines revision",
+        "Health Effects Institute studies",
+        "Air View Car project",
+        "Utrecht Exposome Hub"
+      ],
+      "notable_work": "Leading expert in air pollution epidemiology and WHO air quality guidelines development"
+    },
+    "Augustinus E.M. de Hollander": {
+      "orcid_id": "Not found",
+      "given_name": "Augustinus",
+      "family_name": "de Hollander",
+      "full_name": "Augustinus E.M. de Hollander",
+      "middle_name": "E.M.",
+      "affiliation": "National Institute for Public Health and the Environment (RIVM)",
+      "current_position": "Senior researcher and project manager",
+      "department": "Environment and Safety Division",
+      "verified": true,
+      "last_verified": "2025-07-25",
+      "source": "RIVM and ResearchGate",
+      "researchgate": "Augustinus-de-Hollander",
+      "citations": "1,360",
+      "education": "PhD",
+      "research_interests": [
+        "Environmental health",
+        "Environmental burden of disease",
+        "Public health policy",
+        "Environmental epidemiology",
+        "Health impact assessment",
+        "Environmental quality",
+        "Human well-being",
+        "Environmental risk assessment",
+        "Healthy living environment",
+        "Environmental health indicators"
+      ],
+      "expertise": [
+        "Environmental burden of disease assessment",
+        "Environmental health policy",
+        "Public health research",
+        "Environmental epidemiology",
+        "Health impact assessment methodology",
+        "Environmental quality assessment",
+        "Environmental health indicators",
+        "Risk assessment",
+        "Environmental health planning",
+        "Healthy living environment development"
+      ],
+      "projects": [
+        "Environmental burden of disease studies",
+        "Healthy living environment tool development",
+        "Environmental quality and human well-being research",
+        "RIVM strategic programme environment and health"
+      ],
+      "notable_work": "Leading expert in environmental burden of disease assessment and environmental health policy at RIVM"
     }
   }
 }

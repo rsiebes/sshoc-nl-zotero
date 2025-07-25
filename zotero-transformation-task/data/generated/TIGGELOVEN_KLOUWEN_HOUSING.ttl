@@ -1,0 +1,187 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <http://schema.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://bri.aadr.nl/index.php?simaction=content&pagid=&onderdeel=bri&stukid=80369&mediumid=1&action>
+    a bibo:Report ;
+    dc:title "Afwegingskader voor woningbouwontwikkeling - Bijlage woningmarktanalyse" ;
+    dc:creator "Tiggeloven, Pim" ;
+    dc:creator "Klouwen, Bram" ;
+    dc:date "2014"^^xsd:gYear ;
+    dc:publisher "Companen" ;
+    
+    # Authors with detailed information
+    dc:creator [
+        a foaf:Person ;
+        foaf:name "Pim Tiggeloven" ;
+        foaf:givenName "Pim" ;
+        foaf:familyName "Tiggeloven" ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "Companen B.V." ;
+            schema:address [
+                a schema:PostalAddress ;
+                schema:addressCountry "Netherlands" ;
+                schema:addressLocality "Delft"
+            ]
+        ] ;
+        schema:jobTitle "Onderzoeker/Adviseur" ;
+        schema:description "Specialist in housing market research, customer satisfaction research, and feasibility studies" ;
+        foaf:page <https://nl.linkedin.com/in/pimtiggeloven> ;
+        schema:expertise [
+            "Housing market research",
+            "Customer satisfaction research", 
+            "Feasibility studies",
+            "Urban planning advice"
+        ]
+    ] ;
+    
+    dc:creator [
+        a foaf:Person ;
+        foaf:name "Bram Klouwen" ;
+        foaf:givenName "Bram" ;
+        foaf:familyName "Klouwen" ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "Companen B.V." ;
+            schema:address [
+                a schema:PostalAddress ;
+                schema:addressCountry "Netherlands" ;
+                schema:addressLocality "Delft"
+            ]
+        ] ;
+        schema:jobTitle "Directeur/Adviseur" ;
+        schema:description "Director and advisor specializing in housing and care partnerships, social housing sector" ;
+        foaf:page <https://nl.linkedin.com/in/bramklouwen> ;
+        schema:expertise [
+            "Housing and care partnerships",
+            "Social housing",
+            "Housing policy development",
+            "Municipal housing strategies"
+        ]
+    ] ;
+    
+    # Publication details
+    dc:issued "2014"^^xsd:gYear ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:inLanguage "nl" ;
+    
+    # Geographic coverage
+    schema:spatialCoverage [
+        a schema:Place ;
+        schema:name "Netherlands" ;
+        schema:geo [
+            a schema:GeoCoordinates ;
+            schema:latitude "52.1326" ;
+            schema:longitude "5.2913"
+        ]
+    ] ;
+    
+    # Keywords
+    dc:subject "Woningbouwontwikkeling" ;
+    dc:subject "Woningmarktanalyse" ;
+    dc:subject "Afwegingskader" ;
+    dc:subject "Housing development" ;
+    dc:subject "Housing market analysis" ;
+    dc:subject "Policy framework" ;
+    dc:subject "Municipal policy" ;
+    dc:subject "Urban planning" ;
+    dc:subject "Netherlands housing market" ;
+    dc:subject "Development planning" ;
+    dc:subject "Housing economics" ;
+    dc:subject "Real estate development" ;
+    
+    # ELSST vocabulary subjects
+    dc:subject <https://elsst.cessda.eu/id/5/2807deec-4ed7-4a05-a62b-9ceeefbefa1c> ; # HOUSING ECONOMICS
+    dc:subject <https://elsst.cessda.eu/id/5/5a23fd3-a899-43a2-a24a-64c4d589faa6> ; # PLANNING
+    dc:subject <https://elsst.cessda.eu/id/5/24473156-aebb-4c02-83e2-ac0698cfb842> ; # HOUSING POLICY
+    dc:subject <https://elsst.cessda.eu/id/5/0dda29d6-ea7d-44bf-b65d-69ee321e4f71> ; # URBAN DEVELOPMENT
+    dc:subject <https://elsst.cessda.eu/id/5/6f628e04-cd98-4e7d-a50c-3078fe506f7f> ; # HOUSING
+    
+    # Parent organization
+    schema:parentOrganization [
+        a foaf:Organization ;
+        foaf:name "Companen" ;
+        schema:name "Companen B.V." ;
+        dc:identifier "Companen" ;
+        schema:url <https://www.companen.nl/> ;
+        schema:address [
+            a schema:PostalAddress ;
+            schema:addressCountry "Netherlands" ;
+            schema:addressLocality "Delft"
+        ] ;
+        schema:description "Housing market and living environment advisory company" ;
+        schema:organizationType "Private Research Company" ;
+        schema:mission "Maatschappelijk resultaat (Social impact)" ;
+        schema:serviceArea [
+            "Housing market analysis",
+            "Urban planning",
+            "Policy development"
+        ]
+    ] ;
+    
+    # Producer information
+    schema:producer <https://w3id.org/odissei/ns/kg/cbs/project/7656> ;
+    
+    # Document type and purpose
+    schema:about [
+        a schema:Thing ;
+        schema:name "Housing development assessment framework" ;
+        schema:description "Policy framework document for evaluating housing development projects and housing market analysis"
+    ] ;
+    
+    # Target audience
+    schema:audience [
+        a schema:Audience ;
+        schema:audienceType "Municipal governments" ;
+        schema:audienceType "Housing developers" ;
+        schema:audienceType "Policy makers" ;
+        schema:audienceType "Urban planners" ;
+        schema:audienceType "Housing corporations"
+    ] ;
+    
+    # Research methodology
+    schema:workExample [
+        a schema:CreativeWork ;
+        schema:name "Housing market analysis methodology" ;
+        schema:description "Framework for assessing housing development proposals against municipal policy objectives and housing needs"
+    ] ;
+    
+    # Document format and access
+    schema:encodingFormat "application/pdf" ;
+    schema:isAccessibleForFree true ;
+    schema:url <http://bri.aadr.nl/index.php?simaction=content&pagid=&onderdeel=bri&stukid=80369&mediumid=1&action> ;
+    
+    # Content classification
+    bibo:status "Published" ;
+    schema:genre "Policy document" ;
+    schema:genre "Research report" ;
+    
+    # Temporal coverage
+    schema:temporalCoverage "2014" ;
+    
+    # Related concepts
+    schema:keywords [
+        "Woningbouw",
+        "Woningmarkt", 
+        "Beleidskader",
+        "Gemeentelijk beleid",
+        "Stedelijke planning",
+        "Woningbehoefte",
+        "Vastgoedontwikkeling"
+    ] ;
+    
+    # Language and localization
+    schema:contentLocation [
+        a schema:Place ;
+        schema:name "Netherlands" ;
+        schema:description "Dutch housing market context"
+    ] ;
+    
+    # Professional context
+    schema:industry "Housing and Urban Development" ;
+    schema:applicationCategory "Policy Analysis" .
+

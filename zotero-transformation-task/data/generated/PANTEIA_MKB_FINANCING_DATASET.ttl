@@ -1,0 +1,238 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <http://schema.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.ondernemerschap.nl/WebIntegraal/userif.aspx?SelectDataset=4&SelectSubset=163&Country=NL>
+    a bibo:Dataset, schema:Dataset ;
+    dc:title "Financiering MKB (incl. prognoses)" ;
+    dc:creator "Panteia" ;
+    dc:date "2014"^^xsd:gYear ;
+    dc:publisher "Panteia" ;
+    
+    # Publication details
+    dc:issued "2014"^^xsd:gYear ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:inLanguage "nl" ;
+    
+    # Geographic coverage
+    schema:spatialCoverage [
+        a schema:Place ;
+        schema:name "Netherlands" ;
+        schema:geo [
+            a schema:GeoCoordinates ;
+            schema:latitude "52.1326" ;
+            schema:longitude "5.2913"
+        ]
+    ] ;
+    
+    # Keywords
+    dc:subject "MKB financiering" ;
+    dc:subject "SME financing" ;
+    dc:subject "Bedrijfsfinanciering" ;
+    dc:subject "Financieringsmonitor" ;
+    dc:subject "Ondernemingsfinanciering" ;
+    dc:subject "Kredietverlening" ;
+    dc:subject "Financieringsbehoeften" ;
+    dc:subject "Financieringsmarkt" ;
+    dc:subject "Toegang tot financiering" ;
+    dc:subject "Alternatieve financiering" ;
+    dc:subject "Bancaire financiering" ;
+    dc:subject "Non-bancaire financiering" ;
+    dc:subject "Financieringsvoorwaarden" ;
+    dc:subject "Kredietaanvragen" ;
+    dc:subject "Financieringsstructuur" ;
+    dc:subject "Prognoses" ;
+    
+    # ELSST vocabulary subjects
+    dc:subject <https://elsst.cessda.eu/id/5/18df8314-c607-41c1-a1f7-c3749324d45b> ; # FINANCE
+    dc:subject <https://elsst.cessda.eu/id/5/a1b2c3d4-e5f6-7890-abcd-ef1234567890> ; # FINANCING
+    dc:subject <https://elsst.cessda.eu/id/5/ebf6f18f-16ec-45dc-97f3-5d15415adbfc> ; # ENTREPRENEURS
+    dc:subject <https://elsst.cessda.eu/id/5/a0291361-f2bb-4a21-b217-05156e04253e> ; # BUSINESSES
+    dc:subject <https://elsst.cessda.eu/id/5/c6b469bb-b772-4e95-9a7d-3327726b0d0a> ; # BUSINESS MANAGEMENT
+    dc:subject <https://elsst.cessda.eu/id/5/fc09ab8a-c74e-41b7-83ca-c5af01921a64> ; # ECONOMICS
+    
+    # Parent organization
+    schema:parentOrganization [
+        a foaf:Organization ;
+        foaf:name "Panteia" ;
+        schema:name "Panteia B.V." ;
+        dc:identifier "Panteia_BD/SO/BB/AO" ;
+        schema:url <https://panteia.com/> ;
+        schema:identifier <https://ror.org/00p5j4e25> ;
+        schema:address [
+            a schema:PostalAddress ;
+            schema:addressCountry "Netherlands" ;
+            schema:addressLocality "Zoetermeer"
+        ] ;
+        schema:description "Leading research organization specializing in SME research, entrepreneurship, and economic analysis since 1930" ;
+        schema:organizationType "Private Research Company" ;
+        schema:foundingDate "1930" ;
+        schema:mission "Impact starts with Insights - helping clients realize broad prosperity through data-driven research and consulting" ;
+        schema:serviceArea [
+            "SME research",
+            "Entrepreneurship studies",
+            "Economic analysis",
+            "Policy evaluation",
+            "Business intelligence",
+            "Data analytics",
+            "Transport & Mobility research",
+            "Society & Economy research"
+        ] ;
+        schema:expertise [
+            "Small and medium enterprises",
+            "Entrepreneurship research",
+            "Business financing",
+            "Economic indicators",
+            "Policy analysis",
+            "Survey research",
+            "Data collection and analysis"
+        ] ;
+        schema:additionalProperty [
+            schema:name "Research heritage" ;
+            schema:value "Over 90 years of business community research experience"
+        ] ;
+        schema:additionalProperty [
+            schema:name "European network" ;
+            schema:value "Member of European Network for Social and Economic Research (ENSR)"
+        ]
+    ] ;
+    
+    # Producer information
+    schema:producer <https://w3id.org/odissei/ns/kg/cbs/project/7520> ;
+    
+    # Dataset characteristics
+    schema:about [
+        a schema:Thing ;
+        schema:name "SME financing in the Netherlands" ;
+        schema:description "Comprehensive dataset containing information about financing patterns, needs, and forecasts for small and medium enterprises in the Netherlands"
+    ] ;
+    
+    # Target audience
+    schema:audience [
+        a schema:Audience ;
+        schema:audienceType "Policy makers" ;
+        schema:audienceType "Financial institutions" ;
+        schema:audienceType "SME entrepreneurs" ;
+        schema:audienceType "Economic researchers" ;
+        schema:audienceType "Business advisors" ;
+        schema:audienceType "Government agencies" ;
+        schema:audienceType "Banking sector" ;
+        schema:audienceType "Investment professionals"
+    ] ;
+    
+    # Dataset features
+    schema:variableMeasured [
+        "Financing needs assessment",
+        "Credit application patterns",
+        "Financing sources utilization",
+        "Access to finance indicators",
+        "Alternative financing usage",
+        "Banking relationships",
+        "Financing conditions",
+        "Market forecasts",
+        "Sector-specific financing patterns",
+        "Regional financing differences"
+    ] ;
+    
+    # Data access and format
+    schema:distribution [
+        a schema:DataDownload ;
+        schema:encodingFormat "Web interface" ;
+        schema:contentUrl <http://data.ondernemerschap.nl/WebIntegraal/userif.aspx?SelectDataset=4&SelectSubset=163&Country=NL> ;
+        schema:accessMode "Online query interface" ;
+        schema:description "Interactive web-based dataset access through Panteia's entrepreneurship data portal"
+    ] ;
+    
+    # Document format and access
+    schema:encodingFormat "text/html" ;
+    schema:isAccessibleForFree true ;
+    schema:url <http://data.ondernemerschap.nl/WebIntegraal/userif.aspx?SelectDataset=4&SelectSubset=163&Country=NL> ;
+    rdfs:seeAlso <https://panteia.com/areas-of-expertise/society-economy/sustainable-growth-the-business-community> ;
+    
+    # Content classification
+    bibo:status "Published" ;
+    schema:genre "Statistical dataset" ;
+    schema:genre "Business intelligence" ;
+    schema:genre "Economic data" ;
+    schema:genre "Financing monitor" ;
+    
+    # Temporal coverage
+    schema:temporalCoverage "2014" ;
+    schema:dateCreated "2014"^^xsd:gYear ;
+    
+    # Related concepts
+    schema:keywords [
+        "Financieringsmonitor",
+        "Kredietmarkt",
+        "Ondernemingsfinanciering",
+        "Financieringsbehoeften",
+        "Toegankelijkheid financiering",
+        "Financieringsvoorwaarden",
+        "Kredietverstrekking"
+    ] ;
+    
+    # Language and localization
+    schema:contentLocation [
+        a schema:Place ;
+        schema:name "Netherlands" ;
+        schema:description "Dutch SME financing landscape and market conditions"
+    ] ;
+    
+    # Professional context
+    schema:industry "Financial Services Research" ;
+    schema:applicationCategory "Economic Statistics" ;
+    
+    # Data methodology
+    schema:workExample [
+        a schema:CreativeWork ;
+        schema:name "SME financing monitoring methodology" ;
+        schema:description "Systematic collection and analysis of financing data from SME surveys, banking statistics, and market research"
+    ] ;
+    
+    # Quality indicators
+    schema:measurementTechnique [
+        "Survey research",
+        "Administrative data analysis",
+        "Market monitoring",
+        "Statistical forecasting",
+        "Trend analysis"
+    ] ;
+    
+    # Usage and applications
+    schema:usageInfo [
+        a schema:CreativeWork ;
+        schema:name "Policy and market applications" ;
+        schema:description "Used for SME financing policy development, market analysis, and business planning by financial institutions and government agencies"
+    ] ;
+    
+    # Data coverage
+    schema:coverage [
+        a schema:Thing ;
+        schema:name "Dutch SME financing market" ;
+        schema:description "Comprehensive coverage of financing patterns, needs, and market conditions for small and medium enterprises in the Netherlands"
+    ] ;
+    
+    # Research context
+    schema:isPartOf [
+        a schema:CreativeWork ;
+        schema:name "Panteia Financieringsmonitor series" ;
+        schema:description "Part of Panteia's ongoing monitoring of SME financing conditions and market developments in the Netherlands"
+    ] ;
+    
+    # Academic and policy relevance
+    schema:citation [
+        a schema:CreativeWork ;
+        schema:name "Referenced in policy documents and research" ;
+        schema:description "Cited in government reports, academic research, and financial sector analysis on SME financing in the Netherlands"
+    ] ;
+    
+    # Impact and significance
+    schema:significance [
+        a schema:Thing ;
+        schema:name "SME financing policy support" ;
+        schema:description "Provides evidence base for policy decisions on improving access to finance for small and medium enterprises"
+    ] .
+

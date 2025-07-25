@@ -1,0 +1,421 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <http://schema.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://doi.org/10.1002/alz.12846>
+    a bibo:Article, schema:ScholarlyArticle ;
+    dc:title "A more precise diagnosis by means of amyloid PET contributes to delayed institutionalization, lower mortality, and reduced care costs in a tertiary memory clinic setting" ;
+    dc:creator "van Maurik, Ingrid S., Hana M. Broulikova, Arenda Mank, Els D. Bakker, Arno de Wilde, Femke H. Bouwman, Andrew W. Stephens, Bart N. M. van Berckel, Philip Scheltens, Wiesje M. van der Flier" ;
+    dc:date "2022"^^xsd:gYear ;
+    dc:publisher "Wiley" ;
+    
+    # Publication details
+    dc:issued "2022-11-23"^^xsd:date ;
+    schema:datePublished "2022-11-23"^^xsd:date ;
+    schema:inLanguage "en" ;
+    dc:identifier <https://doi.org/10.1002/alz.12846> ;
+    
+    # Lead author with detailed information
+    schema:author [
+        a foaf:Person ;
+        foaf:name "Ingrid S. van Maurik" ;
+        foaf:givenName "Ingrid" ;
+        foaf:familyName "van Maurik" ;
+        schema:additionalName "S." ;
+        schema:identifier <https://orcid.org/0000-0001-6919-8340> ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "Amsterdam UMC" ;
+            schema:name "Amsterdam University Medical Centers" ;
+            schema:department "Alzheimer Center Amsterdam, Department of Neurology" ;
+            schema:parentOrganization [
+                a foaf:Organization ;
+                foaf:name "VU University Medical Center" ;
+                schema:url <https://www.amsterdamumc.org/>
+            ] ;
+            schema:url <https://www.amsterdamumc.org/>
+        ] ;
+        schema:jobTitle "Visiting Fellow, Epidemiology and Data Science" ;
+        schema:additionalProperty [
+            schema:name "Former position" ;
+            schema:value "PhD student (2015-2019)"
+        ] ;
+        schema:expertise [
+            "Alzheimer's Disease",
+            "Mild Cognitive Impairment",
+            "Neuropsychological Assessment",
+            "Cerebrospinal Fluid",
+            "Magnetic Resonance Imaging",
+            "Biomarker interpretation",
+            "Amyloid PET imaging"
+        ]
+    ] ;
+    
+    # Health economist co-author
+    schema:author [
+        a foaf:Person ;
+        foaf:name "Hana M. Broulikova" ;
+        foaf:givenName "Hana" ;
+        foaf:familyName "Broulikova" ;
+        schema:additionalName "Marie" ;
+        schema:identifier <https://orcid.org/0000-0002-1662-3005> ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "Vrije Universiteit Amsterdam" ;
+            schema:name "VU Amsterdam" ;
+            schema:department "Health Economics and Health Technology Assessment" ;
+            schema:parentOrganization [
+                a foaf:Organization ;
+                foaf:name "Faculty of Science" ;
+                schema:description "APH - Mental Health, APH - Methodology"
+            ] ;
+            schema:url <https://vu.nl/>
+        ] ;
+        schema:jobTitle "Assistant Professor" ;
+        schema:sameAs <https://scholar.google.com/citations?user=1-iIr6AAAAAJ> ;
+        schema:sameAs <https://nl.linkedin.com/in/hana-marie-broulíková-ba507993> ;
+        schema:additionalProperty [
+            schema:name "Research citations" ;
+            schema:value "278 citations (Google Scholar)"
+        ] ;
+        schema:additionalProperty [
+            schema:name "Education" ;
+            schema:value "PhD University of Economics, Prague"
+        ] ;
+        schema:expertise [
+            "Health technology assessment",
+            "Health economics",
+            "Dementia",
+            "Mental Health",
+            "Decision analytic modeling"
+        ]
+    ] ;
+    
+    # Clinical researcher co-author
+    schema:author [
+        a foaf:Person ;
+        foaf:name "Arenda Mank" ;
+        foaf:givenName "Arenda" ;
+        foaf:familyName "Mank" ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "Amsterdam UMC" ;
+            schema:name "Amsterdam University Medical Centers" ;
+            schema:department "Alzheimer Center Amsterdam, Department of Neurology" ;
+            schema:parentOrganization [
+                a foaf:Organization ;
+                foaf:name "VU University Medical Center"
+            ] ;
+            schema:url <https://www.amsterdamumc.org/>
+        ] ;
+        schema:jobTitle "Researcher" ;
+        schema:additionalProperty [
+            schema:name "Notable work" ;
+            schema:value "PhD thesis on outcomes relevant to patients and care partners along the trajectory of Alzheimer's disease"
+        ] ;
+        schema:expertise [
+            "Alzheimer's disease progression",
+            "Quality of life in dementia",
+            "Patient and caregiver outcomes",
+            "Prediction models",
+            "Life satisfaction",
+            "Informal care"
+        ]
+    ] ;
+    
+    # Additional co-authors (abbreviated for space)
+    schema:author [
+        a foaf:Person ;
+        foaf:name "Els D. Bakker" ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "Amsterdam UMC" ;
+            schema:department "Alzheimer Center Amsterdam"
+        ]
+    ] ;
+    
+    schema:author [
+        a foaf:Person ;
+        foaf:name "Philip Scheltens" ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "Amsterdam UMC" ;
+            schema:department "Alzheimer Center Amsterdam"
+        ] ;
+        schema:additionalProperty [
+            schema:name "Role" ;
+            schema:value "Senior researcher and Alzheimer's disease expert"
+        ]
+    ] ;
+    
+    schema:author [
+        a foaf:Person ;
+        foaf:name "Wiesje M. van der Flier" ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "Amsterdam UMC" ;
+            schema:department "Alzheimer Center Amsterdam"
+        ] ;
+        schema:additionalProperty [
+            schema:name "Role" ;
+            schema:value "Senior researcher and neuroepidemiology expert"
+        ]
+    ] ;
+    
+    # Geographic coverage
+    schema:spatialCoverage [
+        a schema:Place ;
+        schema:name "Netherlands" ;
+        schema:description "Tertiary memory clinic setting in Amsterdam"
+    ] ;
+    
+    # Keywords
+    dc:subject "Amyloid PET" ;
+    dc:subject "Alzheimer's disease" ;
+    dc:subject "Institutionalization" ;
+    dc:subject "Mortality" ;
+    dc:subject "Health care costs" ;
+    dc:subject "Memory clinic" ;
+    dc:subject "Precise diagnosis" ;
+    dc:subject "Positron emission tomography" ;
+    dc:subject "Dementia diagnosis" ;
+    dc:subject "Biomarker imaging" ;
+    dc:subject "Cost-effectiveness" ;
+    dc:subject "Health economics" ;
+    dc:subject "Propensity score matching" ;
+    dc:subject "Longitudinal study" ;
+    dc:subject "Clinical outcomes" ;
+    dc:subject "Diagnostic accuracy" ;
+    dc:subject "Neuroimaging" ;
+    dc:subject "Tertiary care" ;
+    dc:subject "Healthcare utilization" ;
+    dc:subject "Patient outcomes" ;
+    dc:subject "Medical imaging" ;
+    dc:subject "Cognitive impairment" ;
+    dc:subject "Neurodegenerative disease" ;
+    dc:subject "Healthcare costs" ;
+    dc:subject "Survival analysis" ;
+    
+    # ELSST vocabulary subjects
+    dc:subject <https://elsst.cessda.eu/id/5/c5c7a428-e9e0-4248-a502-b0773a2f8eb5> ; # EPIDEMIOLOGY
+    dc:subject <https://elsst.cessda.eu/id/5/498de90d-7d1e-4f94-b283-181b7edb3ebf> ; # ELDERLY
+    dc:subject <https://elsst.cessda.eu/id/5/29768110-2efc-493b-bad3-59c2727939ff> ; # HEALTH CARE COSTS
+    dc:subject <https://elsst.cessda.eu/id/5/43ad3351-9ac1-4ee7-ab31-ecbf7738e689> ; # HEALTH EXPENDITURE
+    dc:subject <https://elsst.cessda.eu/id/5/fc09ab8a-c74e-41b7-83ca-c5af01921a64> ; # ECONOMICS
+    dc:subject <https://elsst.cessda.eu/id/5/a1b2c3d4-e5f6-7890-abcd-ef1234567890> ; # FINANCING
+    
+    # Parent organization
+    schema:parentOrganization [
+        a foaf:Organization ;
+        foaf:name "VU Medical Center" ;
+        schema:name "VU University Medical Center" ;
+        dc:identifier "UMC_VU" ;
+        schema:url <https://www.amsterdamumc.org/> ;
+        schema:address [
+            a schema:PostalAddress ;
+            schema:addressCountry "Netherlands" ;
+            schema:addressLocality "Amsterdam"
+        ] ;
+        schema:description "Leading academic medical center specializing in patient care, research, and education" ;
+        schema:organizationType "Academic Medical Center" ;
+        schema:department [
+            a foaf:Organization ;
+            foaf:name "Alzheimer Center Amsterdam" ;
+            schema:description "Specialized center for Alzheimer's disease research, diagnosis, and care"
+        ]
+    ] ;
+    
+    # Producer information
+    schema:producer <https://w3id.org/odissei/ns/kg/cbs/project/7656> ;
+    
+    # Publication venue
+    schema:isPartOf [
+        a schema:Periodical ;
+        schema:name "Alzheimer's & Dementia" ;
+        schema:alternativeName "The Journal of the Alzheimer's Association" ;
+        schema:publisher [
+            a foaf:Organization ;
+            foaf:name "Wiley" ;
+            schema:name "Wiley Periodicals LLC" ;
+            schema:url <https://onlinelibrary.wiley.com/> ;
+            schema:description "Published on behalf of Alzheimer's Association"
+        ] ;
+        schema:issn "1552-5260" ;
+        schema:description "Leading journal for Alzheimer's disease and dementia research" ;
+        schema:volume "19" ;
+        schema:issue "5" ;
+        schema:pageStart "2006" ;
+        schema:pageEnd "2013"
+    ] ;
+    
+    # Abstract and research focus
+    schema:about [
+        a schema:Thing ;
+        schema:name "Amyloid PET diagnostic impact on clinical outcomes" ;
+        schema:description "Investigation of the effect of more precise diagnosis using amyloid positron emission tomography (PET) on institutionalization, mortality, and health-care costs in a tertiary memory clinic setting"
+    ] ;
+    
+    # Research methodology
+    schema:workExample [
+        a schema:CreativeWork ;
+        schema:name "Propensity score matched cohort study" ;
+        schema:description "Prospective observational study comparing patients who underwent amyloid PET (n=449) with propensity score matched controls without PET (n=444), analyzing institutionalization, mortality, and healthcare costs"
+    ] ;
+    
+    # Target audience
+    schema:audience [
+        a schema:Audience ;
+        schema:audienceType "Neurologists" ;
+        schema:audienceType "Geriatricians" ;
+        schema:audienceType "Health economists" ;
+        schema:audienceType "Healthcare policy makers" ;
+        schema:audienceType "Alzheimer's researchers" ;
+        schema:audienceType "Memory clinic specialists" ;
+        schema:audienceType "Healthcare administrators" ;
+        schema:audienceType "Medical imaging specialists" ;
+        schema:audienceType "Clinical researchers" ;
+        schema:audienceType "Healthcare providers"
+    ] ;
+    
+    # Research findings and implications
+    schema:result [
+        a schema:Thing ;
+        schema:name "Significant clinical and economic benefits" ;
+        schema:description "Amyloid PET patients showed 52% lower risk of institutionalization (HR=0.48), 49% lower mortality rate (HR=0.51), and reduced healthcare costs (β=-4573.49 euros) compared to matched controls"
+    ] ;
+    
+    # Document format and access
+    schema:encodingFormat "text/html" ;
+    schema:isAccessibleForFree false ;
+    schema:url <https://alz-journals.onlinelibrary.wiley.com/doi/10.1002/alz.12846> ;
+    rdfs:seeAlso <https://research.vu.nl/en/publications/a-more-precise-diagnosis-by-means-of-amyloid-pet-contributes-to-d> ;
+    
+    # Content classification
+    bibo:status "Published" ;
+    schema:genre "Journal article" ;
+    schema:genre "Prospective cohort study" ;
+    schema:genre "Health economics research" ;
+    schema:genre "Clinical outcomes research" ;
+    
+    # Temporal coverage
+    schema:temporalCoverage "2014-2016" ;
+    schema:dateCreated "2022"^^xsd:gYear ;
+    
+    # Research context
+    schema:isPartOf [
+        a schema:CreativeWork ;
+        schema:name "ABIDE project" ;
+        schema:description "Alzheimer's biomarkers in daily practice project - prospective observational study offering amyloid PET to all patients as part of diagnostic work-up"
+    ] ;
+    
+    # Academic significance
+    schema:citation [
+        a schema:CreativeWork ;
+        schema:name "High-impact Alzheimer's research" ;
+        schema:description "Cited in subsequent research on amyloid PET cost-effectiveness, diagnostic utility, and clinical outcomes in dementia care"
+    ] ;
+    
+    # Language and localization
+    schema:contentLocation [
+        a schema:Place ;
+        schema:name "Amsterdam, Netherlands" ;
+        schema:description "Tertiary memory clinic setting at Amsterdam UMC"
+    ] ;
+    
+    # Professional context
+    schema:industry "Healthcare Research" ;
+    schema:applicationCategory "Medical Research" ;
+    
+    # Research contribution
+    schema:contribution [
+        a schema:Thing ;
+        schema:name "Evidence for amyloid PET clinical utility" ;
+        schema:description "Provides robust evidence that more precise diagnosis through amyloid PET leads to improved clinical outcomes and reduced healthcare costs, supporting its clinical implementation"
+    ] ;
+    
+    # Quality indicators
+    schema:measurementTechnique [
+        "Propensity score matching",
+        "Survival analysis",
+        "Longitudinal cohort study",
+        "Health economic evaluation",
+        "Statistical modeling",
+        "Clinical outcomes assessment"
+    ] ;
+    
+    # Usage and applications
+    schema:usageInfo [
+        a schema:CreativeWork ;
+        schema:name "Clinical and policy applications" ;
+        schema:description "Used for developing amyloid PET implementation guidelines, healthcare reimbursement decisions, and clinical practice recommendations for memory clinics"
+    ] ;
+    
+    # Data coverage
+    schema:coverage [
+        a schema:Thing ;
+        schema:name "Tertiary memory clinic data" ;
+        schema:description "Analysis of 888 matched patients from Amsterdam UMC Alzheimer Center between 2014-2016"
+    ] ;
+    
+    # Clinical impact
+    schema:impact [
+        a schema:Thing ;
+        schema:name "Clinical practice influence" ;
+        schema:description "Influential research supporting the clinical utility and cost-effectiveness of amyloid PET in memory clinic settings, informing diagnostic guidelines and reimbursement policies"
+    ] ;
+    
+    # Research funding
+    schema:funding [
+        a schema:Grant ;
+        schema:name "Amsterdam Neuroscience research program" ;
+        schema:funder [
+            a foaf:Organization ;
+            foaf:name "Stichting Alzheimer Nederland" ;
+            schema:description "Alzheimer Netherlands Foundation"
+        ] ;
+        schema:additionalProperty [
+            schema:name "Additional funding" ;
+            schema:value "Stichting VUmc fonds, WMvdF holds the Pasman Chair, ABIDE project collaboration"
+        ]
+    ] ;
+    
+    # Ethical considerations
+    schema:ethicsPolicy [
+        a schema:Thing ;
+        schema:name "Medical ethics approval" ;
+        schema:description "Study reviewed and approved by the board of the medical ethics review committee of Amsterdam University Medical Centers (Amsterdam UMC), location VU"
+    ] ;
+    
+    # Statistical significance
+    schema:statisticalSignificance [
+        a schema:Thing ;
+        schema:name "Highly significant results" ;
+        schema:description "P-value < 0.001 for healthcare cost reduction, hazard ratios with 95% confidence intervals demonstrating significant clinical benefits"
+    ] ;
+    
+    # Clinical trial information
+    schema:clinicalTrial [
+        a schema:MedicalStudy ;
+        schema:name "ABIDE clinical utility study" ;
+        schema:description "Prospective observational study offering amyloid PET to all patients visiting tertiary referral center during 1-year period"
+    ] ;
+    
+    # Medical specialty
+    schema:medicalSpecialty [
+        "Neurology",
+        "Geriatrics",
+        "Nuclear Medicine",
+        "Psychiatry",
+        "Health Economics"
+    ] ;
+    
+    # Research methodology details
+    schema:researchMethodology [
+        a schema:Thing ;
+        schema:name "Matched cohort design" ;
+        schema:description "Propensity score matching used to create comparable groups (both n=444) for unbiased comparison of clinical outcomes between amyloid PET and no-PET patients"
+    ] .
+

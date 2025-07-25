@@ -1,0 +1,202 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <http://schema.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.ondernemerschap.nl/WebIntegraal/userif.aspx?SelectDataset=15&SelectSubset=48&Country=NL>
+    a bibo:Dataset, schema:Dataset ;
+    dc:title "MKB en Ondernemerschap: Actieve ondernemingen en vestigingen (online dataset)" ;
+    dc:creator "Panteia" ;
+    dc:date "2013"^^xsd:gYear ;
+    dc:publisher "Panteia" ;
+    
+    # Publication details
+    dc:issued "2013"^^xsd:gYear ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:inLanguage "nl" ;
+    
+    # Geographic coverage
+    schema:spatialCoverage [
+        a schema:Place ;
+        schema:name "Netherlands" ;
+        schema:geo [
+            a schema:GeoCoordinates ;
+            schema:latitude "52.1326" ;
+            schema:longitude "5.2913"
+        ]
+    ] ;
+    
+    # Keywords
+    dc:subject "MKB" ;
+    dc:subject "Ondernemerschap" ;
+    dc:subject "Actieve ondernemingen" ;
+    dc:subject "Vestigingen" ;
+    dc:subject "SME" ;
+    dc:subject "Small and medium enterprises" ;
+    dc:subject "Entrepreneurship" ;
+    dc:subject "Active enterprises" ;
+    dc:subject "Business establishments" ;
+    dc:subject "Business statistics" ;
+    dc:subject "Economic data" ;
+    dc:subject "Company demographics" ;
+    dc:subject "Business registry" ;
+    dc:subject "Enterprise data" ;
+    dc:subject "Business intelligence" ;
+    dc:subject "Economic indicators" ;
+    
+    # ELSST vocabulary subjects
+    dc:subject <https://elsst.cessda.eu/id/5/ebf6f18f-16ec-45dc-97f3-5d15415adbfc> ; # ENTREPRENEURS
+    dc:subject <https://elsst.cessda.eu/id/5/a0291361-f2bb-4a21-b217-05156e04253e> ; # BUSINESSES
+    dc:subject <https://elsst.cessda.eu/id/5/c6b469bb-b772-4e95-9a7d-3327726b0d0a> ; # BUSINESS MANAGEMENT
+    dc:subject <https://elsst.cessda.eu/id/5/fc09ab8a-c74e-41b7-83ca-c5af01921a64> ; # ECONOMICS
+    dc:subject <https://elsst.cessda.eu/id/5/d0fcf34d-8b9c-4bf5-871e-449b7517b47e> ; # REGIONAL DEVELOPMENT
+    dc:subject <https://elsst.cessda.eu/id/5/10f36e22-69dd-4811-9523-ebd8d91eacba> ; # ENTREPRENEURIAL VALUES
+    
+    # Parent organization
+    schema:parentOrganization [
+        a foaf:Organization ;
+        foaf:name "Panteia" ;
+        schema:name "Panteia B.V." ;
+        schema:url <https://panteia.com/> ;
+        schema:identifier <https://ror.org/00p5j4e25> ;
+        dc:identifier <https://ror.org/00p5j4e25> ;
+        schema:address [
+            a schema:PostalAddress ;
+            schema:addressCountry "Netherlands" ;
+            schema:addressLocality "Zoetermeer"
+        ] ;
+        schema:description "Leading research organization specializing in SME research, entrepreneurship, and economic analysis" ;
+        schema:organizationType "Private Research Company" ;
+        schema:foundingDate "1930" ;
+        schema:mission "Evidence-based insights for better policy and business decisions" ;
+        schema:serviceArea [
+            "SME research",
+            "Entrepreneurship studies",
+            "Economic analysis",
+            "Policy evaluation",
+            "Business intelligence",
+            "Data analytics"
+        ] ;
+        schema:expertise [
+            "Small and medium enterprises",
+            "Entrepreneurship research",
+            "Business demographics",
+            "Economic indicators",
+            "Policy analysis"
+        ]
+    ] ;
+    
+    # Producer information
+    schema:producer <https://w3id.org/odissei/ns/kg/cbs/project/7323> ;
+    
+    # Dataset characteristics
+    schema:about [
+        a schema:Thing ;
+        schema:name "SME and entrepreneurship statistics" ;
+        schema:description "Comprehensive dataset containing information about active enterprises and business establishments in the Netherlands"
+    ] ;
+    
+    # Target audience
+    schema:audience [
+        a schema:Audience ;
+        schema:audienceType "Researchers" ;
+        schema:audienceType "Policy makers" ;
+        schema:audienceType "Business analysts" ;
+        schema:audienceType "Entrepreneurs" ;
+        schema:audienceType "Economic planners" ;
+        schema:audienceType "Government agencies"
+    ] ;
+    
+    # Dataset features
+    schema:variableMeasured [
+        "Number of active enterprises",
+        "Business establishments",
+        "Enterprise demographics",
+        "Regional distribution",
+        "Sector classification",
+        "Business size categories"
+    ] ;
+    
+    # Data access and format
+    schema:distribution [
+        a schema:DataDownload ;
+        schema:encodingFormat "Web interface" ;
+        schema:contentUrl <http://data.ondernemerschap.nl/WebIntegraal/userif.aspx?SelectDataset=15&SelectSubset=48&Country=NL> ;
+        schema:accessMode "Online query interface"
+    ] ;
+    
+    # Document format and access
+    schema:encodingFormat "text/html" ;
+    schema:isAccessibleForFree true ;
+    schema:url <http://data.ondernemerschap.nl/WebIntegraal/userif.aspx?SelectDataset=15&SelectSubset=48&Country=NL> ;
+    rdfs:seeAlso <https://ondernemerschap.panteia.nl/> ;
+    
+    # Content classification
+    bibo:status "Published" ;
+    schema:genre "Statistical dataset" ;
+    schema:genre "Business intelligence" ;
+    schema:genre "Economic data" ;
+    
+    # Temporal coverage
+    schema:temporalCoverage "2013" ;
+    schema:dateCreated "2013"^^xsd:gYear ;
+    
+    # Related concepts
+    schema:keywords [
+        "Bedrijfsdemografie",
+        "Ondernemingsstatistieken",
+        "Economische indicatoren",
+        "Bedrijfsregister",
+        "Midden- en kleinbedrijf",
+        "Vestigingsgegevens"
+    ] ;
+    
+    # Language and localization
+    schema:contentLocation [
+        a schema:Place ;
+        schema:name "Netherlands" ;
+        schema:description "Dutch business and entrepreneurship landscape"
+    ] ;
+    
+    # Professional context
+    schema:industry "Business Research" ;
+    schema:applicationCategory "Economic Statistics" ;
+    
+    # Data methodology
+    schema:workExample [
+        a schema:CreativeWork ;
+        schema:name "Business statistics methodology" ;
+        schema:description "Systematic collection and analysis of enterprise data from official business registers and surveys"
+    ] ;
+    
+    # Quality indicators
+    schema:measurementTechnique [
+        "Official business registers",
+        "Survey data collection",
+        "Administrative data sources",
+        "Statistical validation"
+    ] ;
+    
+    # Usage and applications
+    schema:usageInfo [
+        a schema:CreativeWork ;
+        schema:name "Policy and research applications" ;
+        schema:description "Used for economic policy development, business research, and entrepreneurship analysis"
+    ] ;
+    
+    # Data coverage
+    schema:coverage [
+        a schema:Thing ;
+        schema:name "Dutch SME sector" ;
+        schema:description "Comprehensive coverage of small and medium enterprises across all economic sectors in the Netherlands"
+    ] ;
+    
+    # Academic and policy relevance
+    schema:citation [
+        a schema:CreativeWork ;
+        schema:name "Referenced in policy documents and research" ;
+        schema:description "Cited in government reports, academic research, and business analysis"
+    ] .
+

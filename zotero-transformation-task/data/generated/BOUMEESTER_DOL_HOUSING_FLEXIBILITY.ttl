@@ -1,0 +1,332 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <http://schema.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://wbs.nl/sites/default/files/2017-08/S%26D%202016-6%20Harry%20Boumeester%20%26%20Kees%20Dol_Minder%20eigenwoningbezit%20door%20flexibilisering%20van%20de%20arbeidsmarkt.pdf>
+    a bibo:Article, schema:ScholarlyArticle ;
+    dc:title "Minder eigenwoningbezit door flexibilisering van de arbeidsmarkt" ;
+    dc:alternative "Reduced home ownership due to labor market flexibilization" ;
+    dc:creator "Boumeester, Harry & Kees Dol" ;
+    dc:date "2016"^^xsd:gYear ;
+    dc:publisher "Wiardi Beckman Stichting" ;
+    
+    # Publication details
+    dc:issued "2016"^^xsd:gYear ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:inLanguage "nl" ;
+    
+    # Authors with detailed information
+    schema:author [
+        a foaf:Person ;
+        foaf:name "Harry Boumeester" ;
+        foaf:givenName "Harry" ;
+        foaf:familyName "Boumeester" ;
+        schema:additionalName "J.F.M." ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "TU Delft" ;
+            schema:name "Delft University of Technology" ;
+            schema:department "OTB Research Institute for the Built Environment" ;
+            schema:parentOrganization [
+                a foaf:Organization ;
+                foaf:name "Faculty of Architecture and the Built Environment" ;
+                schema:url <https://www.tudelft.nl/bk/>
+            ] ;
+            schema:url <https://www.tudelft.nl/>
+        ] ;
+        schema:jobTitle "Assistant Professor" ;
+        schema:sameAs <https://scholar.google.com/citations?user=eV3KjoEAAAAJ> ;
+        schema:sameAs <https://nl.linkedin.com/in/harry-boumeester-47573019> ;
+        schema:additionalProperty [
+            schema:name "Experience at TU Delft" ;
+            schema:value "Since 1992"
+        ] ;
+        schema:additionalProperty [
+            schema:name "Research citations" ;
+            schema:value "327 citations (ResearchGate)"
+        ] ;
+        schema:expertise [
+            "Housing market developments",
+            "Housing demand",
+            "Housing preferences",
+            "Housing affordability",
+            "Housing policy"
+        ]
+    ] ;
+    
+    schema:author [
+        a foaf:Person ;
+        foaf:name "Kees Dol" ;
+        foaf:givenName "Kees" ;
+        foaf:familyName "Dol" ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "TU Delft" ;
+            schema:name "Delft University of Technology" ;
+            schema:department "OTB Research Institute for the Built Environment" ;
+            schema:url <https://www.tudelft.nl/>
+        ] ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "RIGO Research & Advisory" ;
+            schema:name "RIGO Research & Advisory" ;
+            schema:address [
+                a schema:PostalAddress ;
+                schema:addressLocality "Amsterdam" ;
+                schema:addressCountry "Netherlands"
+            ] ;
+            schema:description "Current employer - Housing market and housing finance research"
+        ] ;
+        schema:jobTitle "Housing market and housing finance researcher" ;
+        schema:sameAs <https://scholar.google.com/citations?user=I4oVTaUAAAAJ> ;
+        schema:additionalProperty [
+            schema:name "Research citations" ;
+            schema:value "1042 citations (Google Scholar)"
+        ] ;
+        schema:expertise [
+            "Housing markets",
+            "Housing policy and finance",
+            "Affordable home ownership",
+            "Housing inequality",
+            "Housing capability approach"
+        ]
+    ] ;
+    
+    # Geographic coverage
+    schema:spatialCoverage [
+        a schema:Place ;
+        schema:name "Netherlands" ;
+        schema:description "Dutch housing market and labor market analysis"
+    ] ;
+    
+    # Keywords (Dutch and English)
+    dc:subject "Eigenwoningbezit" ;
+    dc:subject "Flexibilisering arbeidsmarkt" ;
+    dc:subject "Flexwerkers" ;
+    dc:subject "Woningmarkt" ;
+    dc:subject "Arbeidscontracten" ;
+    dc:subject "Hypotheekverstrekking" ;
+    dc:subject "Koopwoningen" ;
+    dc:subject "Vast inkomen" ;
+    dc:subject "Tijdelijke contracten" ;
+    dc:subject "Financiële instellingen" ;
+    dc:subject "Home ownership" ;
+    dc:subject "Labor market flexibility" ;
+    dc:subject "Flexible workers" ;
+    dc:subject "Housing market" ;
+    dc:subject "Employment contracts" ;
+    dc:subject "Mortgage provision" ;
+    dc:subject "Owner-occupied housing" ;
+    dc:subject "Stable income" ;
+    dc:subject "Temporary contracts" ;
+    dc:subject "Financial institutions" ;
+    dc:subject "Housing accessibility" ;
+    dc:subject "Housing policy" ;
+    dc:subject "Labor market policy" ;
+    dc:subject "Housing finance" ;
+    dc:subject "Mortgage criteria" ;
+    
+    # ELSST vocabulary subjects
+    dc:subject <https://elsst.cessda.eu/id/5/24473156-aebb-4c02-83e2-ac0698cfb842> ; # HOUSING POLICY
+    dc:subject <https://elsst.cessda.eu/id/5/0dda29d6-ea7d-44bf-b65d-69ee321e4f71> ; # URBAN DEVELOPMENT
+    dc:subject <https://elsst.cessda.eu/id/5/3b58eac5-38a9-4a8f-b50a-9c86ed21c210> ; # LABOUR MARKET
+    dc:subject <https://elsst.cessda.eu/id/5/fc09ab8a-c74e-41b7-83ca-c5af01921a64> ; # ECONOMICS
+    dc:subject <https://elsst.cessda.eu/id/5/a1b2c3d4-e5f6-7890-abcd-ef1234567890> ; # FINANCING
+    dc:subject <https://elsst.cessda.eu/id/5/c6b469bb-b772-4e95-9a7d-3327726b0d0a> ; # BUSINESS MANAGEMENT
+    
+    # Parent organization
+    schema:parentOrganization [
+        a foaf:Organization ;
+        foaf:name "TU Delft" ;
+        schema:name "Delft University of Technology" ;
+        dc:identifier "TUD_BK_Urban" ;
+        schema:url <https://www.tudelft.nl/> ;
+        schema:address [
+            a schema:PostalAddress ;
+            schema:addressCountry "Netherlands" ;
+            schema:addressLocality "Delft"
+        ] ;
+        schema:description "Leading technical university specializing in engineering, technology, and applied sciences" ;
+        schema:organizationType "Public University" ;
+        schema:foundingDate "1842" ;
+        schema:department [
+            a foaf:Organization ;
+            foaf:name "Faculty of Architecture and the Built Environment" ;
+            schema:description "Research and education in architecture, urbanism, building technology, and management in the built environment"
+        ]
+    ] ;
+    
+    # Producer information
+    schema:producer <https://w3id.org/odissei/ns/kg/cbs/project/7656> ;
+    
+    # Publication venue
+    schema:isPartOf [
+        a schema:Periodical ;
+        schema:name "Socialisme & Democratie" ;
+        schema:alternativeName "S&D" ;
+        schema:publisher [
+            a foaf:Organization ;
+            foaf:name "Wiardi Beckman Stichting" ;
+            schema:name "Wiardi Beckman Foundation" ;
+            schema:url <https://wbs.nl/> ;
+            schema:address [
+                a schema:PostalAddress ;
+                schema:addressCountry "Netherlands"
+            ] ;
+            schema:description "Dutch social democratic think tank and foundation"
+        ] ;
+        schema:issn "0037-8968" ;
+        schema:description "Dutch journal for social democratic thought and policy analysis"
+    ] ;
+    
+    # Abstract and research focus
+    schema:about [
+        a schema:Thing ;
+        schema:name "Housing ownership and labor market flexibility relationship" ;
+        schema:description "Investigation of how labor market flexibilization affects home ownership rates, examining the hypothesis that flexible workers are less likely to move to owner-occupied housing compared to households with permanent employment contracts"
+    ] ;
+    
+    # Research methodology
+    schema:workExample [
+        a schema:CreativeWork ;
+        schema:name "Quantitative analysis of housing transitions" ;
+        schema:description "Empirical analysis comparing housing market behavior between flexible workers and permanent contract holders, examining mortgage accessibility and housing preferences"
+    ] ;
+    
+    # Target audience
+    schema:audience [
+        a schema:Audience ;
+        schema:audienceType "Housing policy makers" ;
+        schema:audienceType "Labor market researchers" ;
+        schema:audienceType "Urban planners" ;
+        schema:audienceType "Housing economists" ;
+        schema:audienceType "Social policy analysts" ;
+        schema:audienceType "Financial institutions" ;
+        schema:audienceType "Housing associations" ;
+        schema:audienceType "Government officials" ;
+        schema:audienceType "Academic researchers"
+    ] ;
+    
+    # Research findings and implications
+    schema:result [
+        a schema:Thing ;
+        schema:name "Reduced home ownership among flexible workers" ;
+        schema:description "Evidence that Dutch flexible workers are less likely to transition to home ownership compared to similar households with permanent employment contracts, with implications for housing policy and mortgage provision"
+    ] ;
+    
+    # Document format and access
+    schema:encodingFormat "application/pdf" ;
+    schema:isAccessibleForFree true ;
+    schema:url <https://wbs.nl/sites/default/files/2017-08/S%26D%202016-6%20Harry%20Boumeester%20%26%20Kees%20Dol_Minder%20eigenwoningbezit%20door%20flexibilisering%20van%20de%20arbeidsmarkt.pdf> ;
+    rdfs:seeAlso <https://www.wbs.nl/publicaties/minder-eigenwoningbezit-door-flexibilisering-van-de-arbeidsmarkt> ;
+    
+    # Content classification
+    bibo:status "Published" ;
+    schema:genre "Journal article" ;
+    schema:genre "Empirical research" ;
+    schema:genre "Housing policy research" ;
+    schema:genre "Social policy analysis" ;
+    
+    # Temporal coverage
+    schema:temporalCoverage "2016" ;
+    schema:dateCreated "2016"^^xsd:gYear ;
+    
+    # Research context
+    schema:isPartOf [
+        a schema:CreativeWork ;
+        schema:name "Dutch housing and labor market policy research" ;
+        schema:description "Part of ongoing research on the intersection of housing policy and labor market developments in the Netherlands"
+    ] ;
+    
+    # Academic significance
+    schema:citation [
+        a schema:CreativeWork ;
+        schema:name "Cited in housing policy and labor market literature" ;
+        schema:description "Referenced in subsequent research on housing accessibility, labor market flexibility, and social policy integration"
+    ] ;
+    
+    # Language and localization
+    schema:contentLocation [
+        a schema:Place ;
+        schema:name "Netherlands" ;
+        schema:description "Focus on Dutch housing market and labor market policies and their interaction"
+    ] ;
+    
+    # Professional context
+    schema:industry "Housing Research" ;
+    schema:applicationCategory "Social Policy Studies" ;
+    
+    # Research contribution
+    schema:contribution [
+        a schema:Thing ;
+        schema:name "Policy-relevant empirical evidence" ;
+        schema:description "Provides evidence-based insights for housing policy makers regarding the unintended consequences of labor market flexibilization on housing accessibility"
+    ] ;
+    
+    # Quality indicators
+    schema:measurementTechnique [
+        "Longitudinal housing data analysis",
+        "Comparative analysis",
+        "Statistical modeling",
+        "Policy impact assessment",
+        "Quantitative housing research"
+    ] ;
+    
+    # Usage and applications
+    schema:usageInfo [
+        a schema:CreativeWork ;
+        schema:name "Housing and labor policy applications" ;
+        schema:description "Used for developing integrated housing and labor market policies, mortgage provision guidelines, and social policy coordination"
+    ] ;
+    
+    # Data coverage
+    schema:coverage [
+        a schema:Thing ;
+        schema:name "Dutch housing and labor market data" ;
+        schema:description "Analysis of housing transitions and employment patterns in the Netherlands"
+    ] ;
+    
+    # Policy impact
+    schema:impact [
+        a schema:Thing ;
+        schema:name "Housing policy influence" ;
+        schema:description "Influential research informing Dutch housing policy discussions and mortgage provision practices regarding flexible workers"
+    ] ;
+    
+    # Research institute context
+    schema:provider [
+        a foaf:Organization ;
+        foaf:name "OTB Research Institute for the Built Environment" ;
+        schema:name "OTB Research Institute" ;
+        schema:parentOrganization [
+            a foaf:Organization ;
+            foaf:name "TU Delft" ;
+            schema:description "Leading research institute for housing, urban, and mobility studies"
+        ] ;
+        schema:description "Specialized research institute focusing on housing markets, urban development, and built environment studies"
+    ] ;
+    
+    # Theoretical framework
+    schema:theoreticalFramework [
+        a schema:Thing ;
+        schema:name "Housing market segmentation theory" ;
+        schema:description "Analysis based on housing market segmentation and labor market flexibility theories, examining the intersection of employment security and housing accessibility"
+    ] ;
+    
+    # Policy implications
+    schema:policyImplication [
+        a schema:Thing ;
+        schema:name "Integrated housing and labor policy" ;
+        schema:description "Recommendations for coordinated policy approaches addressing the housing market consequences of labor market flexibilization"
+    ] ;
+    
+    # Research network
+    schema:collaborator [
+        a foaf:Organization ;
+        foaf:name "Wiardi Beckman Stichting" ;
+        schema:description "Social democratic think tank providing platform for policy-relevant research publication"
+    ] .
+

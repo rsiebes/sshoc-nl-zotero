@@ -1,0 +1,157 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://arno.uvt.nl/show.cgi?fid=116321>
+    a bibo:Article ;
+    
+    # Basic bibliographic information
+    dc:title "Individual Survival Expectations and Actual Mortality: Evidence from Dutch Survey and Administrative Data" ;
+    dc:date "2014"^^xsd:gYear ;
+    dc:language "en" ;
+    dc:type "Academic Article" ;
+    
+    # Abstract and description
+    bibo:abstract """This study examines the relationship between individual survival expectations and actual mortality using a combination of Dutch survey and administrative data. We investigate whether people's subjective survival probabilities predict actual mortality outcomes, contributing to understanding of demographic decision-making and risk assessment. Our main finding is that individual life expectancies (measured as subjective survival probabilities) do predict actual mortality, with women underestimating their remaining life expectancy more than men. The research has important implications for retirement planning, insurance decisions, and demographic forecasting, demonstrating that individuals possess valuable private information about their mortality risk that extends beyond observable health characteristics.""" ;
+    
+    # Authors with detailed information
+    dc:creator [
+        a foaf:Person ;
+        foaf:name "Vesile Kutlu-Koc" ;
+        foaf:givenName "Vesile" ;
+        foaf:familyName "Kutlu-Koc" ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "Utrecht University" ;
+            schema:department "School of Economics" ;
+            schema:address [
+                schema:addressLocality "Utrecht" ;
+                schema:addressCountry "Netherlands"
+            ]
+        ] ;
+        schema:jobTitle "PhD Researcher" ;
+        schema:expertise "Survival data analysis, statistical programming, mortality risk assessment, saving decisions of older individuals" ;
+        schema:currentPosition [
+            schema:jobTitle "Risk Analyst" ;
+            schema:worksFor [
+                a foaf:Organization ;
+                foaf:name "Daimler Truck Financial Services"
+            ]
+        ]
+    ] ;
+    
+    dc:creator [
+        a foaf:Person ;
+        foaf:name "Adriaan Kalwij" ;
+        foaf:givenName "Adriaan" ;
+        foaf:familyName "Kalwij" ;
+        bibo:orcid <https://orcid.org/0000-0001-9061-6156> ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "Utrecht University" ;
+            schema:department "School of Economics" ;
+            schema:address [
+                schema:addressLocality "Utrecht" ;
+                schema:addressCountry "Netherlands"
+            ]
+        ] ;
+        schema:jobTitle "Associate Professor" ;
+        foaf:mbox "a.s.kalwij@uu.nl" ;
+        schema:expertise "Socio-economic gradient in mortality risk, risk preferences & behavior, economics of aging & social security, applied economics" ;
+        schema:citationCount "3528" ;
+        schema:publicationCount "112+" ;
+        schema:memberOf [
+            a foaf:Organization ;
+            foaf:name "IZA Institute of Labor Economics" ;
+            schema:membershipType "Research Fellow (2001-2014)"
+        ] ;
+        schema:memberOf [
+            a foaf:Organization ;
+            foaf:name "National Bureau of Economic Research" ;
+            schema:membershipType "Research Associate"
+        ]
+    ] ;
+    
+    # Publisher and organization information
+    dc:publisher [
+        a foaf:Organization ;
+        foaf:name "Tilburg University" ;
+        schema:address [
+            schema:addressLocality "Tilburg" ;
+            schema:addressCountry "Netherlands"
+        ] ;
+        schema:description "Research university specializing in economics, business, and social sciences"
+    ] ;
+    
+    # Geographic coverage
+    schema:spatialCoverage [
+        a schema:Place ;
+        schema:name "Netherlands" ;
+        schema:addressCountry "Netherlands" ;
+        schema:geo [
+            a schema:GeoCoordinates ;
+            schema:latitude "52.3676" ;
+            schema:longitude "4.9041"
+        ]
+    ] ;
+    
+    # Subject classification with keywords
+    dc:subject "Individual survival expectations" ;
+    dc:subject "Mortality prediction" ;
+    dc:subject "Subjective survival probabilities" ;
+    dc:subject "Demographic economics" ;
+    dc:subject "Risk assessment" ;
+    dc:subject "Administrative data analysis" ;
+    dc:subject "Survey methodology" ;
+    dc:subject "Life expectancy" ;
+    dc:subject "Retirement planning" ;
+    dc:subject "Insurance economics" ;
+    
+    # ELSST vocabulary terms
+    dc:subject <https://elsst.cessda.eu/id/5/290327e7-0a69-44f7-8348-c9608aee1fad> ; # DEMOGRAPHY
+    dc:subject <https://elsst.cessda.eu/id/5/acdfb412-a63f-4ff6-a371-db94edf733bb> ; # MORTALITY
+    dc:subject <https://elsst.cessda.eu/id/5/dcd368c4-512d-4804-935f-bee93db0bf73> ; # MORTALITY RATE
+    
+    # Producer information (CBS project)
+    schema:producer <https://w3id.org/odissei/ns/kg/cbs/project/7112> ;
+    
+    # Additional metadata
+    schema:audience "Demographic researchers, economists, policy makers, insurance professionals, retirement planners" ;
+    schema:inLanguage "en" ;
+    schema:about "Relationship between individual survival expectations and actual mortality outcomes" ;
+    
+    # Research methodology
+    schema:methodology "Combination of Dutch survey and administrative data analysis, statistical modeling, survival analysis" ;
+    
+    # Research findings
+    schema:result "Individual life expectancies (subjective survival probabilities) predict actual mortality; women underestimate remaining life expectancy more than men" ;
+    
+    # Target audience and impact
+    schema:targetAudience "Demographic researchers, health economists, policy makers, insurance industry, pension planners" ;
+    
+    # Related research areas
+    schema:keywords "Survival analysis, demographic economics, mortality risk, subjective expectations, life insurance, pension economics" ;
+    
+    # Academic discipline
+    schema:academicDiscipline "Demographics, Economics, Statistics" ;
+    
+    # Parent organization
+    schema:parentOrganization [
+        a foaf:Organization ;
+        foaf:name "Tilburg University - Tilburg School of Economics and Management - Network for Studies on Pensions, Aging and Retirement" ;
+        schema:alternateName "TIU_TiSEM_Netspar" ;
+        schema:description "Academic research network combining Tilburg University's economics school with pension research network" ;
+        schema:address [
+            schema:addressLocality "Tilburg" ;
+            schema:addressCountry "Netherlands"
+        ] ;
+        schema:url "https://www.tilburguniversity.edu/" ;
+        schema:additionalProperty [
+            schema:name "Netspar website" ;
+            schema:value "https://www.netspar.nl/en/"
+        ] ;
+        schema:expertise "Leading European School for research and education in Business and Economics, with specialized network for pension and aging research"
+    ] .
+

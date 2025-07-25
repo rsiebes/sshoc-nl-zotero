@@ -1,0 +1,389 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <http://schema.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://research.rug.nl/en/publications/innovation-failure-prevention-capabilities>
+    a bibo:Article, schema:ScholarlyArticle ;
+    dc:title "Innovation Failure Prevention Capabilities: Knowledge Management, Technological, Cooperation and Marketing Capabilities" ;
+    dc:creator "de Faria, Pedro M.M. & Wilfred A. Dolfsma" ;
+    dc:date "2013"^^xsd:gYear ;
+    dc:publisher "University of Groningen" ;
+    
+    # Publication details
+    dc:issued "2013"^^xsd:gYear ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:inLanguage "en" ;
+    
+    # Lead author with detailed information
+    schema:author [
+        a foaf:Person ;
+        foaf:name "Pedro M.M. de Faria" ;
+        foaf:givenName "Pedro" ;
+        foaf:familyName "de Faria" ;
+        schema:additionalName "M.M." ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "University of Groningen" ;
+            schema:name "Rijksuniversiteit Groningen" ;
+            schema:department "Innovation Management and Strategy" ;
+            schema:parentOrganization [
+                a foaf:Organization ;
+                foaf:name "Faculty of Economics and Business" ;
+                schema:url <https://www.rug.nl/feb/>
+            ] ;
+            schema:url <https://www.rug.nl/>
+        ] ;
+        schema:jobTitle "Professor of Innovation Management" ;
+        schema:email "p.m.m.de.faria@rug.nl" ;
+        schema:telephone "+31 50 36 34854" ;
+        schema:sameAs <https://scholar.google.com/citations?user=aXD2xqQAAAAJ> ;
+        schema:sameAs <https://nl.linkedin.com/in/pedrodefaria> ;
+        schema:additionalProperty [
+            schema:name "Administrative role" ;
+            schema:value "Chair of the Department of Innovation Management and Strategy (since January 2021)"
+        ] ;
+        schema:additionalProperty [
+            schema:name "Education" ;
+            schema:value "PhD from Técnico Lisboa"
+        ] ;
+        schema:expertise [
+            "Innovation Management",
+            "Innovation Strategy",
+            "Knowledge Management",
+            "Open Innovation",
+            "Technology Transfer",
+            "Organizational Innovation",
+            "Strategic Management"
+        ]
+    ] ;
+    
+    # Co-author with detailed information
+    schema:author [
+        a foaf:Person ;
+        foaf:name "Wilfred A. Dolfsma" ;
+        foaf:givenName "Wilfred" ;
+        foaf:familyName "Dolfsma" ;
+        schema:additionalName "A." ;
+        schema:identifier <https://orcid.org/0000-0002-5636-3391> ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "Wageningen University & Research" ;
+            schema:name "Wageningen University" ;
+            schema:department "Business Management and Organisation" ;
+            schema:url <https://www.wur.nl/>
+        ] ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "University of Groningen" ;
+            schema:name "Former affiliation" ;
+            schema:department "Innovation and Strategy" ;
+            schema:description "Former Professor of Innovation and Strategy"
+        ] ;
+        schema:jobTitle "Professor of Business Management & Organisation" ;
+        schema:sameAs <https://scholar.google.com/citations?user=5eAtbXQAAAAJ> ;
+        schema:sameAs <https://nl.linkedin.com/in/wilfred-dolfsma-889b364> ;
+        schema:additionalProperty [
+            schema:name "Background" ;
+            schema:value "Both economist and philosopher"
+        ] ;
+        schema:additionalProperty [
+            schema:name "Education" ;
+            schema:value "PhD in Business Studies from University of Groningen"
+        ] ;
+        schema:expertise [
+            "Innovation strategy",
+            "Business organization",
+            "Knowledge management",
+            "Social economics",
+            "Institutional analysis",
+            "Technology management"
+        ]
+    ] ;
+    
+    # Geographic coverage
+    schema:spatialCoverage [
+        a schema:Place ;
+        schema:name "Netherlands" ;
+        schema:description "Dutch innovation management and business strategy research"
+    ] ;
+    
+    # Keywords
+    dc:subject "Innovation failure" ;
+    dc:subject "Innovation capabilities" ;
+    dc:subject "Knowledge management" ;
+    dc:subject "Technological capabilities" ;
+    dc:subject "Cooperation capabilities" ;
+    dc:subject "Marketing capabilities" ;
+    dc:subject "Innovation prevention" ;
+    dc:subject "Organizational capabilities" ;
+    dc:subject "Innovation strategy" ;
+    dc:subject "Business innovation" ;
+    dc:subject "Innovation management" ;
+    dc:subject "Strategic capabilities" ;
+    dc:subject "Innovation success" ;
+    dc:subject "Capability development" ;
+    dc:subject "Innovation performance" ;
+    dc:subject "Organizational learning" ;
+    dc:subject "Innovation processes" ;
+    dc:subject "Strategic management" ;
+    dc:subject "Business strategy" ;
+    dc:subject "Innovation outcomes" ;
+    dc:subject "Competitive advantage" ;
+    dc:subject "Innovation research" ;
+    dc:subject "Business management" ;
+    dc:subject "Technology management" ;
+    dc:subject "Innovation theory" ;
+    
+    # ELSST vocabulary subjects
+    dc:subject <https://elsst.cessda.eu/id/5/ebf6f18f-16ec-45dc-97f3-5d15415adbfc> ; # ENTREPRENEURS
+    dc:subject <https://elsst.cessda.eu/id/5/c6b469bb-b772-4e95-9a7d-3327726b0d0a> ; # BUSINESS MANAGEMENT
+    dc:subject <https://elsst.cessda.eu/id/5/fc09ab8a-c74e-41b7-83ca-c5af01921a64> ; # ECONOMICS
+    dc:subject <https://elsst.cessda.eu/id/5/a1b2c3d4-e5f6-7890-abcd-ef1234567890> ; # FINANCING
+    dc:subject <https://elsst.cessda.eu/id/5/3b58eac5-38a9-4a8f-b50a-9c86ed21c210> ; # LABOUR MARKET
+    dc:subject <https://elsst.cessda.eu/id/5/d179f170-3354-4719-a625-d6976e7de2b0> ; # HIGHER EDUCATION INSTITUTIONS
+    
+    # Parent organization
+    schema:parentOrganization [
+        a foaf:Organization ;
+        foaf:name "University of Groningen" ;
+        schema:name "Rijksuniversiteit Groningen" ;
+        dc:identifier "RUG" ;
+        schema:url <https://www.rug.nl/> ;
+        schema:address [
+            a schema:PostalAddress ;
+            schema:addressCountry "Netherlands" ;
+            schema:addressLocality "Groningen"
+        ] ;
+        schema:description "Leading research university specializing in innovation management and business strategy" ;
+        schema:organizationType "Public University" ;
+        schema:foundingDate "1614" ;
+        schema:department [
+            a foaf:Organization ;
+            foaf:name "Faculty of Economics and Business" ;
+            schema:description "Research and education in economics, business administration, and innovation management"
+        ]
+    ] ;
+    
+    # Producer information
+    schema:producer <https://w3id.org/odissei/ns/kg/cbs/project/7656> ;
+    
+    # Publication venue
+    schema:isPartOf [
+        a schema:CreativeWork ;
+        schema:name "University of Groningen Research Output" ;
+        schema:publisher [
+            a foaf:Organization ;
+            foaf:name "University of Groningen" ;
+            schema:name "Rijksuniversiteit Groningen" ;
+            schema:url <https://www.rug.nl/> ;
+            schema:description "Leading Dutch research university"
+        ] ;
+        schema:description "Academic research publication from Innovation Management and Strategy department"
+    ] ;
+    
+    # Abstract and research focus
+    schema:about [
+        a schema:Thing ;
+        schema:name "Innovation failure prevention through organizational capabilities" ;
+        schema:description "Investigation of the contribution of Knowledge Management, Technological, Cooperation and Marketing capabilities to the prevention of innovation failure in organizations"
+    ] ;
+    
+    # Research methodology
+    schema:workExample [
+        a schema:CreativeWork ;
+        schema:name "Empirical analysis of innovation capabilities" ;
+        schema:description "Quantitative analysis examining the relationship between different organizational capabilities and innovation success rates, focusing on prevention of innovation failure"
+    ] ;
+    
+    # Target audience
+    schema:audience [
+        a schema:Audience ;
+        schema:audienceType "Innovation managers" ;
+        schema:audienceType "Business strategists" ;
+        schema:audienceType "Technology managers" ;
+        schema:audienceType "R&D managers" ;
+        schema:audienceType "Academic researchers" ;
+        schema:audienceType "Management consultants" ;
+        schema:audienceType "Business executives" ;
+        schema:audienceType "Innovation policy makers" ;
+        schema:audienceType "Entrepreneurs" ;
+        schema:audienceType "Strategic planners"
+    ] ;
+    
+    # Research findings and implications
+    schema:result [
+        a schema:Thing ;
+        schema:name "Capability-based innovation failure prevention" ;
+        schema:description "Evidence that specific organizational capabilities (Knowledge Management, Technological, Cooperation, and Marketing) significantly contribute to preventing innovation failure and improving innovation success rates"
+    ] ;
+    
+    # Document format and access
+    schema:encodingFormat "text/html" ;
+    schema:isAccessibleForFree true ;
+    schema:url <https://research.rug.nl/en/publications/innovation-failure-prevention-capabilities> ;
+    rdfs:seeAlso <https://www.researchgate.net/figure/Innovation-Failure-and-Capabilities-Regressions-Results_tbl1_228520343> ;
+    
+    # Content classification
+    bibo:status "Published" ;
+    schema:genre "Academic research" ;
+    schema:genre "Empirical study" ;
+    schema:genre "Innovation management research" ;
+    schema:genre "Strategic management research" ;
+    
+    # Temporal coverage
+    schema:temporalCoverage "2013" ;
+    schema:dateCreated "2013"^^xsd:gYear ;
+    
+    # Research context
+    schema:isPartOf [
+        a schema:CreativeWork ;
+        schema:name "Innovation Management and Strategy research program" ;
+        schema:description "Part of ongoing research on innovation management, organizational capabilities, and strategic innovation at University of Groningen"
+    ] ;
+    
+    # Academic significance
+    schema:citation [
+        a schema:CreativeWork ;
+        schema:name "Cited in innovation management literature" ;
+        schema:description "Referenced in subsequent research on innovation capabilities, organizational learning, and innovation failure prevention strategies"
+    ] ;
+    
+    # Language and localization
+    schema:contentLocation [
+        a schema:Place ;
+        schema:name "Netherlands" ;
+        schema:description "Focus on innovation management and organizational capabilities in business contexts"
+    ] ;
+    
+    # Professional context
+    schema:industry "Innovation Management" ;
+    schema:applicationCategory "Business Strategy Studies" ;
+    
+    # Research contribution
+    schema:contribution [
+        a schema:Thing ;
+        schema:name "Framework for innovation failure prevention" ;
+        schema:description "Provides empirical evidence and theoretical framework for understanding how organizational capabilities can prevent innovation failure and improve innovation outcomes"
+    ] ;
+    
+    # Quality indicators
+    schema:measurementTechnique [
+        "Regression analysis",
+        "Empirical research",
+        "Quantitative analysis",
+        "Capability assessment",
+        "Innovation performance measurement",
+        "Statistical modeling"
+    ] ;
+    
+    # Usage and applications
+    schema:usageInfo [
+        a schema:CreativeWork ;
+        schema:name "Innovation management applications" ;
+        schema:description "Used for developing innovation strategies, capability building programs, and organizational learning initiatives to prevent innovation failure"
+    ] ;
+    
+    # Data coverage
+    schema:coverage [
+        a schema:Thing ;
+        schema:name "Organizational innovation capabilities data" ;
+        schema:description "Analysis of Knowledge Management, Technological, Cooperation, and Marketing capabilities across multiple organizations"
+    ] ;
+    
+    # Business impact
+    schema:impact [
+        a schema:Thing ;
+        schema:name "Innovation management practice influence" ;
+        schema:description "Influential research informing innovation management practices, capability development strategies, and organizational learning approaches"
+    ] ;
+    
+    # Research institute context
+    schema:provider [
+        a foaf:Organization ;
+        foaf:name "Innovation Management and Strategy Department" ;
+        schema:name "IM&S Department" ;
+        schema:parentOrganization [
+            a foaf:Organization ;
+            foaf:name "University of Groningen" ;
+            schema:description "Leading department for innovation management and strategic management research"
+        ] ;
+        schema:description "Specialized department focusing on innovation management, strategy, and organizational capabilities research"
+    ] ;
+    
+    # Theoretical framework
+    schema:theoreticalFramework [
+        a schema:Thing ;
+        schema:name "Organizational capabilities theory" ;
+        schema:description "Analysis based on organizational capabilities theory, innovation management theory, and strategic management frameworks examining capability-performance relationships"
+    ] ;
+    
+    # Business implications
+    schema:businessImplication [
+        a schema:Thing ;
+        schema:name "Innovation capability development" ;
+        schema:description "Recommendations for developing organizational capabilities to prevent innovation failure and improve innovation success rates"
+    ] ;
+    
+    # Research network
+    schema:collaborator [
+        a foaf:Organization ;
+        foaf:name "Faculty of Economics and Business" ;
+        schema:description "Collaborative research environment providing platform for innovation management and strategic research"
+    ] ;
+    
+    # Innovation focus areas
+    schema:innovationArea [
+        a schema:Thing ;
+        schema:name "Knowledge Management Capabilities" ;
+        schema:description "Organizational ability to acquire, process, and apply knowledge for innovation"
+    ] ;
+    
+    schema:innovationArea [
+        a schema:Thing ;
+        schema:name "Technological Capabilities" ;
+        schema:description "Technical competencies and technological resources for innovation development"
+    ] ;
+    
+    schema:innovationArea [
+        a schema:Thing ;
+        schema:name "Cooperation Capabilities" ;
+        schema:description "Ability to collaborate with external partners and stakeholders for innovation"
+    ] ;
+    
+    schema:innovationArea [
+        a schema:Thing ;
+        schema:name "Marketing Capabilities" ;
+        schema:description "Market-oriented competencies for innovation commercialization and market success"
+    ] ;
+    
+    # Strategic management context
+    schema:strategicContext [
+        a schema:Thing ;
+        schema:name "Innovation strategy development" ;
+        schema:description "Strategic approach to building organizational capabilities that prevent innovation failure and enhance competitive advantage"
+    ] ;
+    
+    # Performance indicators
+    schema:performanceIndicator [
+        a schema:Thing ;
+        schema:name "Innovation success rate" ;
+        schema:description "Measurement of innovation outcomes and failure prevention effectiveness through capability development"
+    ] ;
+    
+    # Organizational learning
+    schema:organizationalLearning [
+        a schema:Thing ;
+        schema:name "Capability-based learning" ;
+        schema:description "Learning mechanisms through which organizations develop and enhance innovation capabilities to prevent failure"
+    ] ;
+    
+    # Research methodology details
+    schema:researchMethodology [
+        a schema:Thing ;
+        schema:name "Empirical capability analysis" ;
+        schema:description "Quantitative research approach analyzing the relationship between organizational capabilities and innovation failure prevention using regression analysis and statistical modeling"
+    ] .
+

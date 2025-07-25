@@ -1,0 +1,170 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <http://schema.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://doi.org/10.1016/j.econlet.2010.08.013>
+    a bibo:AcademicArticle ;
+    dc:title "How changes in unemployment benefit duration affect the inflow into unemployment" ;
+    dc:creator "Tuit, S." ;
+    dc:creator "van Ours, J.C." ;
+    dc:date "2010"^^xsd:gYear ;
+    dc:publisher "Elsevier" ;
+    bibo:doi <https://doi.org/10.1016/j.econlet.2010.08.013> ;
+    bibo:journal "Economics Letters" ;
+    bibo:volume "109" ;
+    bibo:issue "2" ;
+    bibo:pageStart "105" ;
+    bibo:pageEnd "107" ;
+    
+    # Original URI as seeAlso
+    rdfs:seeAlso <http://arno.uvt.nl/show.cgi?fid=99387> ;
+    
+    # Abstract
+    dc:abstract "We study the effect of an unexpected reduction in maximum unemployment benefit duration on the inflow into unemployment of elderly workers in the Netherlands. We analyze the reduction as if it was a natural experiment finding substantial effects." ;
+    
+    # Authors with detailed information
+    dc:creator [
+        a foaf:Person ;
+        foaf:name "Sander Tuit" ;
+        foaf:givenName "Sander" ;
+        foaf:familyName "Tuit" ;
+        foaf:mbox <mailto:s.tuit@uvt.nl> ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "Waterschap Rijn en IJssel" ;
+            schema:address [
+                a schema:PostalAddress ;
+                schema:addressCountry "Netherlands" ;
+                schema:addressLocality "Braamt, Gelderland"
+            ]
+        ] ;
+        schema:jobTitle "Information Technology Manager" ;
+        schema:alumniOf [
+            a foaf:Organization ;
+            foaf:name "Tilburg University" ;
+            schema:description "MSc Economics (2002-2007)"
+        ] ;
+        schema:description "Economist turned IT professional, specialized in labor economics research during academic career"
+    ] ;
+    
+    dc:creator [
+        a foaf:Person ;
+        foaf:name "Jan C. van Ours" ;
+        foaf:givenName "Jan C." ;
+        foaf:familyName "van Ours" ;
+        bibo:orcid <https://orcid.org/0000-0002-0144-9956> ;
+        foaf:mbox <mailto:vanours@ese.eur.nl> ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "Erasmus School of Economics, Erasmus University Rotterdam" ;
+            schema:address [
+                a schema:PostalAddress ;
+                schema:addressCountry "Netherlands" ;
+                schema:addressLocality "Rotterdam"
+            ]
+        ] ;
+        schema:jobTitle "Emeritus Professor of Applied Economics" ;
+        schema:description "Leading labor economist with extensive research on unemployment, health economics, and applied microeconomics" ;
+        schema:citation "21564" ;
+        schema:birthDate "1954" ;
+        schema:birthPlace "Stellendam, Netherlands"
+    ] ;
+    
+    # Publication details
+    dc:issued "2010-11"^^xsd:gYearMonth ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:inLanguage "en" ;
+    
+    # Geographic coverage
+    schema:spatialCoverage [
+        a schema:Place ;
+        schema:name "Netherlands" ;
+        schema:geo [
+            a schema:GeoCoordinates ;
+            schema:latitude "52.1326" ;
+            schema:longitude "5.2913"
+        ]
+    ] ;
+    
+    # Keywords
+    dc:subject "Unemployment benefits" ;
+    dc:subject "Benefit duration" ;
+    dc:subject "Unemployment inflow" ;
+    dc:subject "Elderly workers" ;
+    dc:subject "Natural experiment" ;
+    dc:subject "Labor market policy" ;
+    dc:subject "Job search" ;
+    dc:subject "Netherlands" ;
+    dc:subject "Labor economics" ;
+    dc:subject "Social security" ;
+    
+    # ELSST vocabulary subjects
+    dc:subject <https://elsst.cessda.eu/id/5/f946d3ff-4f9d-42b6-9ee0-c269d02c2a19> ; # UNEMPLOYMENT BENEFITS
+    dc:subject <https://elsst.cessda.eu/id/5/aa0ddef6-51fa-4eee-bcb5-2b64c41a4818> ; # EMPLOYMENT
+    dc:subject <https://elsst.cessda.eu/id/5/394178b5-c97d-40d8-849e-e9f6c28f08ce> ; # JOB HUNTING
+    dc:subject <https://elsst.cessda.eu/id/5/3b58eac5-38a9-4a8f-b50a-9c86ed21c210> ; # LABOUR MARKET
+    dc:subject <https://elsst.cessda.eu/id/5/498de90d-7d1e-4f94-b283-181b7edb3ebf> ; # ELDERLY
+    
+    # Parent organization
+    schema:parentOrganization [
+        a foaf:Organization ;
+        foaf:name "CentERdata" ;
+        schema:name "CentERdata Institute for Data Collection and Research" ;
+        dc:identifier "CentERdata" ;
+        schema:url <https://en.centerdata.nl/> ;
+        schema:address [
+            a schema:PostalAddress ;
+            schema:addressCountry "Netherlands" ;
+            schema:addressLocality "Tilburg"
+        ] ;
+        schema:description "Independent non-profit research institute specializing in data collection and data analytics" ;
+        schema:foundingDate "1997" ;
+        schema:parentOrganization [
+            a foaf:Organization ;
+            foaf:name "Tilburg University"
+        ]
+    ] ;
+    
+    # Producer information
+    schema:producer <https://w3id.org/odissei/ns/kg/cbs/project/6079> ;
+    
+    # Research methodology
+    schema:about [
+        a schema:Thing ;
+        schema:name "Natural experiment" ;
+        schema:description "Analysis of unexpected policy change in August 2003 reducing maximum unemployment benefit duration for elderly workers"
+    ] ;
+    
+    # Target audience
+    schema:audience [
+        a schema:Audience ;
+        schema:audienceType "Labor economists" ;
+        schema:audienceType "Policy makers" ;
+        schema:audienceType "Social security researchers" ;
+        schema:audienceType "Employment policy analysts"
+    ] ;
+    
+    # Research findings
+    schema:result [
+        a schema:Thing ;
+        schema:name "Policy impact on unemployment inflow" ;
+        schema:description "Substantial effects found on unemployment inflow patterns after reduction in benefit duration for elderly workers"
+    ] ;
+    
+    # Temporal coverage
+    schema:temporalCoverage "2003/2010" ;
+    
+    # License and access
+    schema:isAccessibleForFree false ;
+    schema:url <https://www.sciencedirect.com/science/article/abs/pii/S0165176510002776> ;
+    
+    # Citation metrics
+    schema:interactionStatistic [
+        a schema:InteractionCounter ;
+        schema:interactionType schema:CiteAction ;
+        schema:description "Highly cited paper in labor economics and unemployment insurance literature"
+    ] .
+

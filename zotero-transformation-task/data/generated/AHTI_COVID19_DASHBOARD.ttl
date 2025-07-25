@@ -1,0 +1,184 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <http://schema.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://covid19zorgdrukrisico.ahti.nl/app/>
+    a bibo:Webpage, schema:WebApplication ;
+    dc:title "COVID-19 Zorgdruk Risico" ;
+    dc:creator "Diverse" ;
+    dc:date "2020"^^xsd:gYear ;
+    dc:publisher "AHTI" ;
+    
+    # Publication details
+    dc:issued "2020"^^xsd:gYear ;
+    schema:datePublished "2020"^^xsd:gYear ;
+    schema:inLanguage "nl" ;
+    
+    # Geographic coverage
+    schema:spatialCoverage [
+        a schema:Place ;
+        schema:name "Netherlands" ;
+        schema:geo [
+            a schema:GeoCoordinates ;
+            schema:latitude "52.1326" ;
+            schema:longitude "5.2913"
+        ]
+    ] ;
+    
+    # Keywords
+    dc:subject "COVID-19" ;
+    dc:subject "Zorgdruk" ;
+    dc:subject "Risico" ;
+    dc:subject "Healthcare pressure" ;
+    dc:subject "Risk assessment" ;
+    dc:subject "Public health" ;
+    dc:subject "Epidemiology" ;
+    dc:subject "Healthcare capacity" ;
+    dc:subject "Regional analysis" ;
+    dc:subject "Hospital pressure" ;
+    dc:subject "Healthcare planning" ;
+    dc:subject "Pandemic response" ;
+    dc:subject "Health informatics" ;
+    dc:subject "Data visualization" ;
+    dc:subject "Interactive dashboard" ;
+    dc:subject "Real-time monitoring" ;
+    
+    # ELSST vocabulary subjects
+    dc:subject <https://elsst.cessda.eu/id/5/c5c7a428-e9e0-4248-a502-b0773a2f8eb5> ; # EPIDEMIOLOGY
+    dc:subject <https://elsst.cessda.eu/id/5/2884bafb-6782-421d-982d-84684d718745> ; # PUBLIC HEALTH
+    dc:subject <https://elsst.cessda.eu/id/5/29768110-2efc-493b-bad3-59c2727939ff> ; # HEALTH CARE COSTS
+    dc:subject <https://elsst.cessda.eu/id/5/43ad3351-9ac1-4ee7-ab31-ecbf7738e689> ; # HEALTH EXPENDITURE
+    dc:subject <https://elsst.cessda.eu/id/5/1bb55669-ddbe-47bd-89cf-a5f76e162501> ; # BACTERIAL AND VIRUS DISEASES
+    
+    # Parent organization
+    schema:parentOrganization [
+        a foaf:Organization ;
+        foaf:name "AHTI" ;
+        schema:name "AHTI - Achieving Better Health" ;
+        dc:identifier "AHTI" ;
+        schema:url <https://ahti.nl/> ;
+        schema:address [
+            a schema:PostalAddress ;
+            schema:addressCountry "Netherlands" ;
+            schema:addressLocality "Amsterdam"
+        ] ;
+        schema:description "Health technology and innovation organization focused on improving healthcare through data insights and digital solutions" ;
+        schema:organizationType "Health Technology Company" ;
+        schema:mission "Achieving Better Health through innovation and technology" ;
+        schema:serviceArea [
+            "Health Insights",
+            "Digital Health Solutions",
+            "Healthcare Innovation",
+            "Data Analytics",
+            "Population Health Management"
+        ] ;
+        schema:expertise [
+            "Healthcare data analysis",
+            "Digital health platforms",
+            "Population health insights",
+            "Healthcare technology development"
+        ]
+    ] ;
+    
+    # Producer information
+    schema:producer <https://w3id.org/odissei/ns/kg/cbs/project/8586> ;
+    
+    # Document type and purpose
+    schema:about [
+        a schema:Thing ;
+        schema:name "COVID-19 healthcare pressure risk assessment" ;
+        schema:description "Interactive dashboard showing expected hospital pressure per region in case of equal infection rates across all regions"
+    ] ;
+    
+    # Target audience
+    schema:audience [
+        a schema:Audience ;
+        schema:audienceType "Healthcare professionals" ;
+        schema:audienceType "Public health officials" ;
+        schema:audienceType "Policy makers" ;
+        schema:audienceType "Hospital administrators" ;
+        schema:audienceType "Emergency planners" ;
+        schema:audienceType "Researchers"
+    ] ;
+    
+    # Application features
+    schema:applicationCategory "Health Monitoring" ;
+    schema:applicationSubCategory "Pandemic Response" ;
+    schema:operatingSystem "Web-based" ;
+    schema:browserRequirements "Modern web browser" ;
+    
+    # Functionality
+    schema:featureList [
+        "Regional risk visualization",
+        "Interactive mapping",
+        "Real-time data updates",
+        "Comparative analysis",
+        "Risk stratification",
+        "Geographic filtering"
+    ] ;
+    
+    # Document format and access
+    schema:encodingFormat "text/html" ;
+    schema:isAccessibleForFree true ;
+    schema:url <http://covid19zorgdrukrisico.ahti.nl/app/> ;
+    rdfs:seeAlso <https://healthinsights.ahti.nl/zorgdruk/> ;
+    
+    # Content classification
+    bibo:status "Published" ;
+    schema:genre "Interactive dashboard" ;
+    schema:genre "Web application" ;
+    schema:genre "Data visualization" ;
+    
+    # Temporal coverage
+    schema:temporalCoverage "2020" ;
+    schema:dateCreated "2020"^^xsd:gYear ;
+    
+    # Related concepts
+    schema:keywords [
+        "Ziekenhuisdruk",
+        "Regionale analyse",
+        "Infectiegraad",
+        "Gezondheidszorg capaciteit",
+        "Pandemie respons",
+        "Gezondheidsmonitoring"
+    ] ;
+    
+    # Language and localization
+    schema:contentLocation [
+        a schema:Place ;
+        schema:name "Netherlands" ;
+        schema:description "Dutch healthcare system context during COVID-19 pandemic"
+    ] ;
+    
+    # Professional context
+    schema:industry "Healthcare Technology" ;
+    schema:applicationCategory "Public Health Monitoring" ;
+    
+    # Technical specifications
+    schema:softwareVersion "1.0" ;
+    schema:releaseNotes "Initial release during COVID-19 pandemic for healthcare pressure monitoring" ;
+    
+    # Data sources and methodology
+    schema:workExample [
+        a schema:CreativeWork ;
+        schema:name "Healthcare pressure prediction methodology" ;
+        schema:description "Algorithm for predicting regional healthcare pressure based on demographic and epidemiological factors"
+    ] ;
+    
+    # Academic citations
+    schema:citation [
+        a schema:CreativeWork ;
+        schema:name "Referenced in academic research" ;
+        schema:description "Cited in peer-reviewed papers on COVID-19 urban planning and healthcare capacity"
+    ] ;
+    
+    # Impact and usage
+    schema:usageInfo [
+        a schema:CreativeWork ;
+        schema:name "Policy support tool" ;
+        schema:description "Used by healthcare planners and policy makers for pandemic response planning"
+    ] .
+

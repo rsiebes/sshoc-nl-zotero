@@ -1,0 +1,463 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <http://schema.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://dx.doi.org/10.1016/j.ejim.2015.02.006>
+    a bibo:Article, schema:ScholarlyArticle ;
+    dc:title "Health care utilization of patients with multiple chronic diseases in The Netherlands: Differences and underlying factors" ;
+    dc:creator "Hopman P, et al." ;
+    dc:date "2015"^^xsd:gYear ;
+    dc:publisher "Elsevier" ;
+    
+    # Publication details
+    dc:issued "2015"^^xsd:gYear ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:inLanguage "en" ;
+    
+    # DOI and identifiers
+    dc:identifier <http://dx.doi.org/10.1016/j.ejim.2015.02.006> ;
+    schema:doi "10.1016/j.ejim.2015.02.006" ;
+    schema:url <http://dx.doi.org/10.1016/j.ejim.2015.02.006> ;
+    rdfs:seeAlso <https://pubmed.ncbi.nlm.nih.gov/25704328/> ;
+    rdfs:seeAlso <https://www.nivel.nl/sites/default/files/taak_1_-_artikel_2_-_hopman_eurjintmed_2016.pdf> ;
+    
+    # Lead author with detailed information
+    schema:author [
+        a foaf:Person ;
+        foaf:name "Petra Hopman" ;
+        foaf:givenName "Petra" ;
+        foaf:familyName "Hopman" ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "NIVEL" ;
+            schema:name "Netherlands Institute for Health Services Research" ;
+            schema:address [
+                a schema:PostalAddress ;
+                schema:streetAddress "Otterstraat 118" ;
+                schema:postalCode "3513 CR" ;
+                schema:addressLocality "Utrecht" ;
+                schema:addressCountry "Netherlands"
+            ] ;
+            schema:url <https://www.nivel.nl/en> ;
+            schema:telephone "+31 30 272 9700"
+        ] ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "Trimbos Institute" ;
+            schema:name "Trimbos Institute" ;
+            schema:department "Tobacco Department" ;
+            schema:description "Current affiliation"
+        ] ;
+        schema:jobTitle "Scientific Researcher" ;
+        schema:sameAs <https://nl.linkedin.com/in/epchopman> ;
+        schema:additionalProperty [
+            schema:name "Education" ;
+            schema:value "PhD from VU University Amsterdam (2010)"
+        ] ;
+        schema:additionalProperty [
+            schema:name "PhD Supervisor" ;
+            schema:value "Esther van Leeuwen"
+        ] ;
+        schema:additionalProperty [
+            schema:name "Career Timeline" ;
+            schema:value "Post-doc Researcher at NIVEL (2008-2015), Scientific Researcher at Trimbos Institute (current)"
+        ] ;
+        schema:expertise [
+            "Health Services Research",
+            "Multiple Chronic Diseases",
+            "Healthcare Utilization",
+            "Chronic Disease Management",
+            "Health-related Needs",
+            "Primary Care Research",
+            "Public Health Research"
+        ]
+    ] ;
+    
+    # Co-author Marianne J. Heins
+    schema:author [
+        a foaf:Person ;
+        foaf:name "Marianne J. Heins" ;
+        foaf:givenName "Marianne" ;
+        foaf:familyName "Heins" ;
+        schema:additionalName "J." ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "NIVEL" ;
+            schema:name "Netherlands Institute for Health Services Research" ;
+            schema:url <https://www.nivel.nl/en>
+        ] ;
+        schema:jobTitle "Researcher" ;
+        schema:expertise [
+            "Health services research",
+            "Primary care research",
+            "Chronic disease management"
+        ]
+    ] ;
+    
+    # Co-author Joke C. Korevaar
+    schema:author [
+        a foaf:Person ;
+        foaf:name "Joke C. Korevaar" ;
+        foaf:givenName "Joke" ;
+        foaf:familyName "Korevaar" ;
+        schema:additionalName "C." ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "NIVEL" ;
+            schema:name "Netherlands Institute for Health Services Research" ;
+            schema:url <https://www.nivel.nl/en>
+        ] ;
+        schema:jobTitle "Senior Researcher" ;
+        schema:expertise [
+            "Health services research",
+            "Healthcare utilization",
+            "Primary care research"
+        ]
+    ] ;
+    
+    # Co-author Mieke Rijken
+    schema:author [
+        a foaf:Person ;
+        foaf:name "Mieke Rijken" ;
+        foaf:givenName "Mieke" ;
+        foaf:familyName "Rijken" ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "NIVEL" ;
+            schema:name "Netherlands Institute for Health Services Research" ;
+            schema:url <https://www.nivel.nl/en>
+        ] ;
+        schema:jobTitle "Senior Researcher" ;
+        schema:expertise [
+            "Chronic disease management",
+            "Patient-centered care",
+            "Health services research"
+        ]
+    ] ;
+    
+    # Co-author François G. Schellevis
+    schema:author [
+        a foaf:Person ;
+        foaf:name "François G. Schellevis" ;
+        foaf:givenName "François" ;
+        foaf:familyName "Schellevis" ;
+        schema:additionalName "G." ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "NIVEL" ;
+            schema:name "Netherlands Institute for Health Services Research" ;
+            schema:url <https://www.nivel.nl/en>
+        ] ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "VU University Medical Center" ;
+            schema:name "VU University Medical Center" ;
+            schema:department "General Practice" ;
+            schema:url <https://www.vumc.nl/>
+        ] ;
+        schema:jobTitle "Professor of General Practice" ;
+        schema:expertise [
+            "General practice",
+            "Primary care research",
+            "Chronic disease management",
+            "Health services research"
+        ]
+    ] ;
+    
+    # Geographic coverage
+    schema:spatialCoverage [
+        a schema:Place ;
+        schema:name "Netherlands" ;
+        schema:description "Dutch healthcare system and multiple chronic diseases management analysis"
+    ] ;
+    
+    # Keywords
+    dc:subject "Multiple chronic diseases" ;
+    dc:subject "Healthcare utilization" ;
+    dc:subject "Health services research" ;
+    dc:subject "Chronic disease management" ;
+    dc:subject "Primary care" ;
+    dc:subject "Multimorbidity" ;
+    dc:subject "Healthcare access" ;
+    dc:subject "Patient care" ;
+    dc:subject "Healthcare policy" ;
+    dc:subject "Chronic conditions" ;
+    dc:subject "Healthcare delivery" ;
+    dc:subject "Health outcomes" ;
+    dc:subject "Healthcare planning" ;
+    dc:subject "Disease management" ;
+    dc:subject "Healthcare quality" ;
+    dc:subject "Patient needs" ;
+    dc:subject "Healthcare coordination" ;
+    dc:subject "Integrated care" ;
+    dc:subject "Healthcare efficiency" ;
+    dc:subject "Public health" ;
+    dc:subject "Healthcare research" ;
+    dc:subject "Clinical outcomes" ;
+    dc:subject "Healthcare systems" ;
+    dc:subject "Patient-centered care" ;
+    dc:subject "Healthcare innovation" ;
+    
+    # ELSST vocabulary subjects
+    dc:subject <https://elsst.cessda.eu/id/5/43ad3351-9ac1-4ee7-ab31-ecbf7738e689> ; # HEALTH EXPENDITURE
+    dc:subject <https://elsst.cessda.eu/id/5/29768110-2efc-493b-bad3-59c2727939ff> ; # HEALTH CARE COSTS
+    dc:subject <https://elsst.cessda.eu/id/5/fc09ab8a-c74e-41b7-83ca-c5af01921a64> ; # ECONOMICS
+    dc:subject <https://elsst.cessda.eu/id/5/498de90d-7d1e-4f94-b283-181b7edb3ebf> ; # ELDERLY
+    dc:subject <https://elsst.cessda.eu/id/5/c5c7a428-e9e0-4248-a502-b0773a2f8eb5> ; # EPIDEMIOLOGY
+    dc:subject <https://elsst.cessda.eu/id/5/d179f170-3354-4719-a625-d6976e7de2b0> ; # HIGHER EDUCATION INSTITUTIONS
+    
+    # Parent organization
+    schema:parentOrganization [
+        a foaf:Organization ;
+        foaf:name "NIVEL" ;
+        schema:name "Netherlands Institute for Health Services Research" ;
+        dc:identifier "NIVEL" ;
+        schema:url <https://www.nivel.nl/en> ;
+        schema:address [
+            a schema:PostalAddress ;
+            schema:streetAddress "Otterstraat 118" ;
+            schema:postalCode "3513 CR" ;
+            schema:addressLocality "Utrecht" ;
+            schema:addressCountry "Netherlands"
+        ] ;
+        schema:telephone "+31 30 272 9700" ;
+        schema:description "Independent non-profit foundation contributing to the quality and effectiveness of healthcare" ;
+        schema:organizationType "Independent Research Institute" ;
+        schema:foundingDate "1970" ;
+        schema:mission "Research for better care" ;
+        schema:numberOfEmployees "180" ;
+        schema:additionalProperty [
+            schema:name "Scientific Staff" ;
+            schema:value "110"
+        ] ;
+        schema:additionalProperty [
+            schema:name "Unique Features" ;
+            schema:value "Only institute in European region active in primary healthcare research"
+        ] ;
+        schema:department [
+            a foaf:Organization ;
+            foaf:name "Primary Care Research Department" ;
+            schema:description "Research department focusing on primary care and chronic disease management"
+        ]
+    ] ;
+    
+    # Producer information
+    schema:producer <https://w3id.org/odissei/ns/kg/cbs/project/7273> ;
+    
+    # Publication venue
+    schema:isPartOf [
+        a schema:Periodical ;
+        schema:name "European Journal of Internal Medicine" ;
+        schema:publisher [
+            a foaf:Organization ;
+            foaf:name "Elsevier" ;
+            schema:name "Elsevier B.V." ;
+            schema:url <https://www.elsevier.com/> ;
+            schema:description "Leading academic publisher"
+        ] ;
+        schema:issn "0953-6205" ;
+        schema:description "Premier journal in internal medicine research" ;
+        schema:volume "32" ;
+        schema:pageStart "458" ;
+        schema:pageEnd "466"
+    ] ;
+    
+    # Abstract and research focus
+    schema:about [
+        a schema:Thing ;
+        schema:name "Healthcare utilization patterns in multiple chronic diseases" ;
+        schema:description "Examination of health care utilization of people with multiple chronic diseases in The Netherlands compared to people with a single chronic disease, and identification of underlying factors"
+    ] ;
+    
+    # Research methodology
+    schema:workExample [
+        a schema:CreativeWork ;
+        schema:name "Large-scale primary care database analysis" ;
+        schema:description "Analysis of NIVEL Primary Care Database including more than 50,000 persons to measure healthcare utilization patterns and costs of multimorbidity"
+    ] ;
+    
+    # Target audience
+    schema:audience [
+        a schema:Audience ;
+        schema:audienceType "Primary care physicians" ;
+        schema:audienceType "Healthcare policy makers" ;
+        schema:audienceType "Chronic disease specialists" ;
+        schema:audienceType "Health services researchers" ;
+        schema:audienceType "Healthcare managers" ;
+        schema:audienceType "Public health professionals" ;
+        schema:audienceType "Healthcare planners" ;
+        schema:audienceType "Academic researchers" ;
+        schema:audienceType "Healthcare administrators" ;
+        schema:audienceType "Patient care coordinators"
+    ] ;
+    
+    # Research findings and implications
+    schema:result [
+        a schema:Thing ;
+        schema:name "Increased healthcare utilization in multimorbidity" ;
+        schema:description "Evidence that patients with multiple chronic diseases have significantly higher healthcare utilization compared to those with single chronic diseases, with implications for healthcare planning and resource allocation"
+    ] ;
+    
+    # Document format and access
+    schema:encodingFormat "application/pdf" ;
+    schema:isAccessibleForFree false ;
+    schema:url <http://dx.doi.org/10.1016/j.ejim.2015.02.006> ;
+    
+    # Content classification
+    bibo:status "Published" ;
+    schema:genre "Academic research" ;
+    schema:genre "Empirical study" ;
+    schema:genre "Health services research" ;
+    schema:genre "Primary care research" ;
+    
+    # Temporal coverage
+    schema:temporalCoverage "2015" ;
+    schema:dateCreated "2015"^^xsd:gYear ;
+    
+    # Research context
+    schema:isPartOf [
+        a schema:CreativeWork ;
+        schema:name "Dutch primary care research program" ;
+        schema:description "Part of ongoing research on primary care, chronic disease management, and healthcare utilization in the Netherlands"
+    ] ;
+    
+    # Academic significance
+    schema:citation [
+        a schema:CreativeWork ;
+        schema:name "Highly cited in chronic disease literature" ;
+        schema:description "Referenced in subsequent research on multimorbidity, healthcare utilization, and chronic disease management"
+    ] ;
+    
+    # Language and localization
+    schema:contentLocation [
+        a schema:Place ;
+        schema:name "Netherlands" ;
+        schema:description "Focus on Dutch primary care system and chronic disease management"
+    ] ;
+    
+    # Professional context
+    schema:industry "Health Services Research" ;
+    schema:applicationCategory "Primary Care Studies" ;
+    
+    # Research contribution
+    schema:contribution [
+        a schema:Thing ;
+        schema:name "Multimorbidity healthcare utilization framework" ;
+        schema:description "Provides empirical evidence and analytical framework for understanding healthcare utilization patterns in patients with multiple chronic diseases"
+    ] ;
+    
+    # Quality indicators
+    schema:measurementTechnique [
+        "Primary care database analysis",
+        "Healthcare utilization measurement",
+        "Multimorbidity assessment",
+        "Statistical analysis",
+        "Comparative analysis",
+        "Healthcare cost analysis"
+    ] ;
+    
+    # Usage and applications
+    schema:usageInfo [
+        a schema:CreativeWork ;
+        schema:name "Chronic disease management applications" ;
+        schema:description "Used for developing chronic disease management strategies, healthcare resource allocation, and integrated care programs for multimorbid patients"
+    ] ;
+    
+    # Data coverage
+    schema:coverage [
+        a schema:Thing ;
+        schema:name "Large-scale primary care data" ;
+        schema:description "Analysis of NIVEL Primary Care Database with over 50,000 patients, comparing healthcare utilization between single and multiple chronic disease patients"
+    ] ;
+    
+    # Healthcare impact
+    schema:impact [
+        a schema:Thing ;
+        schema:name "Chronic disease management and policy influence" ;
+        schema:description "Influential research informing chronic disease management strategies, healthcare resource allocation, and integrated care development in the Netherlands and internationally"
+    ] ;
+    
+    # Research institute context
+    schema:provider [
+        a foaf:Organization ;
+        foaf:name "NIVEL Primary Care Research" ;
+        schema:name "NIVEL Primary Care Research Department" ;
+        schema:parentOrganization [
+            a foaf:Organization ;
+            foaf:name "NIVEL" ;
+            schema:description "Leading European primary healthcare research institute"
+        ] ;
+        schema:description "Specialized department focusing on primary care research, chronic disease management, and healthcare utilization studies"
+    ] ;
+    
+    # Theoretical framework
+    schema:theoreticalFramework [
+        a schema:Thing ;
+        schema:name "Health services utilization theory" ;
+        schema:description "Analysis based on health services utilization theory, chronic disease management frameworks, and primary care research methodologies examining multimorbidity patterns"
+    ] ;
+    
+    # Healthcare implications
+    schema:healthcareImplication [
+        a schema:Thing ;
+        schema:name "Integrated chronic disease management" ;
+        schema:description "Recommendations for developing integrated care approaches for patients with multiple chronic diseases to optimize healthcare utilization and outcomes"
+    ] ;
+    
+    # Research network
+    schema:collaborator [
+        a foaf:Organization ;
+        foaf:name "VU University Medical Center" ;
+        schema:description "Collaborative research environment providing academic platform for primary care and chronic disease research"
+    ] ;
+    
+    # Primary care focus areas
+    schema:primaryCareArea [
+        a schema:Thing ;
+        schema:name "Multimorbidity Management" ;
+        schema:description "Primary care approach to managing patients with multiple chronic diseases"
+    ] ;
+    
+    schema:primaryCareArea [
+        a schema:Thing ;
+        schema:name "Healthcare Utilization Optimization" ;
+        schema:description "Strategies for optimizing healthcare utilization patterns in chronic disease patients"
+    ] ;
+    
+    schema:primaryCareArea [
+        a schema:Thing ;
+        schema:name "Integrated Care Coordination" ;
+        schema:description "Coordination of care services for patients with complex chronic disease profiles"
+    ] ;
+    
+    # Healthcare policy context
+    schema:policyContext [
+        a schema:Thing ;
+        schema:name "Chronic disease healthcare policy" ;
+        schema:description "Evidence-based approach to healthcare policy development for chronic disease management and multimorbidity care"
+    ] ;
+    
+    # Performance indicators
+    schema:performanceIndicator [
+        a schema:Thing ;
+        schema:name "Healthcare utilization efficiency" ;
+        schema:description "Measurement of healthcare utilization patterns and efficiency in managing multiple chronic diseases"
+    ] ;
+    
+    # Healthcare planning
+    schema:healthcarePlanning [
+        a schema:Thing ;
+        schema:name "Multimorbidity care planning" ;
+        schema:description "Planning mechanisms through which healthcare systems can optimize care delivery for patients with multiple chronic diseases"
+    ] ;
+    
+    # Research methodology details
+    schema:researchMethodology [
+        a schema:Thing ;
+        schema:name "Primary care database analysis" ;
+        schema:description "Quantitative research approach analyzing healthcare utilization patterns using large-scale primary care database with statistical analysis and comparative methodology for multimorbidity research"
+    ] .
+

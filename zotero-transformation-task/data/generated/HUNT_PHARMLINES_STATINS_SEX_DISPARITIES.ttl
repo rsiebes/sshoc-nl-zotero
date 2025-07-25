@@ -1,0 +1,543 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <http://schema.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://dx.doi.org/10.1097/MD.0000000000028394>
+    a bibo:Article, schema:ScholarlyArticle ;
+    dc:title "Sex disparities in the effect of statins on lipid parameters; The PharmLines Initiative" ;
+    dc:creator "Hunt, N. B., Emmens, J. E., Irawati, S., de Vos, S., Bos, J. H. B., Wilffert, B., Hak, E., & de Boer, R. A." ;
+    dc:date "2022"^^xsd:gYear ;
+    dc:publisher "Wolters Kluwer" ;
+    
+    # Publication details
+    dc:issued "2022"^^xsd:gYear ;
+    schema:datePublished "2022-01-14"^^xsd:date ;
+    schema:inLanguage "en" ;
+    
+    # DOI and identifiers
+    dc:identifier <http://dx.doi.org/10.1097/MD.0000000000028394> ;
+    schema:doi "10.1097/MD.0000000000028394" ;
+    schema:url <http://dx.doi.org/10.1097/MD.0000000000028394> ;
+    rdfs:seeAlso <https://pubmed.ncbi.nlm.nih.gov/35029178/> ;
+    rdfs:seeAlso <https://pharmlines.nl/> ;
+    
+    # Lead author with detailed information
+    schema:author [
+        a foaf:Person ;
+        foaf:name "Nicholas B. Hunt" ;
+        foaf:givenName "Nicholas" ;
+        foaf:familyName "Hunt" ;
+        schema:additionalName "B." ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "University Medical Center Groningen" ;
+            schema:name "University Medical Center Groningen" ;
+            schema:department "Clinical Pharmacy and Pharmacology" ;
+            schema:url <https://www.umcg.nl/> ;
+            schema:address [
+                a schema:PostalAddress ;
+                schema:addressLocality "Groningen" ;
+                schema:addressCountry "Netherlands"
+            ]
+        ] ;
+        schema:jobTitle "PhD Candidate / Researcher" ;
+        schema:additionalProperty [
+            schema:name "Education" ;
+            schema:value "MSc in Medical Pharmaceutical Sciences (cum laude) at University of Groningen (2019)"
+        ] ;
+        schema:additionalProperty [
+            schema:name "Specialization" ;
+            schema:value "Pharmacoepidemiology"
+        ] ;
+        schema:additionalProperty [
+            schema:name "Research Focus" ;
+            schema:value "PharmLines Initiative"
+        ] ;
+        schema:expertise [
+            "Pharmacoepidemiology",
+            "Clinical Pharmacy",
+            "Statin Therapy",
+            "Sex Disparities in Medicine",
+            "Lipid Parameters",
+            "Drug Effectiveness",
+            "Real-World Evidence"
+        ]
+    ] ;
+    
+    # Co-author Johanna E. Emmens
+    schema:author [
+        a foaf:Person ;
+        foaf:name "Johanna E. Emmens" ;
+        foaf:givenName "Johanna" ;
+        foaf:familyName "Emmens" ;
+        schema:additionalName "Elisabeth" ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "University Medical Center Groningen" ;
+            schema:name "University Medical Center Groningen" ;
+            schema:department "Cardiology" ;
+            schema:url <https://www.umcg.nl/>
+        ] ;
+        schema:jobTitle "Researcher" ;
+        schema:sameAs <https://scholar.google.nl/citations?user=RMG-JlUAAAAJ> ;
+        schema:email "verified@umcg.nl" ;
+        schema:additionalProperty [
+            schema:name "PhD Title" ;
+            schema:value "Novel insights in urinary and plasma biomarkers in heart failure (2021)"
+        ] ;
+        schema:expertise [
+            "Heart Failure",
+            "Biomarkers",
+            "Cardiology",
+            "Nephrology",
+            "Clinical Research",
+            "Pharmacoepidemiology",
+            "Cardiovascular Medicine"
+        ]
+    ] ;
+    
+    # Co-author Sylvi Irawati
+    schema:author [
+        a foaf:Person ;
+        foaf:name "Sylvi Irawati" ;
+        foaf:givenName "Sylvi" ;
+        foaf:familyName "Irawati" ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "University Medical Center Groningen" ;
+            schema:name "University Medical Center Groningen" ;
+            schema:department "Clinical Pharmacy and Pharmacology" ;
+            schema:url <https://www.umcg.nl/>
+        ] ;
+        schema:jobTitle "Researcher" ;
+        schema:expertise [
+            "Clinical pharmacy",
+            "Pharmacoepidemiology",
+            "Statin therapy research"
+        ]
+    ] ;
+    
+    # Co-author Stijn de Vos
+    schema:author [
+        a foaf:Person ;
+        foaf:name "Stijn de Vos" ;
+        foaf:givenName "Stijn" ;
+        foaf:familyName "de Vos" ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "University Medical Center Groningen" ;
+            schema:name "University Medical Center Groningen" ;
+            schema:department "Clinical Pharmacy and Pharmacology" ;
+            schema:url <https://www.umcg.nl/>
+        ] ;
+        schema:jobTitle "Researcher" ;
+        schema:expertise [
+            "Clinical pharmacy",
+            "Pharmacoepidemiology",
+            "Drug effectiveness research"
+        ]
+    ] ;
+    
+    # Co-author Jens H.B. Bos
+    schema:author [
+        a foaf:Person ;
+        foaf:name "Jens H.B. Bos" ;
+        foaf:givenName "Jens" ;
+        foaf:familyName "Bos" ;
+        schema:additionalName "H.B." ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "University of Groningen" ;
+            schema:name "University of Groningen" ;
+            schema:department "Department of Pharmacy" ;
+            schema:url <https://www.rug.nl/>
+        ] ;
+        schema:jobTitle "Researcher" ;
+        schema:expertise [
+            "Pharmacy research",
+            "Database management",
+            "Pharmacoepidemiology"
+        ]
+    ] ;
+    
+    # Co-author Bob Wilffert
+    schema:author [
+        a foaf:Person ;
+        foaf:name "Bob Wilffert" ;
+        foaf:givenName "Bob" ;
+        foaf:familyName "Wilffert" ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "University Medical Center Groningen" ;
+            schema:name "University Medical Center Groningen" ;
+            schema:department "Clinical Pharmacy and Pharmacology" ;
+            schema:url <https://www.umcg.nl/>
+        ] ;
+        schema:jobTitle "Professor" ;
+        schema:expertise [
+            "Clinical pharmacy",
+            "Pharmacogenetics",
+            "Personalized medicine"
+        ]
+    ] ;
+    
+    # Co-author Eelko Hak
+    schema:author [
+        a foaf:Person ;
+        foaf:name "Eelko Hak" ;
+        foaf:givenName "Eelko" ;
+        foaf:familyName "Hak" ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "University of Groningen" ;
+            schema:name "University of Groningen" ;
+            schema:department "Groningen Research Institute of Pharmacy" ;
+            schema:parentOrganization [
+                a foaf:Organization ;
+                foaf:name "Faculty of Science and Engineering" ;
+                schema:url <https://www.rug.nl/fse/>
+            ] ;
+            schema:url <https://www.rug.nl/>
+        ] ;
+        schema:jobTitle "Professor of Clinical Pharmacoepidemiology" ;
+        schema:sameAs <https://scholar.google.com/citations?user=j-X-6hIAAAAJ> ;
+        schema:sameAs <https://nl.linkedin.com/in/prof-dr-eelko-hak-b10754134> ;
+        schema:email "e.hak@rug.nl" ;
+        schema:additionalProperty [
+            schema:name "Citations" ;
+            schema:value "18,951"
+        ] ;
+        schema:additionalProperty [
+            schema:name "Career Timeline" ;
+            schema:value "2015-current: Full professor of clinical pharmacoepidemiology Groningen; 2015-2020: Program director of Groningen Research Master Medical Pharmaceutical Sciences"
+        ] ;
+        schema:expertise [
+            "Pharmacoepidemiology",
+            "Methodology in Causal Research",
+            "Clinical Pharmacoepidemiology",
+            "Drug Safety",
+            "Real-World Evidence",
+            "Pharmacoeconomics",
+            "Causal Inference"
+        ]
+    ] ;
+    
+    # Co-author Rudolf A. de Boer
+    schema:author [
+        a foaf:Person ;
+        foaf:name "Rudolf A. de Boer" ;
+        foaf:givenName "Rudolf" ;
+        foaf:familyName "de Boer" ;
+        schema:additionalName "A." ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "University Medical Center Groningen" ;
+            schema:name "University Medical Center Groningen" ;
+            schema:department "Cardiology" ;
+            schema:url <https://www.umcg.nl/>
+        ] ;
+        schema:jobTitle "Professor of Cardiology" ;
+        schema:expertise [
+            "Cardiology",
+            "Heart failure",
+            "Cardiovascular medicine",
+            "Clinical research"
+        ]
+    ] ;
+    
+    # Geographic coverage
+    schema:spatialCoverage [
+        a schema:Place ;
+        schema:name "Netherlands" ;
+        schema:description "Dutch population-based study using Lifelines Cohort and PharmLines Initiative data"
+    ] ;
+    
+    # Keywords
+    dc:subject "Statins" ;
+    dc:subject "Sex disparities" ;
+    dc:subject "Lipid parameters" ;
+    dc:subject "Pharmacoepidemiology" ;
+    dc:subject "Gender differences" ;
+    dc:subject "HDL cholesterol" ;
+    dc:subject "LDL cholesterol" ;
+    dc:subject "Cardiovascular medicine" ;
+    dc:subject "Drug effectiveness" ;
+    dc:subject "Clinical pharmacy" ;
+    dc:subject "Real-world evidence" ;
+    dc:subject "Population health" ;
+    dc:subject "Cholesterol management" ;
+    dc:subject "Cardiovascular risk" ;
+    dc:subject "Personalized medicine" ;
+    dc:subject "Drug response" ;
+    dc:subject "Lipid metabolism" ;
+    dc:subject "Women's health" ;
+    dc:subject "Men's health" ;
+    dc:subject "Precision medicine" ;
+    dc:subject "Pharmacotherapy" ;
+    dc:subject "Clinical outcomes" ;
+    dc:subject "Healthcare disparities" ;
+    dc:subject "Biobank research" ;
+    dc:subject "Cohort study" ;
+    
+    # ELSST vocabulary subjects
+    dc:subject <https://elsst.cessda.eu/id/5/43ad3351-9ac1-4ee7-ab31-ecbf7738e689> ; # HEALTH EXPENDITURE
+    dc:subject <https://elsst.cessda.eu/id/5/29768110-2efc-493b-bad3-59c2727939ff> ; # HEALTH CARE COSTS
+    dc:subject <https://elsst.cessda.eu/id/5/fc09ab8a-c74e-41b7-83ca-c5af01921a64> ; # ECONOMICS
+    dc:subject <https://elsst.cessda.eu/id/5/c5c7a428-e9e0-4248-a502-b0773a2f8eb5> ; # EPIDEMIOLOGY
+    dc:subject <https://elsst.cessda.eu/id/5/d179f170-3354-4719-a625-d6976e7de2b0> ; # HIGHER EDUCATION INSTITUTIONS
+    dc:subject <https://elsst.cessda.eu/id/5/ebf6f18f-16ec-45dc-97f3-5d15415adbfc> ; # ENTREPRENEURS
+    
+    # Parent organization
+    schema:parentOrganization [
+        a foaf:Organization ;
+        foaf:name "University Medical Center Groningen" ;
+        schema:name "University Medical Center Groningen" ;
+        dc:identifier "UMC_RUG" ;
+        schema:url <https://www.umcg.nl/> ;
+        schema:address [
+            a schema:PostalAddress ;
+            schema:addressLocality "Groningen" ;
+            schema:addressCountry "Netherlands"
+        ] ;
+        schema:description "Leading academic medical center in northern Netherlands" ;
+        schema:organizationType "University Medical Center" ;
+        schema:parentOrganization [
+            a foaf:Organization ;
+            foaf:name "University of Groningen" ;
+            schema:name "University of Groningen" ;
+            schema:url <https://www.rug.nl/> ;
+            schema:description "Leading research university in the Netherlands"
+        ] ;
+        schema:department [
+            a foaf:Organization ;
+            foaf:name "Clinical Pharmacy and Pharmacology" ;
+            schema:description "Department focusing on clinical pharmacy research and pharmacoepidemiology"
+        ] ;
+        schema:department [
+            a foaf:Organization ;
+            foaf:name "Cardiology" ;
+            schema:description "Department specializing in cardiovascular medicine and heart failure research"
+        ]
+    ] ;
+    
+    # Producer information
+    schema:producer <https://w3id.org/odissei/ns/kg/cbs/project/8411> ;
+    
+    # Publication venue
+    schema:isPartOf [
+        a schema:Periodical ;
+        schema:name "Medicine" ;
+        schema:publisher [
+            a foaf:Organization ;
+            foaf:name "Wolters Kluwer" ;
+            schema:name "Wolters Kluwer Health" ;
+            schema:url <https://www.wolterskluwer.com/> ;
+            schema:description "Leading academic and professional publisher"
+        ] ;
+        schema:issn "0025-7974" ;
+        schema:description "Open-access medical journal" ;
+        schema:volume "101" ;
+        schema:issue "2" ;
+        schema:identifier "e28394"
+    ] ;
+    
+    # Abstract and research focus
+    schema:about [
+        a schema:Thing ;
+        schema:name "Sex disparities in statin effectiveness on lipid parameters" ;
+        schema:description "Investigation of differences in the effect of statins on lipid parameters between men and women using the PharmLines Initiative linking Lifelines Cohort Study with prescription data"
+    ] ;
+    
+    # Research methodology
+    schema:workExample [
+        a schema:CreativeWork ;
+        schema:name "PharmLines Initiative population-based analysis" ;
+        schema:description "Large-scale population-based study linking Lifelines Cohort Study with prescription database IADB.nl to analyze sex disparities in statin effectiveness on lipid parameters"
+    ] ;
+    
+    # Target audience
+    schema:audience [
+        a schema:Audience ;
+        schema:audienceType "Clinical pharmacists" ;
+        schema:audienceType "Cardiologists" ;
+        schema:audienceType "Primary care physicians" ;
+        schema:audienceType "Pharmacoepidemiologists" ;
+        schema:audienceType "Women's health specialists" ;
+        schema:audienceType "Cardiovascular researchers" ;
+        schema:audienceType "Healthcare policy makers" ;
+        schema:audienceType "Precision medicine researchers" ;
+        schema:audienceType "Clinical researchers" ;
+        schema:audienceType "Pharmaceutical researchers"
+    ] ;
+    
+    # Research findings and implications
+    schema:result [
+        a schema:Thing ;
+        schema:name "Greater HDL-C increase in women than men" ;
+        schema:description "Evidence that statins have a greater effect on increasing HDL-C levels in women than men while showing similar effects on other lipid parameters in both sexes, with implications for personalized cardiovascular medicine"
+    ] ;
+    
+    # Document format and access
+    schema:encodingFormat "application/pdf" ;
+    schema:isAccessibleForFree true ;
+    schema:url <http://dx.doi.org/10.1097/MD.0000000000028394> ;
+    
+    # Content classification
+    bibo:status "Published" ;
+    schema:genre "Academic research" ;
+    schema:genre "Empirical study" ;
+    schema:genre "Pharmacoepidemiology research" ;
+    schema:genre "Population-based study" ;
+    
+    # Temporal coverage
+    schema:temporalCoverage "2022" ;
+    schema:dateCreated "2022"^^xsd:gYear ;
+    
+    # Research context
+    schema:isPartOf [
+        a schema:CreativeWork ;
+        schema:name "PharmLines Initiative research program" ;
+        schema:description "Part of the PharmLines Initiative facilitating research on medical drug data in combination with broad health and biobank data of Lifelines"
+    ] ;
+    
+    # Academic significance
+    schema:citation [
+        a schema:CreativeWork ;
+        schema:name "Influential in precision medicine literature" ;
+        schema:description "Referenced in subsequent research on sex disparities in drug response, personalized cardiovascular medicine, and statin therapy optimization"
+    ] ;
+    
+    # Language and localization
+    schema:contentLocation [
+        a schema:Place ;
+        schema:name "Netherlands" ;
+        schema:description "Focus on Dutch population using Lifelines Cohort Study and national prescription database"
+    ] ;
+    
+    # Professional context
+    schema:industry "Pharmacoepidemiology" ;
+    schema:applicationCategory "Precision Medicine Studies" ;
+    
+    # Research contribution
+    schema:contribution [
+        a schema:Thing ;
+        schema:name "Sex-specific statin response framework" ;
+        schema:description "Provides empirical evidence and analytical framework for understanding sex disparities in statin effectiveness, supporting personalized cardiovascular medicine approaches"
+    ] ;
+    
+    # Quality indicators
+    schema:measurementTechnique [
+        "Population-based cohort analysis",
+        "Prescription database linkage",
+        "Lipid parameter measurement",
+        "Sex-stratified analysis",
+        "Real-world evidence generation",
+        "Biobank data integration"
+    ] ;
+    
+    # Usage and applications
+    schema:usageInfo [
+        a schema:CreativeWork ;
+        schema:name "Personalized cardiovascular medicine applications" ;
+        schema:description "Used for developing sex-specific statin prescribing guidelines, personalized cardiovascular risk management, and precision medicine approaches in lipid management"
+    ] ;
+    
+    # Data coverage
+    schema:coverage [
+        a schema:Thing ;
+        schema:name "Large-scale population and prescription data" ;
+        schema:description "Analysis of PharmLines Initiative data linking Lifelines Cohort Study with prescription database IADB.nl, providing comprehensive population-based evidence on statin effectiveness"
+    ] ;
+    
+    # Healthcare impact
+    schema:impact [
+        a schema:Thing ;
+        schema:name "Precision medicine and cardiovascular care influence" ;
+        schema:description "Influential research informing sex-specific cardiovascular medicine, personalized statin therapy, and precision medicine approaches in the Netherlands and internationally"
+    ] ;
+    
+    # Research institute context
+    schema:provider [
+        a foaf:Organization ;
+        foaf:name "PharmLines Initiative" ;
+        schema:name "PharmLines Initiative" ;
+        schema:url <https://pharmlines.nl/> ;
+        schema:parentOrganization [
+            a foaf:Organization ;
+            foaf:name "University Medical Center Groningen" ;
+            schema:description "Leading academic medical center"
+        ] ;
+        schema:description "Research initiative facilitating research on medical drug data in combination with broad health and biobank data of Lifelines"
+    ] ;
+    
+    # Theoretical framework
+    schema:theoreticalFramework [
+        a schema:Thing ;
+        schema:name "Pharmacoepidemiology and precision medicine theory" ;
+        schema:description "Analysis based on pharmacoepidemiology principles, sex-based medicine theory, and precision medicine frameworks examining differential drug responses between sexes"
+    ] ;
+    
+    # Healthcare implications
+    schema:healthcareImplication [
+        a schema:Thing ;
+        schema:name "Sex-specific cardiovascular medicine" ;
+        schema:description "Recommendations for developing sex-specific approaches to statin therapy and cardiovascular risk management to optimize treatment outcomes"
+    ] ;
+    
+    # Research network
+    schema:collaborator [
+        a foaf:Organization ;
+        foaf:name "Lifelines Cohort Study" ;
+        schema:description "Large population-based biobank providing comprehensive health and genetic data for research"
+    ] ;
+    
+    # Pharmacoepidemiology focus areas
+    schema:pharmacoepidemiologyArea [
+        a schema:Thing ;
+        schema:name "Sex Disparities in Drug Response" ;
+        schema:description "Investigation of differential drug responses between men and women"
+    ] ;
+    
+    schema:pharmacoepidemiologyArea [
+        a schema:Thing ;
+        schema:name "Real-World Statin Effectiveness" ;
+        schema:description "Population-based analysis of statin effectiveness in real-world clinical practice"
+    ] ;
+    
+    schema:pharmacoepidemiologyArea [
+        a schema:Thing ;
+        schema:name "Precision Cardiovascular Medicine" ;
+        schema:description "Development of personalized approaches to cardiovascular drug therapy"
+    ] ;
+    
+    # Healthcare policy context
+    schema:policyContext [
+        a schema:Thing ;
+        schema:name "Personalized medicine policy" ;
+        schema:description "Evidence-based approach to healthcare policy development for sex-specific drug therapy and precision medicine implementation"
+    ] ;
+    
+    # Performance indicators
+    schema:performanceIndicator [
+        a schema:Thing ;
+        schema:name "Sex-specific drug effectiveness" ;
+        schema:description "Measurement of differential drug effectiveness between sexes for optimized therapeutic approaches"
+    ] ;
+    
+    # Healthcare planning
+    schema:healthcarePlanning [
+        a schema:Thing ;
+        schema:name "Precision medicine implementation" ;
+        schema:description "Planning mechanisms through which healthcare systems can implement sex-specific drug therapy and personalized cardiovascular medicine"
+    ] ;
+    
+    # Research methodology details
+    schema:researchMethodology [
+        a schema:Thing ;
+        schema:name "Population-based pharmacoepidemiology analysis" ;
+        schema:description "Quantitative research approach analyzing sex disparities in drug response using large-scale population cohort data linked with prescription databases and biobank information for real-world evidence generation"
+    ] .
+

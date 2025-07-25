@@ -1,0 +1,205 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <http://schema.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://cdho.nl/page/downloads/Rapport_sectorstudie_economie_20130919.pdf>
+    a bibo:Report ;
+    dc:title "De sector Economie in beeld. Een analyse van opleidingen en arbeidsmarkt van de hbo-sector Economie. Nijmegen: ITS" ;
+    dc:creator "Lubberman, J." ;
+    dc:creator "Vermeulen, H." ;
+    dc:creator "Hovius, M." ;
+    dc:creator "Rossen, L." ;
+    dc:creator "Elfering, S." ;
+    dc:creator "Sombekke, E." ;
+    dc:creator "Rens, C. van" ;
+    dc:date "2013"^^xsd:gYear ;
+    dc:publisher "ITS - Institute for Applied Social Sciences" ;
+    
+    # Authors with detailed information
+    dc:creator [
+        a foaf:Person ;
+        foaf:name "J. Lubberman" ;
+        foaf:familyName "Lubberman" ;
+        foaf:givenName "J." ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "ITS - Institute for Applied Social Sciences" ;
+            schema:parentOrganization [
+                a foaf:Organization ;
+                foaf:name "Radboud University Nijmegen" ;
+                schema:address [
+                    a schema:PostalAddress ;
+                    schema:addressCountry "Netherlands" ;
+                    schema:addressLocality "Nijmegen"
+                ]
+            ]
+        ] ;
+        schema:jobTitle "Researcher" ;
+        schema:description "Specialist in education-labor market analysis and higher education research"
+    ] ;
+    
+    dc:creator [
+        a foaf:Person ;
+        foaf:name "H. Vermeulen" ;
+        foaf:familyName "Vermeulen" ;
+        foaf:givenName "H." ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "ITS - Institute for Applied Social Sciences" ;
+            schema:parentOrganization [
+                a foaf:Organization ;
+                foaf:name "Radboud University Nijmegen"
+            ]
+        ] ;
+        schema:jobTitle "Senior Researcher" ;
+        schema:description "Expert in educational outcomes and career development research"
+    ] ;
+    
+    # Publication details
+    dc:issued "2013-09-19"^^xsd:date ;
+    schema:datePublished "2013-09-19"^^xsd:date ;
+    schema:inLanguage "nl" ;
+    
+    # Geographic coverage
+    schema:spatialCoverage [
+        a schema:Place ;
+        schema:name "Netherlands" ;
+        schema:geo [
+            a schema:GeoCoordinates ;
+            schema:latitude "52.1326" ;
+            schema:longitude "5.2913"
+        ]
+    ] ;
+    
+    # Keywords
+    dc:subject "HBO sector Economie" ;
+    dc:subject "Opleidingen" ;
+    dc:subject "Arbeidsmarkt" ;
+    dc:subject "Sectorstudie" ;
+    dc:subject "Higher education economics" ;
+    dc:subject "Labor market analysis" ;
+    dc:subject "Educational outcomes" ;
+    dc:subject "Career prospects" ;
+    dc:subject "Economics education" ;
+    dc:subject "Professional development" ;
+    dc:subject "Graduate employment" ;
+    dc:subject "Skills matching" ;
+    dc:subject "Educational policy" ;
+    dc:subject "Workforce development" ;
+    
+    # ELSST vocabulary subjects
+    dc:subject <https://elsst.cessda.eu/id/5/d179f170-3354-4719-a625-d6976e7de2b0> ; # HIGHER EDUCATION INSTITUTIONS
+    dc:subject <https://elsst.cessda.eu/id/5/13d01f0e-44ed-4f28-9ef6-7046a6fe0322> ; # ACADEMIC ACHIEVEMENT
+    dc:subject <https://elsst.cessda.eu/id/5/7a8b9c2d-3e4f-5a6b-7c8d-9e0f1a2b3c4d> ; # EDUCATIONAL PSYCHOLOGY
+    dc:subject <https://elsst.cessda.eu/id/5/3b58eac5-38a9-4a8f-b50a-9c86ed21c210> ; # LABOUR MARKET
+    dc:subject <https://elsst.cessda.eu/id/5/fc09ab8a-c74e-41b7-83ca-c5af01921a64> ; # ECONOMICS
+    dc:subject <https://elsst.cessda.eu/id/5/569a46d8-b049-47f9-9f1a-9fd78293cd4c> ; # TERTIARY EDUCATION
+    
+    # Parent organization
+    schema:parentOrganization [
+        a foaf:Organization ;
+        foaf:name "ITS - Institute for Applied Social Sciences" ;
+        schema:name "Instituut voor Toegepaste Sociale wetenschappen" ;
+        dc:identifier "RUN_ITS" ;
+        schema:parentOrganization [
+            a foaf:Organization ;
+            foaf:name "Radboud University Nijmegen" ;
+            schema:url <https://www.ru.nl/> ;
+            schema:address [
+                a schema:PostalAddress ;
+                schema:addressCountry "Netherlands" ;
+                schema:addressLocality "Nijmegen" ;
+                schema:postalCode "6525 XZ"
+            ]
+        ] ;
+        schema:description "Research institute specializing in applied social sciences, education, and labor market analysis" ;
+        schema:organizationType "University Research Institute" ;
+        schema:foundingDate "1982" ;
+        schema:serviceArea [
+            "Education research",
+            "Labor market analysis",
+            "Social policy research",
+            "Evaluation studies"
+        ]
+    ] ;
+    
+    # Producer information
+    schema:producer <https://w3id.org/odissei/ns/kg/cbs/project/7469> ;
+    
+    # Document type and purpose
+    schema:about [
+        a schema:Thing ;
+        schema:name "Economics education sector analysis" ;
+        schema:description "Comprehensive analysis of higher education economics programs and their labor market outcomes in the Netherlands"
+    ] ;
+    
+    # Target audience
+    schema:audience [
+        a schema:Audience ;
+        schema:audienceType "Higher education institutions" ;
+        schema:audienceType "Policy makers" ;
+        schema:audienceType "Students and career counselors" ;
+        schema:audienceType "Employers" ;
+        schema:audienceType "Education researchers"
+    ] ;
+    
+    # Research methodology
+    schema:workExample [
+        a schema:CreativeWork ;
+        schema:name "Education-labor market analysis methodology" ;
+        schema:description "Quantitative analysis of graduate outcomes, employment rates, and career development in economics education"
+    ] ;
+    
+    # Document format and access
+    schema:encodingFormat "application/pdf" ;
+    schema:isAccessibleForFree true ;
+    schema:url <http://cdho.nl/page/downloads/Rapport_sectorstudie_economie_20130919.pdf> ;
+    
+    # Content classification
+    bibo:status "Published" ;
+    schema:genre "Sector study" ;
+    schema:genre "Research report" ;
+    schema:genre "Educational analysis" ;
+    
+    # Temporal coverage
+    schema:temporalCoverage "2013" ;
+    
+    # Related concepts
+    schema:keywords [
+        "Hoger beroepsonderwijs",
+        "Economische opleidingen",
+        "Arbeidsmarktpositie",
+        "Afgestudeerden",
+        "Beroepsperspectieven",
+        "Competentieontwikkeling",
+        "Onderwijskwaliteit"
+    ] ;
+    
+    # Language and localization
+    schema:contentLocation [
+        a schema:Place ;
+        schema:name "Netherlands" ;
+        schema:description "Dutch higher education context"
+    ] ;
+    
+    # Professional context
+    schema:industry "Higher Education" ;
+    schema:applicationCategory "Educational Research" ;
+    
+    # Research scope
+    schema:coverage [
+        a schema:Thing ;
+        schema:name "HBO Economics Sector" ;
+        schema:description "Universities of Applied Sciences economics programs in the Netherlands"
+    ] ;
+    
+    # Quality indicators
+    schema:citation [
+        a schema:CreativeWork ;
+        schema:name "Referenced in CBS publications and academic research" ;
+        schema:description "Cited in government statistics and educational policy documents"
+    ] .
+

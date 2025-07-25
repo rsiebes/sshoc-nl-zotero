@@ -1,0 +1,604 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <http://schema.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://ehp.niehs.nih.gov/pub/advance/>
+    a bibo:Article, schema:ScholarlyArticle ;
+    dc:title "Air pollution and Mortality in 7 Million Adults - The Dutch Environmental Longitudinal Study (DUELS)" ;
+    dc:creator "Fischer, Paul H., Marten Marra, Caroline B. Ameling, Gerard Hoek, Rob Beelen, Kees de Hoogh, Oscar Breugelmans, Hanneke Kruize, Nicole A.H. Janssen, and Danny Houthuijs" ;
+    dc:date "2015"^^xsd:gYear ;
+    dc:publisher "National Institute of Environmental Health Sciences" ;
+    
+    # Publication details
+    dc:issued "2015"^^xsd:gYear ;
+    schema:datePublished "2015-07-01"^^xsd:date ;
+    schema:inLanguage "en" ;
+    
+    # DOI and identifiers
+    dc:identifier <https://doi.org/10.1289/ehp.1408254> ;
+    schema:doi "10.1289/ehp.1408254" ;
+    schema:url <https://ehp.niehs.nih.gov/1408254> ;
+    rdfs:seeAlso <https://pubmed.ncbi.nlm.nih.gov/25760672/> ;
+    rdfs:seeAlso <https://pmc.ncbi.nlm.nih.gov/articles/PMC4492265/> ;
+    
+    # Lead author Paul H. Fischer
+    schema:author [
+        a foaf:Person ;
+        foaf:name "Paul H. Fischer" ;
+        foaf:givenName "Paul" ;
+        foaf:familyName "Fischer" ;
+        schema:additionalName "H." ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "National Institute for Public Health and the Environment" ;
+            schema:name "National Institute for Public Health and the Environment (RIVM)" ;
+            schema:department "Department for Environmental Health" ;
+            schema:parentOrganization [
+                a foaf:Organization ;
+                foaf:name "Centre for Sustainability, Environment and Health" ;
+                schema:description "Research center focusing on environmental health and sustainability"
+            ] ;
+            schema:url <https://www.rivm.nl/> ;
+            schema:address [
+                a schema:PostalAddress ;
+                schema:addressLocality "De Bilt" ;
+                schema:addressCountry "Netherlands"
+            ]
+        ] ;
+        schema:jobTitle "Air pollution epidemiologist and policy advisor" ;
+        schema:sameAs <https://scholar.google.com/citations?user=GO52dLwAAAAJ> ;
+        schema:email "paul.fischer@rivm.nl" ;
+        schema:additionalProperty [
+            schema:name "Citations" ;
+            schema:value "21,542"
+        ] ;
+        schema:additionalProperty [
+            schema:name "Education" ;
+            schema:value "MSc"
+        ] ;
+        schema:expertise [
+            "Air pollution epidemiology",
+            "Environmental health",
+            "Public health policy",
+            "Environmental burden of disease",
+            "Climate change and health",
+            "Mortality and morbidity studies",
+            "Environmental exposure assessment"
+        ]
+    ] ;
+    
+    # Co-author Marten Marra
+    schema:author [
+        a foaf:Person ;
+        foaf:name "Marten Marra" ;
+        foaf:givenName "Marten" ;
+        foaf:familyName "Marra" ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "National Institute for Public Health and the Environment" ;
+            schema:name "National Institute for Public Health and the Environment (RIVM)" ;
+            schema:department "Environmental Health" ;
+            schema:url <https://www.rivm.nl/>
+        ] ;
+        schema:jobTitle "Researcher" ;
+        schema:expertise [
+            "Air pollution",
+            "Environmental epidemiology",
+            "Mortality studies",
+            "Environmental health",
+            "Public health research",
+            "Environmental exposure assessment"
+        ]
+    ] ;
+    
+    # Co-author Caroline B. Ameling
+    schema:author [
+        a foaf:Person ;
+        foaf:name "Caroline B. Ameling" ;
+        foaf:givenName "Caroline" ;
+        foaf:familyName "Ameling" ;
+        schema:additionalName "B." ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "National Institute for Public Health and the Environment" ;
+            schema:name "National Institute for Public Health and the Environment (RIVM)" ;
+            schema:url <https://www.rivm.nl/>
+        ] ;
+        schema:jobTitle "Researcher" ;
+        schema:expertise [
+            "Environmental health",
+            "Air pollution research",
+            "Epidemiological studies"
+        ]
+    ] ;
+    
+    # Co-author Gerard Hoek
+    schema:author [
+        a foaf:Person ;
+        foaf:name "Gerard Hoek" ;
+        foaf:givenName "Gerard" ;
+        foaf:familyName "Hoek" ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "Utrecht University" ;
+            schema:name "Utrecht University" ;
+            schema:department "Institute for Risk Assessment Sciences" ;
+            schema:url <https://www.uu.nl/> ;
+            schema:address [
+                a schema:PostalAddress ;
+                schema:addressLocality "Utrecht" ;
+                schema:addressCountry "Netherlands"
+            ]
+        ] ;
+        schema:jobTitle "Professor" ;
+        schema:email "G.Hoek@uu.nl" ;
+        schema:additionalProperty [
+            schema:name "Education" ;
+            schema:value "Dr. ir. (PhD)"
+        ] ;
+        schema:expertise [
+            "Environmental exposure assessment",
+            "Air pollution",
+            "Environmental epidemiology",
+            "Combined effects of air pollution, noise and green space",
+            "Low air pollution levels effects",
+            "European cohort studies",
+            "Environmental stressors"
+        ]
+    ] ;
+    
+    # Co-author Rob Beelen
+    schema:author [
+        a foaf:Person ;
+        foaf:name "Rob Beelen" ;
+        foaf:givenName "Rob" ;
+        foaf:familyName "Beelen" ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "Utrecht University" ;
+            schema:name "Utrecht University" ;
+            schema:department "Institute for Risk Assessment Sciences" ;
+            schema:url <https://www.uu.nl/>
+        ] ;
+        schema:jobTitle "Researcher" ;
+        schema:expertise [
+            "Environmental exposure assessment",
+            "Air pollution modeling",
+            "Environmental epidemiology"
+        ]
+    ] ;
+    
+    # Co-author Kees de Hoogh
+    schema:author [
+        a foaf:Person ;
+        foaf:name "Kees de Hoogh" ;
+        foaf:givenName "Kees" ;
+        foaf:familyName "de Hoogh" ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "Imperial College London" ;
+            schema:name "Imperial College London" ;
+            schema:department "MRC-PHE Centre for Environment and Health" ;
+            schema:url <https://www.imperial.ac.uk/>
+        ] ;
+        schema:jobTitle "Senior Research Fellow" ;
+        schema:expertise [
+            "Environmental exposure assessment",
+            "Air pollution modeling",
+            "Spatial analysis",
+            "Environmental health"
+        ]
+    ] ;
+    
+    # Co-author Oscar Breugelmans
+    schema:author [
+        a foaf:Person ;
+        foaf:name "Oscar Breugelmans" ;
+        foaf:givenName "Oscar" ;
+        foaf:familyName "Breugelmans" ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "National Institute for Public Health and the Environment" ;
+            schema:name "National Institute for Public Health and the Environment (RIVM)" ;
+            schema:url <https://www.rivm.nl/>
+        ] ;
+        schema:jobTitle "Researcher" ;
+        schema:expertise [
+            "Environmental health",
+            "Public health research",
+            "Epidemiological studies"
+        ]
+    ] ;
+    
+    # Co-author Hanneke Kruize
+    schema:author [
+        a foaf:Person ;
+        foaf:name "Hanneke Kruize" ;
+        foaf:givenName "Hanneke" ;
+        foaf:familyName "Kruize" ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "National Institute for Public Health and the Environment" ;
+            schema:name "National Institute for Public Health and the Environment (RIVM)" ;
+            schema:url <https://www.rivm.nl/>
+        ] ;
+        schema:jobTitle "Senior Researcher" ;
+        schema:expertise [
+            "Environmental health",
+            "Environmental justice",
+            "Health inequalities",
+            "Urban health"
+        ]
+    ] ;
+    
+    # Co-author Nicole A.H. Janssen
+    schema:author [
+        a foaf:Person ;
+        foaf:name "Nicole A.H. Janssen" ;
+        foaf:givenName "Nicole" ;
+        foaf:familyName "Janssen" ;
+        schema:additionalName "A.H." ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "National Institute for Public Health and the Environment" ;
+            schema:name "National Institute for Public Health and the Environment (RIVM)" ;
+            schema:url <https://www.rivm.nl/>
+        ] ;
+        schema:jobTitle "Senior Researcher" ;
+        schema:expertise [
+            "Air pollution health effects",
+            "Environmental epidemiology",
+            "Particulate matter research",
+            "Environmental health assessment"
+        ]
+    ] ;
+    
+    # Co-author Danny Houthuijs
+    schema:author [
+        a foaf:Person ;
+        foaf:name "Danny Houthuijs" ;
+        foaf:givenName "Danny" ;
+        foaf:familyName "Houthuijs" ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "National Institute for Public Health and the Environment" ;
+            schema:name "National Institute for Public Health and the Environment (RIVM)" ;
+            schema:url <https://www.rivm.nl/>
+        ] ;
+        schema:jobTitle "Senior Researcher" ;
+        schema:expertise [
+            "Environmental epidemiology",
+            "Air pollution health effects",
+            "Environmental health research",
+            "Public health assessment"
+        ]
+    ] ;
+    
+    # Geographic coverage
+    schema:spatialCoverage [
+        a schema:Place ;
+        schema:name "Netherlands" ;
+        schema:description "Nationwide study covering the entire Dutch population aged 30 years and older (7 million adults)"
+    ] ;
+    
+    # Keywords
+    dc:subject "Air pollution" ;
+    dc:subject "Mortality" ;
+    dc:subject "Environmental epidemiology" ;
+    dc:subject "PM10" ;
+    dc:subject "NO2" ;
+    dc:subject "Particulate matter" ;
+    dc:subject "Nitrogen dioxide" ;
+    dc:subject "Long-term exposure" ;
+    dc:subject "Environmental health" ;
+    dc:subject "Public health" ;
+    dc:subject "Cohort study" ;
+    dc:subject "DUELS" ;
+    dc:subject "Dutch Environmental Longitudinal Study" ;
+    dc:subject "Cardiovascular mortality" ;
+    dc:subject "Respiratory mortality" ;
+    dc:subject "Nonaccidental mortality" ;
+    dc:subject "Cause-specific mortality" ;
+    dc:subject "Environmental exposure" ;
+    dc:subject "Population health" ;
+    dc:subject "Environmental burden of disease" ;
+    dc:subject "Health impact assessment" ;
+    dc:subject "Environmental policy" ;
+    dc:subject "Climate change" ;
+    dc:subject "Urban health" ;
+    dc:subject "Environmental justice" ;
+    dc:subject "Health inequalities" ;
+    
+    # ELSST vocabulary subjects
+    dc:subject <https://elsst.cessda.eu/id/5/43ad3351-9ac1-4ee7-ab31-ecbf7738e689> ; # HEALTH EXPENDITURE
+    dc:subject <https://elsst.cessda.eu/id/5/29768110-2efc-493b-bad3-59c2727939ff> ; # HEALTH CARE COSTS
+    dc:subject <https://elsst.cessda.eu/id/5/c5c7a428-e9e0-4248-a502-b0773a2f8eb5> ; # EPIDEMIOLOGY
+    dc:subject <https://elsst.cessda.eu/id/5/fc09ab8a-c74e-41b7-83ca-c5af01921a64> ; # ECONOMICS
+    dc:subject <https://elsst.cessda.eu/id/5/498de90d-7d1e-4f94-b283-181b7edb3ebf> ; # ELDERLY
+    dc:subject <https://elsst.cessda.eu/id/5/d179f170-3354-4719-a625-d6976e7de2b0> ; # HIGHER EDUCATION INSTITUTIONS
+    
+    # Parent organization
+    schema:parentOrganization [
+        a foaf:Organization ;
+        foaf:name "National Institute for Public Health and the Environment" ;
+        schema:name "National Institute for Public Health and the Environment (RIVM)" ;
+        dc:identifier <https://ror.org/01cesdt21> ;
+        schema:url <https://www.rivm.nl/> ;
+        schema:address [
+            a schema:PostalAddress ;
+            schema:addressLocality "De Bilt" ;
+            schema:addressCountry "Netherlands"
+        ] ;
+        schema:description "Leading Dutch national institute for public health and environmental protection" ;
+        schema:organizationType "Government Research Institute" ;
+        schema:parentOrganization [
+            a foaf:Organization ;
+            foaf:name "Ministry of Health, Welfare and Sport" ;
+            schema:description "Dutch government ministry responsible for public health policy"
+        ] ;
+        schema:department [
+            a foaf:Organization ;
+            foaf:name "Centre for Sustainability, Environment and Health" ;
+            schema:description "Research center focusing on environmental health and sustainability"
+        ] ;
+        schema:department [
+            a foaf:Organization ;
+            foaf:name "Department for Environmental Health" ;
+            schema:description "Department specializing in environmental health research and policy"
+        ]
+    ] ;
+    
+    # Producer information
+    schema:producer <https://w3id.org/odissei/ns/kg/cbs/project/7267> ;
+    
+    # Publication venue
+    schema:isPartOf [
+        a schema:Periodical ;
+        schema:name "Environmental Health Perspectives" ;
+        schema:publisher [
+            a foaf:Organization ;
+            foaf:name "National Institute of Environmental Health Sciences" ;
+            schema:name "National Institute of Environmental Health Sciences (NIEHS)" ;
+            schema:url <https://www.niehs.nih.gov/> ;
+            schema:parentOrganization [
+                a foaf:Organization ;
+                foaf:name "National Institutes of Health" ;
+                schema:description "Leading US biomedical research agency"
+            ] ;
+            schema:address [
+                a schema:PostalAddress ;
+                schema:addressLocality "Research Triangle Park" ;
+                schema:addressRegion "North Carolina" ;
+                schema:addressCountry "United States"
+            ] ;
+            schema:description "Leading journal in environmental health sciences"
+        ] ;
+        schema:issn "0091-6765" ;
+        schema:description "Premier journal for environmental health research" ;
+        schema:volume "123" ;
+        schema:issue "7" ;
+        schema:pageStart "697" ;
+        schema:pageEnd "704"
+    ] ;
+    
+    # Abstract and research focus
+    schema:about [
+        a schema:Thing ;
+        schema:name "Long-term air pollution exposure and mortality in Dutch population" ;
+        schema:description "Large-scale longitudinal study evaluating associations between long-term exposure to air pollution (PM10 and NO2) and nonaccidental and cause-specific mortality in 7 million Dutch adults aged 30 years and older"
+    ] ;
+    
+    # Research methodology
+    schema:workExample [
+        a schema:CreativeWork ;
+        schema:name "Dutch Environmental Longitudinal Study (DUELS)" ;
+        schema:description "Nationwide cohort study linking environmental exposure data with mortality records for the entire Dutch population aged 30 years and older, providing unprecedented scale for air pollution health effects research"
+    ] ;
+    
+    # Target audience
+    schema:audience [
+        a schema:Audience ;
+        schema:audienceType "Environmental health researchers" ;
+        schema:audienceType "Public health officials" ;
+        schema:audienceType "Environmental policy makers" ;
+        schema:audienceType "Epidemiologists" ;
+        schema:audienceType "Air quality managers" ;
+        schema:audienceType "Urban planners" ;
+        schema:audienceType "Climate change researchers" ;
+        schema:audienceType "Government health agencies" ;
+        schema:audienceType "International health organizations" ;
+        schema:audienceType "Environmental justice advocates"
+    ] ;
+    
+    # Research findings and implications
+    schema:result [
+        a schema:Thing ;
+        schema:name "Significant associations between air pollution and mortality" ;
+        schema:description "Evidence that long-term exposure to PM10 and NO2 was associated with nonaccidental and cause-specific mortality in the Dutch population, with implications for air quality standards and public health policy"
+    ] ;
+    
+    # Document format and access
+    schema:encodingFormat "application/pdf" ;
+    schema:isAccessibleForFree true ;
+    schema:url <https://ehp.niehs.nih.gov/1408254> ;
+    
+    # Content classification
+    bibo:status "Published" ;
+    schema:genre "Academic research" ;
+    schema:genre "Epidemiological study" ;
+    schema:genre "Environmental health research" ;
+    schema:genre "Population-based study" ;
+    
+    # Temporal coverage
+    schema:temporalCoverage "2015" ;
+    schema:dateCreated "2015"^^xsd:gYear ;
+    
+    # Research context
+    schema:isPartOf [
+        a schema:CreativeWork ;
+        schema:name "Dutch Environmental Longitudinal Study (DUELS) research program" ;
+        schema:description "Part of the comprehensive DUELS research program examining environmental health effects in the Dutch population"
+    ] ;
+    
+    # Academic significance
+    schema:citation [
+        a schema:CreativeWork ;
+        schema:name "Influential in environmental health and air pollution literature" ;
+        schema:description "Widely cited in subsequent research on air pollution health effects, environmental policy development, and large-scale environmental epidemiology studies"
+    ] ;
+    
+    # Language and localization
+    schema:contentLocation [
+        a schema:Place ;
+        schema:name "Netherlands" ;
+        schema:description "Nationwide study covering the entire Dutch population with comprehensive environmental and health data linkage"
+    ] ;
+    
+    # Professional context
+    schema:industry "Environmental Health" ;
+    schema:applicationCategory "Public Health Research" ;
+    
+    # Research contribution
+    schema:contribution [
+        a schema:Thing ;
+        schema:name "Large-scale environmental epidemiology framework" ;
+        schema:description "Provides methodological framework for conducting nationwide environmental health studies and demonstrates the feasibility of linking environmental exposure data with population health records"
+    ] ;
+    
+    # Quality indicators
+    schema:measurementTechnique [
+        "Nationwide cohort study design",
+        "Environmental exposure modeling",
+        "Mortality record linkage",
+        "Statistical survival analysis",
+        "Air pollution exposure assessment",
+        "Population-based epidemiology"
+    ] ;
+    
+    # Usage and applications
+    schema:usageInfo [
+        a schema:CreativeWork ;
+        schema:name "Environmental health policy and air quality standards applications" ;
+        schema:description "Used for developing air quality standards, environmental health policy, and understanding population-level health impacts of air pollution exposure"
+    ] ;
+    
+    # Data coverage
+    schema:coverage [
+        a schema:Thing ;
+        schema:name "Comprehensive Dutch population and environmental data" ;
+        schema:description "Analysis of 7 million Dutch adults with complete environmental exposure assessment and mortality follow-up, providing unprecedented scale for environmental health research"
+    ] ;
+    
+    # Public health impact
+    schema:impact [
+        a schema:Thing ;
+        schema:name "Environmental health policy and air quality regulation influence" ;
+        schema:description "Influential research informing air quality standards, environmental health policy, and public health protection measures in the Netherlands and internationally"
+    ] ;
+    
+    # Research institute context
+    schema:provider [
+        a foaf:Organization ;
+        foaf:name "National Institute for Public Health and the Environment (RIVM)" ;
+        schema:name "National Institute for Public Health and the Environment (RIVM)" ;
+        schema:url <https://www.rivm.nl/> ;
+        schema:parentOrganization [
+            a foaf:Organization ;
+            foaf:name "Ministry of Health, Welfare and Sport" ;
+            schema:description "Dutch government ministry responsible for public health policy"
+        ] ;
+        schema:description "Leading Dutch national institute for public health and environmental protection"
+    ] ;
+    
+    # Theoretical framework
+    schema:theoreticalFramework [
+        a schema:Thing ;
+        schema:name "Environmental epidemiology and exposure assessment theory" ;
+        schema:description "Analysis based on environmental epidemiology principles, exposure assessment methodology, and population health surveillance frameworks"
+    ] ;
+    
+    # Public health implications
+    schema:publicHealthImplication [
+        a schema:Thing ;
+        schema:name "Air quality standards and environmental health policy" ;
+        schema:description "Recommendations for strengthening air quality standards and developing comprehensive environmental health policies to protect population health"
+    ] ;
+    
+    # Research network
+    schema:collaborator [
+        a foaf:Organization ;
+        foaf:name "Utrecht University" ;
+        schema:description "Leading Dutch university with strong environmental health research program"
+    ] ;
+    
+    # Environmental health focus areas
+    schema:environmentalHealthArea [
+        a schema:Thing ;
+        schema:name "Air Pollution Epidemiology" ;
+        schema:description "Investigation of health effects of long-term air pollution exposure in large populations"
+    ] ;
+    
+    schema:environmentalHealthArea [
+        a schema:Thing ;
+        schema:name "Environmental Exposure Assessment" ;
+        schema:description "Development and application of methods for assessing population-level environmental exposures"
+    ] ;
+    
+    schema:environmentalHealthArea [
+        a schema:Thing ;
+        schema:name "Population Health Surveillance" ;
+        schema:description "Large-scale monitoring of environmental health effects in national populations"
+    ] ;
+    
+    # Environmental policy context
+    schema:policyContext [
+        a schema:Thing ;
+        schema:name "Air quality and environmental health policy" ;
+        schema:description "Evidence-based approach to environmental policy development for protecting public health from air pollution"
+    ] ;
+    
+    # Performance indicators
+    schema:performanceIndicator [
+        a schema:Thing ;
+        schema:name "Population health outcomes" ;
+        schema:description "Measurement of mortality and morbidity outcomes associated with environmental exposures for policy evaluation"
+    ] ;
+    
+    # Environmental planning
+    schema:environmentalPlanning [
+        a schema:Thing ;
+        schema:name "Air quality management and health protection" ;
+        schema:description "Planning mechanisms through which air quality policies can be designed to protect population health and reduce environmental health disparities"
+    ] ;
+    
+    # Research methodology details
+    schema:researchMethodology [
+        a schema:Thing ;
+        schema:name "Large-scale environmental epidemiology with administrative data linkage" ;
+        schema:description "Comprehensive approach combining environmental exposure modeling, population health surveillance, and administrative data linkage to assess environmental health effects at national scale"
+    ] ;
+    
+    # Study population characteristics
+    schema:studyPopulation [
+        a schema:Thing ;
+        schema:name "Dutch population aged 30 years and older" ;
+        schema:description "Nationwide cohort of 7 million Dutch adults providing comprehensive representation of the Dutch population for environmental health research"
+    ] ;
+    
+    # Environmental exposure assessment
+    schema:exposureAssessment [
+        a schema:Thing ;
+        schema:name "National air pollution exposure modeling" ;
+        schema:description "Comprehensive assessment of PM10 and NO2 exposure levels across the Netherlands using advanced environmental modeling techniques"
+    ] ;
+    
+    # Health outcome assessment
+    schema:healthOutcome [
+        a schema:Thing ;
+        schema:name "Mortality surveillance and cause-specific analysis" ;
+        schema:description "Comprehensive mortality follow-up with detailed cause-specific analysis including cardiovascular, respiratory, and nonaccidental mortality"
+    ] .
+

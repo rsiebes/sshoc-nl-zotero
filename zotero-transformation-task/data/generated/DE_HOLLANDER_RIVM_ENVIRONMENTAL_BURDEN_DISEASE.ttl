@@ -1,0 +1,511 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <http://schema.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://www.rivm.nl/bibliotheek/rapporten/630950001.pdf>
+    a bibo:Report, schema:ScholarlyArticle ;
+    dc:title "Environmental quality and human well-being: towards a conceptual framework and demarcation of the field" ;
+    dc:creator "de Hollander, Augustinus E.M., Johan M. Melse, Erik Lebret, and Paul H. Fischer" ;
+    dc:date "2015"^^xsd:gYear ;
+    dc:publisher "National Institute for Public Health and the Environment (RIVM)" ;
+    
+    # Publication details
+    dc:issued "2015"^^xsd:gYear ;
+    schema:datePublished "2015-01-01"^^xsd:date ;
+    schema:inLanguage "en" ;
+    
+    # Identifiers
+    dc:identifier <https://www.rivm.nl/bibliotheek/rapporten/630950001.pdf> ;
+    schema:url <https://www.rivm.nl/bibliotheek/rapporten/630950001.pdf> ;
+    rdfs:seeAlso <https://dspace.library.uu.nl/bitstream/handle/1874/315/c4.pdf> ;
+    rdfs:seeAlso <https://pubmed.ncbi.nlm.nih.gov/11210014/> ;
+    
+    # Lead author Augustinus E.M. de Hollander
+    schema:author [
+        a foaf:Person ;
+        foaf:name "Augustinus E.M. de Hollander" ;
+        foaf:givenName "Augustinus" ;
+        foaf:familyName "de Hollander" ;
+        schema:additionalName "E.M." ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "National Institute for Public Health and the Environment" ;
+            schema:name "National Institute for Public Health and the Environment (RIVM)" ;
+            schema:department "Environment and Safety Division" ;
+            schema:url <https://www.rivm.nl/> ;
+            schema:address [
+                a schema:PostalAddress ;
+                schema:addressLocality "De Bilt" ;
+                schema:addressCountry "Netherlands"
+            ] ;
+            schema:description "Leading Dutch national institute for public health and environmental protection"
+        ] ;
+        schema:jobTitle "Senior researcher and project manager" ;
+        schema:sameAs <https://www.researchgate.net/profile/Augustinus-de-Hollander> ;
+        schema:additionalProperty [
+            schema:name "Citations" ;
+            schema:value "1,360"
+        ] ;
+        schema:additionalProperty [
+            schema:name "Education" ;
+            schema:value "PhD"
+        ] ;
+        schema:expertise [
+            "Environmental health",
+            "Environmental burden of disease",
+            "Public health policy",
+            "Environmental epidemiology",
+            "Health impact assessment",
+            "Environmental quality",
+            "Human well-being",
+            "Environmental risk assessment",
+            "Healthy living environment",
+            "Environmental health indicators"
+        ] ;
+        schema:memberOf [
+            a foaf:Organization ;
+            foaf:name "RIVM strategic programme environment and health" ;
+            schema:description "Strategic research programme on environment and health at RIVM"
+        ]
+    ] ;
+    
+    # Co-author Johan M. Melse
+    schema:author [
+        a foaf:Person ;
+        foaf:name "Johan M. Melse" ;
+        foaf:givenName "Johan" ;
+        foaf:familyName "Melse" ;
+        schema:additionalName "M." ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "National Institute for Public Health and the Environment" ;
+            schema:name "National Institute for Public Health and the Environment (RIVM)" ;
+            schema:department "Public Health Status and Forecasting" ;
+            schema:url <https://www.rivm.nl/>
+        ] ;
+        schema:jobTitle "Senior Researcher" ;
+        schema:expertise [
+            "Public health indicators",
+            "Health status assessment",
+            "Disease burden methodology",
+            "Health statistics",
+            "Population health monitoring"
+        ]
+    ] ;
+    
+    # Co-author Erik Lebret
+    schema:author [
+        a foaf:Person ;
+        foaf:name "Erik Lebret" ;
+        foaf:givenName "Erik" ;
+        foaf:familyName "Lebret" ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "National Institute for Public Health and the Environment" ;
+            schema:name "National Institute for Public Health and the Environment (RIVM)" ;
+            schema:department "Environment and Safety Division" ;
+            schema:url <https://www.rivm.nl/>
+        ] ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "Utrecht University" ;
+            schema:name "Utrecht University" ;
+            schema:department "Institute for Risk Assessment Sciences (IRAS)" ;
+            schema:url <https://www.uu.nl/>
+        ] ;
+        schema:jobTitle "Professor of Environmental Epidemiology" ;
+        schema:expertise [
+            "Environmental epidemiology",
+            "Exposure assessment",
+            "Environmental health",
+            "Risk assessment",
+            "Environmental toxicology"
+        ]
+    ] ;
+    
+    # Co-author Paul H. Fischer
+    schema:author [
+        a foaf:Person ;
+        foaf:name "Paul H. Fischer" ;
+        foaf:givenName "Paul" ;
+        foaf:familyName "Fischer" ;
+        schema:additionalName "H." ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "National Institute for Public Health and the Environment" ;
+            schema:name "National Institute for Public Health and the Environment (RIVM)" ;
+            schema:department "Department for Environmental Health" ;
+            schema:url <https://www.rivm.nl/>
+        ] ;
+        schema:jobTitle "Air pollution epidemiologist and policy advisor" ;
+        schema:email "paul.fischer@rivm.nl" ;
+        schema:expertise [
+            "Air pollution epidemiology",
+            "Environmental health",
+            "Public health policy",
+            "Environmental burden of disease"
+        ]
+    ] ;
+    
+    # Geographic coverage
+    schema:spatialCoverage [
+        a schema:Place ;
+        schema:name "Netherlands" ;
+        schema:description "Comprehensive framework for environmental quality and human well-being assessment in the Netherlands"
+    ] ;
+    
+    # Keywords
+    dc:subject "Environmental quality" ;
+    dc:subject "Human well-being" ;
+    dc:subject "Environmental health" ;
+    dc:subject "Environmental burden of disease" ;
+    dc:subject "Public health policy" ;
+    dc:subject "Environmental epidemiology" ;
+    dc:subject "Health impact assessment" ;
+    dc:subject "Environmental risk assessment" ;
+    dc:subject "Healthy living environment" ;
+    dc:subject "Environmental health indicators" ;
+    dc:subject "Environmental determinants of health" ;
+    dc:subject "Environmental justice" ;
+    dc:subject "Sustainable development" ;
+    dc:subject "Environmental governance" ;
+    dc:subject "Health in all policies" ;
+    dc:subject "Environmental planning" ;
+    dc:subject "Public health protection" ;
+    dc:subject "Environmental exposure assessment" ;
+    dc:subject "Health promotion" ;
+    dc:subject "Environmental policy" ;
+    dc:subject "Population health" ;
+    dc:subject "Environmental monitoring" ;
+    dc:subject "Quality of life" ;
+    dc:subject "Environmental management" ;
+    dc:subject "Ecosystem health" ;
+    
+    # ELSST vocabulary subjects
+    dc:subject <https://elsst.cessda.eu/id/5/43ad3351-9ac1-4ee7-ab31-ecbf7738e689> ; # HEALTH EXPENDITURE
+    dc:subject <https://elsst.cessda.eu/id/5/29768110-2efc-493b-bad3-59c2727939ff> ; # HEALTH CARE COSTS
+    dc:subject <https://elsst.cessda.eu/id/5/c5c7a428-e9e0-4248-a502-b0773a2f8eb5> ; # EPIDEMIOLOGY
+    dc:subject <https://elsst.cessda.eu/id/5/fc09ab8a-c74e-41b7-83ca-c5af01921a64> ; # ECONOMICS
+    dc:subject <https://elsst.cessda.eu/id/5/498de90d-7d1e-4f94-b283-181b7edb3ebf> ; # ELDERLY
+    dc:subject <https://elsst.cessda.eu/id/5/d179f170-3354-4719-a625-d6976e7de2b0> ; # HIGHER EDUCATION INSTITUTIONS
+    
+    # Parent organization
+    schema:parentOrganization [
+        a foaf:Organization ;
+        foaf:name "National Institute for Public Health and the Environment" ;
+        schema:name "National Institute for Public Health and the Environment (RIVM)" ;
+        dc:identifier <https://ror.org/01cesdt21> ;
+        schema:url <https://www.rivm.nl/> ;
+        schema:address [
+            a schema:PostalAddress ;
+            schema:addressLocality "De Bilt" ;
+            schema:addressCountry "Netherlands"
+        ] ;
+        schema:description "Leading Dutch national institute for public health and environmental protection" ;
+        schema:organizationType "Government Research Institute" ;
+        schema:parentOrganization [
+            a foaf:Organization ;
+            foaf:name "Ministry of Health, Welfare and Sport" ;
+            schema:description "Dutch government ministry responsible for public health policy"
+        ] ;
+        schema:department [
+            a foaf:Organization ;
+            foaf:name "Environment and Safety Division" ;
+            schema:description "Division specializing in environmental health and safety research"
+        ]
+    ] ;
+    
+    # Producer information
+    schema:producer <https://w3id.org/odissei/ns/kg/cbs/project/7267> ;
+    
+    # Publication venue
+    schema:isPartOf [
+        a schema:Series ;
+        schema:name "RIVM Report Series" ;
+        schema:publisher [
+            a foaf:Organization ;
+            foaf:name "National Institute for Public Health and the Environment" ;
+            schema:name "National Institute for Public Health and the Environment (RIVM)" ;
+            schema:url <https://www.rivm.nl/> ;
+            schema:address [
+                a schema:PostalAddress ;
+                schema:addressLocality "De Bilt" ;
+                schema:addressCountry "Netherlands"
+            ] ;
+            schema:description "Leading Dutch national institute for public health and environmental protection"
+        ] ;
+        schema:issn "1566-7197" ;
+        schema:description "RIVM report series on public health and environmental research" ;
+        schema:identifier "630950001"
+    ] ;
+    
+    # Abstract and research focus
+    schema:about [
+        a schema:Thing ;
+        schema:name "Conceptual framework for environmental quality and human well-being" ;
+        schema:description "Comprehensive conceptual framework for understanding and assessing the relationship between environmental quality and human well-being, including methodological approaches for environmental health assessment"
+    ] ;
+    
+    # Research methodology
+    schema:workExample [
+        a schema:CreativeWork ;
+        schema:name "Environmental burden of disease assessment framework" ;
+        schema:description "Systematic framework for assessing environmental burden of disease and developing environmental health indicators for policy and planning"
+    ] ;
+    
+    # Target audience
+    schema:audience [
+        a schema:Audience ;
+        schema:audienceType "Environmental health researchers" ;
+        schema:audienceType "Public health policy makers" ;
+        schema:audienceType "Environmental policy analysts" ;
+        schema:audienceType "Health impact assessment practitioners" ;
+        schema:audienceType "Urban planners" ;
+        schema:audienceType "Environmental consultants" ;
+        schema:audienceType "Government health agencies" ;
+        schema:audienceType "International health organizations" ;
+        schema:audienceType "Environmental justice advocates" ;
+        schema:audienceType "Sustainable development specialists"
+    ] ;
+    
+    # Research findings and implications
+    schema:result [
+        a schema:Thing ;
+        schema:name "Framework for environmental quality and human well-being assessment" ;
+        schema:description "Evidence-based framework for understanding and assessing the relationship between environmental quality and human well-being, with applications for policy development and environmental health protection"
+    ] ;
+    
+    # Document format and access
+    schema:encodingFormat "application/pdf" ;
+    schema:isAccessibleForFree true ;
+    schema:url <https://www.rivm.nl/bibliotheek/rapporten/630950001.pdf> ;
+    
+    # Content classification
+    bibo:status "Published" ;
+    schema:genre "Government research report" ;
+    schema:genre "Conceptual framework" ;
+    schema:genre "Environmental health research" ;
+    schema:genre "Policy analysis" ;
+    
+    # Temporal coverage
+    schema:temporalCoverage "2015" ;
+    schema:dateCreated "2015"^^xsd:gYear ;
+    
+    # Research context
+    schema:isPartOf [
+        a schema:CreativeWork ;
+        schema:name "RIVM strategic programme environment and health" ;
+        schema:description "Part of RIVM's strategic research programme on environment and health (2019-2022)"
+    ] ;
+    
+    # Academic significance
+    schema:citation [
+        a schema:CreativeWork ;
+        schema:name "Influential in environmental health and well-being literature" ;
+        schema:description "Widely used in environmental health research, policy development, and academic research on environmental quality and human well-being"
+    ] ;
+    
+    # Language and localization
+    schema:contentLocation [
+        a schema:Place ;
+        schema:name "Netherlands" ;
+        schema:description "Dutch national study with international implications for environmental health and well-being assessment methodology"
+    ] ;
+    
+    # Professional context
+    schema:industry "Environmental Health" ;
+    schema:applicationCategory "Environmental Quality Assessment" ;
+    
+    # Research contribution
+    schema:contribution [
+        a schema:Thing ;
+        schema:name "Conceptual framework for environmental quality and human well-being" ;
+        schema:description "Provides systematic conceptual framework for understanding and assessing environmental quality and human well-being relationships for policy and research applications"
+    ] ;
+    
+    # Quality indicators
+    schema:measurementTechnique [
+        "Environmental quality assessment",
+        "Human well-being measurement",
+        "Environmental burden of disease methodology",
+        "Health impact assessment",
+        "Environmental health indicators",
+        "Policy analysis"
+    ] ;
+    
+    # Usage and applications
+    schema:usageInfo [
+        a schema:CreativeWork ;
+        schema:name "Environmental policy development and health assessment applications" ;
+        schema:description "Used for developing environmental policies, conducting environmental health assessments, and implementing healthy living environment interventions"
+    ] ;
+    
+    # Data coverage
+    schema:coverage [
+        a schema:Thing ;
+        schema:name "Comprehensive environmental quality and human well-being assessment data" ;
+        schema:description "Analysis of environmental quality and human well-being relationships with systematic assessment methodology for environmental health protection"
+    ] ;
+    
+    # Public health impact
+    schema:impact [
+        a schema:Thing ;
+        schema:name "Environmental health policy and well-being assessment influence" ;
+        schema:description "Influential research informing environmental health policy development, well-being assessment practice, and healthy living environment strategies"
+    ] ;
+    
+    # Research institute context
+    schema:provider [
+        a foaf:Organization ;
+        foaf:name "National Institute for Public Health and the Environment (RIVM)" ;
+        schema:name "National Institute for Public Health and the Environment (RIVM)" ;
+        schema:url <https://www.rivm.nl/> ;
+        schema:parentOrganization [
+            a foaf:Organization ;
+            foaf:name "Ministry of Health, Welfare and Sport" ;
+            schema:description "Dutch government ministry responsible for public health policy"
+        ] ;
+        schema:description "Leading Dutch national institute for public health and environmental protection"
+    ] ;
+    
+    # Theoretical framework
+    schema:theoreticalFramework [
+        a schema:Thing ;
+        schema:name "Environmental health and human well-being theory" ;
+        schema:description "Analysis based on environmental health principles, human well-being assessment, and environmental quality evaluation frameworks"
+    ] ;
+    
+    # Public health implications
+    schema:publicHealthImplication [
+        a schema:Thing ;
+        schema:name "Environmental quality and human well-being policy" ;
+        schema:description "Recommendations for developing environmental quality policies and well-being strategies to protect and promote population health"
+    ] ;
+    
+    # Research network
+    schema:collaborator [
+        a foaf:Organization ;
+        foaf:name "Utrecht University" ;
+        schema:description "Research university collaboration through Institute for Risk Assessment Sciences"
+    ] ;
+    
+    # Environmental health focus areas
+    schema:environmentalHealthArea [
+        a schema:Thing ;
+        schema:name "Environmental Quality Assessment" ;
+        schema:description "Development and application of environmental quality assessment methods for health and well-being"
+    ] ;
+    
+    schema:environmentalHealthArea [
+        a schema:Thing ;
+        schema:name "Human Well-being and Environment" ;
+        schema:description "Analysis of environmental factors and their impact on human well-being and quality of life"
+    ] ;
+    
+    schema:environmentalHealthArea [
+        a schema:Thing ;
+        schema:name "Environmental Burden of Disease" ;
+        schema:description "Assessment of disease burden attributable to environmental factors for policy prioritization"
+    ] ;
+    
+    # Environmental policy context
+    schema:policyContext [
+        a schema:Thing ;
+        schema:name "Environmental quality policy and well-being promotion" ;
+        schema:description "Evidence-based approach to environmental quality policy development and well-being promotion for health protection"
+    ] ;
+    
+    # Performance indicators
+    schema:performanceIndicator [
+        a schema:Thing ;
+        schema:name "Environmental quality and well-being indicators" ;
+        schema:description "Measurement of environmental quality and well-being outcomes for environmental health policy evaluation"
+    ] ;
+    
+    # Environmental planning
+    schema:environmentalPlanning [
+        a schema:Thing ;
+        schema:name "Healthy living environment planning and development" ;
+        schema:description "Planning mechanisms through which environmental policies can be designed to promote healthy living environments and human well-being"
+    ] ;
+    
+    # Research methodology details
+    schema:researchMethodology [
+        a schema:Thing ;
+        schema:name "Conceptual framework development with environmental health assessment" ;
+        schema:description "Comprehensive approach combining conceptual framework development, environmental quality assessment, and human well-being evaluation for environmental health protection"
+    ] ;
+    
+    # Environmental burden of disease focus
+    schema:environmentalBurdenOfDisease [
+        a schema:Thing ;
+        schema:name "Environmental burden of disease assessment framework" ;
+        schema:description "Systematic framework for assessing disease burden attributable to environmental factors and developing evidence-based policy recommendations"
+    ] ;
+    
+    # Healthy living environment
+    schema:healthyLivingEnvironment [
+        a schema:Thing ;
+        schema:name "Healthy living environment development and assessment" ;
+        schema:description "Development and assessment of healthy living environment interventions and policies for population health promotion"
+    ] ;
+    
+    # Environmental health indicators
+    schema:environmentalHealthIndicators [
+        a schema:Thing ;
+        schema:name "Environmental health indicators development and application" ;
+        schema:description "Development and application of environmental health indicators for monitoring and evaluation of environmental health policies"
+    ] ;
+    
+    # Quality of life assessment
+    schema:qualityOfLife [
+        a schema:Thing ;
+        schema:name "Environmental quality of life assessment" ;
+        schema:description "Assessment of environmental factors that influence quality of life and human well-being outcomes"
+    ] ;
+    
+    # Environmental determinants of health
+    schema:environmentalDeterminants [
+        a schema:Thing ;
+        schema:name "Environmental determinants of health and well-being" ;
+        schema:description "Comprehensive assessment of environmental factors that determine health and well-being outcomes in populations"
+    ] ;
+    
+    # Sustainable development context
+    schema:sustainableDevelopment [
+        a schema:Thing ;
+        schema:name "Environmental health and sustainable development" ;
+        schema:description "Integration of environmental health considerations into sustainable development planning and policy"
+    ] ;
+    
+    # Environmental governance
+    schema:environmentalGovernance [
+        a schema:Thing ;
+        schema:name "Environmental governance for health and well-being" ;
+        schema:description "Governance mechanisms for integrating health and well-being considerations into environmental policy and management"
+    ] ;
+    
+    # Ecosystem health
+    schema:ecosystemHealth [
+        a schema:Thing ;
+        schema:name "Ecosystem health and human well-being connections" ;
+        schema:description "Investigation of connections between ecosystem health and human well-being for integrated environmental health approaches"
+    ] ;
+    
+    # Environmental monitoring
+    schema:environmentalMonitoring [
+        a schema:Thing ;
+        schema:name "Environmental monitoring for health and well-being assessment" ;
+        schema:description "Environmental monitoring systems and methods for assessing health and well-being impacts of environmental quality"
+    ] ;
+    
+    # Municipal applications
+    schema:municipalApplications [
+        a schema:Thing ;
+        schema:name "Municipal environmental health and well-being applications" ;
+        schema:description "Applications for municipalities to develop environmental visions, environmental plans, and management of healthy living environments"
+    ] .
+

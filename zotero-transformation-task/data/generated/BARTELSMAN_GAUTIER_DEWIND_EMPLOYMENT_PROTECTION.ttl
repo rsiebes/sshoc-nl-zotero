@@ -1,0 +1,522 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <http://schema.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://econpapers.repec.org/RePEc:iza:izadps:dp4895>
+    a bibo:Article, schema:ScholarlyArticle ;
+    dc:title "Employment Protection, Technology Choice, and Worker Allocation" ;
+    dc:creator "Bartelsman, E., Gautier, P., & De Wind, J." ;
+    dc:date "2010"^^xsd:gYear ;
+    dc:publisher "Institute of Labor Economics (IZA)" ;
+    
+    # Publication details
+    dc:issued "2010"^^xsd:gYear ;
+    schema:datePublished "2010-04-26"^^xsd:date ;
+    schema:inLanguage "en" ;
+    
+    # Identifiers
+    dc:identifier <http://econpapers.repec.org/RePEc:iza:izadps:dp4895> ;
+    schema:url <http://econpapers.repec.org/RePEc:iza:izadps:dp4895> ;
+    rdfs:seeAlso <https://www.iza.org/publications/dp/4895/employment-protection-technology-choice-and-worker-allocation> ;
+    rdfs:seeAlso <https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1595536> ;
+    rdfs:seeAlso <https://onlinelibrary.wiley.com/doi/abs/10.1111/iere.12176> ; # Published version in International Economic Review (2016)
+    
+    # Lead author Eric J. Bartelsman
+    schema:author [
+        a foaf:Person ;
+        foaf:name "Eric J. Bartelsman" ;
+        foaf:givenName "Eric" ;
+        foaf:familyName "Bartelsman" ;
+        schema:additionalName "J." ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "Vrije Universiteit Amsterdam" ;
+            schema:name "Vrije Universiteit Amsterdam" ;
+            schema:department "Department of Economics" ;
+            schema:parentOrganization [
+                a foaf:Organization ;
+                foaf:name "School of Business and Economics" ;
+                schema:url <https://vu.nl/en/about-vu/faculties/school-of-business-and-economics>
+            ] ;
+            schema:url <https://vu.nl/> ;
+            schema:address [
+                a schema:PostalAddress ;
+                schema:addressLocality "Amsterdam" ;
+                schema:addressCountry "Netherlands"
+            ]
+        ] ;
+        schema:jobTitle "Professor of Economics and General Director of Tinbergen Institute" ;
+        schema:sameAs <https://scholar.google.com/citations?user=8LcvSPgAAAAJ> ;
+        schema:sameAs <https://nl.linkedin.com/in/eric-bartelsman-496382> ;
+        schema:email "eric.bartelsman@vu.nl" ;
+        schema:additionalProperty [
+            schema:name "Birth Year" ;
+            schema:value "1960"
+        ] ;
+        schema:additionalProperty [
+            schema:name "Education" ;
+            schema:value "BS from MIT, PhD from Columbia University"
+        ] ;
+        schema:additionalProperty [
+            schema:name "Career Timeline" ;
+            schema:value "Professor of Economics and General Director of Tinbergen Institute, Vice-Dean at Vrije Universiteit Amsterdam, Research Fellow at CEPR and IZA"
+        ] ;
+        schema:expertise [
+            "Productivity",
+            "Applied Microeconomics",
+            "Markets and Organizations",
+            "Macroeconomics",
+            "Employment Protection",
+            "Technology Choice",
+            "Worker Allocation",
+            "Firm Dynamics"
+        ] ;
+        schema:memberOf [
+            a foaf:Organization ;
+            foaf:name "Tinbergen Institute" ;
+            schema:name "Tinbergen Institute" ;
+            schema:url <https://tinbergen.nl/> ;
+            schema:description "Leading graduate school and research institute in economics, econometrics and finance"
+        ] ;
+        schema:memberOf [
+            a foaf:Organization ;
+            foaf:name "CEPR" ;
+            schema:name "Centre for Economic Policy Research" ;
+            schema:url <https://cepr.org/> ;
+            schema:description "Leading European network of economists"
+        ] ;
+        schema:memberOf [
+            a foaf:Organization ;
+            foaf:name "IZA" ;
+            schema:name "Institute of Labor Economics" ;
+            schema:url <https://www.iza.org/> ;
+            schema:description "Leading international research institute in labor economics"
+        ]
+    ] ;
+    
+    # Co-author Pieter A. Gautier
+    schema:author [
+        a foaf:Person ;
+        foaf:name "Pieter A. Gautier" ;
+        foaf:givenName "Pieter" ;
+        foaf:familyName "Gautier" ;
+        schema:additionalName "A." ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "Vrije Universiteit Amsterdam" ;
+            schema:name "Vrije Universiteit Amsterdam" ;
+            schema:department "Department of Economics" ;
+            schema:parentOrganization [
+                a foaf:Organization ;
+                foaf:name "School of Business and Economics" ;
+                schema:url <https://vu.nl/en/about-vu/faculties/school-of-business-and-economics>
+            ] ;
+            schema:url <https://vu.nl/>
+        ] ;
+        schema:jobTitle "Professor of Economics" ;
+        schema:sameAs <https://scholar.google.com/citations?user=bNa-RX0AAAAJ> ;
+        schema:sameAs <https://nl.linkedin.com/in/pieter-gautier-41208311> ;
+        schema:email "p.a.gautier@vu.nl" ;
+        schema:additionalProperty [
+            schema:name "Education" ;
+            schema:value "PhD 1997, Vrije Universiteit Amsterdam"
+        ] ;
+        schema:additionalProperty [
+            schema:name "Career Timeline" ;
+            schema:value "2008-present: Professor VU University Amsterdam; 2004-2008: Associate Professor; 2003: VIDI grant from NWO"
+        ] ;
+        schema:expertise [
+            "Macro Labor",
+            "Search Theory",
+            "Labor Economics",
+            "Macroeconomics",
+            "Microeconomic Theory",
+            "Employment Protection",
+            "Worker Allocation",
+            "Search and Matching"
+        ] ;
+        schema:memberOf [
+            a foaf:Organization ;
+            foaf:name "CEPR" ;
+            schema:name "Centre for Economic Policy Research" ;
+            schema:description "Research Fellow"
+        ] ;
+        schema:memberOf [
+            a foaf:Organization ;
+            foaf:name "IZA" ;
+            schema:name "Institute of Labor Economics" ;
+            schema:description "Research Fellow"
+        ] ;
+        schema:memberOf [
+            a foaf:Organization ;
+            foaf:name "Tinbergen Institute" ;
+            schema:name "Tinbergen Institute" ;
+            schema:description "Research Fellow"
+        ] ;
+        schema:memberOf [
+            a foaf:Organization ;
+            foaf:name "CESifo" ;
+            schema:name "CESifo" ;
+            schema:description "Research Fellow"
+        ]
+    ] ;
+    
+    # Co-author Joris de Wind
+    schema:author [
+        a foaf:Person ;
+        foaf:name "Joris de Wind" ;
+        foaf:givenName "Joris" ;
+        foaf:familyName "de Wind" ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "De Nederlandsche Bank" ;
+            schema:name "De Nederlandsche Bank" ;
+            schema:department "Research Department" ;
+            schema:url <https://www.dnb.nl/> ;
+            schema:address [
+                a schema:PostalAddress ;
+                schema:addressLocality "Amsterdam" ;
+                schema:addressCountry "Netherlands"
+            ] ;
+            schema:description "Central bank of the Netherlands"
+        ] ;
+        schema:jobTitle "Economist" ;
+        schema:sameAs <https://nl.linkedin.com/in/jorisdewind> ;
+        schema:additionalProperty [
+            schema:name "Education" ;
+            schema:value "PhD from University of Amsterdam (Cum Laude)"
+        ] ;
+        schema:additionalProperty [
+            schema:name "PhD Honors" ;
+            schema:value "Highest honors (Cum Laude), honorary mention for KVS medal 2014 for best economics PhD thesis"
+        ] ;
+        schema:additionalProperty [
+            schema:name "Career Timeline" ;
+            schema:value "Economist at De Nederlandsche Bank Research Department, PhD candidate at University of Amsterdam, 2014: KVS medal honorary mention"
+        ] ;
+        schema:expertise [
+            "DSGE Models",
+            "Macroeconomics",
+            "Employment Protection",
+            "Technology Choice",
+            "Worker Allocation",
+            "Monetary Policy",
+            "Economic Modeling",
+            "Financial Stability"
+        ] ;
+        schema:memberOf [
+            a foaf:Organization ;
+            foaf:name "CEPR" ;
+            schema:name "Centre for Economic Policy Research" ;
+            schema:description "Research Fellow"
+        ]
+    ] ;
+    
+    # Geographic coverage
+    schema:spatialCoverage [
+        a schema:Place ;
+        schema:name "OECD Countries" ;
+        schema:description "Cross-country analysis of employment protection legislation effects across OECD economies"
+    ] ;
+    
+    # Keywords
+    dc:subject "Employment protection" ;
+    dc:subject "Technology choice" ;
+    dc:subject "Worker allocation" ;
+    dc:subject "Labor economics" ;
+    dc:subject "Employment protection legislation" ;
+    dc:subject "EPL" ;
+    dc:subject "Technology adoption" ;
+    dc:subject "Firm dynamics" ;
+    dc:subject "Productivity" ;
+    dc:subject "Labor market regulation" ;
+    dc:subject "Safe technology" ;
+    dc:subject "Risky technology" ;
+    dc:subject "Matching models" ;
+    dc:subject "Search theory" ;
+    dc:subject "Worker reallocation" ;
+    dc:subject "Job creation" ;
+    dc:subject "Job destruction" ;
+    dc:subject "Labor market flexibility" ;
+    dc:subject "Economic policy" ;
+    dc:subject "Macroeconomics" ;
+    dc:subject "Industrial organization" ;
+    dc:subject "Firm behavior" ;
+    dc:subject "Innovation" ;
+    dc:subject "ICT adoption" ;
+    dc:subject "Sectoral analysis" ;
+    
+    # ELSST vocabulary subjects
+    dc:subject <https://elsst.cessda.eu/id/5/3b58eac5-38a9-4a8f-b50a-9c86ed21c210> ; # LABOUR MARKET
+    dc:subject <https://elsst.cessda.eu/id/5/394178b5-c97d-40d8-849e-e9f6c28f08ce> ; # JOB HUNTING
+    dc:subject <https://elsst.cessda.eu/id/5/fc09ab8a-c74e-41b7-83ca-c5af01921a64> ; # ECONOMICS
+    dc:subject <https://elsst.cessda.eu/id/5/ebf6f18f-16ec-45dc-97f3-5d15415adbfc> ; # ENTREPRENEURS
+    dc:subject <https://elsst.cessda.eu/id/5/18df8314-c607-41c1-a1f7-c3749324d45b> ; # FINANCE
+    dc:subject <https://elsst.cessda.eu/id/5/d179f170-3354-4719-a625-d6976e7de2b0> ; # HIGHER EDUCATION INSTITUTIONS
+    
+    # Parent organization
+    schema:parentOrganization [
+        a foaf:Organization ;
+        foaf:name "Vrije Universiteit Amsterdam" ;
+        schema:name "Vrije Universiteit Amsterdam" ;
+        dc:identifier "VU_SBE" ;
+        schema:url <https://vu.nl/> ;
+        schema:address [
+            a schema:PostalAddress ;
+            schema:addressLocality "Amsterdam" ;
+            schema:addressCountry "Netherlands"
+        ] ;
+        schema:description "Leading research university in Amsterdam" ;
+        schema:organizationType "University" ;
+        schema:department [
+            a foaf:Organization ;
+            foaf:name "School of Business and Economics" ;
+            schema:description "Faculty focusing on economics, business administration, and econometrics"
+        ] ;
+        schema:department [
+            a foaf:Organization ;
+            foaf:name "Department of Economics" ;
+            schema:description "Department specializing in economic research and education"
+        ]
+    ] ;
+    
+    # Producer information
+    schema:producer <https://w3id.org/odissei/ns/kg/cbs/project/7172> ;
+    
+    # Publication venue
+    schema:isPartOf [
+        a schema:Periodical ;
+        schema:name "IZA Discussion Papers" ;
+        schema:publisher [
+            a foaf:Organization ;
+            foaf:name "Institute of Labor Economics (IZA)" ;
+            schema:name "Institute of Labor Economics (IZA)" ;
+            schema:url <https://www.iza.org/> ;
+            schema:address [
+                a schema:PostalAddress ;
+                schema:addressLocality "Bonn" ;
+                schema:addressCountry "Germany"
+            ] ;
+            schema:description "Leading international research institute and network in labor economics"
+        ] ;
+        schema:issn "2365-9793" ;
+        schema:description "IZA Discussion Paper Series" ;
+        schema:identifier "4895"
+    ] ;
+    
+    # Abstract and research focus
+    schema:about [
+        a schema:Thing ;
+        schema:name "Employment protection effects on technology choice and worker allocation" ;
+        schema:description "Analysis of how employment protection legislation affects firms' technology choices between safe and risky technologies and the resulting implications for worker allocation and productivity"
+    ] ;
+    
+    # Research methodology
+    schema:workExample [
+        a schema:CreativeWork ;
+        schema:name "Two-sector matching model with endogenous technology choice" ;
+        schema:description "Theoretical model where firms endogenously choose between safe technology with known productivity and risky technology with uncertain productivity, analyzing the effects of employment protection legislation"
+    ] ;
+    
+    # Target audience
+    schema:audience [
+        a schema:Audience ;
+        schema:audienceType "Labor economists" ;
+        schema:audienceType "Policy makers" ;
+        schema:audienceType "Macroeconomists" ;
+        schema:audienceType "Industrial organization researchers" ;
+        schema:audienceType "Employment policy analysts" ;
+        schema:audienceType "Technology policy researchers" ;
+        schema:audienceType "Academic researchers" ;
+        schema:audienceType "Central bankers" ;
+        schema:audienceType "Government economists" ;
+        schema:audienceType "International organizations"
+    ] ;
+    
+    # Research findings and implications
+    schema:result [
+        a schema:Thing ;
+        schema:name "Employment protection discourages risky technology adoption" ;
+        schema:description "Evidence that employment protection legislation particularly discourages adoption of risky technologies in ICT-intensive sectors, leading to productivity differences across countries"
+    ] ;
+    
+    # Document format and access
+    schema:encodingFormat "application/pdf" ;
+    schema:isAccessibleForFree true ;
+    schema:url <http://econpapers.repec.org/RePEc:iza:izadps:dp4895> ;
+    
+    # Content classification
+    bibo:status "Published" ;
+    schema:genre "Academic research" ;
+    schema:genre "Theoretical study" ;
+    schema:genre "Labor economics research" ;
+    schema:genre "Policy analysis" ;
+    
+    # Temporal coverage
+    schema:temporalCoverage "2010" ;
+    schema:dateCreated "2010"^^xsd:gYear ;
+    
+    # Research context
+    schema:isPartOf [
+        a schema:CreativeWork ;
+        schema:name "Employment protection and productivity research program" ;
+        schema:description "Part of broader research program examining the effects of labor market regulations on firm behavior and economic outcomes"
+    ] ;
+    
+    # Academic significance
+    schema:citation [
+        a schema:CreativeWork ;
+        schema:name "Influential in labor economics and industrial organization literature" ;
+        schema:description "Widely cited in subsequent research on employment protection, technology adoption, and productivity differences across countries"
+    ] ;
+    
+    # Language and localization
+    schema:contentLocation [
+        a schema:Place ;
+        schema:name "OECD Countries" ;
+        schema:description "Cross-country analysis focusing on developed economies with varying employment protection legislation"
+    ] ;
+    
+    # Professional context
+    schema:industry "Labor Economics" ;
+    schema:applicationCategory "Economic Policy Research" ;
+    
+    # Research contribution
+    schema:contribution [
+        a schema:Thing ;
+        schema:name "Theoretical framework for employment protection and technology choice" ;
+        schema:description "Provides theoretical foundation for understanding how employment protection legislation affects firms' technology adoption decisions and worker allocation patterns"
+    ] ;
+    
+    # Quality indicators
+    schema:measurementTechnique [
+        "Two-sector matching model",
+        "Endogenous technology choice analysis",
+        "Cross-country empirical analysis",
+        "Theoretical modeling",
+        "Policy simulation",
+        "Productivity decomposition"
+    ] ;
+    
+    # Usage and applications
+    schema:usageInfo [
+        a schema:CreativeWork ;
+        schema:name "Employment protection policy analysis applications" ;
+        schema:description "Used for analyzing the effects of labor market reforms, technology policy design, and understanding productivity differences across countries"
+    ] ;
+    
+    # Data coverage
+    schema:coverage [
+        a schema:Thing ;
+        schema:name "OECD cross-country analysis" ;
+        schema:description "Analysis of employment protection legislation effects across developed economies with focus on technology adoption and productivity outcomes"
+    ] ;
+    
+    # Policy impact
+    schema:impact [
+        a schema:Thing ;
+        schema:name "Employment protection and technology policy influence" ;
+        schema:description "Influential research informing labor market reform debates, technology policy design, and understanding of productivity differences across countries"
+    ] ;
+    
+    # Research institute context
+    schema:provider [
+        a foaf:Organization ;
+        foaf:name "Institute of Labor Economics (IZA)" ;
+        schema:name "Institute of Labor Economics (IZA)" ;
+        schema:url <https://www.iza.org/> ;
+        schema:parentOrganization [
+            a foaf:Organization ;
+            foaf:name "University of Bonn" ;
+            schema:description "Leading German research university"
+        ] ;
+        schema:description "World's largest network of labor economists"
+    ] ;
+    
+    # Theoretical framework
+    schema:theoreticalFramework [
+        a schema:Thing ;
+        schema:name "Search and matching theory with endogenous technology choice" ;
+        schema:description "Analysis based on search and matching models extended to include firms' endogenous choice between safe and risky technologies under different employment protection regimes"
+    ] ;
+    
+    # Policy implications
+    schema:policyImplication [
+        a schema:Thing ;
+        schema:name "Labor market flexibility and innovation policy" ;
+        schema:description "Recommendations for designing employment protection policies that balance worker security with incentives for technological innovation and productivity growth"
+    ] ;
+    
+    # Research network
+    schema:collaborator [
+        a foaf:Organization ;
+        foaf:name "Tinbergen Institute" ;
+        schema:description "Leading graduate school and research institute in economics, econometrics and finance"
+    ] ;
+    
+    # Labor economics focus areas
+    schema:laborEconomicsArea [
+        a schema:Thing ;
+        schema:name "Employment Protection Legislation" ;
+        schema:description "Analysis of labor market regulations and their effects on firm behavior and worker outcomes"
+    ] ;
+    
+    schema:laborEconomicsArea [
+        a schema:Thing ;
+        schema:name "Technology Adoption and Labor Markets" ;
+        schema:description "Investigation of how labor market institutions affect firms' technology choices and innovation"
+    ] ;
+    
+    schema:laborEconomicsArea [
+        a schema:Thing ;
+        schema:name "Worker Allocation and Productivity" ;
+        schema:description "Analysis of how labor market regulations affect the allocation of workers across firms and sectors"
+    ] ;
+    
+    # Economic policy context
+    schema:policyContext [
+        a schema:Thing ;
+        schema:name "Labor market reform policy" ;
+        schema:description "Evidence-based approach to labor market policy design balancing worker protection with economic efficiency"
+    ] ;
+    
+    # Performance indicators
+    schema:performanceIndicator [
+        a schema:Thing ;
+        schema:name "Technology adoption rates" ;
+        schema:description "Measurement of differential technology adoption across countries with varying employment protection legislation"
+    ] ;
+    
+    # Economic planning
+    schema:economicPlanning [
+        a schema:Thing ;
+        schema:name "Labor market and innovation policy coordination" ;
+        schema:description "Planning mechanisms through which labor market policies can be designed to support technological innovation and productivity growth"
+    ] ;
+    
+    # Research methodology details
+    schema:researchMethodology [
+        a schema:Thing ;
+        schema:name "Theoretical modeling with empirical validation" ;
+        schema:description "Combination of theoretical two-sector matching model with endogenous technology choice and cross-country empirical analysis to understand employment protection effects on firm behavior and economic outcomes"
+    ] ;
+    
+    # Published version reference
+    schema:publishedVersion [
+        a schema:ScholarlyArticle ;
+        schema:name "Published in International Economic Review (2016)" ;
+        schema:url <https://onlinelibrary.wiley.com/doi/abs/10.1111/iere.12176> ;
+        schema:datePublished "2016-08-09"^^xsd:date ;
+        schema:isPartOf [
+            a schema:Periodical ;
+            schema:name "International Economic Review" ;
+            schema:volume "57" ;
+            schema:issue "3" ;
+            schema:pageStart "787" ;
+            schema:pageEnd "826"
+        ]
+    ] .
+

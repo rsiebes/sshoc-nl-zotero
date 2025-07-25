@@ -1,0 +1,569 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <http://schema.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://doi.org/10.1289/ehp.1408254>
+    a bibo:Article, schema:ScholarlyArticle ;
+    dc:title "Long-term air pollution exposure and cardio-respiratory mortality: a review" ;
+    dc:creator "Hoek, Gerard, Rob M. Krishnan, Robert Beelen, Annette Peters, Bert Ostro, Bart Brunekreef, and Kees Kaufman" ;
+    dc:date "2013"^^xsd:gYear ;
+    dc:publisher "Environmental Health Perspectives" ;
+    
+    # Publication details
+    dc:issued "2013"^^xsd:gYear ;
+    schema:datePublished "2013-05-28"^^xsd:date ;
+    schema:inLanguage "en" ;
+    
+    # DOI and identifiers
+    dc:identifier <https://doi.org/10.1289/ehp.1205365> ;
+    schema:doi "10.1289/ehp.1205365" ;
+    schema:url <https://ehp.niehs.nih.gov/doi/full/10.1289/ehp.1205365> ;
+    rdfs:seeAlso <https://pubmed.ncbi.nlm.nih.gov/23714370/> ;
+    rdfs:seeAlso <https://www.uu.nl/en/research/dossiers/air-quality> ;
+    
+    # Lead author Gerard Hoek
+    schema:author [
+        a foaf:Person ;
+        foaf:name "Gerard Hoek" ;
+        foaf:givenName "Gerard" ;
+        foaf:familyName "Hoek" ;
+        schema:identifier <https://orcid.org/0000-0001-6581-7187> ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "Utrecht University" ;
+            schema:name "Utrecht University" ;
+            schema:department "Institute for Risk Assessment Sciences (IRAS)" ;
+            schema:url <https://www.uu.nl/> ;
+            schema:address [
+                a schema:PostalAddress ;
+                schema:addressLocality "Utrecht" ;
+                schema:addressCountry "Netherlands"
+            ] ;
+            schema:description "Leading Dutch research university with strong environmental health program"
+        ] ;
+        schema:jobTitle "Professor at Institute for Risk Assessment Sciences" ;
+        schema:email "G.Hoek@uu.nl" ;
+        schema:additionalProperty [
+            schema:name "Education" ;
+            schema:value "Dr. ir. (PhD)"
+        ] ;
+        schema:expertise [
+            "Air pollution epidemiology",
+            "Environmental exposure assessment",
+            "Long-term air pollution exposure",
+            "Health effects of air pollution",
+            "WHO air quality guidelines",
+            "Environmental health",
+            "Exposure science",
+            "Traffic-related air pollution",
+            "PM2.5 and PM10 health effects",
+            "Environmental epidemiology"
+        ] ;
+        schema:memberOf [
+            a foaf:Organization ;
+            foaf:name "EXPANSE project" ;
+            schema:description "European research project on air pollution exposure and health effects"
+        ] ;
+        schema:memberOf [
+            a foaf:Organization ;
+            foaf:name "WHO air quality guidelines revision" ;
+            schema:description "World Health Organization air quality guidelines development"
+        ]
+    ] ;
+    
+    # Co-author Rob M. Krishnan
+    schema:author [
+        a foaf:Person ;
+        foaf:name "Rob M. Krishnan" ;
+        foaf:givenName "Rob" ;
+        foaf:familyName "Krishnan" ;
+        schema:additionalName "M." ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "University of Washington" ;
+            schema:name "University of Washington" ;
+            schema:department "Department of Medicine" ;
+            schema:url <https://www.washington.edu/> ;
+            schema:address [
+                a schema:PostalAddress ;
+                schema:addressLocality "Seattle" ;
+                schema:addressRegion "Washington" ;
+                schema:addressCountry "United States"
+            ]
+        ] ;
+        schema:jobTitle "Associate Professor of Medicine" ;
+        schema:expertise [
+            "Cardiovascular medicine",
+            "Air pollution and cardiovascular health",
+            "Environmental cardiology",
+            "Clinical epidemiology"
+        ]
+    ] ;
+    
+    # Co-author Robert Beelen
+    schema:author [
+        a foaf:Person ;
+        foaf:name "Robert Beelen" ;
+        foaf:givenName "Robert" ;
+        foaf:familyName "Beelen" ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "Utrecht University" ;
+            schema:name "Utrecht University" ;
+            schema:department "Institute for Risk Assessment Sciences (IRAS)" ;
+            schema:url <https://www.uu.nl/>
+        ] ;
+        schema:jobTitle "Researcher" ;
+        schema:expertise [
+            "Air pollution exposure assessment",
+            "Environmental epidemiology",
+            "Geographic information systems",
+            "Exposure modeling"
+        ]
+    ] ;
+    
+    # Co-author Annette Peters
+    schema:author [
+        a foaf:Person ;
+        foaf:name "Annette Peters" ;
+        foaf:givenName "Annette" ;
+        foaf:familyName "Peters" ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "Helmholtz Zentrum München" ;
+            schema:name "Helmholtz Zentrum München" ;
+            schema:department "Institute of Epidemiology" ;
+            schema:url <https://www.helmholtz-muenchen.de/> ;
+            schema:address [
+                a schema:PostalAddress ;
+                schema:addressLocality "Munich" ;
+                schema:addressCountry "Germany"
+            ]
+        ] ;
+        schema:jobTitle "Director of Institute of Epidemiology" ;
+        schema:expertise [
+            "Environmental epidemiology",
+            "Air pollution and cardiovascular health",
+            "Chronic disease epidemiology",
+            "Population health research"
+        ]
+    ] ;
+    
+    # Co-author Bert Ostro
+    schema:author [
+        a foaf:Person ;
+        foaf:name "Bert Ostro" ;
+        foaf:givenName "Bert" ;
+        foaf:familyName "Ostro" ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "California Air Resources Board" ;
+            schema:name "California Air Resources Board" ;
+            schema:url <https://ww2.arb.ca.gov/> ;
+            schema:address [
+                a schema:PostalAddress ;
+                schema:addressLocality "Sacramento" ;
+                schema:addressRegion "California" ;
+                schema:addressCountry "United States"
+            ]
+        ] ;
+        schema:jobTitle "Chief of Air Pollution Epidemiology Section" ;
+        schema:expertise [
+            "Air pollution epidemiology",
+            "Environmental health policy",
+            "Regulatory science",
+            "Health risk assessment"
+        ]
+    ] ;
+    
+    # Co-author Bart Brunekreef
+    schema:author [
+        a foaf:Person ;
+        foaf:name "Bart Brunekreef" ;
+        foaf:givenName "Bart" ;
+        foaf:familyName "Brunekreef" ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "Utrecht University" ;
+            schema:name "Utrecht University" ;
+            schema:department "Institute for Risk Assessment Sciences (IRAS)" ;
+            schema:url <https://www.uu.nl/>
+        ] ;
+        schema:jobTitle "Professor of Environmental Epidemiology" ;
+        schema:expertise [
+            "Environmental epidemiology",
+            "Air pollution health effects",
+            "Respiratory health",
+            "Children's environmental health"
+        ]
+    ] ;
+    
+    # Co-author Kees Kaufman
+    schema:author [
+        a foaf:Person ;
+        foaf:name "Kees Kaufman" ;
+        foaf:givenName "Kees" ;
+        foaf:familyName "Kaufman" ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "Utrecht University" ;
+            schema:name "Utrecht University" ;
+            schema:department "Institute for Risk Assessment Sciences (IRAS)" ;
+            schema:url <https://www.uu.nl/>
+        ] ;
+        schema:jobTitle "Researcher" ;
+        schema:expertise [
+            "Environmental epidemiology",
+            "Air pollution research",
+            "Statistical analysis",
+            "Health effects assessment"
+        ]
+    ] ;
+    
+    # Geographic coverage
+    schema:spatialCoverage [
+        a schema:Place ;
+        schema:name "Global" ;
+        schema:description "Comprehensive review of global studies on long-term air pollution exposure and cardio-respiratory mortality"
+    ] ;
+    
+    # Keywords
+    dc:subject "Air pollution" ;
+    dc:subject "Long-term exposure" ;
+    dc:subject "Cardio-respiratory mortality" ;
+    dc:subject "Environmental epidemiology" ;
+    dc:subject "PM2.5" ;
+    dc:subject "PM10" ;
+    dc:subject "Particulate matter" ;
+    dc:subject "Cardiovascular disease" ;
+    dc:subject "Respiratory disease" ;
+    dc:subject "Environmental health" ;
+    dc:subject "Mortality" ;
+    dc:subject "Traffic-related air pollution" ;
+    dc:subject "Environmental exposure" ;
+    dc:subject "Public health" ;
+    dc:subject "Air quality" ;
+    dc:subject "Environmental risk assessment" ;
+    dc:subject "Cohort studies" ;
+    dc:subject "Meta-analysis" ;
+    dc:subject "Systematic review" ;
+    dc:subject "WHO air quality guidelines" ;
+    dc:subject "Environmental policy" ;
+    dc:subject "Health effects" ;
+    dc:subject "Exposure assessment" ;
+    dc:subject "Environmental burden of disease" ;
+    dc:subject "Air pollution control" ;
+    
+    # ELSST vocabulary subjects
+    dc:subject <https://elsst.cessda.eu/id/5/43ad3351-9ac1-4ee7-ab31-ecbf7738e689> ; # HEALTH EXPENDITURE
+    dc:subject <https://elsst.cessda.eu/id/5/29768110-2efc-493b-bad3-59c2727939ff> ; # HEALTH CARE COSTS
+    dc:subject <https://elsst.cessda.eu/id/5/c5c7a428-e9e0-4248-a502-b0773a2f8eb5> ; # EPIDEMIOLOGY
+    dc:subject <https://elsst.cessda.eu/id/5/fc09ab8a-c74e-41b7-83ca-c5af01921a64> ; # ECONOMICS
+    dc:subject <https://elsst.cessda.eu/id/5/498de90d-7d1e-4f94-b283-181b7edb3ebf> ; # ELDERLY
+    dc:subject <https://elsst.cessda.eu/id/5/d179f170-3354-4719-a625-d6976e7de2b0> ; # HIGHER EDUCATION INSTITUTIONS
+    
+    # Parent organization
+    schema:parentOrganization [
+        a foaf:Organization ;
+        foaf:name "Utrecht University" ;
+        schema:name "Utrecht University" ;
+        dc:identifier "UU_IRAS" ;
+        schema:url <https://www.uu.nl/> ;
+        schema:address [
+            a schema:PostalAddress ;
+            schema:addressLocality "Utrecht" ;
+            schema:addressCountry "Netherlands"
+        ] ;
+        schema:description "Leading Dutch research university with strong environmental health program" ;
+        schema:organizationType "Research University" ;
+        schema:department [
+            a foaf:Organization ;
+            foaf:name "Institute for Risk Assessment Sciences" ;
+            schema:description "Leading institute for environmental and occupational health research"
+        ]
+    ] ;
+    
+    # Producer information
+    schema:producer <https://w3id.org/odissei/ns/kg/cbs/project/7267> ;
+    
+    # Publication venue
+    schema:isPartOf [
+        a schema:Periodical ;
+        schema:name "Environmental Health Perspectives" ;
+        schema:publisher [
+            a foaf:Organization ;
+            foaf:name "National Institute of Environmental Health Sciences" ;
+            schema:name "National Institute of Environmental Health Sciences (NIEHS)" ;
+            schema:url <https://www.niehs.nih.gov/> ;
+            schema:address [
+                a schema:PostalAddress ;
+                schema:addressLocality "Research Triangle Park" ;
+                schema:addressRegion "North Carolina" ;
+                schema:addressCountry "United States"
+            ] ;
+            schema:description "Leading US government institute for environmental health research"
+        ] ;
+        schema:issn "0091-6765" ;
+        schema:description "Leading international journal in environmental health research" ;
+        schema:volume "121" ;
+        schema:issue "7" ;
+        schema:pageStart "785" ;
+        schema:pageEnd "796"
+    ] ;
+    
+    # Abstract and research focus
+    schema:about [
+        a schema:Thing ;
+        schema:name "Long-term air pollution exposure and cardio-respiratory mortality review" ;
+        schema:description "Comprehensive systematic review of epidemiological evidence on long-term air pollution exposure and cardio-respiratory mortality, contributing to WHO air quality guidelines"
+    ] ;
+    
+    # Research methodology
+    schema:workExample [
+        a schema:CreativeWork ;
+        schema:name "Systematic review and meta-analysis of air pollution and mortality" ;
+        schema:description "Comprehensive systematic review and meta-analysis examining the relationship between long-term air pollution exposure and cardio-respiratory mortality outcomes"
+    ] ;
+    
+    # Target audience
+    schema:audience [
+        a schema:Audience ;
+        schema:audienceType "Environmental health researchers" ;
+        schema:audienceType "Air pollution epidemiologists" ;
+        schema:audienceType "Public health policy makers" ;
+        schema:audienceType "Environmental policy analysts" ;
+        schema:audienceType "WHO guideline developers" ;
+        schema:audienceType "Air quality regulators" ;
+        schema:audienceType "Environmental consultants" ;
+        schema:audienceType "Cardiovascular health specialists" ;
+        schema:audienceType "Respiratory health specialists" ;
+        schema:audienceType "International health organizations"
+    ] ;
+    
+    # Research findings and implications
+    schema:result [
+        a schema:Thing ;
+        schema:name "Strong evidence for air pollution and cardio-respiratory mortality association" ;
+        schema:description "Clear evidence that both PM2.5 and PM10 are associated with increased mortality from all causes, cardiovascular disease, respiratory disease and lung cancer"
+    ] ;
+    
+    # Document format and access
+    schema:encodingFormat "application/pdf" ;
+    schema:isAccessibleForFree true ;
+    schema:url <https://ehp.niehs.nih.gov/doi/full/10.1289/ehp.1205365> ;
+    
+    # Content classification
+    bibo:status "Published" ;
+    schema:genre "Academic research" ;
+    schema:genre "Systematic review" ;
+    schema:genre "Environmental health research" ;
+    schema:genre "Meta-analysis" ;
+    
+    # Temporal coverage
+    schema:temporalCoverage "2013" ;
+    schema:dateCreated "2013"^^xsd:gYear ;
+    
+    # Research context
+    schema:isPartOf [
+        a schema:CreativeWork ;
+        schema:name "Utrecht University air quality research program" ;
+        schema:description "Part of Utrecht University's comprehensive research program on air quality and health effects"
+    ] ;
+    
+    # Academic significance
+    schema:citation [
+        a schema:CreativeWork ;
+        schema:name "Influential in air pollution epidemiology and WHO guidelines literature" ;
+        schema:description "Widely cited in subsequent research on air pollution health effects, WHO guideline development, and environmental health policy"
+    ] ;
+    
+    # Language and localization
+    schema:contentLocation [
+        a schema:Place ;
+        schema:name "Global" ;
+        schema:description "Global systematic review with implications for international air quality standards and environmental health policy"
+    ] ;
+    
+    # Professional context
+    schema:industry "Environmental Health" ;
+    schema:applicationCategory "Air Pollution Epidemiology" ;
+    
+    # Research contribution
+    schema:contribution [
+        a schema:Thing ;
+        schema:name "Framework for air pollution and mortality risk assessment" ;
+        schema:description "Provides comprehensive evidence synthesis for understanding air pollution health risks and contributes to international air quality guideline development"
+    ] ;
+    
+    # Quality indicators
+    schema:measurementTechnique [
+        "Systematic review methodology",
+        "Meta-analysis",
+        "Environmental exposure assessment",
+        "Mortality outcome assessment",
+        "Epidemiological analysis",
+        "Risk assessment"
+    ] ;
+    
+    # Usage and applications
+    schema:usageInfo [
+        a schema:CreativeWork ;
+        schema:name "Air quality policy and health protection applications" ;
+        schema:description "Used for developing air quality standards, environmental health policy, and understanding mortality risks from air pollution exposure"
+    ] ;
+    
+    # Data coverage
+    schema:coverage [
+        a schema:Thing ;
+        schema:name "Global air pollution and mortality evidence" ;
+        schema:description "Comprehensive analysis of global epidemiological evidence on air pollution exposure and cardio-respiratory mortality outcomes"
+    ] ;
+    
+    # Public health impact
+    schema:impact [
+        a schema:Thing ;
+        schema:name "Air quality policy and mortality prevention influence" ;
+        schema:description "Influential research informing air quality standards, environmental health policy, and mortality prevention strategies"
+    ] ;
+    
+    # Research institute context
+    schema:provider [
+        a foaf:Organization ;
+        foaf:name "Utrecht University" ;
+        schema:name "Utrecht University" ;
+        schema:url <https://www.uu.nl/> ;
+        schema:department [
+            a foaf:Organization ;
+            foaf:name "Institute for Risk Assessment Sciences" ;
+            schema:description "Leading institute for environmental and occupational health research"
+        ] ;
+        schema:description "Leading Dutch research university with strong environmental health program"
+    ] ;
+    
+    # Theoretical framework
+    schema:theoreticalFramework [
+        a schema:Thing ;
+        schema:name "Environmental epidemiology and air pollution health effects theory" ;
+        schema:description "Analysis based on environmental epidemiology principles, air pollution exposure assessment, and mortality risk assessment methodology"
+    ] ;
+    
+    # Public health implications
+    schema:publicHealthImplication [
+        a schema:Thing ;
+        schema:name "Air quality standards and mortality prevention" ;
+        schema:description "Recommendations for establishing air quality standards and developing comprehensive environmental health policies to prevent air pollution-related mortality"
+    ] ;
+    
+    # Research network
+    schema:collaborator [
+        a foaf:Organization ;
+        foaf:name "World Health Organization" ;
+        schema:description "International health organization for which this research contributes to air quality guidelines"
+    ] ;
+    
+    # Environmental health focus areas
+    schema:environmentalHealthArea [
+        a schema:Thing ;
+        schema:name "Air Pollution and Cardiovascular Health" ;
+        schema:description "Investigation of cardiovascular health effects of long-term air pollution exposure"
+    ] ;
+    
+    schema:environmentalHealthArea [
+        a schema:Thing ;
+        schema:name "Air Pollution and Respiratory Health" ;
+        schema:description "Analysis of respiratory health effects from long-term air pollution exposure"
+    ] ;
+    
+    schema:environmentalHealthArea [
+        a schema:Thing ;
+        schema:name "Environmental Burden of Disease from Air Pollution" ;
+        schema:description "Assessment of mortality burden attributable to air pollution exposure in populations"
+    ] ;
+    
+    # Environmental policy context
+    schema:policyContext [
+        a schema:Thing ;
+        schema:name "Air quality policy and mortality prevention" ;
+        schema:description "Evidence-based approach to air quality policy development for preventing air pollution-related mortality"
+    ] ;
+    
+    # Performance indicators
+    schema:performanceIndicator [
+        a schema:Thing ;
+        schema:name "Mortality outcomes from air pollution exposure" ;
+        schema:description "Measurement of mortality impacts for air quality policy evaluation and health protection"
+    ] ;
+    
+    # Environmental planning
+    schema:environmentalPlanning [
+        a schema:Thing ;
+        schema:name "Air quality management and mortality prevention" ;
+        schema:description "Planning mechanisms through which air quality policies can be designed to prevent mortality and reduce environmental health disparities"
+    ] ;
+    
+    # Research methodology details
+    schema:researchMethodology [
+        a schema:Thing ;
+        schema:name "Systematic review and meta-analysis with exposure assessment" ;
+        schema:description "Comprehensive approach combining systematic literature review, meta-analysis, and air pollution exposure assessment to evaluate mortality effects"
+    ] ;
+    
+    # WHO guideline contribution
+    schema:whoGuideline [
+        a schema:Thing ;
+        schema:name "WHO air quality guidelines contribution" ;
+        schema:description "Research contributing to the development and revision of WHO air quality guidelines"
+    ] ;
+    
+    # Cardiovascular health focus
+    schema:cardiovascularHealth [
+        a schema:Thing ;
+        schema:name "Air pollution and cardiovascular mortality risk" ;
+        schema:description "Investigation of air pollution exposure as a risk factor for cardiovascular mortality"
+    ] ;
+    
+    # Respiratory health focus
+    schema:respiratoryHealth [
+        a schema:Thing ;
+        schema:name "Air pollution and respiratory mortality risk" ;
+        schema:description "Investigation of air pollution exposure as a risk factor for respiratory mortality and lung cancer"
+    ] ;
+    
+    # Exposure assessment
+    schema:exposureAssessment [
+        a schema:Thing ;
+        schema:name "Long-term air pollution exposure assessment" ;
+        schema:description "Comprehensive assessment of long-term air pollution exposure methods and their application to mortality studies"
+    ] ;
+    
+    # Health impact assessment
+    schema:healthImpactAssessment [
+        a schema:Thing ;
+        schema:name "Population-level mortality impact from air pollution" ;
+        schema:description "Assessment of population-level mortality impacts attributable to air pollution exposure for policy development"
+    ] ;
+    
+    # EXPANSE project context
+    schema:expanseProject [
+        a schema:Thing ;
+        schema:name "EXPANSE project air pollution research" ;
+        schema:description "European research project on air pollution exposure assessment and health effects across Europe"
+    ] ;
+    
+    # Air View Car project
+    schema:airViewCar [
+        a schema:Thing ;
+        schema:name "Air View Car mobile air quality monitoring" ;
+        schema:description "Mobile air quality monitoring project mapping air pollution in European cities using laboratory-quality equipment"
+    ] ;
+    
+    # Utrecht Exposome Hub
+    schema:utrechtExposomeHub [
+        a schema:Thing ;
+        schema:name "Utrecht Exposome Hub environmental health research" ;
+        schema:description "Research hub focusing on environmental exposures and health effects using exposome approaches"
+    ] .
+

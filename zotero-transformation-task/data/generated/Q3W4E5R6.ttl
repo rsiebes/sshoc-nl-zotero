@@ -1,0 +1,144 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://arno.uvt.nl/show.cgi?fid=116322> a bibo:Article ;
+    # Basic bibliographic information
+    dc:title "Individuals' Survival Expectations and Actual Mortality" ;
+    dc:creator "Kutlu-Koc, Vesile" ;
+    dc:creator "Kalwij, Adriaan" ;
+    dc:date "2013"^^xsd:gYear ;
+    dc:publisher "Tilburg University" ;
+    dc:type "Research Paper" ;
+    
+    # Enhanced abstract
+    dc:abstract """Using a combination of Dutch survey and administrative data, this study examines whether individual survival expectations predict actual mortality outcomes. The research analyzes subjective survival probabilities from the Dutch Health and Retirement Study (HRS) linked with administrative mortality records. Main findings show that individual life expectancies (measured as subjective survival probabilities) do predict actual mortality even when controlling for health status, socio-economic characteristics, and other known mortality risk factors. The study reveals systematic biases in survival expectations, with women consistently underestimating their remaining life expectancy compared to men. These findings have important implications for pension planning, insurance markets, and health policy, as they suggest individuals possess private information about their mortality risk beyond what can be inferred from observable characteristics.""" ;
+    
+    # Identifiers
+    bibo:uri <http://arno.uvt.nl/show.cgi?fid=116322> ;
+    bibo:doi <https://doi.org/10.1007/s10680-017-9411-y> ;
+    
+    # Producer information
+    schema:producer <https://w3id.org/odissei/ns/kg/cbs/project/7111> ;
+    
+    # Author information
+    dc:creator [
+        a foaf:Person ;
+        foaf:name "Vesile Kutlu-Koc" ;
+        foaf:givenName "Vesile" ;
+        foaf:familyName "Kutlu-Koc" ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "Munich Center for the Economics of Aging (MEA)" ;
+            schema:address [
+                a schema:PostalAddress ;
+                schema:addressLocality "Munich" ;
+                schema:addressCountry "Germany"
+            ]
+        ] ;
+        schema:email "KutluKoc@mea.mpisoc.mpg.de" ;
+        schema:description "Research economist specializing in survival expectations, mortality analysis, and retirement economics. Expert in demographic analysis and life-cycle modeling." ;
+        # Note: No ORCID ID found in available sources
+    ] ;
+    
+    dc:creator [
+        a foaf:Person ;
+        foaf:name "Adriaan Kalwij" ;
+        foaf:givenName "Adriaan" ;
+        foaf:familyName "Kalwij" ;
+        bibo:orcid <https://orcid.org/0000-0001-9061-6156> ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "Utrecht University School of Economics" ;
+            schema:department "Applied Economics" ;
+            schema:address [
+                a schema:PostalAddress ;
+                schema:streetAddress "Kriekenpitplein 21-22, Kamer 2.09A" ;
+                schema:addressLocality "Utrecht" ;
+                schema:postalCode "3584 EC" ;
+                schema:addressCountry "Netherlands"
+            ]
+        ] ;
+        schema:email "a.s.kalwij@uu.nl" ;
+        schema:jobTitle "Associate Professor" ;
+        schema:description "Applied econometrician with PhD from Tilburg University. Research focus on labor economics, demography, social security, and aging. Expert in International Social Security (ISS) project of the National Bureau of Economics Research (NBER)." ;
+        schema:alumniOf "Tilburg University" ;
+    ] ;
+    
+    # Publication details
+    bibo:journal "European Journal of Population" ;
+    bibo:volume "33" ;
+    bibo:issue "4" ;
+    bibo:pageStart "509" ;
+    bibo:pageEnd "532" ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:inLanguage "en" ;
+    
+    # Geographic coverage
+    schema:spatialCoverage [
+        a schema:Place ;
+        schema:name "Netherlands" ;
+        schema:geo [
+            a schema:GeoCoordinates ;
+            schema:latitude "52.1326" ;
+            schema:longitude "5.2913"
+        ]
+    ] ;
+    
+    # Subject classification - Keywords
+    dc:subject "Survival expectations" ;
+    dc:subject "Subjective mortality" ;
+    dc:subject "Life expectancy" ;
+    dc:subject "Demographic analysis" ;
+    dc:subject "Mortality prediction" ;
+    dc:subject "Health economics" ;
+    dc:subject "Aging research" ;
+    dc:subject "Dutch population data" ;
+    dc:subject "Retirement planning" ;
+    dc:subject "Longevity risk" ;
+    
+    # ELSST vocabulary subjects
+    dc:subject <https://elsst.cessda.eu/id/5/acdfb412-a63f-4ff6-a371-db94edf733bb> ; # MORTALITY
+    dc:subject <https://elsst.cessda.eu/id/5/dcd368c4-512d-4804-935f-bee93db0bf73> ; # MORTALITY RATE
+    dc:subject <https://elsst.cessda.eu/id/5/290327e7-0a69-44f7-8348-c9608aee1fad> ; # DEMOGRAPHY
+    dc:subject <https://elsst.cessda.eu/id/5/13d01f0e-44ed-4f28-9ef6-7046a6fe0322> ; # STATISTICS
+    
+    # Research methodology
+    schema:about "Empirical analysis of survival expectations using Dutch survey and administrative data" ;
+    schema:audience "Demographers, economists, policy makers, pension fund managers, insurance professionals" ;
+    
+    # Data sources
+    schema:isBasedOn "Dutch Health and Retirement Study (HRS) linked with administrative mortality records" ;
+    
+    # Academic context
+    schema:isPartOf [
+        a schema:EducationalOrganization ;
+        schema:name "Tilburg University" ;
+        schema:url <https://www.tilburguniversity.edu/>
+    ] ;
+    
+    # Research impact
+    schema:citation "Demonstrates that individuals possess private information about mortality risk beyond observable characteristics" ;
+    schema:keywords "survival expectations, mortality prediction, demographic analysis, health economics, longevity risk" ;
+    
+    # Parent organization
+    schema:parentOrganization [
+        a foaf:Organization ;
+        foaf:name "Tilburg University - Tilburg School of Economics and Management - Network for Studies on Pensions, Aging and Retirement" ;
+        schema:alternateName "TIU_TiSEM_Netspar" ;
+        dc:identifier "TIU_TiSEM_Netspar" ;
+        schema:description "Academic research network combining Tilburg University's economics school with pension research network" ;
+        schema:address [
+            schema:addressLocality "Tilburg" ;
+            schema:addressCountry "Netherlands"
+        ] ;
+        schema:url "https://www.tilburguniversity.edu/" ;
+        schema:additionalProperty [
+            schema:name "Netspar website" ;
+            schema:value "https://www.netspar.nl/en/"
+        ] ;
+        schema:expertise "Leading European School for research and education in Business and Economics, with specialized network for pension and aging research"
+    ] .
+

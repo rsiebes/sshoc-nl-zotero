@@ -1,0 +1,501 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <http://schema.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://doi.org/10.1289/ehp.1408254>
+    a bibo:Article, schema:ScholarlyArticle ;
+    dc:title "Cardiovascular effects of environmental noise: research in The Netherlands" ;
+    dc:creator "van Kempen, Elise, Hanneke Kruize, Henk C. Boshuizen, Caroline B. Ameling, Brigit A.M. Staatsen, and Augustinus E.M. de Hollander" ;
+    dc:date "2011"^^xsd:gYear ;
+    dc:publisher "Wolters Kluwer Health" ;
+    
+    # Publication details
+    dc:issued "2011"^^xsd:gYear ;
+    schema:datePublished "2011-05-01"^^xsd:date ;
+    schema:inLanguage "en" ;
+    
+    # DOI and identifiers
+    dc:identifier <https://doi.org/10.4103/1463-1741.80163> ;
+    schema:doi "10.4103/1463-1741.80163" ;
+    schema:url <https://journals.lww.com/nohe/fulltext/2011/13520/cardiovascular_effects_of_environmental_noise_.5.aspx> ;
+    rdfs:seeAlso <https://pubmed.ncbi.nlm.nih.gov/21537106/> ;
+    rdfs:seeAlso <https://www.rivm.nl/bibliotheek/rapporten/2017-0078.pdf> ;
+    
+    # Lead author Elise van Kempen
+    schema:author [
+        a foaf:Person ;
+        foaf:name "Elise van Kempen" ;
+        foaf:givenName "Elise" ;
+        foaf:familyName "van Kempen" ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "National Institute for Public Health and the Environment" ;
+            schema:name "National Institute for Public Health and the Environment (RIVM)" ;
+            schema:department "Environmental Health" ;
+            schema:url <https://www.rivm.nl/> ;
+            schema:address [
+                a schema:PostalAddress ;
+                schema:addressLocality "De Bilt" ;
+                schema:addressCountry "Netherlands"
+            ] ;
+            schema:description "Leading Dutch national institute for public health and environmental protection"
+        ] ;
+        schema:jobTitle "Researcher noise and health" ;
+        schema:sameAs <https://www.researchgate.net/profile/Elise_Kempen> ;
+        schema:email "Elise.van.Kempen@rivm.nl" ;
+        schema:additionalProperty [
+            schema:name "Citations" ;
+            schema:value "5,006"
+        ] ;
+        schema:additionalProperty [
+            schema:name "Education" ;
+            schema:value "PhD"
+        ] ;
+        schema:expertise [
+            "Environmental noise",
+            "Cardiovascular health",
+            "Noise annoyance",
+            "Environmental health",
+            "Public health",
+            "Noise and health effects",
+            "Traffic noise",
+            "Sleep disturbance",
+            "Children's health and noise",
+            "WHO environmental noise guidelines"
+        ]
+    ] ;
+    
+    # Co-author Hanneke Kruize
+    schema:author [
+        a foaf:Person ;
+        foaf:name "Hanneke Kruize" ;
+        foaf:givenName "Hanneke" ;
+        foaf:familyName "Kruize" ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "National Institute for Public Health and the Environment" ;
+            schema:name "National Institute for Public Health and the Environment (RIVM)" ;
+            schema:url <https://www.rivm.nl/>
+        ] ;
+        schema:jobTitle "Senior Researcher" ;
+        schema:expertise [
+            "Environmental health",
+            "Environmental justice",
+            "Health inequalities",
+            "Urban health",
+            "Environmental noise research"
+        ]
+    ] ;
+    
+    # Co-author Henk C. Boshuizen
+    schema:author [
+        a foaf:Person ;
+        foaf:name "Henk C. Boshuizen" ;
+        foaf:givenName "Henk" ;
+        foaf:familyName "Boshuizen" ;
+        schema:additionalName "C." ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "National Institute for Public Health and the Environment" ;
+            schema:name "National Institute for Public Health and the Environment (RIVM)" ;
+            schema:url <https://www.rivm.nl/>
+        ] ;
+        schema:jobTitle "Senior Researcher" ;
+        schema:expertise [
+            "Epidemiology",
+            "Biostatistics",
+            "Environmental health",
+            "Public health research methodology"
+        ]
+    ] ;
+    
+    # Co-author Caroline B. Ameling
+    schema:author [
+        a foaf:Person ;
+        foaf:name "Caroline B. Ameling" ;
+        foaf:givenName "Caroline" ;
+        foaf:familyName "Ameling" ;
+        schema:additionalName "B." ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "National Institute for Public Health and the Environment" ;
+            schema:name "National Institute for Public Health and the Environment (RIVM)" ;
+            schema:url <https://www.rivm.nl/>
+        ] ;
+        schema:jobTitle "Researcher" ;
+        schema:expertise [
+            "Environmental health",
+            "Air pollution research",
+            "Environmental epidemiology",
+            "Noise research"
+        ]
+    ] ;
+    
+    # Co-author Brigit A.M. Staatsen
+    schema:author [
+        a foaf:Person ;
+        foaf:name "Brigit A.M. Staatsen" ;
+        foaf:givenName "Brigit" ;
+        foaf:familyName "Staatsen" ;
+        schema:additionalName "A.M." ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "National Institute for Public Health and the Environment" ;
+            schema:name "National Institute for Public Health and the Environment (RIVM)" ;
+            schema:url <https://www.rivm.nl/>
+        ] ;
+        schema:jobTitle "Senior Researcher" ;
+        schema:expertise [
+            "Environmental health",
+            "Health impact assessment",
+            "Environmental policy",
+            "Public health research"
+        ]
+    ] ;
+    
+    # Co-author Augustinus E.M. de Hollander
+    schema:author [
+        a foaf:Person ;
+        foaf:name "Augustinus E.M. de Hollander" ;
+        foaf:givenName "Augustinus" ;
+        foaf:familyName "de Hollander" ;
+        schema:additionalName "E.M." ;
+        schema:affiliation [
+            a foaf:Organization ;
+            foaf:name "National Institute for Public Health and the Environment" ;
+            schema:name "National Institute for Public Health and the Environment (RIVM)" ;
+            schema:url <https://www.rivm.nl/>
+        ] ;
+        schema:jobTitle "Senior Researcher" ;
+        schema:expertise [
+            "Environmental health",
+            "Public health policy",
+            "Environmental burden of disease",
+            "Health impact assessment"
+        ]
+    ] ;
+    
+    # Geographic coverage
+    schema:spatialCoverage [
+        a schema:Place ;
+        schema:name "Netherlands" ;
+        schema:description "Comprehensive study of environmental noise effects on cardiovascular health in the Dutch population"
+    ] ;
+    
+    # Keywords
+    dc:subject "Environmental noise" ;
+    dc:subject "Cardiovascular health" ;
+    dc:subject "Noise annoyance" ;
+    dc:subject "Traffic noise" ;
+    dc:subject "Road traffic noise" ;
+    dc:subject "Aircraft noise" ;
+    dc:subject "Railway noise" ;
+    dc:subject "Hypertension" ;
+    dc:subject "Blood pressure" ;
+    dc:subject "Myocardial infarction" ;
+    dc:subject "Ischaemic heart disease" ;
+    dc:subject "Sleep disturbance" ;
+    dc:subject "Environmental health" ;
+    dc:subject "Public health" ;
+    dc:subject "Noise exposure" ;
+    dc:subject "Health effects" ;
+    dc:subject "Environmental epidemiology" ;
+    dc:subject "Noise pollution" ;
+    dc:subject "Cardiovascular disease" ;
+    dc:subject "Environmental stressors" ;
+    dc:subject "Noise mapping" ;
+    dc:subject "WHO guidelines" ;
+    dc:subject "Environmental burden of disease" ;
+    dc:subject "Health impact assessment" ;
+    dc:subject "Environmental policy" ;
+    
+    # ELSST vocabulary subjects
+    dc:subject <https://elsst.cessda.eu/id/5/43ad3351-9ac1-4ee7-ab31-ecbf7738e689> ; # HEALTH EXPENDITURE
+    dc:subject <https://elsst.cessda.eu/id/5/29768110-2efc-493b-bad3-59c2727939ff> ; # HEALTH CARE COSTS
+    dc:subject <https://elsst.cessda.eu/id/5/c5c7a428-e9e0-4248-a502-b0773a2f8eb5> ; # EPIDEMIOLOGY
+    dc:subject <https://elsst.cessda.eu/id/5/fc09ab8a-c74e-41b7-83ca-c5af01921a64> ; # ECONOMICS
+    dc:subject <https://elsst.cessda.eu/id/5/498de90d-7d1e-4f94-b283-181b7edb3ebf> ; # ELDERLY
+    dc:subject <https://elsst.cessda.eu/id/5/d179f170-3354-4719-a625-d6976e7de2b0> ; # HIGHER EDUCATION INSTITUTIONS
+    
+    # Parent organization
+    schema:parentOrganization [
+        a foaf:Organization ;
+        foaf:name "National Institute for Public Health and the Environment" ;
+        schema:name "National Institute for Public Health and the Environment (RIVM)" ;
+        dc:identifier <https://ror.org/01cesdt21> ;
+        schema:url <https://www.rivm.nl/> ;
+        schema:address [
+            a schema:PostalAddress ;
+            schema:addressLocality "De Bilt" ;
+            schema:addressCountry "Netherlands"
+        ] ;
+        schema:description "Leading Dutch national institute for public health and environmental protection" ;
+        schema:organizationType "Government Research Institute" ;
+        schema:parentOrganization [
+            a foaf:Organization ;
+            foaf:name "Ministry of Health, Welfare and Sport" ;
+            schema:description "Dutch government ministry responsible for public health policy"
+        ] ;
+        schema:department [
+            a foaf:Organization ;
+            foaf:name "Environmental Health" ;
+            schema:description "Department specializing in environmental health research and policy"
+        ]
+    ] ;
+    
+    # Producer information
+    schema:producer <https://w3id.org/odissei/ns/kg/cbs/project/7267> ;
+    
+    # Publication venue
+    schema:isPartOf [
+        a schema:Periodical ;
+        schema:name "Noise and Health" ;
+        schema:publisher [
+            a foaf:Organization ;
+            foaf:name "Wolters Kluwer Health" ;
+            schema:name "Wolters Kluwer Health" ;
+            schema:url <https://www.wolterskluwer.com/> ;
+            schema:address [
+                a schema:PostalAddress ;
+                schema:addressLocality "Philadelphia" ;
+                schema:addressRegion "Pennsylvania" ;
+                schema:addressCountry "United States"
+            ] ;
+            schema:description "Leading international publisher of health and medical information"
+        ] ;
+        schema:issn "1463-1741" ;
+        schema:description "International journal focusing on noise and health research" ;
+        schema:volume "13" ;
+        schema:issue "52" ;
+        schema:pageStart "229" ;
+        schema:pageEnd "242"
+    ] ;
+    
+    # Abstract and research focus
+    schema:about [
+        a schema:Thing ;
+        schema:name "Environmental noise effects on cardiovascular health in the Netherlands" ;
+        schema:description "Comprehensive review and analysis of environmental noise exposure effects on cardiovascular health outcomes in the Dutch population, including traffic noise, aircraft noise, and railway noise impacts"
+    ] ;
+    
+    # Research methodology
+    schema:workExample [
+        a schema:CreativeWork ;
+        schema:name "Systematic review and meta-analysis of noise and cardiovascular health" ;
+        schema:description "Comprehensive systematic review and meta-analysis examining the relationship between environmental noise exposure and cardiovascular health outcomes, contributing to WHO Environmental Noise Guidelines"
+    ] ;
+    
+    # Target audience
+    schema:audience [
+        a schema:Audience ;
+        schema:audienceType "Environmental health researchers" ;
+        schema:audienceType "Public health officials" ;
+        schema:audienceType "Noise policy makers" ;
+        schema:audienceType "Cardiovascular health specialists" ;
+        schema:audienceType "Urban planners" ;
+        schema:audienceType "Environmental consultants" ;
+        schema:audienceType "WHO guideline developers" ;
+        schema:audienceType "Government health agencies" ;
+        schema:audienceType "International health organizations" ;
+        schema:audienceType "Environmental justice advocates"
+    ] ;
+    
+    # Research findings and implications
+    schema:result [
+        a schema:Thing ;
+        schema:name "Limited but significant cardiovascular effects of environmental noise" ;
+        schema:description "Evidence that environmental noise exposure, particularly from road traffic, increases the risk of ischaemic heart disease and myocardial infarction, with less than 1% of myocardial infarction cases per year attributable to noise in the Netherlands"
+    ] ;
+    
+    # Document format and access
+    schema:encodingFormat "application/pdf" ;
+    schema:isAccessibleForFree true ;
+    schema:url <https://journals.lww.com/nohe/fulltext/2011/13520/cardiovascular_effects_of_environmental_noise_.5.aspx> ;
+    
+    # Content classification
+    bibo:status "Published" ;
+    schema:genre "Academic research" ;
+    schema:genre "Systematic review" ;
+    schema:genre "Environmental health research" ;
+    schema:genre "Cardiovascular research" ;
+    
+    # Temporal coverage
+    schema:temporalCoverage "2011" ;
+    schema:dateCreated "2011"^^xsd:gYear ;
+    
+    # Research context
+    schema:isPartOf [
+        a schema:CreativeWork ;
+        schema:name "RIVM Environmental Noise and Health research program" ;
+        schema:description "Part of RIVM's comprehensive research program examining environmental noise effects on public health"
+    ] ;
+    
+    # Academic significance
+    schema:citation [
+        a schema:CreativeWork ;
+        schema:name "Influential in environmental noise and cardiovascular health literature" ;
+        schema:description "Widely cited in subsequent research on noise health effects, WHO guideline development, and environmental health policy"
+    ] ;
+    
+    # Language and localization
+    schema:contentLocation [
+        a schema:Place ;
+        schema:name "Netherlands" ;
+        schema:description "Dutch national study with implications for international environmental noise and health research"
+    ] ;
+    
+    # Professional context
+    schema:industry "Environmental Health" ;
+    schema:applicationCategory "Cardiovascular Health Research" ;
+    
+    # Research contribution
+    schema:contribution [
+        a schema:Thing ;
+        schema:name "Framework for environmental noise and cardiovascular health assessment" ;
+        schema:description "Provides methodological framework for assessing cardiovascular health effects of environmental noise exposure and contributes to international guideline development"
+    ] ;
+    
+    # Quality indicators
+    schema:measurementTechnique [
+        "Systematic review methodology",
+        "Meta-analysis",
+        "Environmental exposure assessment",
+        "Cardiovascular health outcome measurement",
+        "Population-based epidemiology",
+        "Noise exposure modeling"
+    ] ;
+    
+    # Usage and applications
+    schema:usageInfo [
+        a schema:CreativeWork ;
+        schema:name "Environmental noise policy and cardiovascular health protection applications" ;
+        schema:description "Used for developing noise exposure limits, environmental health policy, and understanding cardiovascular health impacts of environmental noise"
+    ] ;
+    
+    # Data coverage
+    schema:coverage [
+        a schema:Thing ;
+        schema:name "Comprehensive Dutch environmental noise and health data" ;
+        schema:description "Analysis of environmental noise exposure and cardiovascular health outcomes in the Dutch population with international comparative perspective"
+    ] ;
+    
+    # Public health impact
+    schema:impact [
+        a schema:Thing ;
+        schema:name "Environmental noise policy and cardiovascular health protection influence" ;
+        schema:description "Influential research informing noise exposure limits, environmental health policy, and cardiovascular health protection measures"
+    ] ;
+    
+    # Research institute context
+    schema:provider [
+        a foaf:Organization ;
+        foaf:name "National Institute for Public Health and the Environment (RIVM)" ;
+        schema:name "National Institute for Public Health and the Environment (RIVM)" ;
+        schema:url <https://www.rivm.nl/> ;
+        schema:parentOrganization [
+            a foaf:Organization ;
+            foaf:name "Ministry of Health, Welfare and Sport" ;
+            schema:description "Dutch government ministry responsible for public health policy"
+        ] ;
+        schema:description "Leading Dutch national institute for public health and environmental protection"
+    ] ;
+    
+    # Theoretical framework
+    schema:theoreticalFramework [
+        a schema:Thing ;
+        schema:name "Environmental health and cardiovascular epidemiology theory" ;
+        schema:description "Analysis based on environmental health principles, cardiovascular epidemiology, and noise exposure assessment methodology"
+    ] ;
+    
+    # Public health implications
+    schema:publicHealthImplication [
+        a schema:Thing ;
+        schema:name "Noise exposure limits and cardiovascular health protection" ;
+        schema:description "Recommendations for establishing noise exposure limits and developing comprehensive environmental health policies to protect cardiovascular health"
+    ] ;
+    
+    # Research network
+    schema:collaborator [
+        a foaf:Organization ;
+        foaf:name "World Health Organization" ;
+        schema:description "International health organization for which this research contributes to Environmental Noise Guidelines"
+    ] ;
+    
+    # Environmental health focus areas
+    schema:environmentalHealthArea [
+        a schema:Thing ;
+        schema:name "Environmental Noise and Cardiovascular Health" ;
+        schema:description "Investigation of cardiovascular health effects of environmental noise exposure"
+    ] ;
+    
+    schema:environmentalHealthArea [
+        a schema:Thing ;
+        schema:name "Noise Annoyance and Health Outcomes" ;
+        schema:description "Analysis of noise annoyance as a mediator of health effects from environmental noise exposure"
+    ] ;
+    
+    schema:environmentalHealthArea [
+        a schema:Thing ;
+        schema:name "Environmental Burden of Disease from Noise" ;
+        schema:description "Assessment of disease burden attributable to environmental noise exposure in populations"
+    ] ;
+    
+    # Environmental policy context
+    schema:policyContext [
+        a schema:Thing ;
+        schema:name "Environmental noise policy and cardiovascular health protection" ;
+        schema:description "Evidence-based approach to environmental noise policy development for protecting cardiovascular health"
+    ] ;
+    
+    # Performance indicators
+    schema:performanceIndicator [
+        a schema:Thing ;
+        schema:name "Cardiovascular health outcomes from noise exposure" ;
+        schema:description "Measurement of cardiovascular health impacts for environmental noise policy evaluation"
+    ] ;
+    
+    # Environmental planning
+    schema:environmentalPlanning [
+        a schema:Thing ;
+        schema:name "Noise management and cardiovascular health protection" ;
+        schema:description "Planning mechanisms through which noise policies can be designed to protect cardiovascular health and reduce environmental health disparities"
+    ] ;
+    
+    # Research methodology details
+    schema:researchMethodology [
+        a schema:Thing ;
+        schema:name "Systematic review and meta-analysis with environmental exposure assessment" ;
+        schema:description "Comprehensive approach combining systematic literature review, meta-analysis, and environmental noise exposure assessment to evaluate cardiovascular health effects"
+    ] ;
+    
+    # WHO guideline contribution
+    schema:whoGuideline [
+        a schema:Thing ;
+        schema:name "WHO Environmental Noise Guidelines contribution" ;
+        schema:description "Research contributing to the development of WHO Environmental Noise Guidelines for the European Region"
+    ] ;
+    
+    # Cardiovascular health focus
+    schema:cardiovascularHealth [
+        a schema:Thing ;
+        schema:name "Environmental noise and cardiovascular disease risk" ;
+        schema:description "Investigation of environmental noise exposure as a risk factor for cardiovascular disease, particularly ischaemic heart disease and myocardial infarction"
+    ] ;
+    
+    # Noise exposure assessment
+    schema:noiseExposure [
+        a schema:Thing ;
+        schema:name "Multi-source environmental noise exposure assessment" ;
+        schema:description "Comprehensive assessment of environmental noise exposure from road traffic, aircraft, and railway sources"
+    ] ;
+    
+    # Health impact assessment
+    schema:healthImpactAssessment [
+        a schema:Thing ;
+        schema:name "Population-level cardiovascular health impact from noise" ;
+        schema:description "Assessment of population-level cardiovascular health impacts attributable to environmental noise exposure for policy development"
+    ] .
+

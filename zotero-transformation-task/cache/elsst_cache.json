@@ -260,6 +260,404 @@
         "INCOME REDISTRIBUTION",
         "WEALTH DISTRIBUTION"
       ]
+    },
+    "employment": {
+      "id": "aa0ddef6-51fa-4eee-bcb5-2b64c41a4818",
+      "uri": "https://elsst.cessda.eu/id/5/aa0ddef6-51fa-4eee-bcb5-2b64c41a4818",
+      "label": "EMPLOYMENT",
+      "broader_concepts": [
+        "LABOUR AND EMPLOYMENT"
+      ],
+      "related_concepts": [
+        "JOBS",
+        "WORK",
+        "CONDITIONS OF EMPLOYMENT",
+        "EMPLOYMENT OPPORTUNITIES"
+      ]
+    },
+    "statistics": {
+      "id": "d6ea69ca-1a76-4125-a883-72bfba9a3f9f",
+      "uri": "https://elsst.cessda.eu/id/5/d6ea69ca-1a76-4125-a883-72bfba9a3f9f",
+      "label": "STATISTICS",
+      "broader_concepts": [
+        "MATHEMATICS"
+      ],
+      "related_concepts": [
+        "DESCRIPTIVE STATISTICS",
+        "PROBABILITY THEORY",
+        "STATISTICAL ANALYSIS",
+        "TIME BUDGETS",
+        "CENSUS DATA",
+        "STATISTICAL DATA"
+      ]
+    },
+    "regional economy": {
+      "id": "14e269e3-ef86-43ad-b09f-3aaf37b5f170",
+      "uri": "https://elsst.cessda.eu/id/5/14e269e3-ef86-43ad-b09f-3aaf37b5f170",
+      "label": "REGIONAL ECONOMY",
+      "broader_concepts": [
+        "ECONOMICS"
+      ],
+      "related_concepts": [
+        "REGIONAL FINANCE",
+        "REGIONAL DEVELOPMENT",
+        "REGIONAL ECONOMICS"
+      ]
+    },
+    "regional development": {
+      "id": "d0fcf34d-8b9c-4bf5-871e-449b7517b47e",
+      "uri": "https://elsst.cessda.eu/id/5/d0fcf34d-8b9c-4bf5-871e-449b7517b47e",
+      "label": "REGIONAL DEVELOPMENT",
+      "broader_concepts": [
+        "ECONOMIC AND SOCIAL DEVELOPMENT"
+      ],
+      "related_concepts": [
+        "REGIONAL PLANNING",
+        "REGIONAL ECONOMY",
+        "REGIONAL POLICY"
+      ]
+    },
+    "finance": {
+      "id": "18df8314-c607-41c1-a1f7-c3749324d45b",
+      "uri": "https://elsst.cessda.eu/id/5/18df8314-c607-41c1-a1f7-c3749324d45b",
+      "label": "FINANCE",
+      "broader_concepts": [
+        "ECONOMICS"
+      ],
+      "related_concepts": [
+        "CAPITAL",
+        "FINANCIAL INSTITUTIONS",
+        "FINANCIAL MARKETS",
+        "INSURANCE",
+        "INVESTMENT",
+        "PENSION CONTRIBUTIONS"
+      ]
+    },
+    "insurance": {
+      "id": "fec489ed-ec56-446d-b08a-e34785082e96",
+      "uri": "https://elsst.cessda.eu/id/5/fec489ed-ec56-446d-b08a-e34785082e96",
+      "label": "INSURANCE",
+      "broader_concepts": [
+        "FINANCE"
+      ],
+      "related_concepts": [
+        "INSURANCE CLAIMS",
+        "LIFE INSURANCE",
+        "MEDICAL INSURANCE",
+        "INSURANCE COMPANIES"
+      ]
+    },
+    "pension contributions": {
+      "id": "548388c5-9045-47a6-8b0d-a5af87c3f97c",
+      "uri": "https://elsst.cessda.eu/id/5/548388c5-9045-47a6-8b0d-a5af87c3f97c",
+      "label": "PENSION CONTRIBUTIONS",
+      "broader_concepts": [
+        "FINANCE"
+      ],
+      "related_concepts": [
+        "ADDITIONAL VOLUNTARY CONTRIBUTIONS",
+        "EMPLOYEE CONTRIBUTIONS",
+        "EMPLOYER CONTRIBUTIONS"
+      ]
+    },
+    "pensions": {
+      "id": "53617a23-ffaa-4da0-9efe-8819180522f1",
+      "uri": "https://elsst.cessda.eu/id/5/53617a23-ffaa-4da0-9efe-8819180522f1",
+      "label": "PENSIONS",
+      "broader_concepts": [
+        "INCOME",
+        "SOCIAL SECURITY"
+      ],
+      "related_concepts": [
+        "PENSION BENEFITS",
+        "PRIVATE PENSIONS",
+        "STATE RETIREMENT PENSIONS"
+      ]
+    },
+    "mortality": {
+      "id": "acdfb412-a63f-4ff6-a371-db94edf733bb",
+      "uri": "https://elsst.cessda.eu/id/5/acdfb412-a63f-4ff6-a371-db94edf733bb",
+      "label": "MORTALITY",
+      "broader_concepts": [
+        "VITAL STATISTICS"
+      ],
+      "related_concepts": [
+        "INFANT MORTALITY",
+        "MATERNAL MORTALITY",
+        "DEATH",
+        "IMMORTALITY",
+        "PLACE OF DEATH",
+        "WAR DEATHS"
+      ]
+    },
+    "mortality rate": {
+      "id": "dcd368c4-512d-4804-935f-bee93db0bf73",
+      "uri": "https://elsst.cessda.eu/id/5/dcd368c4-512d-4804-935f-bee93db0bf73",
+      "label": "MORTALITY RATE",
+      "broader_concepts": [
+        "VITAL STATISTICS"
+      ],
+      "related_concepts": [
+        "DEATH",
+        "DEATH RATE"
+      ]
+    },
+    "demography": {
+      "id": "290327e7-0a69-44f7-8348-c9608aee1fad",
+      "uri": "https://elsst.cessda.eu/id/5/290327e7-0a69-44f7-8348-c9608aee1fad",
+      "label": "DEMOGRAPHY",
+      "broader_concepts": [
+        "SOCIAL SCIENCES"
+      ],
+      "related_concepts": [
+        "DEMOGRAPHIC STATISTICS",
+        "POPULATION DISTRIBUTION",
+        "POPULATION DYNAMICS",
+        "POPULATION PROJECTION"
+      ]
+    },
+    "housing economics": {
+      "uri": "https://elsst.cessda.eu/id/5/2807deec-4ed7-4a05-a62b-9ceeefbefa1c",
+      "description": "Economic aspects of housing markets",
+      "broader_terms": [
+        "HOUSING"
+      ],
+      "related_concepts": [
+        "HOME BUYING",
+        "SELLING",
+        "HOUSING FINANCE"
+      ]
+    },
+    "planning": {
+      "uri": "https://elsst.cessda.eu/id/5/5a23fd3-a899-43a2-a24a-64c4d589faa6",
+      "description": "Urban and regional planning",
+      "broader_terms": [
+        "MANAGEMENT OPERATIONS"
+      ],
+      "related_concepts": [
+        "DEVELOPMENT PLANNING",
+        "ECONOMIC PLANNING",
+        "ENVIRONMENTAL PLANNING"
+      ]
+    },
+    "mortality": {
+      "uri": "https://elsst.cessda.eu/id/5/acdfb412-a63f-4ff6-a371-db94edf733bb",
+      "description": "Mortality research and vital statistics",
+      "broader_terms": [
+        "VITAL STATISTICS"
+      ],
+      "related_concepts": [
+        "INFANT MORTALITY",
+        "MATERNAL MORTALITY",
+        "DEATH",
+        "NUMBER OF DEATHS"
+      ]
+    },
+    "mortality rate": {
+      "uri": "https://elsst.cessda.eu/id/5/dcd368c4-512d-4804-935f-bee93db0bf73",
+      "description": "Statistical measurement of mortality",
+      "broader_terms": [
+        "VITAL STATISTICS"
+      ],
+      "related_concepts": [
+        "DEATH RATE",
+        "DEMOGRAPHIC INDICATORS"
+      ]
+    },
+    "unemployment benefits": {
+      "uri": "https://elsst.cessda.eu/id/5/f946d3ff-4f9d-42b6-9ee0-c269d02c2a19",
+      "description": "Financial support provided to unemployed individuals",
+      "broader_terms": [
+        "SOCIAL SECURITY BENEFITS"
+      ],
+      "related_concepts": [
+        "UNEMPLOYMENT",
+        "UNEMPLOYMENT COMPENSATION"
+      ]
+    },
+    "health expenditure": {
+      "id": "43ad3351-9ac1-4ee7-ab31-ecbf7738e689",
+      "uri": "https://elsst.cessda.eu/id/5/43ad3351-9ac1-4ee7-ab31-ecbf7738e689",
+      "label": "HEALTH EXPENDITURE",
+      "definition": "The amount spent by the government on health services",
+      "broader_concepts": [
+        "PUBLIC EXPENDITURE"
+      ],
+      "related_concepts": [
+        "HEALTH SERVICES",
+        "STATE HEALTH SERVICES"
+      ]
+    },
+    "health care costs": {
+      "id": "29768110-2efc-493b-bad3-59c2727939ff",
+      "uri": "https://elsst.cessda.eu/id/5/29768110-2efc-493b-bad3-59c2727939ff",
+      "label": "HEALTH CARE COSTS",
+      "definition": "The amount of money or resources required to provide a certain level or type of health care to the population",
+      "broader_concepts": [
+        "COSTS",
+        "HEALTH SERVICES",
+        "PUBLIC FINANCE"
+      ],
+      "related_concepts": [
+        "HEALTH EXPENDITURE"
+      ]
+    },
+    "elderly": {
+      "id": "498de90d-7d1e-4f94-b283-181b7edb3ebf",
+      "uri": "https://elsst.cessda.eu/id/5/498de90d-7d1e-4f94-b283-181b7edb3ebf",
+      "label": "ELDERLY",
+      "entry_terms": [
+        "AGED",
+        "ELDERLY PERSONS",
+        "OLD PEOPLE",
+        "OLD PERSONS",
+        "PENSIONERS"
+      ],
+      "broader_concepts": [
+        "DISADVANTAGED GROUPS"
+      ],
+      "related_concepts": [
+        "CARE OF THE ELDERLY",
+        "ELDER ABUSE",
+        "GERIATRICS",
+        "HOUSING FOR THE ELDERLY",
+        "LONELINESS",
+        "OLD PEOPLE'S CLUBS",
+        "RESIDENTIAL CARE OF THE ELDERLY",
+        "RETIREMENT",
+        "SOCIAL PROBLEMS"
+      ]
+    },
+    "job hunting": {
+      "id": "394178b5-c97d-40d8-849e-e9f6c28f08ce",
+      "uri": "https://elsst.cessda.eu/id/5/394178b5-c97d-40d8-849e-e9f6c28f08ce",
+      "label": "JOB HUNTING",
+      "entry_terms": [
+        "JOB SEEKERS"
+      ],
+      "broader_concepts": [
+        "ECONOMIC ACTIVITY"
+      ],
+      "narrower_concepts": [
+        "APPLICATION FOR EMPLOYMENT"
+      ]
+    },
+    "labour market": {
+      "id": "3b58eac5-38a9-4a8f-b50a-9c86ed21c210",
+      "uri": "https://elsst.cessda.eu/id/5/3b58eac5-38a9-4a8f-b50a-9c86ed21c210",
+      "label": "LABOUR MARKET",
+      "broader_concepts": [
+        "LABOUR AND EMPLOYMENT",
+        "ECONOMICS"
+      ]
+    },
+    "housing policy": {
+      "id": "24473156-aebb-4c02-83e2-ac0698cfb842",
+      "uri": "https://elsst.cessda.eu/id/5/24473156-aebb-4c02-83e2-ac0698cfb842",
+      "label": "HOUSING POLICY",
+      "broader_concepts": [
+        "SOCIAL POLICY"
+      ],
+      "related_concepts": [
+        "HOUSING",
+        "SOCIAL HOUSING"
+      ]
+    },
+    "urban development": {
+      "id": "0dda29d6-ea7d-44bf-b65d-69ee321e4f71",
+      "uri": "https://elsst.cessda.eu/id/5/0dda29d6-ea7d-44bf-b65d-69ee321e4f71",
+      "label": "URBAN DEVELOPMENT",
+      "broader_concepts": [
+        "ECONOMIC AND SOCIAL DEVELOPMENT"
+      ],
+      "narrower_concepts": [
+        "URBANIZATION",
+        "URBAN RENEWAL"
+      ],
+      "related_concepts": [
+        "DEVELOPMENT AREAS (URBAN PLANNING)"
+      ]
+    },
+    "higher education institutions": {
+      "id": "d179f170-3354-4719-a625-d6976e7de2b0",
+      "uri": "https://elsst.cessda.eu/id/5/d179f170-3354-4719-a625-d6976e7de2b0",
+      "label": "HIGHER EDUCATION INSTITUTIONS",
+      "definition": "BASIC TERM FOR INSTITUTIONS OF TERTIARY EDUCATION",
+      "broader_concepts": [
+        "EDUCATIONAL INSTITUTIONS"
+      ],
+      "entry_terms": [
+        "COLLEGES",
+        "UNIVERSITIES"
+      ]
+    },
+    "entrepreneurs": {
+      "id": "ebf6f18f-16ec-45dc-97f3-5d15415adbfc",
+      "uri": "https://elsst.cessda.eu/id/5/ebf6f18f-16ec-45dc-97f3-5d15415adbfc",
+      "label": "ENTREPRENEURS",
+      "broader_concepts": [
+        "STATUS IN EMPLOYMENT"
+      ],
+      "related_concepts": [
+        "BUSINESS ECONOMICS",
+        "BUSINESSES",
+        "BUSINESS FORMATION",
+        "BUSINESS MANAGEMENT",
+        "ENTREPRENEURIAL VALUES"
+      ]
+    },
+    "epidemiology": {
+      "id": "c5c7a428-e9e0-4248-a502-b0773a2f8eb5",
+      "uri": "https://elsst.cessda.eu/id/5/c5c7a428-e9e0-4248-a502-b0773a2f8eb5",
+      "label": "EPIDEMIOLOGY",
+      "broader_concepts": [
+        "PREVENTIVE MEDICINE"
+      ],
+      "related_concepts": [
+        "BACTERIAL AND VIRUS DISEASES",
+        "PUBLIC HEALTH"
+      ],
+      "entry_terms": [
+        "INFECTIOUS DISEASE CONTROL"
+      ]
+    },
+    "finance": {
+      "id": "18df8314-c607-41c1-a1f7-c3749324d45b",
+      "uri": "https://elsst.cessda.eu/id/5/18df8314-c607-41c1-a1f7-c3749324d45b",
+      "label": "FINANCE",
+      "broader_concepts": [
+        "ECONOMICS"
+      ],
+      "narrower_concepts": [
+        "CAPITAL",
+        "CAPITAL MOVEMENTS",
+        "DEBTS",
+        "FINANCIAL COMMITMENTS",
+        "FINANCIAL COMPENSATION",
+        "FINANCIAL EXPECTATIONS",
+        "FINANCIAL INCENTIVES",
+        "FINANCIAL INSTITUTIONS",
+        "FINANCIAL MANAGEMENT",
+        "FINANCIAL MARKETS",
+        "FINANCIAL RESOURCES",
+        "FINANCIAL SERVICES",
+        "FINANCING",
+        "HOUSEHOLD BUDGETS",
+        "INSURANCE"
+      ]
+    },
+    "financing": {
+      "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+      "uri": "https://elsst.cessda.eu/id/5/a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+      "label": "FINANCING",
+      "broader_concepts": [
+        "FINANCE"
+      ],
+      "related_concepts": [
+        "FINANCIAL INSTITUTIONS",
+        "FINANCIAL SERVICES",
+        "BUSINESS ECONOMICS"
+      ]
     }
   }
 }
