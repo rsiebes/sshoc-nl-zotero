@@ -1,0 +1,70 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <http://schema.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://ftp.iza.org/dp7575.pdf>
+    a bibo:Article, schema:ScholarlyArticle ;
+    dc:title "Testosterone and the Gender Wage Gap" ;
+    dc:date "2013"^^xsd:gYear ;
+    dc:identifier "MYERS_EUR_ESE_032" ;
+    
+    # Original URI preserved
+    rdfs:seeAlso <http://ftp.iza.org/dp7575.pdf> ;
+    
+    schema:author <https://w3id.org/odissei/ns/kg/person/anne_c_gielen_eb5d0b19> ;
+    schema:author <https://w3id.org/odissei/ns/kg/person/jessica_holmes_b3713fdc> ;
+    schema:author <https://w3id.org/odissei/ns/kg/person/caitlin_myers_d22eaf37> ;
+    
+    # Parent organization
+    schema:parentOrganization [
+        a foaf:Organization ;
+        foaf:name "EUR_ESE" ;
+        dc:identifier "EUR_ESE" ;
+    ] ;
+    
+    # Producer information
+    schema:producer <https://w3id.org/odissei/ns/kg/cbs/project/unknown> ;
+    
+    # Content classification
+    bibo:status "Published" ;
+    schema:genre "Academic research" ;
+    
+    # Temporal coverage
+    schema:temporalCoverage "2013" ;
+    schema:dateCreated "2013"^^xsd:gYear .
+
+
+<https://w3id.org/odissei/ns/kg/person/anne_c_gielen_eb5d0b19>
+    a foaf:Person, schema:Person ;
+    foaf:name "Anne C. Gielen" ;
+    foaf:givenName "Anne C." ;
+    foaf:familyName "Gielen" ;
+    schema:identifier "https://orcid.org/0000-0001-8704-4900" ;
+    foaf:homepage <https://orcid.org/0000-0001-8704-4900> ;
+    schema:jobTitle "Full Professor" ;
+    schema:affiliation "Erasmus Universiteit Rotterdam Erasmus School of Economics" ;
+    schema:department "Economics" ;
+    schema:knowsAbout "Economics" ;
+    schema:knowsAbout "Health Sciences" .
+
+<https://w3id.org/odissei/ns/kg/person/jessica_holmes_b3713fdc>
+    a foaf:Person, schema:Person ;
+    foaf:name "Jessica Holmes" ;
+    foaf:givenName "Jessica" ;
+    foaf:familyName "Holmes" ;
+    schema:identifier "https://orcid.org/0000-0002-9807-6112" ;
+    foaf:homepage <https://orcid.org/0000-0002-9807-6112> ;
+    schema:interest "Chemistry" ;
+    schema:interest "Supramolecular chemistry" ;
+    schema:interest "Education" .
+
+<https://w3id.org/odissei/ns/kg/person/caitlin_myers_d22eaf37>
+    a foaf:Person, schema:Person ;
+    foaf:name "Caitlin Myers" ;
+    foaf:givenName "Caitlin" ;
+    foaf:familyName "Myers" ;
+    schema:identifier "https://orcid.org/0000-0002-4157-6108" ;
+    foaf:homepage <https://orcid.org/0000-0002-4157-6108> .

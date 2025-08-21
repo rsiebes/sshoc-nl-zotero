@@ -1,0 +1,19 @@
+[
+  {
+    "full_name": "Test Author",
+    "given_name": "Test",
+    "family_name": "Author",
+    "orcid_id": "https://orcid.org/0000-0003-3418-1009",
+    "email": "",
+    "current_position": "",
+    "affiliation": "",
+    "department": "",
+    "institution_url": "",
+    "institution_ror_id": "",
+    "google_scholar_id": "",
+    "citation_count": 0,
+    "h_index": 0,
+    "expertise_areas": [],
+    "research_interests": []
+  }
+]

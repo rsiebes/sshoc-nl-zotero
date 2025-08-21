@@ -1,0 +1,39 @@
+[
+  {
+    "full_name": "Shuai Chen",
+    "given_name": "Shuai",
+    "family_name": "Chen",
+    "orcid_id": "https://orcid.org/0009-0005-2927-1458",
+    "email": "",
+    "current_position": "PhD Student",
+    "affiliation": "McGill University",
+    "department": "Educational & Counselling Psychology",
+    "institution_url": "",
+    "institution_ror_id": "",
+    "google_scholar_id": "",
+    "citation_count": 0,
+    "h_index": 0,
+    "expertise_areas": [],
+    "research_interests": [
+      "Educational Technology",
+      "AI in Education"
+    ]
+  },
+  {
+    "full_name": "Jan C. van Ours",
+    "given_name": "Jan C. van",
+    "family_name": "Ours",
+    "orcid_id": "https://orcid.org/0000-0002-0144-9956",
+    "email": "",
+    "current_position": "Visiting professor",
+    "affiliation": "Erasmus University Rotterdam",
+    "department": "Applied Economics",
+    "institution_url": "",
+    "institution_ror_id": "",
+    "google_scholar_id": "",
+    "citation_count": 0,
+    "h_index": 0,
+    "expertise_areas": [],
+    "research_interests": []
+  }
+]

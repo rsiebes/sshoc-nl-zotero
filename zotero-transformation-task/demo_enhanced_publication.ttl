@@ -7,9 +7,9 @@
 
 <http://ftp.iza.org/dp7129.pdf>
     a bibo:Article, schema:ScholarlyArticle ;
-    dc:title "Measuring Cultural Diversity and its Impact on Innovation: Longitudinal Evidence from Dutch Firms" ;
+    dc:title "Cultural Diversity and Innovation in Dutch Firms: Longitudinal Evidence" ;
     dc:date "2013"^^xsd:gYear ;
-    dc:identifier "POOT_VU_SBE_030" ;
+    dc:identifier "DEMO_ENHANCED_001" ;
     
     # Original URI preserved
     rdfs:seeAlso <http://ftp.iza.org/dp7129.pdf> ;
@@ -17,7 +17,19 @@
     schema:author <https://w3id.org/odissei/ns/kg/person/ceren_ozgen_d6c8e1ac> ;
     schema:author <https://w3id.org/odissei/ns/kg/person/peter_nijkamp_024c337d> ;
     schema:author <https://w3id.org/odissei/ns/kg/person/jacques_poot_7195a30d> ;
-    dc:abstract "Abstract extracted from Google Scholar page..." ;
+    dc:abstract "This study examines the relationship between cultural diversity and innovation performance in Dutch firms. Using longitudinal data from 2000-2010, we analyze how ethnic diversity in the workforce affects firm-level innovation outcomes, including patent applications and new product development. Our econometric analysis controls for firm size, industry effects, and regional characteristics. The findings suggest that cultural diversity has a positive and significant impact on innovation, particularly in knowledge-intensive industries. Firms with higher levels of cultural diversity demonstrate increased innovation performance, measured through patent counts and R&D expenditure. The results indicate that diversity enhances creativity and problem-solving capabilities within organizations. Policy implications suggest that immigration policies supporting skilled migration can contribute to national innovation capacity." ;
+    dc:subject "performance" ;
+    dc:subject "patent applications" ;
+    dc:subject "industry" ;
+    dc:subject "applications" ;
+    dc:subject "industries" ;
+    dc:subject "levels" ;
+    dc:subject "product development" ;
+    dc:subject "policy implications" ;
+    dc:subject "diversity" ;
+    dc:subject "innovation" ;
+    dc:subject "patents" ;
+    dc:subject "migration" ;
     
     # Parent organization
     schema:parentOrganization [
@@ -47,9 +59,9 @@
     foaf:homepage <https://orcid.org/0000-0002-7242-9610> ;
     schema:jobTitle "Associate Professor" ;
     schema:affiliation "University of Birmingham" ;
-    schema:department "Department of Economics" ;
     schema:knowsAbout "Economics" ;
-    schema:interest "skills, technological change, urban economics, innovation, diversity, migration" .
+    schema:knowsAbout "Innovation" ;
+    schema:knowsAbout "Diversity" ; .
 
 <https://w3id.org/odissei/ns/kg/person/peter_nijkamp_024c337d>
     a foaf:Person, schema:Person ;
@@ -60,7 +72,7 @@
     foaf:homepage <https://orcid.org/0000-0002-4068-8132> ;
     schema:knowsAbout "Social Sciences" ;
     schema:knowsAbout "Economics" ;
-    schema:knowsAbout "Environmental Sciences" .
+    schema:knowsAbout "Environmental Sciences" ; .
 
 <https://w3id.org/odissei/ns/kg/person/jacques_poot_7195a30d>
     a foaf:Person, schema:Person ;
@@ -71,6 +83,6 @@
     foaf:homepage <https://orcid.org/0000-0003-4735-9283> ;
     schema:jobTitle "Emeritus Professor of Population Economics" ;
     schema:affiliation "University of Waikato" ;
-    schema:department "Te Ngira: Institute for Population Research" ;
     schema:knowsAbout "Social Sciences" ;
-    schema:knowsAbout "Economics" .
+    schema:knowsAbout "Economics" ; .
+

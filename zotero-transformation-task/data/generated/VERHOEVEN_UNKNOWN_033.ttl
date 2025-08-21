@@ -1,0 +1,59 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <http://schema.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://haaglanden.nl/sites/haaglanden.nl/files/pagina-bestanden/240/2012-12-12%20Eindrapport%20Arbeidsmigratie%20in%20Stadsgewest%20Haaglanden%20Panteia.pdf>
+    a bibo:Article, schema:ScholarlyArticle ;
+    dc:title "Arbeidsmigratie in het Stadsgewest Haaglanden. Huisvesting tijdelijke arbeidsmigranten." ;
+    dc:date "2012"^^xsd:gYear ;
+    dc:identifier "VERHOEVEN_UNKNOWN_033" ;
+    
+    # Original URI preserved
+    rdfs:seeAlso <http://haaglanden.nl/sites/haaglanden.nl/files/pagina-bestanden/240/2012-12-12%20Eindrapport%20Arbeidsmigratie%20in%20Stadsgewest%20Haaglanden%20Panteia.pdf> ;
+    
+    schema:author <https://w3id.org/odissei/ns/kg/person/ngl_timmermans_61e9d26e> ;
+    schema:author <https://w3id.org/odissei/ns/kg/person/b_van_der_linden_6dbfec75> ;
+    schema:author <https://w3id.org/odissei/ns/kg/person/wh_j_verhoeven_c2a5d0cd> ;
+    
+    # Parent organization
+    schema:parentOrganization [
+        a foaf:Organization ;
+        foaf:name "Unknown" ;
+        dc:identifier "Unknown" ;
+    ] ;
+    
+    # Producer information
+    schema:producer <https://w3id.org/odissei/ns/kg/cbs/project/unknown> ;
+    
+    # Content classification
+    bibo:status "Published" ;
+    schema:genre "Academic research" ;
+    
+    # Temporal coverage
+    schema:temporalCoverage "2012" ;
+    schema:dateCreated "2012"^^xsd:gYear .
+
+
+<https://w3id.org/odissei/ns/kg/person/ngl_timmermans_61e9d26e>
+    a foaf:Person, schema:Person ;
+    foaf:name "N.G.L. Timmermans" ;
+    foaf:givenName "N.G.L." ;
+    foaf:familyName "Timmermans" .
+
+<https://w3id.org/odissei/ns/kg/person/b_van_der_linden_6dbfec75>
+    a foaf:Person, schema:Person ;
+    foaf:name "B. van der Linden" ;
+    foaf:givenName "B. van der" ;
+    foaf:familyName "Linden" ;
+    schema:identifier "https://orcid.org/0000-0001-7995-9158" ;
+    foaf:homepage <https://orcid.org/0000-0001-7995-9158> ;
+    schema:knowsAbout "Environmental Sciences" .
+
+<https://w3id.org/odissei/ns/kg/person/wh_j_verhoeven_c2a5d0cd>
+    a foaf:Person, schema:Person ;
+    foaf:name "W.H. J. Verhoeven" ;
+    foaf:givenName "W.H. J." ;
+    foaf:familyName "Verhoeven" .

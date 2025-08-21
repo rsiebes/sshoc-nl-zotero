@@ -27,8 +27,9 @@ from typing import Dict, List, Optional, Tuple
 from dataclasses import dataclass
 from pathlib import Path
 
-# Import author enrichment functionality
+# Import enrichment functionality
 from enrichment_modules.author_enrichment import AuthorEnricher, AuthorInfo
+from enrichment_modules.keyword_abstract_enrichment import KeywordAbstractEnricher, ContentInfo
 
 @dataclass
 class Publication:
@@ -132,8 +133,9 @@ class MetadataEnricher:
         self.elsst_cache = self._load_cache("elsst_cache.json")
         self.org_cache = self._load_cache("organization_cache.json")
         
-        # Initialize author enricher
+        # Initialize enrichment modules
         self.author_enricher = AuthorEnricher(cache_file=str(self.cache_dir / "author_enrichment_cache.json"))
+        self.keyword_abstract_enricher = KeywordAbstractEnricher(cache_file=str(self.cache_dir / "keyword_abstract_enrichment_cache.json"))
     
     def _load_cache(self, filename: str) -> Dict:
         """Load cache file or return empty dict"""
@@ -147,7 +149,7 @@ class MetadataEnricher:
         return {}
     
     def enrich_publication(self, pub: Publication) -> Tuple[str, str]:
-        """Generate enriched TTL metadata for a publication with author enrichment"""
+        """Generate enriched TTL metadata for a publication with author and keyword enrichment"""
         print(f"🔍 Enriching publication: {pub.title[:50]}...")
         
         # Generate file ID
@@ -178,8 +180,21 @@ class MetadataEnricher:
                     )
                     enriched_authors.append(fallback_author)
         
-        # Generate TTL content with enriched authors
-        ttl_content = self._generate_enriched_ttl_content(pub, file_id, enriched_authors)
+        # Enrich keywords and abstract
+        print(f"  🔍 Extracting content and keywords...")
+        enriched_content = None
+        try:
+            authors_string = pub.creators[0] if pub.creators else ""
+            enriched_content = self.keyword_abstract_enricher.extract_content_and_keywords(
+                pub.title,
+                authors_string,
+                pub.uri
+            )
+        except Exception as e:
+            print(f"    ⚠️ Error extracting content: {e}")
+        
+        # Generate TTL content with enriched authors and keywords
+        ttl_content = self._generate_enriched_ttl_content(pub, file_id, enriched_authors, enriched_content)
         
         print(f"  ✅ Generated enriched metadata for {file_id}")
         return ttl_content, file_id
@@ -198,7 +213,7 @@ class MetadataEnricher:
         # Create unique ID
         return f"{creator_part}_{org_part}_{pub.index:03d}"
     
-    def _generate_enriched_ttl_content(self, pub: Publication, file_id: str, enriched_authors: List[AuthorInfo]) -> str:
+    def _generate_enriched_ttl_content(self, pub: Publication, file_id: str, enriched_authors: List[AuthorInfo], enriched_content: Optional[ContentInfo] = None) -> str:
         """Generate enriched TTL content for a publication with detailed author information"""
         
         # TTL prefixes
@@ -229,6 +244,24 @@ class MetadataEnricher:
             author_uri = self.author_enricher.generate_author_uri(author)
             author_uris.append(author_uri)
             ttl_content += f"    schema:author <{author_uri}> ;\n"
+        
+        # Add keywords as dc:subject if available
+        if enriched_content:
+            # Add abstract if available
+            if enriched_content.article_abstract:
+                ttl_content += f'    dc:abstract "{self._escape_ttl_string(enriched_content.article_abstract)}" ;\n'
+            
+            # Add primary keywords
+            for keyword in enriched_content.primary_keywords:
+                ttl_content += f'    dc:subject "{self._escape_ttl_string(keyword)}" ;\n'
+            
+            # Add secondary keywords
+            for keyword in enriched_content.secondary_keywords:
+                ttl_content += f'    dc:subject "{self._escape_ttl_string(keyword)}" ;\n'
+            
+            # Add explicit keywords from the article
+            for keyword in enriched_content.explicit_keywords:
+                ttl_content += f'    dc:subject "{self._escape_ttl_string(keyword)}" ;\n'
         
         # Close main resource
         ttl_content += f"""    

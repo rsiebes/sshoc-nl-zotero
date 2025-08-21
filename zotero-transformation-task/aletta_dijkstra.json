@@ -1,0 +1,25 @@
+[
+  {
+    "full_name": "Aletta Dijkstra",
+    "given_name": "Aletta",
+    "family_name": "Dijkstra",
+    "orcid_id": "",
+    "email": "aletta.dijkstra@rug.nl",
+    "current_position": "",
+    "affiliation": "University of Groningen, Faculty of Spatial Sciences",
+    "department": "",
+    "institution_url": "https://www.rug.nl/",
+    "institution_ror_id": "https://ror.org/012p63287",
+    "google_scholar_id": "mock_scholar_id",
+    "citation_count": 245,
+    "h_index": 12,
+    "expertise_areas": [
+      "Health Geography",
+      "Population Health",
+      "Migration Studies",
+      "Regional Development",
+      "Spatial Epidemiology"
+    ],
+    "research_interests": []
+  }
+]

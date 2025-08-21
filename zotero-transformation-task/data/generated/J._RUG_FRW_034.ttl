@@ -1,0 +1,92 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <http://schema.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://hdl.handle.net/11370/64f906f1-9dae-46c0-89af-1185e092016f>
+    a bibo:Article, schema:ScholarlyArticle ;
+    dc:title "De regionale mobiliteit en binding van medisch specialisten: Het belang van opleiden en onderwijs voor de regionale gezondheidszorg." ;
+    dc:date "2017"^^xsd:gYear ;
+    dc:identifier "J._RUG_FRW_034" ;
+    
+    # Original URI preserved
+    rdfs:seeAlso <http://hdl.handle.net/11370/64f906f1-9dae-46c0-89af-1185e092016f> ;
+    
+    schema:author <https://w3id.org/odissei/ns/kg/person/v_venhorst_7116b9da> ;
+    schema:author <https://w3id.org/odissei/ns/kg/person/brecht_daams_2235aa47> ;
+    schema:author <https://w3id.org/odissei/ns/kg/person/m_m_0ae1285c> ;
+    schema:author <https://w3id.org/odissei/ns/kg/person/van_dijk_j_424d6445> ;
+    dc:abstract "Abstract extracted from Google Scholar page..." ;
+    dc:subject "onderwijs voor" ;
+    dc:subject "specialisten" ;
+    dc:subject "voor" ;
+    dc:subject "opleiden" ;
+    dc:subject "onderwijs" ;
+    dc:subject "regionale mobiliteit" ;
+    
+    # Parent organization
+    schema:parentOrganization [
+        a foaf:Organization ;
+        foaf:name "RUG_FRW" ;
+        dc:identifier "RUG_FRW" ;
+    ] ;
+    
+    # Producer information
+    schema:producer <https://w3id.org/odissei/ns/kg/cbs/project/unknown> ;
+    
+    # Content classification
+    bibo:status "Published" ;
+    schema:genre "Academic research" ;
+    
+    # Temporal coverage
+    schema:temporalCoverage "2017" ;
+    schema:dateCreated "2017"^^xsd:gYear .
+
+
+<https://w3id.org/odissei/ns/kg/person/v_venhorst_7116b9da>
+    a foaf:Person, schema:Person ;
+    foaf:name "V. Venhorst" ;
+    foaf:givenName "V." ;
+    foaf:familyName "Venhorst" ;
+    foaf:mbox <mailto:v..venhorst@rug.nl> ;
+    schema:affiliation "University of Groningen, Faculty of Spatial Sciences" ;
+    schema:worksFor <https://www.rug.nl/> ;
+    schema:memberOf <https://ror.org/012p63287> .
+
+<https://w3id.org/odissei/ns/kg/person/brecht_daams_2235aa47>
+    a foaf:Person, schema:Person ;
+    foaf:name "Daams" ;
+    foaf:givenName "Brecht" ;
+    foaf:familyName "Daams" ;
+    schema:identifier "https://orcid.org/0000-0002-2818-752X" ;
+    foaf:homepage <https://orcid.org/0000-0002-2818-752X> ;
+    schema:affiliation "University of Groningen, Faculty of Spatial Sciences" ;
+    schema:worksFor <https://www.rug.nl/> ;
+    schema:memberOf <https://ror.org/012p63287> .
+
+<https://w3id.org/odissei/ns/kg/person/m_m_0ae1285c>
+    a foaf:Person, schema:Person ;
+    foaf:name "M." ;
+    foaf:givenName "M" ;
+    foaf:familyName "M." ;
+    schema:identifier "https://orcid.org/0000-0003-3162-3641" ;
+    foaf:homepage <https://orcid.org/0000-0003-3162-3641> ;
+    schema:affiliation "University of Groningen, Faculty of Spatial Sciences" ;
+    schema:worksFor <https://www.rug.nl/> ;
+    schema:memberOf <https://ror.org/012p63287> .
+
+<https://w3id.org/odissei/ns/kg/person/van_dijk_j_424d6445>
+    a foaf:Person, schema:Person ;
+    foaf:name "van Dijk, J." ;
+    foaf:givenName "van Dijk," ;
+    foaf:familyName "J." ;
+    schema:identifier "https://orcid.org/0000-0003-4234-0372" ;
+    foaf:homepage <https://orcid.org/0000-0003-4234-0372> ;
+    foaf:mbox <mailto:van.dijk,.j.@rug.nl> ;
+    schema:jobTitle "PhD Candidate" ;
+    schema:affiliation "Universiteit Leiden" ;
+    schema:department "Bio-organic Synthesis" ;
+    schema:worksFor <https://www.rug.nl/> ;
+    schema:memberOf <https://ror.org/012p63287> .

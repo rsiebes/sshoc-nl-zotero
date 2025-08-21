@@ -1,0 +1,42 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <http://schema.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://hdl.handle.net/1765/32749>
+    a bibo:Article, schema:ScholarlyArticle ;
+    dc:title "Healthy Ageing: tackling the burden of disease and disability in an ageing population." ;
+    dc:date "2012"^^xsd:gYear ;
+    dc:identifier "B._UMC_EUR_035" ;
+    
+    # Original URI preserved
+    rdfs:seeAlso <http://hdl.handle.net/1765/32749> ;
+    
+    schema:author <https://w3id.org/odissei/ns/kg/person/b_klijs_22d31658> ;
+    
+    # Parent organization
+    schema:parentOrganization [
+        a foaf:Organization ;
+        foaf:name "UMC_EUR" ;
+        dc:identifier "UMC_EUR" ;
+    ] ;
+    
+    # Producer information
+    schema:producer <https://w3id.org/odissei/ns/kg/cbs/project/unknown> ;
+    
+    # Content classification
+    bibo:status "Published" ;
+    schema:genre "Academic research" ;
+    
+    # Temporal coverage
+    schema:temporalCoverage "2012" ;
+    schema:dateCreated "2012"^^xsd:gYear .
+
+
+<https://w3id.org/odissei/ns/kg/person/b_klijs_22d31658>
+    a foaf:Person, schema:Person ;
+    foaf:name "B. Klijs" ;
+    foaf:givenName "B." ;
+    foaf:familyName "Klijs" .

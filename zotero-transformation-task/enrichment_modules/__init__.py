@@ -22,6 +22,7 @@ Version: 2.1.0
 
 # Import main classes for easy access
 from .author_enrichment import AuthorEnricher, AuthorInfo
+from .keyword_abstract_enrichment import KeywordAbstractEnricher, ContentInfo
 
 __version__ = "2.1.0"
 __author__ = "SSHOC-NL Development Team"
@@ -30,5 +31,7 @@ __author__ = "SSHOC-NL Development Team"
 __all__ = [
     "AuthorEnricher",
     "AuthorInfo",
+    "KeywordAbstractEnricher", 
+    "ContentInfo",
 ]
 
