@@ -1,0 +1,82 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <http://schema.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://irs.ub.rug.nl/ppn/37257274X>
+    a bibo:Article, schema:ScholarlyArticle ;
+    dc:title "Geslaagd in de stad" ;
+    dc:date "2013"^^xsd:gYear ;
+    dc:identifier "V._RUG_040" ;
+    
+    # Original URI preserved
+    rdfs:seeAlso <http://irs.ub.rug.nl/ppn/37257274X> ;
+    
+    schema:author <https://w3id.org/odissei/ns/kg/person/v_a_venhorst_b7f43914> ;
+    schema:author <https://w3id.org/odissei/ns/kg/person/andrew_koster_715960cb> ;
+    schema:author <https://w3id.org/odissei/ns/kg/person/s_s_a5cb5c38> ;
+    schema:author <https://w3id.org/odissei/ns/kg/person/dijk_j_v_489d2f17> ;
+    dc:subject "geslaagd" ;
+    
+    # Parent organization
+    schema:parentOrganization [
+        a foaf:Organization ;
+        foaf:name "RUG" ;
+        dc:identifier "RUG" ;
+    ] ;
+    
+    # Producer information
+    schema:producer <https://w3id.org/odissei/ns/kg/cbs/project/unknown> ;
+    
+    # Content classification
+    bibo:status "Published" ;
+    schema:genre "Academic research" ;
+    
+    # Temporal coverage
+    schema:temporalCoverage "2013" ;
+    schema:dateCreated "2013"^^xsd:gYear .
+
+
+<https://w3id.org/odissei/ns/kg/person/v_a_venhorst_b7f43914>
+    a foaf:Person, schema:Person ;
+    foaf:name "V. A. Venhorst" ;
+    foaf:givenName "V. A." ;
+    foaf:familyName "Venhorst" ;
+    foaf:mbox <mailto:v..a..venhorst@rug.nl> ;
+    schema:affiliation "University of Groningen, Faculty of Spatial Sciences" ;
+    schema:worksFor <https://www.rug.nl/> ;
+    schema:memberOf <https://ror.org/012p63287> .
+
+<https://w3id.org/odissei/ns/kg/person/andrew_koster_715960cb>
+    a foaf:Person, schema:Person ;
+    foaf:name "Koster" ;
+    foaf:givenName "Andrew" ;
+    foaf:familyName "Koster" ;
+    schema:identifier "https://orcid.org/0000-0003-1525-1753" ;
+    foaf:homepage <https://orcid.org/0000-0003-1525-1753> ;
+    schema:affiliation "University of Groningen, Faculty of Spatial Sciences" ;
+    schema:worksFor <https://www.rug.nl/> ;
+    schema:memberOf <https://ror.org/012p63287> .
+
+<https://w3id.org/odissei/ns/kg/person/s_s_a5cb5c38>
+    a foaf:Person, schema:Person ;
+    foaf:name "S." ;
+    foaf:givenName "s" ;
+    foaf:familyName "S." ;
+    schema:identifier "https://orcid.org/0000-0003-2412-9223" ;
+    foaf:homepage <https://orcid.org/0000-0003-2412-9223> ;
+    schema:affiliation "University of Groningen, Faculty of Spatial Sciences" ;
+    schema:worksFor <https://www.rug.nl/> ;
+    schema:memberOf <https://ror.org/012p63287> .
+
+<https://w3id.org/odissei/ns/kg/person/dijk_j_v_489d2f17>
+    a foaf:Person, schema:Person ;
+    foaf:name "Dijk, J. V." ;
+    foaf:givenName "Dijk, J." ;
+    foaf:familyName "V." ;
+    foaf:mbox <mailto:dijk,.j..v.@rug.nl> ;
+    schema:affiliation "University of Groningen, Faculty of Spatial Sciences" ;
+    schema:worksFor <https://www.rug.nl/> ;
+    schema:memberOf <https://ror.org/012p63287> .

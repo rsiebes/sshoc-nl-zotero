@@ -157,5 +157,123 @@
     "mapping_confidence": 0.942857142857143,
     "mapping_method": "vocabulary_similarity",
     "mapping_timestamp": "1755811291"
+  },
+  "f4f87448fc5576e024d8dd18124b8897": {
+    "publication_title": "Geslaagd in de stad",
+    "publication_keywords": [
+      "geslaagd"
+    ],
+    "primary_concepts": [],
+    "secondary_concepts": [],
+    "total_concepts_found": 0,
+    "mapping_confidence": 0.0,
+    "mapping_method": "no_matches",
+    "mapping_timestamp": "1755811868"
+  },
+  "fdf25dfc3bcea7366d617a6becbbfb2f": {
+    "publication_title": "Long Run Returns to Education: Does Schooling Lead to an Extended Old Age?\\",
+    "publication_keywords": [
+      "returns",
+      "long",
+      "old age",
+      "long run",
+      "run returns",
+      "extended",
+      "education"
+    ],
+    "primary_concepts": [
+      {
+        "uri": "https://elsst.cessda.eu/id/5/d2842fa1-8ad7-4937-bf6c-71a3cfa4ab31",
+        "preferred_label": "FOOTPATHS",
+        "alternative_labels": [
+          "long"
+        ],
+        "broader_concepts": [],
+        "narrower_concepts": [],
+        "related_concepts": [],
+        "definition": "",
+        "language": "en",
+        "confidence_score": 0.9,
+        "matching_keywords": [
+          "long"
+        ]
+      },
+      {
+        "uri": "https://elsst.cessda.eu/id/5/44a1df3e-9924-4512-94c3-e5cbc1d45d19",
+        "preferred_label": "OLD AGE",
+        "alternative_labels": [
+          "old age"
+        ],
+        "broader_concepts": [],
+        "narrower_concepts": [],
+        "related_concepts": [],
+        "definition": "",
+        "language": "en",
+        "confidence_score": 0.9,
+        "matching_keywords": [
+          "old age"
+        ]
+      },
+      {
+        "uri": "https://elsst.cessda.eu/id/5/5db94191-315e-4f6a-92c2-2caa5c0e020f",
+        "preferred_label": "EXTENDED FAMILY",
+        "alternative_labels": [
+          "extended"
+        ],
+        "broader_concepts": [],
+        "narrower_concepts": [],
+        "related_concepts": [],
+        "definition": "",
+        "language": "en",
+        "confidence_score": 0.9,
+        "matching_keywords": [
+          "extended"
+        ]
+      },
+      {
+        "uri": "https://elsst.cessda.eu/id/5/c5310e73-4a7f-4ef6-b8d4-6fe62cef9281",
+        "preferred_label": "EDUCATION",
+        "alternative_labels": [
+          "education"
+        ],
+        "broader_concepts": [],
+        "narrower_concepts": [],
+        "related_concepts": [],
+        "definition": "",
+        "language": "en",
+        "confidence_score": 0.9,
+        "matching_keywords": [
+          "education"
+        ]
+      },
+      {
+        "uri": "https://elsst.cessda.eu/id/5/9e8d7c6b-5a4f-3e2d-1c0b-9a8f7e6d5c4b",
+        "preferred_label": "EDUCATION",
+        "alternative_labels": [
+          "training",
+          "education",
+          "learning",
+          "skills",
+          "development",
+          "teaching"
+        ],
+        "broader_concepts": [
+          "SOCIAL SCIENCES"
+        ],
+        "narrower_concepts": [],
+        "related_concepts": [],
+        "definition": "Formal and informal learning processes",
+        "language": "en",
+        "confidence_score": 0.8,
+        "matching_keywords": [
+          "education"
+        ]
+      }
+    ],
+    "secondary_concepts": [],
+    "total_concepts_found": 5,
+    "mapping_confidence": 0.8800000000000001,
+    "mapping_method": "vocabulary_similarity",
+    "mapping_timestamp": "1755813234"
   }
 }

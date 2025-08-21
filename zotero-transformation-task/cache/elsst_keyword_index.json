@@ -22,5 +22,29 @@
     "preferred_label": "POLICY MAKING",
     "confidence_score": 0.9,
     "last_updated": "1755811304"
+  },
+  "long": {
+    "uri": "https://elsst.cessda.eu/id/5/d2842fa1-8ad7-4937-bf6c-71a3cfa4ab31",
+    "preferred_label": "FOOTPATHS",
+    "confidence_score": 0.9,
+    "last_updated": "1755813241"
+  },
+  "old age": {
+    "uri": "https://elsst.cessda.eu/id/5/44a1df3e-9924-4512-94c3-e5cbc1d45d19",
+    "preferred_label": "OLD AGE",
+    "confidence_score": 0.9,
+    "last_updated": "1755813241"
+  },
+  "extended": {
+    "uri": "https://elsst.cessda.eu/id/5/5db94191-315e-4f6a-92c2-2caa5c0e020f",
+    "preferred_label": "EXTENDED FAMILY",
+    "confidence_score": 0.9,
+    "last_updated": "1755813241"
+  },
+  "education": {
+    "uri": "https://elsst.cessda.eu/id/5/c5310e73-4a7f-4ef6-b8d4-6fe62cef9281",
+    "preferred_label": "EDUCATION",
+    "confidence_score": 0.9,
+    "last_updated": "1755813241"
   }
 }

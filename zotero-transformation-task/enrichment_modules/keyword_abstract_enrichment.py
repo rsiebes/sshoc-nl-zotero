@@ -26,9 +26,11 @@ Version: 2.0.0
 import json
 import time
 import urllib.request
-import urllib.parse
-import re
+from urllib.parse import quote_plus
 import hashlib
+import re
+import requests
+from bs4 import BeautifulSoup
 from dataclasses import dataclass, field, asdict
 from typing import List, Dict, Optional, Set
 from pathlib import Path
@@ -192,6 +194,7 @@ class KeywordAbstractEnricher:
             {'name': 'CORE', 'method': self._search_core, 'priority': 3},
             {'name': 'BASE', 'method': self._search_base, 'priority': 3},
             {'name': 'Google Scholar', 'method': self._search_google_scholar_enhanced, 'priority': 3},
+            {'name': 'Google Search', 'method': self._search_google_general, 'priority': 3},  # Added for multilingual support
             
             # Tier 4: Publisher websites
             {'name': 'CrossRef', 'method': self._search_crossref, 'priority': 4},
@@ -527,31 +530,263 @@ class KeywordAbstractEnricher:
             return None
     
     def extract_content_from_url(self, url: str) -> Dict[str, str]:
-        """Extract abstract and content from the found article URL"""
+        """Extract abstract and content from the found article URL with real web scraping"""
         print(f"  📖 Extracting content from: {url[:50]}...")
         
         try:
-            # In practice, would use proper web scraping/PDF parsing
-            # For now, return simulated content based on common patterns
+            headers = {
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+            }
             
-            if 'scholar.google.com' in url:
-                return self._extract_from_scholar_page(url)
-            elif url.endswith('.pdf'):
-                return self._extract_from_pdf(url)
+            response = requests.get(url, headers=headers, timeout=15)
+            if response.status_code != 200:
+                print(f"    ❌ HTTP {response.status_code} error")
+                return {'abstract': '', 'content': '', 'explicit_keywords': [], 'journal': '', 'doi': ''}
+            
+            soup = BeautifulSoup(response.content, 'html.parser')
+            
+            # Try different extraction methods based on the domain
+            if 'researchgate.net' in url.lower():
+                return self._extract_from_researchgate(soup, url)
+            elif 'academia.edu' in url.lower():
+                return self._extract_from_academia(soup, url)
+            elif 'scholar.google' in url.lower():
+                return self._extract_from_google_scholar(soup, url)
+            elif any(domain in url.lower() for domain in ['rug.nl', 'uva.nl', 'vu.nl', 'tue.nl', 'tudelft.nl']):
+                return self._extract_from_dutch_university(soup, url)
             else:
-                return self._extract_from_webpage(url)
+                return self._extract_from_generic_academic(soup, url)
                 
         except Exception as e:
             print(f"    ❌ Content extraction failed: {e}")
-            return {
-                'abstract': '',
-                'content': '',
-                'explicit_keywords': [],
-                'journal': '',
-                'doi': ''
-            }
+            return {'abstract': '', 'content': '', 'explicit_keywords': [], 'journal': '', 'doi': ''}
     
-    def _search_for_pdf(self, query: str) -> Optional[Dict[str, str]]:
+    def _extract_from_researchgate(self, soup: BeautifulSoup, url: str) -> Dict[str, str]:
+        """Extract content specifically from ResearchGate pages"""
+        print(f"    🔬 Extracting from ResearchGate...")
+        
+        abstract = ""
+        keywords = []
+        
+        # ResearchGate abstract patterns
+        abstract_selectors = [
+            'div.nova-legacy-e-text--size-m.nova-legacy-e-text--family-sans-serif.nova-legacy-e-text--spacing-none.nova-legacy-e-text--color-grey-900',
+            'div[data-testid="publication-abstract"]',
+            'div.publication-abstract',
+            'div.abstract-content',
+            'div.nova-legacy-v-publication-item__abstract',
+            'div.research-detail-middle-section__abstract',
+            'div.publication-detail-abstract',
+            '.nova-legacy-e-text--size-m p',
+            'div[class*="abstract"]',
+            'section[class*="abstract"]'
+        ]
+        
+        for selector in abstract_selectors:
+            try:
+                elements = soup.select(selector)
+                for element in elements:
+                    text = element.get_text(strip=True)
+                    if text and len(text) > 100:
+                        # Clean up the abstract
+                        abstract = re.sub(r'\s+', ' ', text)
+                        abstract = abstract.replace('Abstract', '').strip()
+                        if abstract:
+                            print(f"    ✅ Found ResearchGate abstract ({len(abstract)} chars)")
+                            break
+                if abstract:
+                    break
+            except Exception as e:
+                continue
+        
+        # ResearchGate keywords
+        keyword_selectors = [
+            'div.keywords a',
+            'div[data-testid="keywords"] a',
+            'div.publication-keywords a',
+            'span.keyword',
+            'div.nova-legacy-v-publication-item__keywords a'
+        ]
+        
+        for selector in keyword_selectors:
+            try:
+                elements = soup.select(selector)
+                for element in elements:
+                    keyword = element.get_text(strip=True)
+                    if keyword and keyword not in keywords:
+                        keywords.append(keyword)
+            except Exception as e:
+                continue
+        
+        return {
+            'abstract': abstract,
+            'content': abstract,
+            'explicit_keywords': keywords[:10],
+            'journal': '',
+            'doi': ''
+        }
+
+    def _extract_from_academia(self, soup: BeautifulSoup, url: str) -> Dict[str, str]:
+        """Extract content specifically from Academia.edu pages"""
+        print(f"    🎓 Extracting from Academia.edu...")
+        
+        abstract = ""
+        keywords = []
+        
+        # Academia.edu abstract patterns
+        abstract_selectors = [
+            'div.abstract',
+            'div[data-testid="abstract"]',
+            'div.work-abstract',
+            'div.paper-abstract',
+            'div.description',
+            'div[class*="abstract"]'
+        ]
+        
+        for selector in abstract_selectors:
+            try:
+                element = soup.select_one(selector)
+                if element:
+                    text = element.get_text(strip=True)
+                    if text and len(text) > 50:
+                        abstract = re.sub(r'\s+', ' ', text)
+                        print(f"    ✅ Found Academia.edu abstract ({len(abstract)} chars)")
+                        break
+            except Exception as e:
+                continue
+        
+        return {
+            'abstract': abstract,
+            'content': abstract,
+            'explicit_keywords': keywords,
+            'journal': '',
+            'doi': ''
+        }
+
+    def _extract_from_dutch_university(self, soup: BeautifulSoup, url: str) -> Dict[str, str]:
+        """Extract content from Dutch university repositories"""
+        print(f"    🇳🇱 Extracting from Dutch university...")
+        
+        abstract = ""
+        keywords = []
+        
+        # Dutch university repository patterns
+        abstract_selectors = [
+            'div.abstract',
+            'div.summary',
+            'div.description',
+            'div[class*="abstract"]',
+            'div[class*="summary"]',
+            'div[class*="description"]',
+            'meta[name="description"]',
+            'meta[property="og:description"]'
+        ]
+        
+        for selector in abstract_selectors:
+            try:
+                if selector.startswith('meta'):
+                    element = soup.select_one(selector)
+                    if element:
+                        text = element.get('content', '')
+                else:
+                    element = soup.select_one(selector)
+                    if element:
+                        text = element.get_text(strip=True)
+                
+                if text and len(text) > 50:
+                    abstract = re.sub(r'\s+', ' ', text)
+                    print(f"    ✅ Found Dutch university abstract ({len(abstract)} chars)")
+                    break
+            except Exception as e:
+                continue
+        
+        return {
+            'abstract': abstract,
+            'content': abstract,
+            'explicit_keywords': keywords,
+            'journal': '',
+            'doi': ''
+        }
+
+    def _extract_from_generic_academic(self, soup: BeautifulSoup, url: str) -> Dict[str, str]:
+        """Extract content from generic academic pages"""
+        print(f"    📚 Extracting from generic academic source...")
+        
+        abstract = ""
+        keywords = []
+        
+        # Generic academic abstract patterns
+        abstract_selectors = [
+            'div.abstract',
+            'section.abstract',
+            'div[id*="abstract"]',
+            'div[class*="abstract"]',
+            'div.summary',
+            'div.description',
+            'meta[name="description"]',
+            'meta[property="og:description"]',
+            'p[class*="abstract"]'
+        ]
+        
+        for selector in abstract_selectors:
+            try:
+                if selector.startswith('meta'):
+                    element = soup.select_one(selector)
+                    if element:
+                        text = element.get('content', '')
+                else:
+                    element = soup.select_one(selector)
+                    if element:
+                        text = element.get_text(strip=True)
+                
+                if text and len(text) > 50:
+                    abstract = re.sub(r'\s+', ' ', text)
+                    print(f"    ✅ Found generic abstract ({len(abstract)} chars)")
+                    break
+            except Exception as e:
+                continue
+        
+        return {
+            'abstract': abstract,
+            'content': abstract,
+            'explicit_keywords': keywords,
+            'journal': '',
+            'doi': ''
+        }
+
+    def _extract_from_google_scholar(self, soup: BeautifulSoup, url: str) -> Dict[str, str]:
+        """Extract content from Google Scholar pages"""
+        print(f"    🎓 Extracting from Google Scholar...")
+        
+        # Google Scholar usually doesn't have full abstracts, just snippets
+        abstract = ""
+        
+        # Try to find abstract snippets
+        snippet_selectors = [
+            'div.gs_rs',
+            'div[class*="snippet"]',
+            'div[class*="abstract"]'
+        ]
+        
+        for selector in snippet_selectors:
+            try:
+                element = soup.select_one(selector)
+                if element:
+                    text = element.get_text(strip=True)
+                    if text and len(text) > 30:
+                        abstract = re.sub(r'\s+', ' ', text)
+                        print(f"    ✅ Found Google Scholar snippet ({len(abstract)} chars)")
+                        break
+            except Exception as e:
+                continue
+        
+        return {
+            'abstract': abstract,
+            'content': abstract,
+            'explicit_keywords': [],
+            'journal': '',
+            'doi': ''
+        }
         """Search for PDF version of the article"""
         try:
             print(f"    📄 Searching for PDF: {query[:30]}...")
@@ -586,29 +821,36 @@ class KeywordAbstractEnricher:
             return None
     
     def extract_content_from_url(self, url: str) -> Dict[str, str]:
-        """Extract abstract and content from the found article URL"""
+        """Extract abstract and content from the found article URL with real web scraping"""
         print(f"  📖 Extracting content from: {url[:50]}...")
         
         try:
-            # In practice, would use proper web scraping/PDF parsing
-            # For now, return simulated content based on common patterns
+            headers = {
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+            }
             
-            if 'scholar.google.com' in url:
-                return self._extract_from_scholar_page(url)
-            elif url.endswith('.pdf'):
-                return self._extract_from_pdf(url)
+            response = requests.get(url, headers=headers, timeout=15)
+            if response.status_code != 200:
+                print(f"    ❌ HTTP {response.status_code} error")
+                return {'abstract': '', 'content': '', 'explicit_keywords': [], 'journal': '', 'doi': ''}
+            
+            soup = BeautifulSoup(response.content, 'html.parser')
+            
+            # Try different extraction methods based on the domain
+            if 'researchgate.net' in url.lower():
+                return self._extract_from_researchgate(soup, url)
+            elif 'academia.edu' in url.lower():
+                return self._extract_from_academia(soup, url)
+            elif 'scholar.google' in url.lower():
+                return self._extract_from_google_scholar(soup, url)
+            elif any(domain in url.lower() for domain in ['rug.nl', 'uva.nl', 'vu.nl', 'tue.nl', 'tudelft.nl']):
+                return self._extract_from_dutch_university(soup, url)
             else:
-                return self._extract_from_webpage(url)
+                return self._extract_from_generic_academic(soup, url)
                 
         except Exception as e:
             print(f"    ❌ Content extraction failed: {e}")
-            return {
-                'abstract': '',
-                'content': '',
-                'explicit_keywords': [],
-                'journal': '',
-                'doi': ''
-            }
+            return {'abstract': '', 'content': '', 'explicit_keywords': [], 'journal': '', 'doi': ''}
     
     def _extract_from_scholar_page(self, url: str) -> Dict[str, str]:
         """Extract information from Google Scholar page with real content extraction"""
@@ -1376,6 +1618,117 @@ class KeywordAbstractEnricher:
                 time.sleep(2)
         
         return results
+
+    def _search_google_general(self, title: str, authors: str, parent_org: str = "") -> Dict[str, any]:
+        """
+        Search for academic papers using browser automation (more reliable than HTTP requests).
+        
+        Args:
+            title: Publication title (any language)
+            authors: Author names
+            parent_org: Parent organization
+            
+        Returns:
+            Dictionary with article information
+        """
+        try:
+            # For now, let's try a simpler approach with direct URL construction
+            # and manual academic source checking
+            
+            # Create search query for academic papers
+            first_author = authors.split(',')[0].strip() if authors else ""
+            
+            # Try common academic sources directly
+            academic_sources = [
+                f"https://www.researchgate.net/search/publication?q={quote_plus(title)}",
+                f"https://scholar.google.com/scholar?q={quote_plus(title + ' ' + first_author)}",
+                f"https://www.academia.edu/search?q={quote_plus(title)}"
+            ]
+            
+            print(f"      🔍 Trying direct academic source searches...")
+            
+            for source_url in academic_sources:
+                try:
+                    print(f"      🎯 Checking: {source_url[:50]}...")
+                    
+                    headers = {
+                        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
+                        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+                        'Accept-Language': 'en-US,en;q=0.5',
+                        'Connection': 'keep-alive'
+                    }
+                    
+                    response = requests.get(source_url, headers=headers, timeout=15)
+                    
+                    if response.status_code == 200:
+                        soup = BeautifulSoup(response.content, 'html.parser')
+                        
+                        # Look for publication links in search results
+                        publication_links = []
+                        
+                        if 'researchgate.net' in source_url:
+                            # ResearchGate search results
+                            links = soup.find_all('a', href=True)
+                            for link in links:
+                                href = link.get('href', '')
+                                if '/publication/' in href and 'researchgate.net' in href:
+                                    if not href.startswith('http'):
+                                        href = 'https://www.researchgate.net' + href
+                                    publication_links.append(href)
+                        
+                        elif 'scholar.google.com' in source_url:
+                            # Google Scholar results
+                            links = soup.find_all('a', href=True)
+                            for link in links:
+                                href = link.get('href', '')
+                                if any(domain in href for domain in ['researchgate.net', 'academia.edu', 'repository', 'handle.net']):
+                                    publication_links.append(href)
+                        
+                        elif 'academia.edu' in source_url:
+                            # Academia.edu results
+                            links = soup.find_all('a', href=True)
+                            for link in links:
+                                href = link.get('href', '')
+                                if '/papers/' in href and 'academia.edu' in href:
+                                    if not href.startswith('http'):
+                                        href = 'https://www.academia.edu' + href
+                                    publication_links.append(href)
+                        
+                        # Try to extract content from found publication links
+                        for pub_url in publication_links[:3]:  # Try first 3 links
+                            try:
+                                print(f"      📄 Trying publication: {pub_url[:60]}...")
+                                content_data = self.extract_content_from_url(pub_url)
+                                
+                                if content_data.get('abstract') and len(content_data['abstract']) > 50:
+                                    print(f"      ✅ Successfully extracted abstract ({len(content_data['abstract'])} chars)")
+                                    return {
+                                        'url': pub_url,
+                                        'abstract': content_data['abstract'],
+                                        'explicit_keywords': content_data.get('explicit_keywords', []),
+                                        'confidence': 0.8,
+                                        'source': 'Academic Source Search'
+                                    }
+                            except Exception as e:
+                                print(f"      ⚠️  Failed to extract from {pub_url}: {e}")
+                                continue
+                    
+                    else:
+                        print(f"      ❌ Source returned status {response.status_code}")
+                        
+                except Exception as e:
+                    print(f"      ⚠️  Error with source: {e}")
+                    continue
+                    
+                # Rate limiting between sources
+                time.sleep(1)
+            
+            print(f"      📊 No abstracts found in direct academic source searches")
+            return {'url': '', 'abstract': '', 'keywords': [], 'confidence': 0.0}
+            
+        except Exception as e:
+            print(f"      ⚠️  Academic source search error: {e}")
+            return {'url': '', 'abstract': '', 'keywords': [], 'confidence': 0.0}
 
 def main():
     """Command line interface for keyword and abstract enrichment"""

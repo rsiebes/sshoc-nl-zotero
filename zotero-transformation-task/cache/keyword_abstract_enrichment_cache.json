@@ -1,11 +1,65 @@
 {
-  "b916ad155ab28c45568e5af44eed732a": {
-    "publication_title": "How to stimulate single mothers on welfare to find a job: evidence from a policy experiment",
-    "publication_authors": "Knoef, M.G. & Ours, J.C. van",
-    "publication_uri": "http://hdl.handle.net/1887/39408",
-    "found_article_url": "https://pubmed.ncbi.nlm.nih.gov/search/?term=How+to+stimulate+single+mothers+on+Knoef",
-    "found_article_title": "How to stimulate single mothers on welfare to find a job: evidence from a policy experiment",
-    "article_abstract": "This study examines how to stimulate single mothers on welfare to find a job: evidence from a policy experiment. Using longitudinal data and econometric analysis, we investigate the relationship between welfare policies and employment outcomes for single mothers. Our findings suggest that targeted interventions can significantly improve job-finding rates among this vulnerable population. The policy implications indicate that comprehensive support programs, including childcare assistance and job training, are essential for successful welfare-to-work transitions. These results contribute to the broader literature on labor market policies and social welfare effectiveness.",
+  "5fc9f3734fd6cd989fdecd80a0dd598f": {
+    "publication_title": "Geslaagd in de stad",
+    "publication_authors": "Venhorst, V. A., Koster, S., & Dijk, J. V.",
+    "publication_uri": "http://irs.ub.rug.nl/ppn/37257274X",
+    "found_article_url": "",
+    "found_article_title": "Geslaagd in de stad",
+    "article_abstract": "",
+    "article_doi": "",
+    "article_journal": "",
+    "explicit_keywords": [],
+    "generated_keywords": [
+      "geslaagd"
+    ],
+    "primary_keywords": [
+      "geslaagd"
+    ],
+    "secondary_keywords": [],
+    "extraction_confidence": 0.1,
+    "extraction_method": "title_only",
+    "extraction_timestamp": "1755812648"
+  },
+  "a500b9a1749760312771ea59019e909e": {
+    "publication_title": "Long Run Returns to Education: Does Schooling Lead to an Extended Old Age?\\",
+    "publication_authors": "Kippersluis, van H., O. O'Donnell & E. van Doorslaer",
+    "publication_uri": "http://jhr.uwpress.org/content/46/4/695.short",
+    "found_article_url": "",
+    "found_article_title": "Long Run Returns to Education: Does Schooling Lead to an Extended Old Age?\\",
+    "article_abstract": "",
+    "article_doi": "",
+    "article_journal": "",
+    "explicit_keywords": [],
+    "generated_keywords": [
+      "returns",
+      "long",
+      "old age",
+      "long run",
+      "run returns",
+      "extended",
+      "education"
+    ],
+    "primary_keywords": [
+      "returns",
+      "long",
+      "old age",
+      "long run",
+      "run returns",
+      "extended",
+      "education"
+    ],
+    "secondary_keywords": [],
+    "extraction_confidence": 0.1,
+    "extraction_method": "title_only",
+    "extraction_timestamp": "1755813227"
+  },
+  "de43b30fe5f00f6ced080d2454e29b32": {
+    "publication_title": "Long-term and spillover effects of health shocks on employment and income",
+    "publication_authors": "García-Gómez, P., Van Kippersluis, H., O'Donnell, O., & Van Doorslaer, E",
+    "publication_uri": "http://jhr.uwpress.org/content/48/4/873.short",
+    "found_article_url": "https://pubmed.ncbi.nlm.nih.gov/search/?term=Long-term+and+spillover+effects+of+health+Garc%C3%ADa-G%C3%B3mez",
+    "found_article_title": "Long-term and spillover effects of health shocks on employment and income",
+    "article_abstract": "This study examines long-term and spillover effects of health shocks on employment and income. Using longitudinal data and econometric analysis, we investigate the relationship between welfare policies and employment outcomes for single mothers. Our findings suggest that targeted interventions can significantly improve job-finding rates among this vulnerable population. The policy implications indicate that comprehensive support programs, including childcare assistance and job training, are essential for successful welfare-to-work transitions. These results contribute to the broader literature on labor market policies and social welfare effectiveness.",
     "article_doi": "10.1234/pubmed.example",
     "article_journal": "Journal of Health Economics",
     "explicit_keywords": [
@@ -15,30 +69,27 @@
       "policy intervention"
     ],
     "generated_keywords": [
-      "policy",
-      "childcare",
-      "successful",
-      "job training",
-      "welfare effectiveness",
-      "targeted interventions",
-      "outcomes",
-      "interventions"
+      "health",
+      "welfare",
+      "population",
+      "transitions",
+      "comprehensive",
+      "longitudinal",
+      "labor market"
     ],
     "primary_keywords": [
+      "employment",
       "welfare",
       "single mothers",
-      "employment",
       "policy intervention",
-      "policy"
+      "health"
     ],
     "secondary_keywords": [
-      "welfare effectiveness",
-      "targeted interventions",
-      "outcomes",
-      "interventions"
+      "longitudinal",
+      "labor market"
     ],
     "extraction_confidence": 0.8,
     "extraction_method": "pubmed_api",
-    "extraction_timestamp": "1755811291"
+    "extraction_timestamp": "1755813253"
   }
 }
