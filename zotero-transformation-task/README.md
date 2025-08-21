@@ -58,9 +58,6 @@ zotero-transformation-task/
 │       └── ... (more enriched metadata files)
 ├── cache/                             # Intelligent caching system
 │   └── author_enrichment_cache.json  # Author profiles with ORCID data
-├── examples/                          # Example files and documentation
-│   ├── selected_files.csv            # Legacy CSV input format
-│   └── twenty_five_publications_manifest.md
 └── docs/                             # Documentation
     ├── batch_processing_documentation.md
     └── todo.md
