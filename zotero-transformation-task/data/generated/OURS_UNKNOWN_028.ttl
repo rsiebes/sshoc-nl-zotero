@@ -1,0 +1,61 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <http://schema.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://ftp.iza.org/dp12516.pdf>
+    a bibo:Article, schema:ScholarlyArticle ;
+    dc:title "Symbolism Matters: The Effect of Same-Sex Marriage Legalization on Partnership Stability" ;
+    dc:date "2019"^^xsd:gYear ;
+    dc:identifier "OURS_UNKNOWN_028" ;
+    
+    # Original URI preserved
+    rdfs:seeAlso <http://ftp.iza.org/dp12516.pdf> ;
+    
+    schema:author <https://w3id.org/odissei/ns/kg/person/shuai_chen_9f77db64> ;
+    schema:author <https://w3id.org/odissei/ns/kg/person/jan_c_van_ours_7e0d75b2> ;
+    
+    # Parent organization
+    schema:parentOrganization [
+        a foaf:Organization ;
+        foaf:name "Unknown" ;
+        dc:identifier "Unknown" ;
+    ] ;
+    
+    # Producer information
+    schema:producer <https://w3id.org/odissei/ns/kg/cbs/project/unknown> ;
+    
+    # Content classification
+    bibo:status "Published" ;
+    schema:genre "Academic research" ;
+    
+    # Temporal coverage
+    schema:temporalCoverage "2019" ;
+    schema:dateCreated "2019"^^xsd:gYear .
+
+
+<https://w3id.org/odissei/ns/kg/person/shuai_chen_9f77db64>
+    a foaf:Person, schema:Person ;
+    foaf:name "Shuai Chen" ;
+    foaf:givenName "Shuai" ;
+    foaf:familyName "Chen" ;
+    schema:identifier "https://orcid.org/0009-0005-2927-1458" ;
+    foaf:homepage <https://orcid.org/0009-0005-2927-1458> ;
+    schema:jobTitle "PhD Student" ;
+    schema:affiliation "McGill University" ;
+    schema:department "Educational & Counselling Psychology" ;
+    schema:interest "Educational Technology" ;
+    schema:interest "AI in Education" .
+
+<https://w3id.org/odissei/ns/kg/person/jan_c_van_ours_7e0d75b2>
+    a foaf:Person, schema:Person ;
+    foaf:name "Jan C. van Ours" ;
+    foaf:givenName "Jan C. van" ;
+    foaf:familyName "Ours" ;
+    schema:identifier "https://orcid.org/0000-0002-0144-9956" ;
+    foaf:homepage <https://orcid.org/0000-0002-0144-9956> ;
+    schema:jobTitle "Visiting professor" ;
+    schema:affiliation "Erasmus University Rotterdam" ;
+    schema:department "Applied Economics" .

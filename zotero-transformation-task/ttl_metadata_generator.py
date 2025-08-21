@@ -27,6 +27,9 @@ from typing import Dict, List, Optional, Tuple
 from dataclasses import dataclass
 from pathlib import Path
 
+# Import author enrichment functionality
+from author_enrichment import AuthorEnricher, AuthorInfo
+
 @dataclass
 class Publication:
     """Data class for publication information extracted from original.ttl"""
@@ -121,13 +124,16 @@ class TTLParser:
         return matches
 
 class MetadataEnricher:
-    """Enriches publication metadata using cached information"""
+    """Enriches publication metadata using cached information and author enrichment"""
     
     def __init__(self, cache_dir: str = "cache"):
         self.cache_dir = Path(cache_dir)
         self.orcid_cache = self._load_cache("orcid_cache.json")
         self.elsst_cache = self._load_cache("elsst_cache.json")
         self.org_cache = self._load_cache("organization_cache.json")
+        
+        # Initialize author enricher
+        self.author_enricher = AuthorEnricher(cache_file=str(self.cache_dir / "author_enrichment_cache.json"))
     
     def _load_cache(self, filename: str) -> Dict:
         """Load cache file or return empty dict"""
@@ -140,14 +146,42 @@ class MetadataEnricher:
                 print(f"⚠️  Warning: Could not load {filename}: {e}")
         return {}
     
-    def enrich_publication(self, pub: Publication) -> str:
-        """Generate enriched TTL metadata for a publication"""
-        # Generate a unique identifier for the TTL file
+    def enrich_publication(self, pub: Publication) -> Tuple[str, str]:
+        """Generate enriched TTL metadata for a publication with author enrichment"""
+        print(f"🔍 Enriching publication: {pub.title[:50]}...")
+        
+        # Generate file ID
         file_id = self._generate_file_id(pub)
         
-        # Create TTL content
-        ttl_content = self._generate_ttl_content(pub, file_id)
+        # Enrich authors
+        print(f"  👥 Enriching {len(pub.creators)} authors...")
+        enriched_authors = []
         
+        # Parse all authors from the creators string
+        if pub.creators:
+            authors_string = pub.creators[0] if len(pub.creators) == 1 else ", ".join(pub.creators)
+            try:
+                enriched_authors = self.author_enricher.enrich_authors_from_string(
+                    authors_string, 
+                    pub.title, 
+                    pub.parent_organization
+                )
+            except Exception as e:
+                print(f"    ⚠️ Error enriching authors: {e}")
+                # Create basic author info as fallback
+                for creator in pub.creators:
+                    given_name, family_name = self.author_enricher.parse_author_name(creator)
+                    fallback_author = AuthorInfo(
+                        full_name=creator,
+                        given_name=given_name,
+                        family_name=family_name
+                    )
+                    enriched_authors.append(fallback_author)
+        
+        # Generate TTL content with enriched authors
+        ttl_content = self._generate_enriched_ttl_content(pub, file_id, enriched_authors)
+        
+        print(f"  ✅ Generated enriched metadata for {file_id}")
         return ttl_content, file_id
     
     def _generate_file_id(self, pub: Publication) -> str:
@@ -164,44 +198,44 @@ class MetadataEnricher:
         # Create unique ID
         return f"{creator_part}_{org_part}_{pub.index:03d}"
     
-    def _generate_ttl_content(self, pub: Publication, file_id: str) -> str:
-        """Generate TTL content for a publication"""
-        # This is a simplified version - in practice, you would implement
-        # the full metadata enrichment logic here
+    def _generate_enriched_ttl_content(self, pub: Publication, file_id: str, enriched_authors: List[AuthorInfo]) -> str:
+        """Generate enriched TTL content for a publication with detailed author information"""
         
-        ttl_template = f"""@prefix dc: <http://purl.org/dc/terms/> .
+        # TTL prefixes
+        ttl_content = """@prefix dc: <http://purl.org/dc/terms/> .
 @prefix bibo: <http://purl.org/ontology/bibo/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix schema: <http://schema.org/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<{pub.uri}>
+"""
+        
+        # Main publication resource
+        ttl_content += f"""<{pub.uri}>
     a bibo:Article, schema:ScholarlyArticle ;
-    dc:title "{pub.title}" ;
+    dc:title "{self._escape_ttl_string(pub.title)}" ;
     dc:date "{pub.date}"^^xsd:gYear ;
     dc:identifier "{file_id}" ;
     
     # Original URI preserved
     rdfs:seeAlso <{pub.uri}> ;
     
-    # Authors
 """
         
-        # Add authors
-        for i, creator in enumerate(pub.creators):
-            ttl_template += f"""    schema:author [
-        a foaf:Person ;
-        foaf:name "{creator}" ;
-    ] ;
-"""
+        # Add enriched authors
+        author_uris = []
+        for i, author in enumerate(enriched_authors):
+            author_uri = self.author_enricher.generate_author_uri(author)
+            author_uris.append(author_uri)
+            ttl_content += f"    schema:author <{author_uri}> ;\n"
         
-        # Add parent organization
-        ttl_template += f"""    
+        # Close main resource
+        ttl_content += f"""    
     # Parent organization
     schema:parentOrganization [
         a foaf:Organization ;
-        foaf:name "{pub.parent_organization}" ;
+        foaf:name "{self._escape_ttl_string(pub.parent_organization)}" ;
         dc:identifier "{pub.parent_organization}" ;
     ] ;
     
@@ -215,9 +249,22 @@ class MetadataEnricher:
     # Temporal coverage
     schema:temporalCoverage "{pub.date}" ;
     schema:dateCreated "{pub.date}"^^xsd:gYear .
+
 """
         
-        return ttl_template
+        # Add detailed author information using the author enricher
+        for i, author in enumerate(enriched_authors):
+            author_uri = author_uris[i]
+            author_ttl = self.author_enricher.generate_author_ttl(author, author_uri)
+            ttl_content += author_ttl
+        
+        return ttl_content
+    
+    def _escape_ttl_string(self, text: str) -> str:
+        """Escape special characters in TTL strings"""
+        if not text:
+            return ""
+        return text.replace('\\', '\\\\').replace('"', '\\"').replace('\n', '\\n').replace('\r', '\\r')
 
 class TTLMetadataGenerator:
     """Main class for generating enriched metadata from original.ttl"""

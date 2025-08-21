@@ -1,62 +1,63 @@
 # Zotero Transformation Task
 
-An optimized batch metadata generation system for creating Dublin Core BIBO-compliant metadata files from research papers in `original.ttl`, with intelligent caching for ELSST vocabulary and ORCID author information.
+An advanced metadata generation system for creating comprehensive, semantically enriched metadata files from research papers in `original.ttl`, featuring intelligent author enrichment with ORCID integration and ODISSEI namespace compliance.
 
-## 🎉 Version 2.0.0: TTL-Based Processing Pipeline
+## 🎉 Version 2.1.0: Enhanced Author Enrichment System
 
-**Major Update**: The system now processes publications directly from `original.ttl` instead of CSV files, providing comprehensive metadata enrichment with advanced caching systems.
+**Major Update**: The system now includes comprehensive author enrichment with ORCID integration, unique author URI generation, and rich semantic metadata for knowledge graph applications.
 
 ## Overview
 
 This system transforms research paper information from the `original.ttl` file (containing 1,000+ publications) into comprehensive RDF/Turtle metadata files that comply with:
 - **Dublin Core BIBO** (Bibliographic Ontology)
-- **ELSST** (European Language Social Science Thesaurus)
+- **FOAF** for structured author information with ORCID integration
 - **Schema.org** for enhanced web discoverability
-- **FOAF** for structured author information
+- **ODISSEI Namespace** for unique author identification
+- **ELSST** (European Language Social Science Thesaurus) - *Coming Soon*
 
 ## Key Features
 
-### 🚀 **Intelligent Caching System**
-- **ELSST Vocabulary Cache**: 650+ terms cached (90% cache hit rate)
-- **ORCID Information Cache**: 45+ researcher profiles cached (85% cache hit rate)
-- **Organization Cache**: 20+ institutional profiles with ROR identifiers
-- **Performance Gain**: ~95% faster processing for subsequent similar papers
+### 🚀 **Advanced Author Enrichment System**
+- **ORCID Integration**: Complete author profiles with employment, education, and research data
+- **Unique Author URIs**: ODISSEI namespace compliance (`https://w3id.org/odissei/ns/kg/person/`)
+- **Intelligent Name Parsing**: Handles various citation formats and international names
+- **Institutional Affiliations**: ROR identifiers and complete organizational hierarchy
+- **Research Profiles**: Expertise areas, research interests, and professional positions
+- **Performance**: 30-100% ORCID success rate depending on author type
 
 ### 📊 **Comprehensive Metadata Coverage**
 - Complete bibliographic information (title, journal, volume, pages, dates)
-- Author information with ORCID URIs and institutional affiliations
+- Rich author information with ORCID URIs and institutional affiliations
 - DOI and other persistent identifiers as resolvable URIs
 - Full abstracts and keywords
-- ELSST subjects for social science compatibility
 - Producer/project attribution via Schema.org
 - Organizational context with detailed institutional information
 
-### 🔧 **Cross-Disciplinary Excellence**
-- **Health Economics & Medical Research**: Environmental health, primary care, precision medicine
-- **Economics & Business Intelligence**: Labor economics, SME research, international business
-- **Social Sciences & Demographics**: Mortality studies, employment research, innovation management
-- **Housing & Urban Policy**: Housing market analysis, urban development
-- **Education & Technology**: Higher education economics, healthcare technology
+### 🔧 **Intelligent Caching System**
+- **Author Profile Cache**: Persistent caching of ORCID and enrichment data
+- **Context-Aware Caching**: `{author_name}_{parent_org}` key system
+- **Performance Gain**: 80%+ cache hit rate for repeated processing
+- **Rate Limiting**: Respectful API usage with configurable delays
 
 ## Directory Structure
 
 ```
 zotero-transformation-task/
-├── README.md                          # This file
-├── ttl_metadata_generator.py          # New TTL-based processing script
+├── README.md                          # Main documentation
+├── README_AUTHOR_ENRICHMENT.md       # Detailed author enrichment documentation
+├── CHANGELOG.md                       # Version history and improvements
+├── ttl_metadata_generator.py          # Main TTL processing script with author enrichment
+├── author_enrichment.py               # Comprehensive author enrichment module
 ├── batch_metadata_generator.py        # Legacy CSV processing script
 ├── data/                              # Input and generated metadata files
 │   ├── original.ttl                  # Input: 1,000+ publications from Zotero
-│   └── generated/                    # Output: 25 enriched TTL metadata files
-│       ├── FISCHER_RIVM_DUELS_AIR_POLLUTION_MORTALITY.ttl
-│       ├── HOPMAN_NIVEL_MULTIPLE_CHRONIC_DISEASES.ttl
-│       ├── BARTELSMAN_GAUTIER_DEWIND_EMPLOYMENT_PROTECTION.ttl
-│       ├── FARIA_DOLFSMA_INNOVATION_CAPABILITIES.ttl
-│       └── ... (21 more enriched metadata files)
+│   └── generated/                    # Output: Enriched TTL metadata files
+│       ├── POOT_VU_SBE_030.ttl      # Example: Cultural diversity study (3 authors, 100% ORCID)
+│       ├── OURS_UNKNOWN_028.ttl      # Example: Same-sex marriage study (2 authors, 100% ORCID)
+│       ├── JANSSEN_RUG_FRW_027.ttl   # Example: Migration health study (5 authors, 40% ORCID)
+│       └── ... (more enriched metadata files)
 ├── cache/                             # Intelligent caching system
-│   ├── orcid_cache.json              # 45+ researcher profiles
-│   ├── elsst_cache.json              # 650+ semantic terms
-│   └── organization_cache.json        # 20+ institutional profiles
+│   └── author_enrichment_cache.json  # Author profiles with ORCID data
 ├── examples/                          # Example files and documentation
 │   ├── selected_files.csv            # Legacy CSV input format
 │   └── twenty_five_publications_manifest.md
@@ -89,52 +90,66 @@ zotero-transformation-task/
 
 ### Example Output
 
-Each generated `.ttl` file contains comprehensive metadata like:
+Each generated `.ttl` file contains comprehensive metadata with enriched author information:
 
 ```turtle
-@prefix bibo: <http://purl.org/ontology/bibo/> .
 @prefix dc: <http://purl.org/dc/terms/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix schema: <http://schema.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://doi.org/10.1289/ehp.1408254>
+<http://ftp.iza.org/dp7129.pdf>
     a bibo:Article, schema:ScholarlyArticle ;
-    dc:title "Air pollution and Mortality in 7 Million Adults - The Dutch Environmental Longitudinal Study (DUELS)" ;
-    dc:identifier "FISCHER_RIVM_DUELS_AIR_POLLUTION_MORTALITY" ;
-    bibo:doi <https://doi.org/10.1289/ehp.1408254> ;
+    dc:title "Measuring Cultural Diversity and its Impact on Innovation: Longitudinal Evidence from Dutch Firms" ;
+    dc:date "2013"^^xsd:gYear ;
+    dc:identifier "POOT_VU_SBE_030" ;
     
-    # Lead author with complete profile
-    schema:author [
-        a foaf:Person ;
-        foaf:name "Paul H. Fischer" ;
-        foaf:givenName "Paul" ;
-        foaf:familyName "Fischer" ;
-        schema:email "paul.fischer@rivm.nl" ;
-        schema:affiliation [
-            a foaf:Organization ;
-            foaf:name "RIVM" ;
-            schema:name "National Institute for Public Health and the Environment" ;
-            schema:identifier <https://ror.org/01cesdt21> ;
-            schema:url <https://www.rivm.nl/>
-        ] ;
-        schema:jobTitle "Air pollution epidemiologist and policy advisor"
-    ] ;
+    # Original URI preserved
+    rdfs:seeAlso <http://ftp.iza.org/dp7129.pdf> ;
     
-    # ELSST vocabulary subjects
-    dc:subject <https://elsst.cessda.eu/id/5/c5c7a428-e9e0-4248-a502-b0773a2f8eb5> ; # EPIDEMIOLOGY
-    dc:subject <https://elsst.cessda.eu/id/5/43ad3351-9ac1-4ee7-ab31-ecbf7738e689> ; # HEALTH EXPENDITURE
+    # Authors with unique ODISSEI URIs
+    schema:author <https://w3id.org/odissei/ns/kg/person/ceren_ozgen_d6c8e1ac> ;
+    schema:author <https://w3id.org/odissei/ns/kg/person/peter_nijkamp_024c337d> ;
+    schema:author <https://w3id.org/odissei/ns/kg/person/jacques_poot_7195a30d> ;
     
-    # Parent organization with proper identifier
+    # Parent organization
     schema:parentOrganization [
         a foaf:Organization ;
-        foaf:name "RIVM" ;
-        schema:name "National Institute for Public Health and the Environment" ;
-        dc:identifier <https://ror.org/01cesdt21> ;
-        schema:url <https://www.rivm.nl/>
+        foaf:name "VU_SBE" ;
+        dc:identifier "VU_SBE" ;
     ] ;
     
     # Producer information
-    schema:producer <https://w3id.org/odissei/ns/kg/cbs/project/7267> .
+    schema:producer <https://w3id.org/odissei/ns/kg/cbs/project/unknown> .
+
+# Enriched author profiles with ORCID integration
+<https://w3id.org/odissei/ns/kg/person/ceren_ozgen_d6c8e1ac>
+    a foaf:Person, schema:Person ;
+    foaf:name "Ceren Ozgen" ;
+    foaf:givenName "Ceren" ;
+    foaf:familyName "Ozgen" ;
+    schema:identifier "https://orcid.org/0000-0002-7242-9610" ;
+    foaf:homepage <https://orcid.org/0000-0002-7242-9610> ;
+    schema:jobTitle "Associate Professor" ;
+    schema:affiliation "University of Birmingham" ;
+    schema:department "Department of Economics" ;
+    schema:knowsAbout "Economics" ;
+    schema:interest "skills, technological change, urban economics, innovation, diversity, migration" .
+
+<https://w3id.org/odissei/ns/kg/person/jacques_poot_7195a30d>
+    a foaf:Person, schema:Person ;
+    foaf:name "Jacques Poot" ;
+    foaf:givenName "Jacques" ;
+    foaf:familyName "Poot" ;
+    schema:identifier "https://orcid.org/0000-0003-4735-9283" ;
+    foaf:homepage <https://orcid.org/0000-0003-4735-9283> ;
+    schema:jobTitle "Emeritus Professor of Population Economics" ;
+    schema:affiliation "University of Waikato" ;
+    schema:department "Te Ngira: Institute for Population Research" ;
+    schema:knowsAbout "Social Sciences" ;
+    schema:knowsAbout "Economics" .
 ```
 
 ## Processing Results

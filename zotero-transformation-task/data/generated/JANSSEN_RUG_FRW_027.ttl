@@ -1,0 +1,97 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <http://schema.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://eurpub.oxfordjournals.org/content/25/6/944>
+    a bibo:Article, schema:ScholarlyArticle ;
+    dc:title "Can selective migration explain why health is worse in regions with population decline? :A study on migration and self-rated health in the Netherlands" ;
+    dc:date "2015"^^xsd:gYear ;
+    dc:identifier "JANSSEN_RUG_FRW_027" ;
+    
+    # Original URI preserved
+    rdfs:seeAlso <http://eurpub.oxfordjournals.org/content/25/6/944> ;
+    
+    schema:author <http://eurpub.oxfordjournals.org/content/25/6/944#author1> ;
+    schema:author <http://eurpub.oxfordjournals.org/content/25/6/944#author2> ;
+    schema:author <http://eurpub.oxfordjournals.org/content/25/6/944#author3> ;
+    schema:author <http://eurpub.oxfordjournals.org/content/25/6/944#author4> ;
+    schema:author <http://eurpub.oxfordjournals.org/content/25/6/944#author5> ;
+    
+    # Parent organization
+    schema:parentOrganization [
+        a foaf:Organization ;
+        foaf:name "RUG_FRW" ;
+        dc:identifier "RUG_FRW" ;
+    ] ;
+    
+    # Producer information
+    schema:producer <https://w3id.org/odissei/ns/kg/cbs/project/unknown> ;
+    
+    # Content classification
+    bibo:status "Published" ;
+    schema:genre "Academic research" ;
+    
+    # Temporal coverage
+    schema:temporalCoverage "2015" ;
+    schema:dateCreated "2015"^^xsd:gYear .
+
+
+<http://eurpub.oxfordjournals.org/content/25/6/944#author1>
+    a foaf:Person, schema:Person ;
+    foaf:name "Aletta Dijkstra" ;
+    foaf:givenName "Aletta" ;
+    foaf:familyName "Dijkstra" ;
+    foaf:mbox <mailto:aletta.dijkstra@rug.nl> ;
+    schema:affiliation "University of Groningen, Faculty of Spatial Sciences" ;
+    schema:worksFor <https://www.rug.nl/> ;
+    schema:memberOf <https://ror.org/012p63287> .
+
+<http://eurpub.oxfordjournals.org/content/25/6/944#author2>
+    a foaf:Person, schema:Person ;
+    foaf:name "Eva U.B. Kibele" ;
+    foaf:givenName "Eva U.B." ;
+    foaf:familyName "Kibele" ;
+    schema:identifier "https://orcid.org/0009-0004-7295-4425" ;
+    foaf:homepage <https://orcid.org/0009-0004-7295-4425> ;
+    foaf:mbox <mailto:eva.u.b..kibele@rug.nl> ;
+    schema:affiliation "University of Groningen, Faculty of Spatial Sciences" ;
+    schema:worksFor <https://www.rug.nl/> ;
+    schema:memberOf <https://ror.org/012p63287> ;
+    schema:knowsAbout "Health Sciences" .
+
+<http://eurpub.oxfordjournals.org/content/25/6/944#author3>
+    a foaf:Person, schema:Person ;
+    foaf:name "Antonia Verweij" ;
+    foaf:givenName "Antonia" ;
+    foaf:familyName "Verweij" ;
+    foaf:mbox <mailto:antonia.verweij@rug.nl> ;
+    schema:affiliation "University of Groningen, Faculty of Spatial Sciences" ;
+    schema:worksFor <https://www.rug.nl/> ;
+    schema:memberOf <https://ror.org/012p63287> .
+
+<http://eurpub.oxfordjournals.org/content/25/6/944#author4>
+    a foaf:Person, schema:Person ;
+    foaf:name "Fons van der Lucht" ;
+    foaf:givenName "Fons van der" ;
+    foaf:familyName "Lucht" ;
+    foaf:mbox <mailto:fons.van.der.lucht@rug.nl> ;
+    schema:affiliation "University of Groningen, Faculty of Spatial Sciences" ;
+    schema:worksFor <https://www.rug.nl/> ;
+    schema:memberOf <https://ror.org/012p63287> .
+
+<http://eurpub.oxfordjournals.org/content/25/6/944#author5>
+    a foaf:Person, schema:Person ;
+    foaf:name "Fanny Janssen" ;
+    foaf:givenName "Fanny" ;
+    foaf:familyName "Janssen" ;
+    schema:identifier "https://orcid.org/0000-0002-3110-238X" ;
+    foaf:homepage <https://orcid.org/0000-0002-3110-238X> ;
+    foaf:mbox <mailto:fanny.janssen@rug.nl> ;
+    schema:jobTitle "Senior researcher" ;
+    schema:affiliation "Netherlands Interdisciplinary Demographic Institute" ;
+    schema:worksFor <https://www.rug.nl/> ;
+    schema:memberOf <https://ror.org/012p63287> ;
+    schema:knowsAbout "Health Sciences" .

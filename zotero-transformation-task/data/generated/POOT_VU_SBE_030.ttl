@@ -1,0 +1,75 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <http://schema.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://ftp.iza.org/dp7129.pdf>
+    a bibo:Article, schema:ScholarlyArticle ;
+    dc:title "Measuring Cultural Diversity and its Impact on Innovation: Longitudinal Evidence from Dutch Firms" ;
+    dc:date "2013"^^xsd:gYear ;
+    dc:identifier "POOT_VU_SBE_030" ;
+    
+    # Original URI preserved
+    rdfs:seeAlso <http://ftp.iza.org/dp7129.pdf> ;
+    
+    schema:author <https://w3id.org/odissei/ns/kg/person/ceren_ozgen_d6c8e1ac> ;
+    schema:author <https://w3id.org/odissei/ns/kg/person/peter_nijkamp_024c337d> ;
+    schema:author <https://w3id.org/odissei/ns/kg/person/jacques_poot_7195a30d> ;
+    
+    # Parent organization
+    schema:parentOrganization [
+        a foaf:Organization ;
+        foaf:name "VU_SBE" ;
+        dc:identifier "VU_SBE" ;
+    ] ;
+    
+    # Producer information
+    schema:producer <https://w3id.org/odissei/ns/kg/cbs/project/unknown> ;
+    
+    # Content classification
+    bibo:status "Published" ;
+    schema:genre "Academic research" ;
+    
+    # Temporal coverage
+    schema:temporalCoverage "2013" ;
+    schema:dateCreated "2013"^^xsd:gYear .
+
+
+<https://w3id.org/odissei/ns/kg/person/ceren_ozgen_d6c8e1ac>
+    a foaf:Person, schema:Person ;
+    foaf:name "Ceren Ozgen" ;
+    foaf:givenName "Ceren" ;
+    foaf:familyName "Ozgen" ;
+    schema:identifier "https://orcid.org/0000-0002-7242-9610" ;
+    foaf:homepage <https://orcid.org/0000-0002-7242-9610> ;
+    schema:jobTitle "Associate Professor" ;
+    schema:affiliation "University of Birmingham" ;
+    schema:department "Department of Economics" ;
+    schema:knowsAbout "Economics" ;
+    schema:interest "skills, technological change, urban economics, innovation, diversity, migration" .
+
+<https://w3id.org/odissei/ns/kg/person/peter_nijkamp_024c337d>
+    a foaf:Person, schema:Person ;
+    foaf:name "Peter Nijkamp" ;
+    foaf:givenName "Peter" ;
+    foaf:familyName "Nijkamp" ;
+    schema:identifier "https://orcid.org/0000-0002-4068-8132" ;
+    foaf:homepage <https://orcid.org/0000-0002-4068-8132> ;
+    schema:knowsAbout "Social Sciences" ;
+    schema:knowsAbout "Economics" ;
+    schema:knowsAbout "Environmental Sciences" .
+
+<https://w3id.org/odissei/ns/kg/person/jacques_poot_7195a30d>
+    a foaf:Person, schema:Person ;
+    foaf:name "Jacques Poot" ;
+    foaf:givenName "Jacques" ;
+    foaf:familyName "Poot" ;
+    schema:identifier "https://orcid.org/0000-0003-4735-9283" ;
+    foaf:homepage <https://orcid.org/0000-0003-4735-9283> ;
+    schema:jobTitle "Emeritus Professor of Population Economics" ;
+    schema:affiliation "University of Waikato" ;
+    schema:department "Te Ngira: Institute for Population Research" ;
+    schema:knowsAbout "Social Sciences" ;
+    schema:knowsAbout "Economics" .

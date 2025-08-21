@@ -1,0 +1,67 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <http://schema.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://ftp.iza.org/dp5817.pdf>
+    a bibo:Article, schema:ScholarlyArticle ;
+    dc:title "Migrant Women on the Labour Market: On the Role of Home and Host-Country Participation" ;
+    dc:date "2011"^^xsd:gYear ;
+    dc:identifier "EUWALS_UNKNOWN_029" ;
+    
+    # Original URI preserved
+    rdfs:seeAlso <http://ftp.iza.org/dp5817.pdf> ;
+    
+    schema:author <http://ftp.iza.org/dp5817.pdf#author1> ;
+    schema:author <http://ftp.iza.org/dp5817.pdf#author2> ;
+    schema:author <http://ftp.iza.org/dp5817.pdf#author3> ;
+    schema:author <http://ftp.iza.org/dp5817.pdf#author4> ;
+    
+    # Parent organization
+    schema:parentOrganization [
+        a foaf:Organization ;
+        foaf:name "Unknown" ;
+        dc:identifier "Unknown" ;
+    ] ;
+    
+    # Producer information
+    schema:producer <https://w3id.org/odissei/ns/kg/cbs/project/unknown> ;
+    
+    # Content classification
+    bibo:status "Published" ;
+    schema:genre "Academic research" ;
+    
+    # Temporal coverage
+    schema:temporalCoverage "2011" ;
+    schema:dateCreated "2011"^^xsd:gYear .
+
+
+<http://ftp.iza.org/dp5817.pdf#author1>
+    a foaf:Person, schema:Person ;
+    foaf:name "S. Kok" ;
+    foaf:givenName "S." ;
+    foaf:familyName "Kok" ;
+    schema:identifier "https://orcid.org/0000-0003-3969-572X" ;
+    foaf:homepage <https://orcid.org/0000-0003-3969-572X> .
+
+<http://ftp.iza.org/dp5817.pdf#author2>
+    a foaf:Person, schema:Person ;
+    foaf:name "N. Bosch" ;
+    foaf:givenName "N." ;
+    foaf:familyName "Bosch" ;
+    schema:identifier "https://orcid.org/0009-0004-3878-1524" ;
+    foaf:homepage <https://orcid.org/0009-0004-3878-1524> .
+
+<http://ftp.iza.org/dp5817.pdf#author3>
+    a foaf:Person, schema:Person ;
+    foaf:name "A. Deelen" ;
+    foaf:givenName "A." ;
+    foaf:familyName "Deelen" .
+
+<http://ftp.iza.org/dp5817.pdf#author4>
+    a foaf:Person, schema:Person ;
+    foaf:name "R. Euwals" ;
+    foaf:givenName "R." ;
+    foaf:familyName "Euwals" .

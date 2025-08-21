@@ -1,0 +1,53 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <http://schema.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://ftp.iza.org/dp7526.pdf>
+    a bibo:Article, schema:ScholarlyArticle ;
+    dc:title "Neighbourhood selection of non-western minorities; testing the own group preferences hypothesis using a conditional logit model" ;
+    dc:date "2013"^^xsd:gYear ;
+    dc:identifier "VAN_TUD_BK_URB_031" ;
+    
+    # Original URI preserved
+    rdfs:seeAlso <http://ftp.iza.org/dp7526.pdf> ;
+    
+    schema:author <https://w3id.org/odissei/ns/kg/person/s_boschman_9093b191> ;
+    schema:author <https://w3id.org/odissei/ns/kg/person/ham_m_van_258cb130> ;
+    
+    # Parent organization
+    schema:parentOrganization [
+        a foaf:Organization ;
+        foaf:name "TUD_BK_Urban" ;
+        dc:identifier "TUD_BK_Urban" ;
+    ] ;
+    
+    # Producer information
+    schema:producer <https://w3id.org/odissei/ns/kg/cbs/project/unknown> ;
+    
+    # Content classification
+    bibo:status "Published" ;
+    schema:genre "Academic research" ;
+    
+    # Temporal coverage
+    schema:temporalCoverage "2013" ;
+    schema:dateCreated "2013"^^xsd:gYear .
+
+
+<https://w3id.org/odissei/ns/kg/person/s_boschman_9093b191>
+    a foaf:Person, schema:Person ;
+    foaf:name "S. Boschman" ;
+    foaf:givenName "S." ;
+    foaf:familyName "Boschman" .
+
+<https://w3id.org/odissei/ns/kg/person/ham_m_van_258cb130>
+    a foaf:Person, schema:Person ;
+    foaf:name "Ham, M. van" ;
+    foaf:givenName "Ham, M." ;
+    foaf:familyName "van" ;
+    schema:identifier "https://orcid.org/0000-0002-5857-1936" ;
+    foaf:homepage <https://orcid.org/0000-0002-5857-1936> ;
+    schema:jobTitle "Founder, Consultant, Research Scientist" ;
+    schema:affiliation "Metrology Enabled" .
