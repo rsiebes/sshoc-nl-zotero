@@ -47,7 +47,9 @@ zotero-transformation-task/
 ├── README_AUTHOR_ENRICHMENT.md       # Detailed author enrichment documentation
 ├── CHANGELOG.md                       # Version history and improvements
 ├── ttl_metadata_generator.py          # Main TTL processing script with author enrichment
-├── author_enrichment.py               # Comprehensive author enrichment module
+├── enrichment_modules/                # Enrichment modules package
+│   ├── __init__.py                   # Package initialization
+│   └── author_enrichment.py          # Comprehensive author enrichment module
 ├── batch_metadata_generator.py        # Legacy CSV processing script
 ├── data/                              # Input and generated metadata files
 │   ├── original.ttl                  # Input: 1,000+ publications from Zotero

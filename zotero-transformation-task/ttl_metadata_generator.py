@@ -28,7 +28,7 @@ from dataclasses import dataclass
 from pathlib import Path
 
 # Import author enrichment functionality
-from author_enrichment import AuthorEnricher, AuthorInfo
+from enrichment_modules.author_enrichment import AuthorEnricher, AuthorInfo
 
 @dataclass
 class Publication:

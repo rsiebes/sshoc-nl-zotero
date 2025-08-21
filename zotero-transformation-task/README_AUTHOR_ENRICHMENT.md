@@ -43,19 +43,19 @@ The Author Enrichment Module provides comprehensive author information enrichmen
 
 ```bash
 # Single author enrichment
-python3 author_enrichment.py "Aletta Dijkstra" --publication-title "Migration study" --parent-org "RUG_FRW"
+python3 enrichment_modules/author_enrichment.py "Aletta Dijkstra" --publication-title "Migration study" --parent-org "RUG_FRW"
 
 # Multiple authors from citation string
-python3 author_enrichment.py "Smith, John, Jane Doe & Bob Wilson" --output "enriched_authors.json"
+python3 enrichment_modules/author_enrichment.py "Smith, John, Jane Doe & Bob Wilson" --output "enriched_authors.json"
 
 # With full context
-python3 author_enrichment.py "Fanny Janssen" --publication-title "Can selective migration explain why health is worse in regions with population decline" --parent-org "RUG_FRW" --output "results.json"
+python3 enrichment_modules/author_enrichment.py "Fanny Janssen" --publication-title "Can selective migration explain why health is worse in regions with population decline" --parent-org "RUG_FRW" --output "results.json"
 ```
 
 ### Python API
 
 ```python
-from author_enrichment import AuthorEnricher, AuthorInfo
+from enrichment_modules.author_enrichment import AuthorEnricher, AuthorInfo
 
 # Initialize enricher
 enricher = AuthorEnricher(cache_file="cache/authors.json")
@@ -140,7 +140,7 @@ The author enrichment module is seamlessly integrated with the main TTL metadata
 
 ```python
 # In ttl_metadata_generator.py
-from author_enrichment import AuthorEnricher, AuthorInfo
+from enrichment_modules.author_enrichment import AuthorEnricher, AuthorInfo
 
 class MetadataEnricher:
     def __init__(self, cache_dir: str = "cache"):
