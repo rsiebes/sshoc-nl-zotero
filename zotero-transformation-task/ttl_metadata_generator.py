@@ -30,6 +30,7 @@ from pathlib import Path
 # Import enrichment functionality
 from enrichment_modules.author_enrichment import AuthorEnricher, AuthorInfo
 from enrichment_modules.keyword_abstract_enrichment import KeywordAbstractEnricher, ContentInfo
+from enrichment_modules.elsst_enrichment import ELSSTEnricher, ELSSTInfo
 
 @dataclass
 class Publication:
@@ -136,6 +137,7 @@ class MetadataEnricher:
         # Initialize enrichment modules
         self.author_enricher = AuthorEnricher(cache_file=str(self.cache_dir / "author_enrichment_cache.json"))
         self.keyword_abstract_enricher = KeywordAbstractEnricher(cache_file=str(self.cache_dir / "keyword_abstract_enrichment_cache.json"))
+        self.elsst_enricher = ELSSTEnricher(cache_file=str(self.cache_dir / "elsst_enrichment_cache.json"))
     
     def _load_cache(self, filename: str) -> Dict:
         """Load cache file or return empty dict"""
@@ -193,8 +195,37 @@ class MetadataEnricher:
         except Exception as e:
             print(f"    ⚠️ Error extracting content: {e}")
         
-        # Generate TTL content with enriched authors and keywords
-        ttl_content = self._generate_enriched_ttl_content(pub, file_id, enriched_authors, enriched_content)
+        # Enrich with ELSST vocabulary concepts
+        print(f"  🏛️ Mapping keywords to ELSST concepts...")
+        elsst_info = None
+        try:
+            if enriched_content:
+                # Combine all keywords for ELSST mapping
+                all_keywords = (
+                    enriched_content.primary_keywords + 
+                    enriched_content.secondary_keywords + 
+                    enriched_content.explicit_keywords
+                )
+                
+                if all_keywords:
+                    elsst_info = self.elsst_enricher.map_keywords_to_elsst(
+                        all_keywords,
+                        pub.title
+                    )
+                    if elsst_info and (elsst_info.primary_concepts or elsst_info.secondary_concepts):
+                        total_concepts = len(elsst_info.primary_concepts) + len(elsst_info.secondary_concepts)
+                        print(f"    ✅ Found {total_concepts} ELSST concepts")
+                    else:
+                        print(f"    ⚠️ No ELSST concepts found for keywords")
+                else:
+                    print(f"    ⚠️ No keywords available for ELSST mapping")
+            else:
+                print(f"    ⚠️ No content available for ELSST mapping")
+        except Exception as e:
+            print(f"    ⚠️ Error mapping ELSST concepts: {e}")
+        
+        # Generate TTL content with enriched authors, keywords, and ELSST concepts
+        ttl_content = self._generate_enriched_ttl_content(pub, file_id, enriched_authors, enriched_content, elsst_info)
         
         print(f"  ✅ Generated enriched metadata for {file_id}")
         return ttl_content, file_id
@@ -213,7 +244,7 @@ class MetadataEnricher:
         # Create unique ID
         return f"{creator_part}_{org_part}_{pub.index:03d}"
     
-    def _generate_enriched_ttl_content(self, pub: Publication, file_id: str, enriched_authors: List[AuthorInfo], enriched_content: Optional[ContentInfo] = None) -> str:
+    def _generate_enriched_ttl_content(self, pub: Publication, file_id: str, enriched_authors: List[AuthorInfo], enriched_content: Optional[ContentInfo] = None, elsst_info: Optional[ELSSTInfo] = None) -> str:
         """Generate enriched TTL content for a publication with detailed author information"""
         
         # TTL prefixes
@@ -262,6 +293,16 @@ class MetadataEnricher:
             # Add explicit keywords from the article
             for keyword in enriched_content.explicit_keywords:
                 ttl_content += f'    dc:subject "{self._escape_ttl_string(keyword)}" ;\n'
+        
+        # Add ELSST vocabulary concepts if available
+        if elsst_info and (elsst_info.primary_concepts or elsst_info.secondary_concepts):
+            # Add primary ELSST concepts
+            for concept in elsst_info.primary_concepts:
+                ttl_content += f'    dc:subject <{concept.uri}> ; # {concept.preferred_label}\n'
+            
+            # Add secondary ELSST concepts
+            for concept in elsst_info.secondary_concepts:
+                ttl_content += f'    dc:subject <{concept.uri}> ; # {concept.preferred_label}\n'
         
         # Close main resource
         ttl_content += f"""    

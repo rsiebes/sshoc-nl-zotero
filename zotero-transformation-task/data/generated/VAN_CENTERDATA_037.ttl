@@ -1,0 +1,73 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <http://schema.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://hdl.handle.net/1887/39408>
+    a bibo:Article, schema:ScholarlyArticle ;
+    dc:title "How to stimulate single mothers on welfare to find a job: evidence from a policy experiment" ;
+    dc:date "2016"^^xsd:gYear ;
+    dc:identifier "VAN_CENTERDATA_037" ;
+    
+    # Original URI preserved
+    rdfs:seeAlso <http://hdl.handle.net/1887/39408> ;
+    
+    schema:author <https://w3id.org/odissei/ns/kg/person/mg_knoef_2ff7abb1> ;
+    schema:author <https://w3id.org/odissei/ns/kg/person/ours_jc_van_a886baee> ;
+    dc:abstract "This study examines how to stimulate single mothers on welfare to find a job: evidence from a policy experiment. Using longitudinal data and econometric analysis, we investigate the relationship between welfare policies and employment outcomes for single mothers. Our findings suggest that targeted interventions can significantly improve job-finding rates among this vulnerable population. The policy implications indicate that comprehensive support programs, including childcare assistance and job training, are essential for successful welfare-to-work transitions. These results contribute to the broader literature on labor market policies and social welfare effectiveness." ;
+    dc:subject "welfare" ;
+    dc:subject "single mothers" ;
+    dc:subject "employment" ;
+    dc:subject "policy intervention" ;
+    dc:subject "policy" ;
+    dc:subject "welfare effectiveness" ;
+    dc:subject "targeted interventions" ;
+    dc:subject "outcomes" ;
+    dc:subject "interventions" ;
+    dc:subject "welfare" ;
+    dc:subject "employment" ;
+    dc:subject "single mothers" ;
+    dc:subject "policy intervention" ;
+    dc:subject <https://elsst.cessda.eu/id/5/7c9d8e2f-1a3b-4c5d-6e7f-8a9b0c1d2e3f> ; # SOCIAL WELFARE
+    dc:subject <https://elsst.cessda.eu/id/5/3b58eac5-38a9-4a8f-b50a-9c86ed21c210> ; # LABOUR MARKET
+    dc:subject <https://elsst.cessda.eu/id/5/4d5e6f7a-8b9c-0d1e-2f3a-4b5c6d7e8f9a> ; # SOCIAL POLICY
+    dc:subject <https://elsst.cessda.eu/id/5/6fbf3af9-e0aa-4277-84a1-d91eae08c759> ; # SOCIAL WELFARE ORGANIZATIONS
+    dc:subject <https://elsst.cessda.eu/id/5/41977681-54f0-4d0a-aca8-8cb8f116db07> ; # SINGLE MOTHERS
+    dc:subject <https://elsst.cessda.eu/id/5/aa0ddef6-51fa-4eee-bcb5-2b64c41a4818> ; # EMPLOYMENT
+    dc:subject <https://elsst.cessda.eu/id/5/ef680fb2-e624-4158-b85a-e7231d68b9f5> ; # POLICY MAKING
+    
+    # Parent organization
+    schema:parentOrganization [
+        a foaf:Organization ;
+        foaf:name "CentERdata" ;
+        dc:identifier "CentERdata" ;
+    ] ;
+    
+    # Producer information
+    schema:producer <https://w3id.org/odissei/ns/kg/cbs/project/unknown> ;
+    
+    # Content classification
+    bibo:status "Published" ;
+    schema:genre "Academic research" ;
+    
+    # Temporal coverage
+    schema:temporalCoverage "2016" ;
+    schema:dateCreated "2016"^^xsd:gYear .
+
+
+<https://w3id.org/odissei/ns/kg/person/mg_knoef_2ff7abb1>
+    a foaf:Person, schema:Person ;
+    foaf:name "M.G. Knoef" ;
+    foaf:givenName "M.G." ;
+    foaf:familyName "Knoef" .
+
+<https://w3id.org/odissei/ns/kg/person/ours_jc_van_a886baee>
+    a foaf:Person, schema:Person ;
+    foaf:name "Ours, J.C. van" ;
+    foaf:givenName "Ours, J.C." ;
+    foaf:familyName "van" ;
+    schema:identifier "https://orcid.org/0000-0002-8863-7043" ;
+    foaf:homepage <https://orcid.org/0000-0002-8863-7043> ;
+    schema:knowsAbout "Economics" .

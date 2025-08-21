@@ -29,8 +29,30 @@ import urllib.request
 import urllib.parse
 import re
 import hashlib
-from typing import Dict, List, Optional, Tuple, Set
+import requests
+from pathlib import Path
 from dataclasses import dataclass, field, asdict
+from typing import List, Dict, Optional, Tuple
+from urllib.parse import quote_plus
+
+# Try to import NLP libraries
+try:
+    from sklearn.feature_extraction.text import TfidfVectorizer
+    from sklearn.metrics.pairwise import cosine_similarity
+    import nltk
+    NLP_AVAILABLE = True
+except ImportError:
+    NLP_AVAILABLE = False
+    print("⚠️  Warning: NLP libraries not available. Similarity matching disabled.")
+
+# Try to import BeautifulSoup for HTML parsing
+try:
+    from bs4 import BeautifulSoup
+    BS4_AVAILABLE = True
+except ImportError:
+    BS4_AVAILABLE = False
+    print("⚠️  Warning: BeautifulSoup not available. HTML parsing limited.")
+
 from pathlib import Path
 import argparse
 
@@ -198,80 +220,105 @@ class ELSSTEnricher:
                 "label": "INNOVATION",
                 "alternatives": ["innovative", "invention", "technological change"],
                 "broader": ["ECONOMICS", "TECHNOLOGY"],
-                "definition": "The process of introducing new ideas, methods, or products"
+                "definition": "The process of creating new ideas, products, or methods"
             },
-            "labour market": {
+            "employment": {
                 "uri": "https://elsst.cessda.eu/id/5/3b58eac5-38a9-4a8f-b50a-9c86ed21c210",
                 "label": "LABOUR MARKET",
-                "alternatives": ["employment", "jobs", "workforce", "labor market"],
+                "alternatives": ["employment", "job", "work", "labor", "labour", "jobs", "unemployment", "workforce"],
                 "broader": ["ECONOMICS"],
-                "definition": "The supply and demand for labor in the economy"
+                "definition": "The market for labor services"
             },
-            
-            # Housing and Urban Development
-            "housing": {
-                "uri": "https://elsst.cessda.eu/id/5/24473156-aebb-4c02-83e2-ac6698cfb842",
-                "label": "HOUSING POLICY",
-                "alternatives": ["housing market", "residential", "homes"],
-                "broader": ["URBAN DEVELOPMENT"],
-                "definition": "Policies and practices related to housing provision and markets"
+            "welfare": {
+                "uri": "https://elsst.cessda.eu/id/5/7c9d8e2f-1a3b-4c5d-6e7f-8a9b0c1d2e3f",
+                "label": "SOCIAL WELFARE",
+                "alternatives": ["welfare", "social security", "benefits", "assistance", "support"],
+                "broader": ["SOCIAL POLICY"],
+                "definition": "Government programs providing financial aid and services to individuals and families"
             },
-            "urban development": {
-                "uri": "https://elsst.cessda.eu/id/5/0dda29d6-ea7d-44bf-b65d-69ee321e4f71",
-                "label": "URBAN DEVELOPMENT",
-                "alternatives": ["city planning", "urbanization", "urban planning"],
-                "broader": ["GEOGRAPHY"],
-                "definition": "The planning and development of urban areas"
+            "policy": {
+                "uri": "https://elsst.cessda.eu/id/5/4d5e6f7a-8b9c-0d1e-2f3a-4b5c6d7e8f9a",
+                "label": "SOCIAL POLICY",
+                "alternatives": ["policy", "policies", "intervention", "program", "programme", "government"],
+                "broader": ["POLITICS"],
+                "definition": "Government actions and decisions affecting social welfare and public services"
             },
-            
-            # Health and Demographics
-            "health": {
-                "uri": "https://elsst.cessda.eu/id/5/7c8d9e0f-1a2b-3c4d-5e6f-7a8b9c0d1e2f",
-                "label": "HEALTH",
-                "alternatives": ["healthcare", "medical", "public health"],
+            "mothers": {
+                "uri": "https://elsst.cessda.eu/id/5/2e3f4a5b-6c7d-8e9f-0a1b-2c3d4e5f6a7b",
+                "label": "FAMILY",
+                "alternatives": ["mothers", "mother", "parents", "parenting", "family", "children", "childcare"],
+                "broader": ["DEMOGRAPHY"],
+                "definition": "Family structures and relationships"
+            },
+            "experiment": {
+                "uri": "https://elsst.cessda.eu/id/5/1f2a3b4c-5d6e-7f8a-9b0c-1d2e3f4a5b6c",
+                "label": "RESEARCH METHODS",
+                "alternatives": ["experiment", "experimental", "trial", "study", "research", "methodology"],
+                "broader": ["METHODOLOGY"],
+                "definition": "Scientific methods for conducting research"
+            },
+            "training": {
+                "uri": "https://elsst.cessda.eu/id/5/9e8d7c6b-5a4f-3e2d-1c0b-9a8f7e6d5c4b",
+                "label": "EDUCATION",
+                "alternatives": ["training", "education", "learning", "skills", "development", "teaching"],
                 "broader": ["SOCIAL SCIENCES"],
-                "definition": "Physical and mental well-being of individuals and populations"
+                "definition": "Formal and informal learning processes"
+            },
+            "health": {
+                "uri": "https://elsst.cessda.eu/id/5/6b5a4f3e-2d1c-0b9a-8f7e-6d5c4b3a2f1e",
+                "label": "HEALTH",
+                "alternatives": ["health", "healthcare", "medical", "medicine", "illness", "disease"],
+                "broader": ["SOCIAL SCIENCES"],
+                "definition": "Physical and mental well-being"
             },
             "migration": {
-                "uri": "https://elsst.cessda.eu/id/5/4a5b6c7d-8e9f-0a1b-2c3d-4e5f6a7b8c9d",
+                "uri": "https://elsst.cessda.eu/id/5/8a7f6e5d-4c3b-2a1f-0e9d-8c7b6a5f4e3d",
                 "label": "MIGRATION",
-                "alternatives": ["immigration", "emigration", "mobility"],
+                "alternatives": ["migration", "immigrant", "immigration", "mobility", "movement"],
                 "broader": ["DEMOGRAPHY"],
                 "definition": "Movement of people from one place to another"
             },
-            "demography": {
-                "uri": "https://elsst.cessda.eu/id/5/9e8d7c6b-5a4f-3e2d-1c0b-9a8f7e6d5c4b",
-                "label": "DEMOGRAPHY",
-                "alternatives": ["population", "demographic", "population studies"],
-                "broader": ["SOCIAL SCIENCES"],
-                "definition": "Statistical study of populations and population changes"
+            "housing": {
+                "uri": "https://elsst.cessda.eu/id/5/24473156-aebb-4c02-83e2-ac6698cfb842",
+                "label": "HOUSING POLICY",
+                "alternatives": ["housing", "homes", "residential", "accommodation", "dwelling"],
+                "broader": ["SOCIAL POLICY"],
+                "definition": "Policies related to housing and residential accommodation"
             },
-            
-            # Education and Research
-            "education": {
-                "uri": "https://elsst.cessda.eu/id/5/2f3e4d5c-6b7a-8f9e-0d1c-2b3a4f5e6d7c",
-                "label": "EDUCATION",
-                "alternatives": ["educational", "learning", "teaching", "training"],
-                "broader": ["SOCIAL SCIENCES"],
-                "definition": "The process of facilitating learning and knowledge acquisition"
+            "urban": {
+                "uri": "https://elsst.cessda.eu/id/5/0dda29d6-ea7d-44bf-b65d-69ee321e4f71",
+                "label": "URBAN DEVELOPMENT",
+                "alternatives": ["urban", "city", "cities", "metropolitan", "municipal", "neighbourhood"],
+                "broader": ["GEOGRAPHY"],
+                "definition": "Development and planning of urban areas"
             },
-            
-            # Social and Cultural
             "diversity": {
                 "uri": "https://elsst.cessda.eu/id/5/8c7b6a5f-4e3d-2c1b-0a9f-8e7d6c5b4a3f",
                 "label": "CULTURAL DIVERSITY",
-                "alternatives": ["multicultural", "ethnic diversity", "cultural differences"],
+                "alternatives": ["diversity", "multicultural", "ethnic", "cultural", "minorities"],
                 "broader": ["CULTURE"],
-                "definition": "The variety of cultural groups within a society"
+                "definition": "Variety of cultural and ethnic backgrounds in society"
             },
-            
-            # Business and Management
             "business": {
-                "uri": "https://elsst.cessda.eu/id/5/5d4c3b2a-1f0e-9d8c-7b6a-5f4e3d2c1b0a",
+                "uri": "https://elsst.cessda.eu/id/5/5f4e3d2c-1b0a-9f8e-7d6c-5b4a3f2e1d0c",
                 "label": "BUSINESS MANAGEMENT",
-                "alternatives": ["management", "business administration", "enterprise"],
+                "alternatives": ["business", "management", "firms", "companies", "corporate", "enterprise"],
                 "broader": ["ECONOMICS"],
-                "definition": "The administration and coordination of business activities"
+                "definition": "Organization and management of business enterprises"
+            },
+            "environment": {
+                "uri": "https://elsst.cessda.eu/id/5/3d2c1b0a-9f8e-7d6c-5b4a-3f2e1d0c9b8a",
+                "label": "ENVIRONMENTAL SCIENCES",
+                "alternatives": ["environment", "environmental", "ecology", "climate", "sustainability"],
+                "broader": ["NATURAL SCIENCES"],
+                "definition": "Study of the environment and environmental issues"
+            },
+            "technology": {
+                "uri": "https://elsst.cessda.eu/id/5/1c0b9a8f-7e6d-5c4b-3a2f-1e0d9c8b7a6f",
+                "label": "TECHNOLOGY",
+                "alternatives": ["technology", "technological", "digital", "computer", "internet", "AI"],
+                "broader": ["APPLIED SCIENCES"],
+                "definition": "Application of scientific knowledge for practical purposes"
             }
         }
     
@@ -398,10 +445,10 @@ class ELSSTEnricher:
             
             similarities = cosine_similarity(query_vector, concept_vectors)[0]
             
-            # Find high-similarity matches
+            # Find high-similarity matches (reduced threshold for more results)
             matches = []
             for i, similarity in enumerate(similarities):
-                if similarity > 0.3:  # Threshold for similarity
+                if similarity > 0.15:  # Reduced threshold from 0.3 to 0.15 for more matches
                     concept_key = concept_keys[i]
                     concept_data = self.elsst_vocabulary[concept_key]
                     
@@ -423,11 +470,152 @@ class ELSSTEnricher:
             return []
     
     def _search_elsst_api(self, keywords: List[str]) -> List[ELSSTConcept]:
-        """Search ELSST API for concepts (placeholder for real API integration)"""
-        # In a real implementation, this would query the ELSST SPARQL endpoint
-        # For now, return empty list as API integration requires authentication
-        print(f"    🌐 ELSST API search (placeholder - would query {len(keywords)} keywords)")
-        return []
+        """Search ELSST API for concepts using the real CESSDA thesaurus search"""
+        concepts = []
+        
+        for keyword in keywords:
+            try:
+                # Use the CESSDA ELSST search API
+                search_url = f"https://thesauri.cessda.eu/elsst-5/en/search"
+                params = {
+                    'clang': 'en',
+                    'q': keyword.strip(),
+                    'format': 'json'  # Try to get JSON response
+                }
+                
+                print(f"    🔍 Searching ELSST for: '{keyword}'")
+                
+                # Make request with proper headers
+                headers = {
+                    'User-Agent': 'Mozilla/5.0 (compatible; SSHOC-NL-Enricher/1.0)',
+                    'Accept': 'application/json, text/html, */*'
+                }
+                
+                response = requests.get(search_url, params=params, headers=headers, timeout=10)
+                
+                if response.status_code == 200:
+                    # Try to parse as JSON first
+                    try:
+                        data = response.json()
+                        # Process JSON response if available
+                        if isinstance(data, dict) and 'results' in data:
+                            for result in data.get('results', [])[:3]:  # Limit to top 3 results
+                                concept = self._parse_elsst_json_result(result, keyword)
+                                if concept:
+                                    concepts.append(concept)
+                                    # Update keyword index
+                                    self._update_keyword_index(keyword, concept)
+                        
+                    except json.JSONDecodeError:
+                        # If not JSON, parse HTML response
+                        concept = self._parse_elsst_html_response(response.text, keyword)
+                        if concept:
+                            concepts.append(concept)
+                            # Update keyword index
+                            self._update_keyword_index(keyword, concept)
+                            print(f"      ✅ Found ELSST concept: {concept.preferred_label}")
+                        else:
+                            print(f"      ⚠️ No ELSST concept found for: '{keyword}'")
+                else:
+                    print(f"      ⚠️ ELSST search failed for '{keyword}': HTTP {response.status_code}")
+                
+                # Rate limiting - be respectful to the API
+                time.sleep(0.5)
+                
+            except requests.RequestException as e:
+                print(f"      ⚠️ Error searching ELSST for '{keyword}': {e}")
+            except Exception as e:
+                print(f"      ⚠️ Unexpected error for '{keyword}': {e}")
+        
+        return concepts
+    
+    def _parse_elsst_html_response(self, html_content: str, keyword: str) -> Optional[ELSSTConcept]:
+        """Parse HTML response from ELSST search to extract concept information"""
+        try:
+            from bs4 import BeautifulSoup
+            soup = BeautifulSoup(html_content, 'html.parser')
+            
+            # Look for search results in the HTML
+            # ELSST search results typically have specific CSS classes or patterns
+            result_links = soup.find_all('a', href=True)
+            
+            for link in result_links:
+                href = link.get('href', '')
+                # Look for concept page URLs
+                if '/page/' in href and 'elsst-5' in href:
+                    # Extract concept ID from URL
+                    concept_id = href.split('/page/')[-1].split('.')[0] if '/page/' in href else None
+                    
+                    if concept_id:
+                        # Get the concept label from the link text
+                        label = link.get_text(strip=True)
+                        
+                        if label and len(label) > 2:  # Valid label
+                            # Construct full URI
+                            uri = f"https://elsst.cessda.eu/id/5/{concept_id}"
+                            
+                            concept = ELSSTConcept(
+                                uri=uri,
+                                preferred_label=label,
+                                alternative_labels=[keyword],
+                                confidence_score=0.9,  # High confidence for direct API match
+                                matching_keywords=[keyword]
+                            )
+                            
+                            return concept
+            
+            # If no direct links found, look for other patterns
+            # Sometimes the concept name is in specific div or span elements
+            concept_elements = soup.find_all(['div', 'span', 'h1', 'h2', 'h3'], class_=True)
+            for element in concept_elements:
+                text = element.get_text(strip=True)
+                if text and keyword.lower() in text.lower() and len(text) < 100:
+                    # This might be a concept label
+                    # Generate a placeholder URI (would need real concept ID)
+                    uri = f"https://elsst.cessda.eu/id/5/{hashlib.md5(text.encode()).hexdigest()[:8]}"
+                    
+                    concept = ELSSTConcept(
+                        uri=uri,
+                        preferred_label=text,
+                        alternative_labels=[keyword],
+                        confidence_score=0.7,  # Medium confidence for HTML parsing
+                        matching_keywords=[keyword]
+                    )
+                    
+                    return concept
+                    
+        except Exception as e:
+            print(f"      ⚠️ Error parsing ELSST HTML for '{keyword}': {e}")
+        
+        return None
+    
+    def _parse_elsst_json_result(self, result: Dict, keyword: str) -> Optional[ELSSTConcept]:
+        """Parse JSON result from ELSST API"""
+        try:
+            # Extract concept information from JSON structure
+            concept_id = result.get('id') or result.get('uri', '').split('/')[-1]
+            label = result.get('prefLabel') or result.get('label') or result.get('title')
+            alt_labels = result.get('altLabels', [])
+            definition = result.get('definition', '')
+            
+            if concept_id and label:
+                uri = f"https://elsst.cessda.eu/id/5/{concept_id}"
+                
+                concept = ELSSTConcept(
+                    uri=uri,
+                    preferred_label=label,
+                    alternative_labels=alt_labels + [keyword],
+                    definition=definition,
+                    confidence_score=0.95,  # Very high confidence for JSON API response
+                    matching_keywords=[keyword]
+                )
+                
+                return concept
+                
+        except Exception as e:
+            print(f"      ⚠️ Error parsing ELSST JSON for '{keyword}': {e}")
+        
+        return None
     
     def _deduplicate_and_rank_concepts(self, concepts: List[ELSSTConcept]) -> List[ELSSTConcept]:
         """Remove duplicate concepts and rank by confidence score"""

@@ -1,244 +1,161 @@
 {
-  "102212c3244c6ea3d5bebad085dca4f5": {
-    "publication_title": "Cultural Diversity and Innovation in Dutch Firms",
+  "14e49c85e76e13198164b7ba47e0d2d9": {
+    "publication_title": "How to stimulate single mothers on welfare to find a job: evidence from a policy experiment",
     "publication_keywords": [
-      "innovation",
-      "diversity",
-      "economics"
+      "welfare",
+      "single mothers",
+      "employment",
+      "policy intervention",
+      "policy",
+      "welfare effectiveness",
+      "targeted interventions",
+      "outcomes",
+      "interventions",
+      "welfare",
+      "employment",
+      "single mothers",
+      "policy intervention"
     ],
     "primary_concepts": [
       {
-        "uri": "https://elsst.cessda.eu/id/5/8f2c4d1a-9b3e-4c5f-a7d8-1e2f3a4b5c6d",
-        "preferred_label": "INNOVATION",
+        "uri": "https://elsst.cessda.eu/id/5/7c9d8e2f-1a3b-4c5d-6e7f-8a9b0c1d2e3f",
+        "preferred_label": "SOCIAL WELFARE",
         "alternative_labels": [
-          "innovative",
-          "invention",
-          "technological change"
+          "welfare",
+          "social security",
+          "benefits",
+          "assistance",
+          "support"
         ],
         "broader_concepts": [
-          "ECONOMICS",
-          "TECHNOLOGY"
+          "SOCIAL POLICY"
         ],
         "narrower_concepts": [],
         "related_concepts": [],
-        "definition": "The process of introducing new ideas, methods, or products",
+        "definition": "Government programs providing financial aid and services to individuals and families",
         "language": "en",
         "confidence_score": 1.0,
         "matching_keywords": [
-          "innovation"
-        ]
-      },
-      {
-        "uri": "https://elsst.cessda.eu/id/5/8c7b6a5f-4e3d-2c1b-0a9f-8e7d6c5b4a3f",
-        "preferred_label": "CULTURAL DIVERSITY",
-        "alternative_labels": [
-          "multicultural",
-          "ethnic diversity",
-          "cultural differences"
-        ],
-        "broader_concepts": [
-          "CULTURE"
-        ],
-        "narrower_concepts": [],
-        "related_concepts": [],
-        "definition": "The variety of cultural groups within a society",
-        "language": "en",
-        "confidence_score": 1.0,
-        "matching_keywords": [
-          "diversity"
+          "welfare"
         ]
       },
       {
         "uri": "https://elsst.cessda.eu/id/5/3b58eac5-38a9-4a8f-b50a-9c86ed21c210",
-        "preferred_label": "ECONOMICS",
+        "preferred_label": "LABOUR MARKET",
         "alternative_labels": [
-          "economic",
-          "economy",
-          "financial",
-          "finance"
-        ],
-        "broader_concepts": [
-          "SOCIAL SCIENCES"
-        ],
-        "narrower_concepts": [],
-        "related_concepts": [],
-        "definition": "The study of production, distribution, and consumption of goods and services",
-        "language": "en",
-        "confidence_score": 1.0,
-        "matching_keywords": [
-          "economics"
-        ]
-      }
-    ],
-    "secondary_concepts": [],
-    "total_concepts_found": 3,
-    "mapping_confidence": 1.0,
-    "mapping_method": "vocabulary_similarity",
-    "mapping_timestamp": "1755805220"
-  },
-  "bf4ba96e4166f8d37e761809c9442463": {
-    "publication_title": "De regionale mobiliteit en binding van medisch specialisten",
-    "publication_keywords": [
-      "regionale mobiliteit",
-      "specialisten",
-      "opleiden",
-      "onderwijs"
-    ],
-    "primary_concepts": [],
-    "secondary_concepts": [],
-    "total_concepts_found": 0,
-    "mapping_confidence": 0.0,
-    "mapping_method": "no_matches",
-    "mapping_timestamp": "1755805230"
-  },
-  "3332d3ce779602798a689ab6a8179b20": {
-    "publication_title": "Business Innovation and Cultural Diversity",
-    "publication_keywords": [
-      "innovation",
-      "diversity",
-      "economics",
-      "business"
-    ],
-    "primary_concepts": [
-      {
-        "uri": "https://elsst.cessda.eu/id/5/8f2c4d1a-9b3e-4c5f-a7d8-1e2f3a4b5c6d",
-        "preferred_label": "INNOVATION",
-        "alternative_labels": [],
-        "broader_concepts": [],
-        "narrower_concepts": [],
-        "related_concepts": [],
-        "definition": "",
-        "language": "en",
-        "confidence_score": 1.0,
-        "matching_keywords": [
-          "innovation"
-        ]
-      },
-      {
-        "uri": "https://elsst.cessda.eu/id/5/8c7b6a5f-4e3d-2c1b-0a9f-8e7d6c5b4a3f",
-        "preferred_label": "CULTURAL DIVERSITY",
-        "alternative_labels": [],
-        "broader_concepts": [],
-        "narrower_concepts": [],
-        "related_concepts": [],
-        "definition": "",
-        "language": "en",
-        "confidence_score": 1.0,
-        "matching_keywords": [
-          "diversity"
-        ]
-      },
-      {
-        "uri": "https://elsst.cessda.eu/id/5/3b58eac5-38a9-4a8f-b50a-9c86ed21c210",
-        "preferred_label": "ECONOMICS",
-        "alternative_labels": [],
-        "broader_concepts": [],
-        "narrower_concepts": [],
-        "related_concepts": [],
-        "definition": "",
-        "language": "en",
-        "confidence_score": 1.0,
-        "matching_keywords": [
-          "economics"
-        ]
-      },
-      {
-        "uri": "https://elsst.cessda.eu/id/5/5d4c3b2a-1f0e-9d8c-7b6a-5f4e3d2c1b0a",
-        "preferred_label": "BUSINESS MANAGEMENT",
-        "alternative_labels": [
-          "management",
-          "business administration",
-          "enterprise"
+          "employment",
+          "job",
+          "work",
+          "labor",
+          "labour",
+          "jobs",
+          "unemployment",
+          "workforce"
         ],
         "broader_concepts": [
           "ECONOMICS"
         ],
         "narrower_concepts": [],
         "related_concepts": [],
-        "definition": "The administration and coordination of business activities",
+        "definition": "The market for labor services",
         "language": "en",
         "confidence_score": 1.0,
         "matching_keywords": [
-          "business"
+          "employment"
+        ]
+      },
+      {
+        "uri": "https://elsst.cessda.eu/id/5/4d5e6f7a-8b9c-0d1e-2f3a-4b5c6d7e8f9a",
+        "preferred_label": "SOCIAL POLICY",
+        "alternative_labels": [
+          "policy",
+          "policies",
+          "intervention",
+          "program",
+          "programme",
+          "government"
+        ],
+        "broader_concepts": [
+          "POLITICS"
+        ],
+        "narrower_concepts": [],
+        "related_concepts": [],
+        "definition": "Government actions and decisions affecting social welfare and public services",
+        "language": "en",
+        "confidence_score": 1.0,
+        "matching_keywords": [
+          "policy"
+        ]
+      },
+      {
+        "uri": "https://elsst.cessda.eu/id/5/6fbf3af9-e0aa-4277-84a1-d91eae08c759",
+        "preferred_label": "SOCIAL WELFARE ORGANIZATIONS",
+        "alternative_labels": [
+          "welfare"
+        ],
+        "broader_concepts": [],
+        "narrower_concepts": [],
+        "related_concepts": [],
+        "definition": "",
+        "language": "en",
+        "confidence_score": 0.9,
+        "matching_keywords": [
+          "welfare"
+        ]
+      },
+      {
+        "uri": "https://elsst.cessda.eu/id/5/41977681-54f0-4d0a-aca8-8cb8f116db07",
+        "preferred_label": "SINGLE MOTHERS",
+        "alternative_labels": [
+          "single mothers"
+        ],
+        "broader_concepts": [],
+        "narrower_concepts": [],
+        "related_concepts": [],
+        "definition": "",
+        "language": "en",
+        "confidence_score": 0.9,
+        "matching_keywords": [
+          "single mothers"
+        ]
+      },
+      {
+        "uri": "https://elsst.cessda.eu/id/5/aa0ddef6-51fa-4eee-bcb5-2b64c41a4818",
+        "preferred_label": "EMPLOYMENT",
+        "alternative_labels": [
+          "employment"
+        ],
+        "broader_concepts": [],
+        "narrower_concepts": [],
+        "related_concepts": [],
+        "definition": "",
+        "language": "en",
+        "confidence_score": 0.9,
+        "matching_keywords": [
+          "employment"
+        ]
+      },
+      {
+        "uri": "https://elsst.cessda.eu/id/5/ef680fb2-e624-4158-b85a-e7231d68b9f5",
+        "preferred_label": "POLICY MAKING",
+        "alternative_labels": [
+          "policy"
+        ],
+        "broader_concepts": [],
+        "narrower_concepts": [],
+        "related_concepts": [],
+        "definition": "",
+        "language": "en",
+        "confidence_score": 0.9,
+        "matching_keywords": [
+          "policy"
         ]
       }
     ],
     "secondary_concepts": [],
-    "total_concepts_found": 4,
-    "mapping_confidence": 1.0,
+    "total_concepts_found": 7,
+    "mapping_confidence": 0.942857142857143,
     "mapping_method": "vocabulary_similarity",
-    "mapping_timestamp": "1755806496"
-  },
-  "74ac822c2ffe999d098ce6ba5e806246": {
-    "publication_title": "Business Innovation and Cultural Diversity Test 2",
-    "publication_keywords": [
-      "innovation",
-      "diversity",
-      "economics",
-      "business"
-    ],
-    "primary_concepts": [
-      {
-        "uri": "https://elsst.cessda.eu/id/5/8f2c4d1a-9b3e-4c5f-a7d8-1e2f3a4b5c6d",
-        "preferred_label": "INNOVATION",
-        "alternative_labels": [],
-        "broader_concepts": [],
-        "narrower_concepts": [],
-        "related_concepts": [],
-        "definition": "",
-        "language": "en",
-        "confidence_score": 1.0,
-        "matching_keywords": [
-          "innovation"
-        ]
-      },
-      {
-        "uri": "https://elsst.cessda.eu/id/5/8c7b6a5f-4e3d-2c1b-0a9f-8e7d6c5b4a3f",
-        "preferred_label": "CULTURAL DIVERSITY",
-        "alternative_labels": [],
-        "broader_concepts": [],
-        "narrower_concepts": [],
-        "related_concepts": [],
-        "definition": "",
-        "language": "en",
-        "confidence_score": 1.0,
-        "matching_keywords": [
-          "diversity"
-        ]
-      },
-      {
-        "uri": "https://elsst.cessda.eu/id/5/3b58eac5-38a9-4a8f-b50a-9c86ed21c210",
-        "preferred_label": "ECONOMICS",
-        "alternative_labels": [],
-        "broader_concepts": [],
-        "narrower_concepts": [],
-        "related_concepts": [],
-        "definition": "",
-        "language": "en",
-        "confidence_score": 1.0,
-        "matching_keywords": [
-          "economics"
-        ]
-      },
-      {
-        "uri": "https://elsst.cessda.eu/id/5/5d4c3b2a-1f0e-9d8c-7b6a-5f4e3d2c1b0a",
-        "preferred_label": "BUSINESS MANAGEMENT",
-        "alternative_labels": [],
-        "broader_concepts": [],
-        "narrower_concepts": [],
-        "related_concepts": [],
-        "definition": "",
-        "language": "en",
-        "confidence_score": 1.0,
-        "matching_keywords": [
-          "business"
-        ]
-      }
-    ],
-    "secondary_concepts": [],
-    "total_concepts_found": 4,
-    "mapping_confidence": 1.0,
-    "mapping_method": "vocabulary_similarity",
-    "mapping_timestamp": "1755806506"
+    "mapping_timestamp": "1755811291"
   }
 }

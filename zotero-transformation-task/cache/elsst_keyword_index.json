@@ -1,29 +1,26 @@
 {
-  "innovation": {
-    "uri": "https://elsst.cessda.eu/id/5/8f2c4d1a-9b3e-4c5f-a7d8-1e2f3a4b5c6d",
-    "preferred_label": "INNOVATION",
-    "confidence_score": 1.0,
-    "last_updated": "1755805220",
-    "source": "cache_rebuild"
+  "welfare": {
+    "uri": "https://elsst.cessda.eu/id/5/6fbf3af9-e0aa-4277-84a1-d91eae08c759",
+    "preferred_label": "SOCIAL WELFARE ORGANIZATIONS",
+    "confidence_score": 0.9,
+    "last_updated": "1755811304"
   },
-  "diversity": {
-    "uri": "https://elsst.cessda.eu/id/5/8c7b6a5f-4e3d-2c1b-0a9f-8e7d6c5b4a3f",
-    "preferred_label": "CULTURAL DIVERSITY",
-    "confidence_score": 1.0,
-    "last_updated": "1755805220",
-    "source": "cache_rebuild"
+  "single mothers": {
+    "uri": "https://elsst.cessda.eu/id/5/41977681-54f0-4d0a-aca8-8cb8f116db07",
+    "preferred_label": "SINGLE MOTHERS",
+    "confidence_score": 0.9,
+    "last_updated": "1755811304"
   },
-  "economics": {
-    "uri": "https://elsst.cessda.eu/id/5/3b58eac5-38a9-4a8f-b50a-9c86ed21c210",
-    "preferred_label": "ECONOMICS",
-    "confidence_score": 1.0,
-    "last_updated": "1755805220",
-    "source": "cache_rebuild"
+  "employment": {
+    "uri": "https://elsst.cessda.eu/id/5/aa0ddef6-51fa-4eee-bcb5-2b64c41a4818",
+    "preferred_label": "EMPLOYMENT",
+    "confidence_score": 0.9,
+    "last_updated": "1755811304"
   },
-  "business": {
-    "uri": "https://elsst.cessda.eu/id/5/5d4c3b2a-1f0e-9d8c-7b6a-5f4e3d2c1b0a",
-    "preferred_label": "BUSINESS MANAGEMENT",
-    "confidence_score": 1.0,
-    "last_updated": "1755806496"
+  "policy": {
+    "uri": "https://elsst.cessda.eu/id/5/ef680fb2-e624-4158-b85a-e7231d68b9f5",
+    "preferred_label": "POLICY MAKING",
+    "confidence_score": 0.9,
+    "last_updated": "1755811304"
   }
 }
