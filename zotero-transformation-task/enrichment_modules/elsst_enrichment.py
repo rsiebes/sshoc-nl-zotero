@@ -83,6 +83,10 @@ class ELSSTEnricher:
         self.cache_file.parent.mkdir(exist_ok=True)
         self.cache = self._load_cache()
         
+        # Initialize keyword-to-concept index for fast lookups
+        self.keyword_index_file = self.cache_file.parent / "elsst_keyword_index.json"
+        self.keyword_index = self._load_keyword_index()
+        
         # ELSST API configuration
         self.elsst_api_base = "https://elsst.cessda.eu/api"
         self.elsst_sparql_endpoint = "https://elsst.cessda.eu/sparql"
@@ -110,11 +114,66 @@ class ELSSTEnricher:
                 return {}
         return {}
     
+    def _load_keyword_index(self) -> Dict[str, Dict]:
+        """Load keyword-to-concept index for fast lookups"""
+        if self.keyword_index_file.exists():
+            try:
+                with open(self.keyword_index_file, 'r', encoding='utf-8') as f:
+                    index = json.load(f)
+                print(f"✅ Loaded keyword index with {len(index)} entries")
+                return index
+            except (json.JSONDecodeError, IOError):
+                print(f"⚠️  Warning: Could not load keyword index {self.keyword_index_file}")
+                return {}
+        return {}
+    
+    def _save_keyword_index(self):
+        """Save keyword-to-concept index to file"""
+        try:
+            with open(self.keyword_index_file, 'w', encoding='utf-8') as f:
+                json.dump(self.keyword_index, f, indent=2, ensure_ascii=False)
+        except IOError as e:
+            print(f"⚠️  Warning: Could not save keyword index: {e}")
+    
+    def _update_keyword_index(self, keyword: str, concept: ELSSTConcept):
+        """Update the keyword index with a new keyword-concept mapping"""
+        keyword_lower = keyword.lower().strip()
+        
+        # Store concept information in index
+        concept_data = {
+            "uri": concept.uri,
+            "preferred_label": concept.preferred_label,
+            "confidence_score": concept.confidence_score,
+            "last_updated": str(int(time.time()))
+        }
+        
+        self.keyword_index[keyword_lower] = concept_data
+        
+    def _lookup_keyword_in_index(self, keyword: str) -> Optional[ELSSTConcept]:
+        """Fast lookup of keyword in the index"""
+        keyword_lower = keyword.lower().strip()
+        
+        if keyword_lower in self.keyword_index:
+            concept_data = self.keyword_index[keyword_lower]
+            
+            # Create ELSSTConcept from index data
+            concept = ELSSTConcept(
+                uri=concept_data["uri"],
+                preferred_label=concept_data["preferred_label"],
+                confidence_score=concept_data["confidence_score"],
+                matching_keywords=[keyword]
+            )
+            
+            return concept
+        
+        return None
+    
     def _save_cache(self):
-        """Save cache to file"""
+        """Save cache and keyword index to files"""
         try:
             with open(self.cache_file, 'w', encoding='utf-8') as f:
                 json.dump(self.cache, f, indent=2, ensure_ascii=False)
+            self._save_keyword_index()
         except IOError as e:
             print(f"⚠️  Warning: Could not save cache: {e}")
     
@@ -221,24 +280,51 @@ class ELSSTEnricher:
         print(f"  🔍 Searching ELSST concepts for {len(keywords)} keywords...")
         
         found_concepts = []
+        new_mappings = []  # Track new mappings for index updates
         
-        # 1. Direct vocabulary matching
-        direct_matches = self._match_direct_vocabulary(keywords)
-        found_concepts.extend(direct_matches)
+        # 1. Fast index lookup first
+        index_matches = []
+        remaining_keywords = []
         
-        # 2. Similarity-based matching if NLP is available
-        if NLP_AVAILABLE and abstract:
-            similarity_matches = self._match_similarity_based(keywords, title, abstract)
-            found_concepts.extend(similarity_matches)
+        for keyword in keywords:
+            indexed_concept = self._lookup_keyword_in_index(keyword)
+            if indexed_concept:
+                print(f"    ⚡ Index hit: {keyword} → {indexed_concept.preferred_label}")
+                index_matches.append(indexed_concept)
+            else:
+                remaining_keywords.append(keyword)
         
-        # 3. Try ELSST API search (if available)
-        api_matches = self._search_elsst_api(keywords)
-        found_concepts.extend(api_matches)
+        found_concepts.extend(index_matches)
         
-        # Remove duplicates and rank by confidence
+        # 2. Process remaining keywords with full search
+        if remaining_keywords:
+            print(f"    🔍 Full search for {len(remaining_keywords)} new keywords...")
+            
+            # Direct vocabulary matching
+            direct_matches = self._match_direct_vocabulary(remaining_keywords)
+            found_concepts.extend(direct_matches)
+            new_mappings.extend(direct_matches)
+            
+            # Similarity-based matching if NLP is available
+            if NLP_AVAILABLE and abstract:
+                similarity_matches = self._match_similarity_based(remaining_keywords, title, abstract)
+                found_concepts.extend(similarity_matches)
+                new_mappings.extend(similarity_matches)
+            
+            # Try ELSST API search (if available)
+            api_matches = self._search_elsst_api(remaining_keywords)
+            found_concepts.extend(api_matches)
+            new_mappings.extend(api_matches)
+        
+        # 3. Update keyword index with new mappings
+        for concept in new_mappings:
+            for keyword in concept.matching_keywords:
+                self._update_keyword_index(keyword, concept)
+        
+        # 4. Remove duplicates and rank by confidence
         unique_concepts = self._deduplicate_and_rank_concepts(found_concepts)
         
-        print(f"    ✅ Found {len(unique_concepts)} unique ELSST concepts")
+        print(f"    ✅ Found {len(unique_concepts)} unique ELSST concepts ({len(index_matches)} from index, {len(new_mappings)} new)")
         return unique_concepts
     
     def _match_direct_vocabulary(self, keywords: List[str]) -> List[ELSSTConcept]:

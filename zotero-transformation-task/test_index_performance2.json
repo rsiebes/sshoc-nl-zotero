@@ -1,0 +1,72 @@
+{
+  "publication_title": "Business Innovation and Cultural Diversity Test 2",
+  "publication_keywords": [
+    "innovation",
+    "diversity",
+    "economics",
+    "business"
+  ],
+  "primary_concepts": [
+    {
+      "uri": "https://elsst.cessda.eu/id/5/8f2c4d1a-9b3e-4c5f-a7d8-1e2f3a4b5c6d",
+      "preferred_label": "INNOVATION",
+      "alternative_labels": [],
+      "broader_concepts": [],
+      "narrower_concepts": [],
+      "related_concepts": [],
+      "definition": "",
+      "language": "en",
+      "confidence_score": 1.0,
+      "matching_keywords": [
+        "innovation"
+      ]
+    },
+    {
+      "uri": "https://elsst.cessda.eu/id/5/8c7b6a5f-4e3d-2c1b-0a9f-8e7d6c5b4a3f",
+      "preferred_label": "CULTURAL DIVERSITY",
+      "alternative_labels": [],
+      "broader_concepts": [],
+      "narrower_concepts": [],
+      "related_concepts": [],
+      "definition": "",
+      "language": "en",
+      "confidence_score": 1.0,
+      "matching_keywords": [
+        "diversity"
+      ]
+    },
+    {
+      "uri": "https://elsst.cessda.eu/id/5/3b58eac5-38a9-4a8f-b50a-9c86ed21c210",
+      "preferred_label": "ECONOMICS",
+      "alternative_labels": [],
+      "broader_concepts": [],
+      "narrower_concepts": [],
+      "related_concepts": [],
+      "definition": "",
+      "language": "en",
+      "confidence_score": 1.0,
+      "matching_keywords": [
+        "economics"
+      ]
+    },
+    {
+      "uri": "https://elsst.cessda.eu/id/5/5d4c3b2a-1f0e-9d8c-7b6a-5f4e3d2c1b0a",
+      "preferred_label": "BUSINESS MANAGEMENT",
+      "alternative_labels": [],
+      "broader_concepts": [],
+      "narrower_concepts": [],
+      "related_concepts": [],
+      "definition": "",
+      "language": "en",
+      "confidence_score": 1.0,
+      "matching_keywords": [
+        "business"
+      ]
+    }
+  ],
+  "secondary_concepts": [],
+  "total_concepts_found": 4,
+  "mapping_confidence": 1.0,
+  "mapping_method": "vocabulary_similarity",
+  "mapping_timestamp": "1755806506"
+}
