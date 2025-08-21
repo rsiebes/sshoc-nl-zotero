@@ -208,8 +208,11 @@ class MetadataEnricher:
                 )
                 
                 if all_keywords:
+                    # Translate Dutch keywords to English for better ELSST mapping
+                    translated_keywords = self.keyword_abstract_enricher._translate_dutch_keywords_for_elsst(all_keywords)
+                    
                     elsst_info = self.elsst_enricher.map_keywords_to_elsst(
-                        all_keywords,
+                        translated_keywords,
                         pub.title
                     )
                     if elsst_info and (elsst_info.primary_concepts or elsst_info.secondary_concepts):
@@ -281,6 +284,40 @@ class MetadataEnricher:
             # Add abstract if available
             if enriched_content.article_abstract:
                 ttl_content += f'    dc:abstract "{self._escape_ttl_string(enriched_content.article_abstract)}" ;\n'
+            
+            # Add DOI if available
+            if hasattr(enriched_content, 'article_doi') and enriched_content.article_doi:
+                ttl_content += f'    bibo:doi <https://doi.org/{enriched_content.article_doi}> ;\n'
+            
+            # Add other identifiers if available
+            if hasattr(enriched_content, 'article_pmid') and enriched_content.article_pmid:
+                ttl_content += f'    bibo:uri <https://pubmed.ncbi.nlm.nih.gov/{enriched_content.article_pmid}> ;\n'
+            
+            if hasattr(enriched_content, 'article_arxiv_id') and enriched_content.article_arxiv_id:
+                ttl_content += f'    bibo:uri <https://arxiv.org/abs/{enriched_content.article_arxiv_id}> ;\n'
+            
+            if hasattr(enriched_content, 'article_handle') and enriched_content.article_handle:
+                ttl_content += f'    bibo:uri <https://hdl.handle.net/{enriched_content.article_handle}> ;\n'
+            
+            # Add other repository identifiers
+            if hasattr(enriched_content, 'article_identifiers'):
+                for identifier in enriched_content.article_identifiers:
+                    if identifier.startswith('http'):
+                        ttl_content += f'    bibo:uri <{identifier}> ;\n'
+                    else:
+                        # Try to construct a proper URI for known patterns
+                        if 'Repository:' in identifier:
+                            uri = identifier.replace('Repository: ', '')
+                            if uri.startswith('http'):
+                                ttl_content += f'    bibo:uri <{uri}> ;\n'
+                        elif 'DSpace:' in identifier:
+                            uri = identifier.replace('DSpace: ', '')
+                            if uri.startswith('http'):
+                                ttl_content += f'    bibo:uri <{uri}> ;\n'
+                        elif 'EPrints:' in identifier:
+                            uri = identifier.replace('EPrints: ', '')
+                            if uri.startswith('http'):
+                                ttl_content += f'    bibo:uri <{uri}> ;\n'
             
             # Add primary keywords
             for keyword in enriched_content.primary_keywords:

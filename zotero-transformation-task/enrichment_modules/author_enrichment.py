@@ -607,7 +607,9 @@ class AuthorEnricher:
         """Enrich multiple authors from a comma-separated string"""
         
         # Parse author string - handle academic citation format
-        # Format: "Last1, First1, First2 Last2, First3 Last3, First4 Last4 & First5 Last5"
+        # Format examples:
+        # "Last1, First1, Last2, First2, & Last3, First3"
+        # "Last1, First1, First2 Last2, First3 Last3 & First4 Last4"
         
         authors = []
         
@@ -616,27 +618,54 @@ class AuthorEnricher:
             parts = authors_string.split(' & ')
             main_authors = parts[0].strip()
             last_author = parts[1].strip()
-            if last_author:
-                authors.append(last_author)
         else:
             main_authors = authors_string.strip()
+            last_author = None
         
-        # Now parse the main authors part
+        # Parse the main authors part
         if main_authors:
             comma_parts = [p.strip() for p in main_authors.split(',')]
             
-            if len(comma_parts) >= 2:
-                # First author: "Last, First" -> "First Last"
-                first_author = f"{comma_parts[1]} {comma_parts[0]}"
-                authors.insert(0, first_author)
-                
-                # Remaining parts are individual authors in "First Last" format
-                for i in range(2, len(comma_parts)):
-                    if comma_parts[i].strip():
-                        authors.insert(-1 if ' & ' in authors_string else len(authors), comma_parts[i].strip())
-            elif len(comma_parts) == 1:
-                # Single author
-                authors.insert(0, comma_parts[0].strip())
+            # Handle mixed academic citation format
+            i = 0
+            while i < len(comma_parts):
+                if i == 0 and i + 1 < len(comma_parts):
+                    # First author is typically "Last, First"
+                    last_name = comma_parts[i].strip()
+                    first_name = comma_parts[i + 1].strip()
+                    authors.append(f"{first_name} {last_name}")
+                    i += 2
+                elif i < len(comma_parts):
+                    # Remaining authors could be "First Last" format
+                    author_name = comma_parts[i].strip()
+                    if author_name:
+                        # Check if this looks like a "First Last" format
+                        # (contains space and doesn't look like initials only)
+                        if ' ' in author_name and not (len(author_name.replace('.', '').replace(' ', '')) <= 3):
+                            authors.append(author_name)
+                        else:
+                            # This might be part of "Last, First" format
+                            if i + 1 < len(comma_parts):
+                                next_part = comma_parts[i + 1].strip()
+                                # If next part looks like a first name (short, has periods), combine them
+                                if (len(next_part.replace('.', '').replace(' ', '')) <= 10 and 
+                                    ('.' in next_part or len(next_part.split()) <= 2)):
+                                    authors.append(f"{next_part} {author_name}")
+                                    i += 2
+                                else:
+                                    # This is a standalone "First Last" author
+                                    authors.append(author_name)
+                                    i += 1
+                            else:
+                                # Last part, treat as "First Last"
+                                authors.append(author_name)
+                                i += 1
+                    else:
+                        i += 1
+        
+        # Add the last author (after &)
+        if last_author:
+            authors.append(last_author)
         
         # Clean up and deduplicate
         cleaned_authors = []
